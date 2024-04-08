@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>why-use-git</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="why-use-git_files/libs/clipboard/clipboard.min.js"></script>
+<script src="why-use-git_files/libs/quarto-html/quarto.js"></script>
+<script src="why-use-git_files/libs/quarto-html/popper.min.js"></script>
+<script src="why-use-git_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="why-use-git_files/libs/quarto-html/anchor.min.js"></script>
+<link href="why-use-git_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="why-use-git_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="why-use-git_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="why-use-git_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="why-use-git_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="why-is-git-important" class="level1">
+<h1>Why is Git important?</h1>
+<p>In the dynamic landscape of civil service analysis, Git emerges as a pivotal tool with multifaceted benefits. It addresses the unique challenges faced by analysts by offering a comprehensive solution for collaborative work, version control, accountability, disaster recovery, and knowledge retention. Using Git as a tool strengthens QA practices and ensures you’re working in line with <a href="https://dfe-analytical-services.github.io/analysts-guide/RAP/rap-expectations.html">RAP principles</a>. Here’s why Git holds particular importance for analysts in the civil service:</p>
+<section id="collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="collaboration">Collaboration</h2>
+<p>Civil service analysts often work in multidisciplinary teams, collaborating on projects that can involve data analysis, policy research, and report generation. Git enables seamless collaboration by allowing multiple team members to work on the same project simultaneously from any location. It provides a structured framework for tracking changes made by each contributor, avoiding conflicts, and merging contributions into a unified final product. The ability to collaboratively work on multiple branches simultaneously saves analysts time (no waiting for colleagues to finish one part before moving on). Cloud-hosted repositories also enable other analysts to view your code (with the correct permissions), providing routes for collaborative problem-solving and help with errors or bugs when needed. Git not only saves time but also minimizes the risk of errors that can occur with manual coordination. Git’s collaborative features and features of online repository platforms enable automated checks and code quality assurance through peer reviews, ensuring the highest standards in the analytical work produced.</p>
+</section>
+<section id="branching" class="level2">
+<h2 class="anchored" data-anchor-id="branching">Branching</h2>
+<p>In the civil service, the need for innovative problem-solving is constant. Git’s branching system empowers analysts with methodological agility. Each branch can be dedicated to a unique methodology, different analytical approach, or potential new feature, allowing analysts to experiment and adapt without disrupting the core workflow. This flexibility promotes a culture of continuous improvement and innovation, ensuring that the civil service stays at the forefront of data-driven decision-making.</p>
+</section>
+<section id="version-control" class="level2">
+<h2 class="anchored" data-anchor-id="version-control">Version control</h2>
+<p>the civil service, accuracy and accountability are paramount. Git provides a robust version control system that allows analysts to keep a historical record of all changes made to their work. This capability is especially important when dealing with sensitive government data or policy documents. Analysts can easily revert to previous versions/past methodologies, compare changes, and identify the source of any issues, thus ensuring data integrity and transparency. Git best practices (regular commits, useful branch names and commit messages) ensure that analysts can easily track and manage changes, allowing them to focus more on analysis and less on document management.</p>
+</section>
+<section id="audit-trails-and-accountability" class="level2">
+<h2 class="anchored" data-anchor-id="audit-trails-and-accountability">Audit trails and accountability</h2>
+<p>Government departments/agencies require a high level of accountability and transparency. Git’s commit history and branching system create an audit trail of every change made to a project. This audit trail helps analysts demonstrate the evolution of their work, which is essential when justifying decisions, responding to inquiries, or conducting internal reviews. Git’s ability to attribute changes to specific contributors adds an extra layer of accountability. The visible history of your colleagues’ work removes uncertainty and again saves time otherwise spent figuring out about changes other people have made. Git’s detailed commit messages and audit trails simplify the process of justifying decisions, responding to inquiries, and conducting internal reviews, streamlining daily tasks. This also aids quality assurance as it links closely to the key outcomes of the <a href="https://educationgovuk.sharepoint.com/:w:/r/sites/sarpi/g/_layouts/15/Doc.aspx?sourcedoc=%7BCE688250-04F4-41A2-9951-230577A8F129%7D&amp;file=DfE%20Quality%20Assurance%20Framework.docx&amp;action=default&amp;mobileredirect=true">DfE QA framework</a> (i.e.&nbsp;analysis is transparent and accountable).</p>
+</section>
+<section id="disaster-recovery" class="level2">
+<h2 class="anchored" data-anchor-id="disaster-recovery">Disaster recovery</h2>
+<p>Data loss or file corruption can have severe consequences in the civil service, where data integrity is critical. I’m sure we’ve all had tech-disasters where we’ve lost the files/code scripts we spent the whole day working on! Git repositories can be hosted on remote servers or cloud platforms, ensuring that project data is safely stored and backed up. Committing work regularly (every 30 minutes) ensures it never gets lost, as every commit is recoverable. In DfE we use Azure DevOps for internal/sensitive repositories and GitHub for public repositories. This redundancy minimizes the risk of data loss due to hardware failures or other unforeseen events, providing peace of mind for analysts and their supervisors, knowing that their work is safeguarded against corruption or unforeseen events.</p>
+</section>
+<section id="skill-development" class="level2">
+<h2 class="anchored" data-anchor-id="skill-development">Skill Development</h2>
+<p>Git is a widely used tool in the tech industry and beyond in both public and private sectors. Learning Git not only benefits analysts in their current roles but also enhances their marketability and career prospects. As the civil service increasingly incorporates technology and data-driven approaches, proficiency in Git can open doors to a broader range of opportunities within and outside the government sector.</p>
+</section>
+<section id="knowledge-loss-high-turnover" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-loss-high-turnover">Knowledge-loss &amp; high turnover</h2>
+<p>High-turnover rates and knowledge loss are common challenges in the civil service. Git’s audit trails and detailed commit messages play a pivotal role in addressing this issue. They serve as a knowledge repository, preserving the history of decisions, methodologies, and insights. When new analysts join the team, this historical context proves invaluable in expediting their onboarding process and reducing the knowledge gap.</p>
+<p>In summary, Git is an essential tool for analysts in the civil service because it facilitates collaborative work, ensures version control, maintains accountability and audit trails, supports disaster recovery, and promotes skill development. Embracing Git as part of their toolkit empowers civil service analysts to work more efficiently, maintain data integrity, and adapt to the evolving demands of the modern public sector.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
