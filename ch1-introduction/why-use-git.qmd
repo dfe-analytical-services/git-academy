@@ -29,9 +29,9 @@ online repository platforms enable automated checks and QA through pull
 requests/peer reviews, supporting compliance with the [code of
 practice](https://code.statisticsauthority.gov.uk/).
 
-## Branching
+## Development
 
-Git's branching system empowers analysts to experiment, try different
+Git's 'branching' system creates parallel versions of projects, allowing analysts to experiment, try different
 approaches, or add potential new features without fear of breaking
 anything on the 'main branch'.
 
