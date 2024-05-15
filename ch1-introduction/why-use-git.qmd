@@ -1,0 +1,124 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+css: custom.css
+---
+
+# Why is Git important?
+
+Git is a software that offers a comprehensive solution for collaborative
+work, version control, accountability, disaster recovery, and knowledge
+retention. Using Git strengthens QA practices and ensures you're working
+in line with [RAP
+principles](https://dfe-analytical-services.github.io/analysts-guide/RAP/rap-expectations.html).
+Here's why Git holds particular importance for analysts in the civil
+service:
+
+
+<details>
+<summary><h2>Collaboration</h2></summary>
+
+Git enables collaboration by allowing team members to work on the same
+project simultaneously from any location. It tracks changes made by each
+contributor, highlighting 'conflicts', before merging contributions into
+one final product. The ability to work on multiple branches
+simultaneously saves analysts time (no waiting for colleagues to finish
+one part before moving on). Cloud-hosted repositories also enable other
+analysts to view your code (with the correct permissions), enabling
+knowledge-sharing and transparency. Git's collaborative features and
+online repository platforms enable automated checks and QA through pull
+requests/peer reviews, supporting compliance with the [code of
+practice](https://code.statisticsauthority.gov.uk/).
+
+</details>
+
+ 
+<details>
+<summary><h2>Experiment</h2></summary>
+
+Git's 'branching' system creates parallel versions of projects, allowing analysts to experiment, try different
+approaches, or add potential new features without fear of breaking
+anything on the 'main branch'.
+
+</details>
+
+<details>
+<summary><h2>Version control</h2></summary>
+
+Git provides a version control system that keeps a historical record of
+all changes made to files in the repository. Analysts can easily revert
+to previous versions/past methodologies, compare changes, and identify
+the source of any issues. Git best practices (regular commits, useful
+branch names and commit messages) ensure that analysts can easily track
+and manage changes, allowing them to focus more on analysis and less on
+document management.
+
+</details>
+
+<details>
+<summary><h2>Audit trails and accountability</h2></summary>
+
+Git's commit history and branching system create an audit trail of every
+change made to a project, and who made it. This audit trail helps
+analysts demonstrate the evolution of their work, which is essential
+when justifying decisions, responding to inquiries, or conducting
+internal reviews. The visible history removes uncertainty and again
+saves time otherwise spent figuring out what changes others made. Git's
+commit messages simplify the process of justifying decisions, responding
+to inquiries, and conducting internal reviews, streamlining daily tasks.
+This also aids QA as it links closely to the key outcomes of the [DfE QA
+framework](https://educationgovuk.sharepoint.com/:w:/r/sites/sarpi/g/_layouts/15/Doc.aspx?sourcedoc=%7BCE688250-04F4-41A2-9951-230577A8F129%7D&file=DfE%20Quality%20Assurance%20Framework.docx&action=default&mobileredirect=true)
+(i.e. analysis is transparent and accountable).
+
+</details>
+
+<details>
+<summary><h2>Disaster recovery</h2></summary>
+
+Data loss or file corruption can have severe consequences in the civil
+service, where data integrity is critical. I'm sure we've all had
+tech-disasters where we've lost the files/code scripts we spent the
+whole day working on! Git repositories can be hosted on remote servers
+or cloud platforms, ensuring that data is safely stored and
+backed up. Committing work regularly (every 30 minutes) ensures it never
+gets lost, as every commit is recoverable. In DfE we use Azure DevOps
+for internal/sensitive repositories and GitHub for public repositories.
+This minimizes the risk of data loss due to hardware failures
+or other unforeseen events, providing peace of mind for analysts and
+their supervisors, knowing that their work is safeguarded against
+corruption or unforeseen events.
+
+</details>
+
+<details>
+<summary><h2>Skills development</h2></summary>
+
+Git is a widely used tool in the tech industry and beyond in both public
+and private sectors. Learning Git not only benefits analysts in their
+current roles but also enhances their future career
+prospects. As the civil service increasingly incorporates technology and
+data-driven approaches, proficiency in Git can open doors to a broader
+range of opportunities within and outside the government sector.
+
+</details>
+
+<details>
+<summary><h2>Knowledge loss & high turnover</h2></summary>
+
+High-turnover rates and knowledge loss are common challenges in the
+civil service. Git's audit trails and commit messages serve as a knowledge
+repository, preserving the history of decisions, methodologies, and
+changes. When new analysts join the team, this historical context
+proves invaluable in supporting their onboarding process and reducing
+the knowledge gap.
+
+</details>
+
+In summary, Git is an essential tool for analysts in the civil service
+because it facilitates collaborative work, ensures version control,
+maintains accountability and audit trails, supports disaster recovery,
+and promotes skill development. Embracing Git as part of their toolkit
+empowers civil service analysts to work more efficiently, maintain data
+integrity, and adapt to the evolving demands of the modern public
+sector.
