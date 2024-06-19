@@ -1,0 +1,29 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+css: custom.css
+---
+
+# Aims and scope
+
+Git Academy is intended to provide a pathway to learning how to use Git and 
+DevOps, starting from beginner level, but with useful jumping in points up
+to and intermediate level.
+
+It isn't intended to be an exhaustive reference guide, more a development 
+journey with sign-posting to useful resources that can help you pick up both a
+practical working knowledge of Git alongside a conceptual understanding of what 
+it does and how it works.
+
+As with git itself, there'll be branching off points to explore different 
+subjects so if there's something specific you want to explore further beyond the 
+basics, you should be able to do that.
+
+Some of the topics that we deal with are:
+
+- the basics of adding and committing, plus syncing between local and remote repos using push and pull
+- using branches - how to branch, when to branch, how to organise your work, how to merge branches and how to put in a review process using pull requests.
+- How to navigate your history / git tree and undo / revert changes.
+- Using DevOps to manage your workflows and the security of your remote repositories
+- Automating testing and deployments in DevOps
