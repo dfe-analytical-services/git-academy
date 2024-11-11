@@ -1,0 +1,55 @@
+# Cloning an Existing Repository 
+
+## Introduction
+
+This script will guide you through the process of cloning a GitHub repository. Cloning a repository means making a local copy of a project that exists on GitHub. This enables you to make changes and test locally before pushing to be approved and merged with the main branch on GitHub.
+
+There are several ways to clone an existing repository. There are two methods detailed below. The first uses Rstudio and the second uses Git Command Line. Start with step 1, which is the same for both, and then decide which method to follow.
+
+## Step 1: Clone the Repository
+
+a\. Go to the [git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox) repository page on GitHub.
+
+b\. Click the "Code" green button and copy the URL (HTTPS link).
+
+## To Clone Using RStudio:
+
+### Step 2a: Open RStudio
+
+Open RStudio on your computer.
+
+### Step 2b: Clone the Repository in RStudio
+
+-   In RStudio, go to **File \> New Project \> Version Control \> Git**.
+
+-   Paste the URL you copied from GitHub into the "Repository URL" field.
+
+-   Choose a directory on your computer where you want to save the repository.
+
+-   Click "Create Project".
+
+### Step 2c: Verify the Clone
+
+Check the Files pane in RStudio to see if the repository files have been cloned to your local machine.
+
+## Or, to Clone Using Git Bash:
+
+### Step 2a: Open Git Bash
+
+Navigate to the folder where you want to clone the repository. Right-click in the directory and select "Git Bash Here".
+
+### Step 2b: Clone the Repository in Git Bash
+
+-   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repository, we would write:
+
+**git clone <https://github.com/dfe-analytical-services/git-academy-sandbox.git>**
+
+-   You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash.
+
+### Step 2c: Verify the Clone
+
+Check the Files pane in RStudio to see if the repository files have been cloned to your local machine.
+
+## Conclusion
+
+You have successfully cloned a GitHub repository! Continue on to learn how to create branches.
