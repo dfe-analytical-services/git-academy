@@ -1,24 +1,24 @@
-# Cloning an Existing Repository 
+## Cloning an Existing Repository
 
-## Introduction
+### Introduction
 
-This script will guide you through the process of cloning a GitHub repository. Cloning a repository means making a local copy of a project that exists on GitHub. This enables you to make changes and test locally before pushing to be approved and merged with the main branch on GitHub.
+This section will guide you through the process of cloning a GitHub repository. Cloning a repository means making a local copy of a project that exists on GitHub. This enables you to make changes and test locally before pushing to be approved and merged with the main branch on GitHub.
 
-There are several ways to clone an existing repository. There are two methods detailed below. The first uses Rstudio and the second uses Git Command Line. Start with step 1, which is the same for both, and then decide which method to follow.
+There are several ways to clone an existing repository. There are two methods detailed below. The first uses Rstudio and the second uses Git Bash. Start with step 1, which is the same for both, and then decide which method to follow. Once you have successfully cloned, you should see the files appear in both the file you have chosen to store your repository in and the files pane in R studio.
 
-## Step 1: Clone the Repository
+### Step 1: Clone the Repository
 
 a\. Go to the [git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox) repository page on GitHub.
 
 b\. Click the "Code" green button and copy the URL (HTTPS link).
 
-## To Clone Using RStudio:
+### To Clone Using RStudio:
 
-### Step 2a: Open RStudio
+#### Step 2a: Open RStudio
 
 Open RStudio on your computer.
 
-### Step 2b: Clone the Repository in RStudio
+#### Step 2b: Clone the Repository in RStudio
 
 -   In RStudio, go to **File \> New Project \> Version Control \> Git**.
 
@@ -28,28 +28,30 @@ Open RStudio on your computer.
 
 -   Click "Create Project".
 
-### Step 2c: Verify the Clone
+#### Step 2c: Verify the Clone
 
-Check the Files pane in RStudio to see if the repository files have been cloned to your local machine.
+Check the Files pane in RStudio to see if the repository files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
 
-## Or, to Clone Using Git Bash:
+### Or, to Clone Using Git Bash:
 
-### Step 2a: Open Git Bash
+### Step 2a: Open folder and Git Bash
 
 Navigate to the folder where you want to clone the repository. Right-click in the directory and select "Git Bash Here".
 
-### Step 2b: Clone the Repository in Git Bash
+#### Step 2b: Clone the Repository in Git Bash
 
 -   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repository, we would write:
 
-**git clone <https://github.com/dfe-analytical-services/git-academy-sandbox.git>**
+**git clone**
 
--   You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash.
+**https://github.com/dfe-analytical-services/git-academy-sandbox.git**
 
-### Step 2c: Verify the Clone
+You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash.
 
-Check the Files pane in RStudio to see if the repository files have been cloned to your local machine.
+#### Step 2c: Verify the Clone
 
-## Conclusion
+Check the Files pane in RStudio to see if the repository files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
+
+### Conclusion
 
 You have successfully cloned a GitHub repository! Continue on to learn how to create branches.
