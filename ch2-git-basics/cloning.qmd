@@ -2,7 +2,9 @@
 
 ### Introduction
 
-This section will guide you through the process of cloning a GitHub repository. Cloning a repository means making a local copy of a project that exists on GitHub. This enables you to make changes and test locally before pushing to be approved and merged with the main branch on GitHub.
+This section will guide you through the process of cloning a GitHub repository. Cloning a repository means making a local copy of a project that exists on a "remote" DevOps server such as Axure DevOps, GitHub or GitLab.
+
+This enables you to make changes and test locally before pushing to be approved and merged with the main branch on GitHub.
 
 There are several ways to clone an existing repository. There are two methods detailed below. The first uses Rstudio and the second uses Git Bash. Start with step 1, which is the same for both, and then decide which method to follow. Once you have successfully cloned, you should see the files appear in both the file you have chosen to store your repository in and the files pane in R studio.
 
@@ -48,9 +50,13 @@ Navigate to the folder where you want to clone the repository. Right-click in th
 
 You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash.
 
-#### Step 2c: Verify the Clone
+#### Step 2c: Verify the clone in Git Bash 
 
-Check the Files pane in RStudio to see if the repository files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
+-   Navigate into the repo by typing **cd git-academy-sandbox**.
+
+-   You should now see the current branch name (e.g. main) at the end of the file path.
+
+-   Type **git log** to view recent commits or **git status** to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
 
 ### Conclusion
 
