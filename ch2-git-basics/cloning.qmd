@@ -14,7 +14,8 @@ a\. Go to the [git-academy-sandbox](https://github.com/dfe-analytical-services/g
 
 b\. Click the "Code" green button and copy the URL (HTTPS link).
 
-### To Clone Using RStudio:
+::: panel-tabset
+## To Clone Using RStudio:
 
 #### Step 2a: Open RStudio
 
@@ -34,7 +35,7 @@ Open RStudio on your computer.
 
 Check the Files pane in RStudio to see if the repository files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
 
-### Or, to Clone Using Git Bash:
+## Or, to Clone Using Git Bash:
 
 ### Step 2a: Open folder and Git Bash
 
@@ -50,13 +51,14 @@ Navigate to the folder where you want to clone the repository. Right-click in th
 
 You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash.
 
-#### Step 2c: Verify the clone in Git Bash 
+#### Step 2c: Verify the clone in Git Bash
 
 -   Navigate into the repo by typing **cd git-academy-sandbox**.
 
 -   You should now see the current branch name (e.g. main) at the end of the file path.
 
 -   Type **git log** to view recent commits or **git status** to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
+:::
 
 ### Conclusion
 
