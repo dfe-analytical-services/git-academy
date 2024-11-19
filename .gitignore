@@ -50,3 +50,5 @@ rsconnect/
 
 */*_files
 */*.html
+/.quarto/
+_site/

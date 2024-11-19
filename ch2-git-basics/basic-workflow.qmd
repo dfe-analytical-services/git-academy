@@ -1,0 +1,56 @@
+# Covering the basics
+
+To help cover the essential basics of using Git for your work, we've created the [Git academy 
+sandbox repo on GitHub](https://github.com/dfe-analytical-services/git-academy-sandbox). The 
+steps covered in this walk-through are all intended to work with this sandbox repo.
+
+
+::: {.callout-note}
+## Pre-requisites
+- Git
+- A preferred method for running Git commands, one of:
+  - git bash (included in Git installation)
+  - GitHub Desktop
+  - RStudio
+  - Visual Studio Code
+:::
+
+## Cloning a repository
+
+More often than not, you'll either have set up a remote repository already (e.g. on Azure DevOps, 
+GitHub or GitLab) or someone else will have. So we'll start on how to get a copy of that you can
+work with to edit and run code. For this you'll need to create a local copy somewhere where you
+have the software necessary to edit and run your code (e.g. R-Studio if you're using R code).
+In Git parlance, creating a local copy is called "cloning" and you can do this using the 
+`git clone` command.
+
+Let's try this with the sandbox repo. Every repo has a URL which you can use to clone it. Navigate
+to the [sandbox repo webpage](https://github.com/dfe-analytical-services/git-academy-sandbox) and 
+click the **<> Code** button near the top right. This will show a HTTPS URL that you can copy - 
+copy this to your clipboard.
+
+::: {.panel-tabset}
+
+### Git bash
+
+Now open **git bash** and run through the following steps.
+
+- navigate to where you want to clone the repo, e.g.
+  - `cd ~/repos/` (this navigates to the **repos** directory in your home directory if it exists)
+- Run `git clone ...`, replacing `...` with the URL you copied from the repo home page, e.g.:
+  - `git clone https://github.com/dfe-analytical-services/git-academy-sandbox.git`
+- Switch into the new repository, e.g.:
+  - `cd git-academy-sandbox`
+
+### GitHub Desktop
+
+
+### R-Studio
+
+
+### Visual Studio Code
+
+:::
+
+
+

@@ -1,0 +1,15 @@
+---
+title: "DfE Git Academy"
+date: "Last updated: `r Sys.Date()`"
+author: "statistics.development@education.gov.uk"
+site: "_site.yml"
+---
+
+```{r include=FALSE}
+library(fontawesome)
+library(quarto)
+```
+
+---
+
+
