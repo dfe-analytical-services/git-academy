@@ -4,20 +4,42 @@ title: "Cloning an Existing Repository"
 
 ## Introduction
 
-This section will guide you through the process of cloning a GitHub repository. Cloning a repository means making a local copy of a project that exists on a "remote" DevOps server such as Axure DevOps, GitHub or GitLab.
-
-This enables you to make changes and test locally before pushing to be approved and merged with the main branch on GitHub.
+This section will guide you through the process of cloning a GitHub repository. If you have a repository on Azure DevOps, GitHub or GitLab, you generally can't edit or run your work on those platforms, so if you need to work with the contents of a repo, you'll usually need to make a clone.
 
 There are several ways to clone an existing repository. Below, you'll find two methods. The first uses Rstudio and the second uses Git Bash. Start with step 1, which is the same for both methods, and then decide which method to follow. Once you have successfully cloned, you should see the files appear in the location you have chosen to store your repository.
 
-## Step 1: Clone the Repository
+## Step 1: Get the repository clone link
 
 a\. Go to the [git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox) repository page on GitHub.
 
-b\. Click the "Code" green button and copy the URL (HTTPS link).
+b\. Click the "Code" button and copy the URL (HTTPS link).
 
 ::: panel-tabset
-## To Clone Using RStudio:
+## To Clone Using Git Bash:
+
+### Step 2a: Open folder and Git Bash
+
+Navigate to the folder where you want to clone the repository. Right-click in the directory and select "Git Bash Here".
+
+### Step 2b: Clone the Repository in Git Bash
+
+-   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repository, we would write:
+
+``` bash 
+git clone https://github.com/dfe-analytical-services/git-academy-sandbox.git
+```
+
+You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash.
+
+### Step 2c: Verify the clone in Git Bash
+
+-   Navigate into the repo by typing **cd git-academy-sandbox**.
+
+-   You should now see the current branch name (e.g. main) at the end of the file path.
+
+-   Type **git log** to view recent commits or **git status** to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
+
+## Or, to Clone Using RStudio:
 
 ### Step 2a: Open RStudio
 
@@ -36,32 +58,6 @@ Open RStudio on your computer.
 ### Step 2c: Verify the Clone
 
 Check the Files pane in RStudio to see if the repository files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
-
-## Or, to Clone Using Git Bash:
-
-### Step 2a: Open folder and Git Bash
-
-Navigate to the folder where you want to clone the repository. Right-click in the directory and select "Git Bash Here".
-
-### Step 2b: Clone the Repository in Git Bash
-
--   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repository, we would write:
-
-``` bash
-git clone
-
-https://github.com/dfe-analytical-services/git-academy-sandbox.git
-```
-
-You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash.
-
-### Step 2c: Verify the clone in Git Bash
-
--   Navigate into the repo by typing **cd git-academy-sandbox**.
-
--   You should now see the current branch name (e.g. main) at the end of the file path.
-
--   Type **git log** to view recent commits or **git status** to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
 :::
 
 ## Conclusion
