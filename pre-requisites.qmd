@@ -50,7 +50,7 @@ status and changes of your files.
 
 ### IDE Git integration
 
-Most modern IDEs (e.g. Visual Studio, R-Studio, PyCharm) provide some level of 
+Most modern IDEs (e.g. VS Code, R-Studio, PyCharm) provide some level of 
 Git integration. IDEs often offer a more limited range of Git commands than Git 
 BASH and GitHub Desktop, but work well for basic Git workflows (such as cloning,
 tracking changes, creating branches and syncing with your remote repository) and 
@@ -68,7 +68,7 @@ shuould provide enough functionality for day-to-day tasks.
 
 ## Text editor or IDE
 
-We've tried to keep Git Academy software agnostic as much as possible, so you
+We've tried to keep Git Academy software-agnostic as much as possible, so you
 should be able to work through most of the material using any text editor or 
 IDE. The main files you'll need to edit will contain markdown, which you can 
 edit in any of the following (some of which also provide Git integration).
@@ -80,6 +80,13 @@ Windows Notepad and Notepad++ are good to use if you don't have a preferred
 language that you'd usually work in such as R or Python. There's no Git 
 integration though, so you'll need to use Git BASH or GitHub Desktop to run 
 Git commands.
+
+### VS Code
+
+VS Code is a flexible IDE usable with a range of languages and is available for 
+use on DfE systems on request. It provides Git integration along with markdown 
+file rendering (shortcut: Ctrl+K V), so is a great option for working through 
+Git Academy.
 
 ### R-Studio
 
