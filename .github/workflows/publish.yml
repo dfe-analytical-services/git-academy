@@ -2,8 +2,10 @@ on:
   workflow_dispatch:
   push:
     branches: main
+    branches: newcontent/basics-refresher
   pull_request:
     branches: main
+    branches: newcontent/basics-refresher
 
 name: Publish to pages
 
