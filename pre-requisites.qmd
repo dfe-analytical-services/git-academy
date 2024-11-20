@@ -15,6 +15,75 @@ You'll then need to [e-mail us](mailto:statistics.development@education.gov.uk)
 with your GitHub username and ask to be added to the [Git Academy users](https://github.com/orgs/dfe-analytical-services/teams/git-academy-users) 
 team on [dfe-analytical services](https://github.com/dfe-analytical-services).
 
-## Optional extras
+## Running Git commands
+
+There are a few options for running Git commands once you've installed Git. The
+panels below give the most commonly used options that we recommend for working 
+through Git Academy.
+
+::: panel-tabset
+### Git BASH
+
+Git BASH is a terminal prompt that you can use to run Git commands. It comes 
+with Git, so you'll have it as soon as you've installed Git. It gives you access 
+to all Git commands as well as other system commands (such as creating files,
+navigating through your folders, making directories, removing files and many, 
+many other things).
+
+### GitHub Desktop
+
+If writing commands into a terminal isn't your thing, then a good 
+(language-agnostic) alternative to Git BASH is to use the GitHub Desktop 
+application. This can be downloaded from GitHub and provides access to a wide 
+range of Git commands, whilst providing user-friendly views of the tracking 
+status and changes of your files.
+
+### IDE Git integration
+
+Most modern IDEs (e.g. Visual Studio, R-Studio, PyCharm) provide some level of 
+Git integration. IDEs often offer a more limited range of Git commands than Git 
+BASH and GitHub Desktop, but work well for basic Git workflows (such as cloning,
+tracking changes, creating branches and syncing with your remote repository) and 
+provide enough functionality to follow most of Git Academy without you needing 
+to resort to typing commands into Git BASH.
+
+:::
+
+::: {.callout-note}
+There is no single preferred option for running Git commands. Whichever option 
+you find works best for you is fine to use, whether it's command line based or
+a graphical user interface. Some will offer additional functionality, but all 
+shuould provide enough functionality for day-to-day tasks.
+:::
+
+
+## Text editor or IDE
+
+We've tried to keep Git Academy software agnostic as much as possible, so you
+should be able to work through most of the material using any text editor or 
+IDE. The main files you'll need to edit will contain markdown, which you can 
+edit in any of the following (some of which also provide Git integration).
+
+::: panel-tabset
+
+### Windows Notepad
+
+Windows Notepad and Notepad++ are good to use if you don't have a preferred 
+language that you'd usually work in such as R or Python. There's no Git 
+integration though, so you'll need to use Git BASH or GitHub Desktop to run 
+Git commands.
 
 ### R-Studio
+
+R-Studio is an R IDE and is available from the DfE Software Centre in Windows. 
+It provides Git integration along with markdown file rendering, so is a great 
+option for working through Git Academy.
+
+### PyCharm
+
+PyCharm Community Edition is a Python IDE and is available from the DfE Software 
+Centre. It provides Git integration along with markdown file rendering, so is 
+a great option for working through Git Academy.
+
+:::
+
