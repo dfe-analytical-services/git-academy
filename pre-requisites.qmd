@@ -4,6 +4,16 @@ title: "Pre-requisities"
 
 ## Git
 
+Download Git from the [Git website downloads page](https://git-scm.com/downloads).
+Click the "Download for..." button in the monitor image and this will download 
+the install script.
+
+::: {.callout-tip}
+The install script asks lots of questions, but you're generally fine to accept 
+the defaults on all of these. The main one to watch out for is the default text
+editor, which Git sets to Vim. We strongly recommend changing this to Notepad or 
+Notepad++ as Vim is very user-unfriendly for the average user.
+:::
 
 ## GitHub
 
@@ -46,7 +56,6 @@ BASH and GitHub Desktop, but work well for basic Git workflows (such as cloning,
 tracking changes, creating branches and syncing with your remote repository) and 
 provide enough functionality to follow most of Git Academy without you needing 
 to resort to typing commands into Git BASH.
-
 :::
 
 ::: {.callout-note}
@@ -65,7 +74,6 @@ IDE. The main files you'll need to edit will contain markdown, which you can
 edit in any of the following (some of which also provide Git integration).
 
 ::: panel-tabset
-
 ### Windows Notepad
 
 Windows Notepad and Notepad++ are good to use if you don't have a preferred 
@@ -84,6 +92,5 @@ option for working through Git Academy.
 PyCharm Community Edition is a Python IDE and is available from the DfE Software 
 Centre. It provides Git integration along with markdown file rendering, so is 
 a great option for working through Git Academy.
-
 :::
 

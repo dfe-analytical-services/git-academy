@@ -25,5 +25,17 @@ git checkout -b <github_id>_main
 ```
 
 ## R-Studio
+
+## PyCharm
+
+Open up the Git panel in PyCharm and you should see something like the 
+screenshot below. Right click on **main** and select 
+**New branch from 'origin/main'...**.
+
+Then enter your branch name as **`<github_id>_main`** (but replacing <github_id> 
+with your own GitHub username, e.g. `jsmith_main`)
+
+![Creating a new branch in PyCharm](./images/new-branch-PyCharm.png)
+
 :::
 
