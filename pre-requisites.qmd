@@ -1,0 +1,20 @@
+---
+title: "Pre-requisities"
+---
+
+## Git
+
+
+## GitHub
+
+You'll need a GitHub account to work through the examples used with our 
+[git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox) 
+repository.
+
+You'll then need to [e-mail us](mailto:statistics.development@education.gov.uk)
+with your GitHub username and ask to be added to the [Git Academy users](https://github.com/orgs/dfe-analytical-services/teams/git-academy-users) 
+team on [dfe-analytical services](https://github.com/dfe-analytical-services).
+
+## Optional extras
+
+### R-Studio

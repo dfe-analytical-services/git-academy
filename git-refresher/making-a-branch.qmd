@@ -1,0 +1,29 @@
+--- 
+title: "Making a new branch"
+---
+
+In a Git repository, different versions of work are controlled by using what are
+called "[branches](https://dfe-analytical-services.github.io/azure-devops-for-analysis/version-control-using-git---the-basics.html#making-branches)". Edits can be made to files on a branch and those will not 
+effect files on any other branch.
+
+Most repositories will have a "main" branch. This is considered the central 
+latest working version of your work. When editing work, we generally don't make 
+edits directly on the main branch. Instead we create specific branches for 
+specific chunks of work.
+
+Having [cloned the git-academy-sandbox repository](clone-a-repo.html), 
+now make a new branch to work in.
+
+::: panel-tabset
+## Git Bash
+
+Replace `<github_id>` in the below with your GitHub username to make your own 
+personal main branch in the sandbox repository.
+
+``` bash
+git checkout -b <github_id>_main
+```
+
+## R-Studio
+:::
+
