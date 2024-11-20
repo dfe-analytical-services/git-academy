@@ -1,0 +1,182 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Welcome to the DfE’s Git Academy. This is a collection of interactive tasks you can work through to help learn and practice using Git. Many use a supporting repository called git-academy-sandbox where you can practice using Git in a contained practice environment.\nYou should be able to follow through tasks in order to jump in at specific jump in points where you feel you need to target your learning.\nThis isn’t aimed at being a comprehensive reference guide however. If you need reference material for using Git in the DfE, then we recommend looking through the Azure DevOps for Analysis guide.\n\n\n\n Back to top",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "ch4-merging/reviewing-pull-requests.html",
+    "href": "ch4-merging/reviewing-pull-requests.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "git-refresher/making-a-branch.html",
+    "href": "git-refresher/making-a-branch.html",
+    "title": "Making a new branch",
+    "section": "",
+    "text": "In a Git repository, different versions of work are controlled by using what are called “branches”. Edits can be made to files on a branch and those will not effect files on any other branch.\nMost repositories will have a “main” branch. This is considered the central latest working version of your work. When editing work, we generally don’t make edits directly on the main branch. Instead we create specific branches for specific chunks of work.\nHaving cloned the git-academy-sandbox repository, now make a new branch to work in.\n\nGit BashGitHub DesktopVS CodeRStudioPyCharm\n\n\nReplace &lt;github_id&gt; in the below with your GitHub username to make your own personal main branch in the sandbox repository.\ngit checkout -b &lt;github_id&gt;_main\n\n\nClick Branch in the menu bar and then select New branch… as shown in the screenshot below.\nThen enter your branch name as &lt;github_id&gt;_main (but replacing  with your own GitHub username, e.g. jsmith_main)\n\n\n\nCreating a new branch in GitHub Desktop\n\n\n\n\nThe current branch (main) should be listed in the very bottom left hand corner of the VS Code window frame. If you left click on this, you should then see a menu appear at the top of the VS Code window with some branch options (as shown in the screen shot below).\nClick + Create new branch… and then enter your branch name as &lt;github_id&gt;_main (but replacing  with your own GitHub username, e.g. jsmith_main).\nYou should now see the branch name listed in the bottom left of the window frame shown as the branch you just created, meaning any changes you currently make will be applied to that new branch (and not main).\n\n\n\nCreating a new branch in VS Code\n\n\n\n\nIn the Git panel, click the purple new branch symbol  as circled in the screenshot below.\nThen enter your branch name as &lt;github_id&gt;_main (but replacing  with your own GitHub username, e.g. jsmith_main)\n\n\n\nCreating a new branch in RStudio\n\n\n\n\nOpen up the Git panel in PyCharm and you should see something like the screenshot below. Right click on main and select New branch from ‘origin/main’….\nThen enter your branch name as &lt;github_id&gt;_main (but replacing  with your own GitHub username, e.g. jsmith_main).\n\n\n\nCreating a new branch in PyCharm\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Git basics refresher",
+      "Making a new branch"
+    ]
+  },
+  {
+    "objectID": "ch7-task-management/github-issues.html",
+    "href": "ch7-task-management/github-issues.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "ch1-introduction/why-use-git.html",
+    "href": "ch1-introduction/why-use-git.html",
+    "title": "Why is Git important?",
+    "section": "",
+    "text": "Why is Git important?\nGit is a software that offers a comprehensive solution for collaborative work, version control, accountability, disaster recovery, and knowledge retention. Using Git strengthens QA practices and ensures you’re working in line with RAP principles. Here’s why Git holds particular importance for analysts in the civil service:\n\n\n\nCollaboration\n\n\nGit enables collaboration by allowing team members to work on the same project simultaneously from any location. It tracks changes made by each contributor, highlighting ‘conflicts’, before merging contributions into one final product. The ability to work on multiple branches simultaneously saves analysts time (no waiting for colleagues to finish one part before moving on). Cloud-hosted repositories also enable other analysts to view your code (with the correct permissions), enabling knowledge-sharing and transparency. Git’s collaborative features and online repository platforms enable automated checks and QA through pull requests/peer reviews, supporting compliance with the code of practice.\n\n\n\n\nExperiment\n\n\nGit’s ‘branching’ system creates parallel versions of projects, allowing analysts to experiment, try different approaches, or add potential new features without fear of breaking anything on the ‘main branch’.\n\n\n\n\nVersion control\n\n\nGit provides a version control system that keeps a historical record of all changes made to files in the repository. Analysts can easily revert to previous versions/past methodologies, compare changes, and identify the source of any issues. Git best practices (regular commits, useful branch names and commit messages) ensure that analysts can easily track and manage changes, allowing them to focus more on analysis and less on document management.\n\n\n\n\nAudit trails and accountability\n\n\nGit’s commit history and branching system create an audit trail of every change made to a project, and who made it. This audit trail helps analysts demonstrate the evolution of their work, which is essential when justifying decisions, responding to inquiries, or conducting internal reviews. The visible history removes uncertainty and again saves time otherwise spent figuring out what changes others made. Git’s commit messages simplify the process of justifying decisions, responding to inquiries, and conducting internal reviews, streamlining daily tasks. This also aids QA as it links closely to the key outcomes of the DfE QA framework (i.e. analysis is transparent and accountable).\n\n\n\n\nDisaster recovery\n\n\nData loss or file corruption can have severe consequences in the civil service, where data integrity is critical. I’m sure we’ve all had tech-disasters where we’ve lost the files/code scripts we spent the whole day working on! Git repositories can be hosted on remote servers or cloud platforms, ensuring that data is safely stored and backed up. Committing work regularly (every 30 minutes) ensures it never gets lost, as every commit is recoverable. In DfE we use Azure DevOps for internal/sensitive repositories and GitHub for public repositories. This minimizes the risk of data loss due to hardware failures or other unforeseen events, providing peace of mind for analysts and their supervisors, knowing that their work is safeguarded against corruption or unforeseen events.\n\n\n\n\nSkills development\n\n\nGit is a widely used tool in the tech industry and beyond in both public and private sectors. Learning Git not only benefits analysts in their current roles but also enhances their future career prospects. As the civil service increasingly incorporates technology and data-driven approaches, proficiency in Git can open doors to a broader range of opportunities within and outside the government sector.\n\n\n\n\nKnowledge loss & high turnover\n\n\nHigh-turnover rates and knowledge loss are common challenges in the civil service. Git’s audit trails and commit messages serve as a knowledge repository, preserving the history of decisions, methodologies, and changes. When new analysts join the team, this historical context proves invaluable in supporting their onboarding process and reducing the knowledge gap.\n\nIn summary, Git is an essential tool for analysts in the civil service because it facilitates collaborative work, ensures version control, maintains accountability and audit trails, supports disaster recovery, and promotes skill development. Embracing Git as part of their toolkit empowers civil service analysts to work more efficiently, maintain data integrity, and adapt to the evolving demands of the modern public sector.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "ch1-introduction/git-versus-devops.html",
+    "href": "ch1-introduction/git-versus-devops.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "ch2-git-basics/basic-workflow.html",
+    "href": "ch2-git-basics/basic-workflow.html",
+    "title": "Covering the basics",
+    "section": "",
+    "text": "To help cover the essential basics of using Git for your work, we’ve created the Git academy sandbox repo on GitHub. The steps covered in this walk-through are all intended to work with this sandbox repo.\n\n\n\n\n\n\nPre-requisites\n\n\n\n\nGit\nA preferred method for running Git commands, one of:\n\ngit bash (included in Git installation)\nGitHub Desktop\nRStudio\nVisual Studio Code\n\n\n\n\n\n\nMore often than not, you’ll either have set up a remote repository already (e.g. on Azure DevOps, GitHub or GitLab) or someone else will have. So we’ll start on how to get a copy of that you can work with to edit and run code. For this you’ll need to create a local copy somewhere where you have the software necessary to edit and run your code (e.g. R-Studio if you’re using R code). In Git parlance, creating a local copy is called “cloning” and you can do this using the git clone command.\nLet’s try this with the sandbox repo. Every repo has a URL which you can use to clone it. Navigate to the sandbox repo webpage and click the &lt;&gt; Code button near the top right. This will show a HTTPS URL that you can copy - copy this to your clipboard.\n\nGit bashGitHub DesktopR-StudioVisual Studio Code\n\n\nNow open git bash and run through the following steps.\n\nnavigate to where you want to clone the repo, e.g.\n\ncd ~/repos/ (this navigates to the repos directory in your home directory if it exists)\n\nRun git clone ..., replacing ... with the URL you copied from the repo home page, e.g.:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\n\nSwitch into the new repository, e.g.:\n\ncd git-academy-sandbox"
+  },
+  {
+    "objectID": "ch2-git-basics/basic-workflow.html#cloning-a-repository",
+    "href": "ch2-git-basics/basic-workflow.html#cloning-a-repository",
+    "title": "Covering the basics",
+    "section": "",
+    "text": "More often than not, you’ll either have set up a remote repository already (e.g. on Azure DevOps, GitHub or GitLab) or someone else will have. So we’ll start on how to get a copy of that you can work with to edit and run code. For this you’ll need to create a local copy somewhere where you have the software necessary to edit and run your code (e.g. R-Studio if you’re using R code). In Git parlance, creating a local copy is called “cloning” and you can do this using the git clone command.\nLet’s try this with the sandbox repo. Every repo has a URL which you can use to clone it. Navigate to the sandbox repo webpage and click the &lt;&gt; Code button near the top right. This will show a HTTPS URL that you can copy - copy this to your clipboard.\n\nGit bashGitHub DesktopR-StudioVisual Studio Code\n\n\nNow open git bash and run through the following steps.\n\nnavigate to where you want to clone the repo, e.g.\n\ncd ~/repos/ (this navigates to the repos directory in your home directory if it exists)\n\nRun git clone ..., replacing ... with the URL you copied from the repo home page, e.g.:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\n\nSwitch into the new repository, e.g.:\n\ncd git-academy-sandbox"
+  },
+  {
+    "objectID": "ch2-git-basics/syncing.html",
+    "href": "ch2-git-basics/syncing.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "pre-requisites.html",
+    "href": "pre-requisites.html",
+    "title": "Pre-requisities",
+    "section": "",
+    "text": "Download Git from the Git website downloads page. Click the “Download for…” button in the monitor image and this will download the install script.\n\n\n\n\n\n\nTip\n\n\n\nThe install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.",
+    "crumbs": [
+      "Pre-requisities"
+    ]
+  },
+  {
+    "objectID": "pre-requisites.html#git",
+    "href": "pre-requisites.html#git",
+    "title": "Pre-requisities",
+    "section": "",
+    "text": "Download Git from the Git website downloads page. Click the “Download for…” button in the monitor image and this will download the install script.\n\n\n\n\n\n\nTip\n\n\n\nThe install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.",
+    "crumbs": [
+      "Pre-requisities"
+    ]
+  },
+  {
+    "objectID": "pre-requisites.html#github",
+    "href": "pre-requisites.html#github",
+    "title": "Pre-requisities",
+    "section": "GitHub",
+    "text": "GitHub\nYou’ll need a GitHub account to work through the examples used with our git-academy-sandbox repository.\nYou’ll then need to e-mail us with your GitHub username and ask to be added to the Git Academy users team on dfe-analytical services.",
+    "crumbs": [
+      "Pre-requisities"
+    ]
+  },
+  {
+    "objectID": "pre-requisites.html#running-git-commands",
+    "href": "pre-requisites.html#running-git-commands",
+    "title": "Pre-requisities",
+    "section": "Running Git commands",
+    "text": "Running Git commands\nThere are a few options for running Git commands once you’ve installed Git. The panels below give the most commonly used options that we recommend for working through Git Academy.\n\nGit BASHGitHub DesktopIDE Git integration\n\n\nGit BASH is a terminal prompt that you can use to run Git commands. It comes with Git, so you’ll have it as soon as you’ve installed Git. It gives you access to all Git commands as well as other system commands (such as creating files, navigating through your folders, making directories, removing files and many, many other things).\n\n\nIf writing commands into a terminal isn’t your thing, then a good (language-agnostic) alternative to Git BASH is to use the GitHub Desktop application. This can be downloaded from GitHub and provides access to a wide range of Git commands, whilst providing user-friendly views of the tracking status and changes of your files.\n\n\nMost modern IDEs (e.g. VS Code, R-Studio, PyCharm) provide some level of Git integration. IDEs often offer a more limited range of Git commands than Git BASH and GitHub Desktop, but work well for basic Git workflows (such as cloning, tracking changes, creating branches and syncing with your remote repository) and provide enough functionality to follow most of Git Academy without you needing to resort to typing commands into Git BASH.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThere is no single preferred option for running Git commands. Whichever option you find works best for you is fine to use, whether it’s command line based or a graphical user interface. Some will offer additional functionality, but all shuould provide enough functionality for day-to-day tasks.",
+    "crumbs": [
+      "Pre-requisities"
+    ]
+  },
+  {
+    "objectID": "pre-requisites.html#text-editor-or-ide",
+    "href": "pre-requisites.html#text-editor-or-ide",
+    "title": "Pre-requisities",
+    "section": "Text editor or IDE",
+    "text": "Text editor or IDE\nWe’ve tried to keep Git Academy software-agnostic as much as possible, so you should be able to work through most of the material using any text editor or IDE. The main files you’ll need to edit will contain markdown, which you can edit in any of the following (some of which also provide Git integration).\n\nWindows NotepadVS CodeR-StudioPyCharm\n\n\nWindows Notepad and Notepad++ are good to use if you don’t have a preferred language that you’d usually work in such as R or Python. There’s no Git integration though, so you’ll need to use Git BASH or GitHub Desktop to run Git commands.\n\n\nVS Code is a flexible IDE usable with a range of languages and is available for use on DfE systems on request. It provides Git integration along with markdown file rendering (shortcut: Ctrl+K V), so is a great option for working through Git Academy.\n\n\nR-Studio is an R IDE and is available from the DfE Software Centre in Windows. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.\n\n\nPyCharm Community Edition is a Python IDE and is available from the DfE Software Centre. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.",
+    "crumbs": [
+      "Pre-requisities"
+    ]
+  },
+  {
+    "objectID": "ch5-navigating/the-head.html",
+    "href": "ch5-navigating/the-head.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "ch2-git-basics/cloning.html",
+    "href": "ch2-git-basics/cloning.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "ch8-automations/github-automated-tests.html",
+    "href": "ch8-automations/github-automated-tests.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "ch1-introduction/aims-scope.html",
+    "href": "ch1-introduction/aims-scope.html",
+    "title": "Aims and scope",
+    "section": "",
+    "text": "Aims and scope\nGit Academy is intended to provide a pathway to learning how to use Git and DevOps, starting from beginner level, but with useful jumping in points up to and intermediate level.\nIt isn’t intended to be an exhaustive reference guide, more a development journey with sign-posting to useful resources that can help you pick up both a practical working knowledge of Git alongside a conceptual understanding of what it does and how it works.\nAs with git itself, there’ll be branching off points to explore different subjects so if there’s something specific you want to explore further beyond the basics, you should be able to do that.\nSome of the topics that we deal with are:\n\nthe basics of adding and committing, plus syncing between local and remote repos using push and pull\nusing branches - how to branch, when to branch, how to organise your work, how to merge branches and how to put in a review process using pull requests.\nHow to navigate your history / git tree and undo / revert changes.\nUsing DevOps to manage your workflows and the security of your remote repositories\nAutomating testing and deployments in DevOps\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "ch6-security/azure-managing-access.html",
+    "href": "ch6-security/azure-managing-access.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "ch7-task-management/azure-boards.html",
+    "href": "ch7-task-management/azure-boards.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "git-refresher/clone-a-repo.html",
+    "href": "git-refresher/clone-a-repo.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Git basics refresher",
+      "clone-a-repo.html"
+    ]
+  },
+  {
+    "objectID": "ch3-using-branches/creating-branches.html",
+    "href": "ch3-using-branches/creating-branches.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Back to top"
+  }
+]
