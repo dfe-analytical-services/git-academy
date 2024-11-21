@@ -2,6 +2,7 @@
 title: "Cloning an Existing Repository"
 ---
 
+---
 ## Introduction
 
 This section will guide you through the process of cloning a GitHub repository. A repository contains all of your code, your files and each file's version history. Repositories can have multiple collaborators and can be either private or public. You can find out more about GitHub repositories on [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
@@ -50,7 +51,7 @@ You will need to right-click to paste, as the keyboard shortcut will not work in
 
 ### Step 2a: Open RStudio
 
-Open RStudio on your computer.
+Open RStudio on your device.
 
 ### Step 2b: Clone the Repository in RStudio
 
