@@ -32,7 +32,7 @@ the screenshot below.
 Then enter your branch name as **`<github_id>_main`** (but replacing <github_id> 
 with your own GitHub username, e.g. `jsmith_main`)
 
-![Creating a new branch in GitHub Desktop](./images/new-branch-GitHubDesktop.png)
+![Creating a new branch in GitHub Desktop](./images/new-branch_GitHubDesktop.png)
 
 ## VS Code
 
@@ -49,18 +49,18 @@ You should now see the branch name listed in the bottom left of the window frame
 shown as the branch you just created, meaning any changes you currently make
 will be applied to that new branch (and not main).
 
-![Creating a new branch in VS Code](./images/new-branch-VSCode.png)
+![Creating a new branch in VS Code](./images/new-branch_VSCode.png)
 
 ## RStudio
 
 In the Git panel, click the purple new branch symbol 
-![symbol containing two purple boxes branching from a diamond](images/RStudio-newbranch-button.png) 
+![symbol containing two purple boxes branching from a diamond](images/new-branch_rstudio-button.png) 
 as circled in the screenshot below.
 
 Then enter your branch name as **`<github_id>_main`** (but replacing <github_id> 
 with your own GitHub username, e.g. `jsmith_main`)
 
-![Creating a new branch in RStudio](./images/new-branch-RStudio.png)
+![Creating a new branch in RStudio](./images/new-branch_RStudio.png)
 
 
 ## PyCharm
@@ -72,7 +72,7 @@ screenshot below. Right click on **main** and select
 Then enter your branch name as **`<github_id>_main`** (but replacing <github_id> 
 with your own GitHub username, e.g. `jsmith_main`).
 
-![Creating a new branch in PyCharm](./images/new-branch-PyCharm.png)
+![Creating a new branch in PyCharm](./images/new-branch_PyCharm.png)
 
 :::
 
