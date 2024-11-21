@@ -1,5 +1,5 @@
 --- 
-title: "Syncing changes to the remote"
+title: "Syncing to the remote"
 ---
 
 ...
