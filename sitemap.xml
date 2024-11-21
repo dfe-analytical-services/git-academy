@@ -2,70 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dfe-analytical-services.github.io/git-academy/index.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch4-merging/reviewing-pull-requests.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
+    <lastmod>2024-11-21T13:42:47.196Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/making-a-branch.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch7-task-management/github-issues.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/why-use-git.html</loc>
-    <lastmod>2024-11-21T13:32:36.663Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/git-versus-devops.html</loc>
-    <lastmod>2024-11-21T13:32:36.663Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch2-git-basics/basic-workflow.html</loc>
-    <lastmod>2024-11-21T13:32:36.663Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch2-git-basics/syncing.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/pre-requisites.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch5-navigating/the-head.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch2-git-basics/cloning.html</loc>
-    <lastmod>2024-11-21T13:32:36.663Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch8-automations/github-automated-tests.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
+    <lastmod>2024-11-21T13:42:47.196Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/aims-scope.html</loc>
-    <lastmod>2024-11-21T13:32:36.663Z</lastmod>
+    <lastmod>2024-11-21T13:42:47.192Z</lastmod>
   </url>
   <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch6-security/azure-managing-access.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/git-academy/pre-requisites.html</loc>
+    <lastmod>2024-11-21T13:42:47.196Z</lastmod>
   </url>
   <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch7-task-management/azure-boards.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
+    <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/git-versus-devops.html</loc>
+    <lastmod>2024-11-21T13:42:47.192Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/why-use-git.html</loc>
+    <lastmod>2024-11-21T13:42:47.192Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/clone-a-repo.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch3-using-branches/creating-branches.html</loc>
-    <lastmod>2024-11-21T13:32:36.667Z</lastmod>
+    <lastmod>2024-11-21T13:42:47.192Z</lastmod>
   </url>
 </urlset>

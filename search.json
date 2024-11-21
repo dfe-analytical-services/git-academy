@@ -10,13 +10,6 @@
     ]
   },
   {
-    "objectID": "ch4-merging/reviewing-pull-requests.html",
-    "href": "ch4-merging/reviewing-pull-requests.html",
-    "title": "DfE Git Academy",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
     "objectID": "git-refresher/making-a-branch.html",
     "href": "git-refresher/making-a-branch.html",
     "title": "Making a new branch",
@@ -28,46 +21,11 @@
     ]
   },
   {
-    "objectID": "ch7-task-management/github-issues.html",
-    "href": "ch7-task-management/github-issues.html",
-    "title": "DfE Git Academy",
+    "objectID": "ch1-introduction/aims-scope.html",
+    "href": "ch1-introduction/aims-scope.html",
+    "title": "Aims and scope",
     "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "ch1-introduction/why-use-git.html",
-    "href": "ch1-introduction/why-use-git.html",
-    "title": "Why is Git important?",
-    "section": "",
-    "text": "Why is Git important?\nGit is a software that offers a comprehensive solution for collaborative work, version control, accountability, disaster recovery, and knowledge retention. Using Git strengthens QA practices and ensures you’re working in line with RAP principles. Here’s why Git holds particular importance for analysts in the civil service:\n\n\n\nCollaboration\n\n\nGit enables collaboration by allowing team members to work on the same project simultaneously from any location. It tracks changes made by each contributor, highlighting ‘conflicts’, before merging contributions into one final product. The ability to work on multiple branches simultaneously saves analysts time (no waiting for colleagues to finish one part before moving on). Cloud-hosted repositories also enable other analysts to view your code (with the correct permissions), enabling knowledge-sharing and transparency. Git’s collaborative features and online repository platforms enable automated checks and QA through pull requests/peer reviews, supporting compliance with the code of practice.\n\n\n\n\nExperiment\n\n\nGit’s ‘branching’ system creates parallel versions of projects, allowing analysts to experiment, try different approaches, or add potential new features without fear of breaking anything on the ‘main branch’.\n\n\n\n\nVersion control\n\n\nGit provides a version control system that keeps a historical record of all changes made to files in the repository. Analysts can easily revert to previous versions/past methodologies, compare changes, and identify the source of any issues. Git best practices (regular commits, useful branch names and commit messages) ensure that analysts can easily track and manage changes, allowing them to focus more on analysis and less on document management.\n\n\n\n\nAudit trails and accountability\n\n\nGit’s commit history and branching system create an audit trail of every change made to a project, and who made it. This audit trail helps analysts demonstrate the evolution of their work, which is essential when justifying decisions, responding to inquiries, or conducting internal reviews. The visible history removes uncertainty and again saves time otherwise spent figuring out what changes others made. Git’s commit messages simplify the process of justifying decisions, responding to inquiries, and conducting internal reviews, streamlining daily tasks. This also aids QA as it links closely to the key outcomes of the DfE QA framework (i.e. analysis is transparent and accountable).\n\n\n\n\nDisaster recovery\n\n\nData loss or file corruption can have severe consequences in the civil service, where data integrity is critical. I’m sure we’ve all had tech-disasters where we’ve lost the files/code scripts we spent the whole day working on! Git repositories can be hosted on remote servers or cloud platforms, ensuring that data is safely stored and backed up. Committing work regularly (every 30 minutes) ensures it never gets lost, as every commit is recoverable. In DfE we use Azure DevOps for internal/sensitive repositories and GitHub for public repositories. This minimizes the risk of data loss due to hardware failures or other unforeseen events, providing peace of mind for analysts and their supervisors, knowing that their work is safeguarded against corruption or unforeseen events.\n\n\n\n\nSkills development\n\n\nGit is a widely used tool in the tech industry and beyond in both public and private sectors. Learning Git not only benefits analysts in their current roles but also enhances their future career prospects. As the civil service increasingly incorporates technology and data-driven approaches, proficiency in Git can open doors to a broader range of opportunities within and outside the government sector.\n\n\n\n\nKnowledge loss & high turnover\n\n\nHigh-turnover rates and knowledge loss are common challenges in the civil service. Git’s audit trails and commit messages serve as a knowledge repository, preserving the history of decisions, methodologies, and changes. When new analysts join the team, this historical context proves invaluable in supporting their onboarding process and reducing the knowledge gap.\n\nIn summary, Git is an essential tool for analysts in the civil service because it facilitates collaborative work, ensures version control, maintains accountability and audit trails, supports disaster recovery, and promotes skill development. Embracing Git as part of their toolkit empowers civil service analysts to work more efficiently, maintain data integrity, and adapt to the evolving demands of the modern public sector.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "ch1-introduction/git-versus-devops.html",
-    "href": "ch1-introduction/git-versus-devops.html",
-    "title": "DfE Git Academy",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "ch2-git-basics/basic-workflow.html",
-    "href": "ch2-git-basics/basic-workflow.html",
-    "title": "Covering the basics",
-    "section": "",
-    "text": "To help cover the essential basics of using Git for your work, we’ve created the Git academy sandbox repo on GitHub. The steps covered in this walk-through are all intended to work with this sandbox repo.\n\n\n\n\n\n\nPre-requisites\n\n\n\n\nGit\nA preferred method for running Git commands, one of:\n\ngit bash (included in Git installation)\nGitHub Desktop\nRStudio\nVisual Studio Code\n\n\n\n\n\n\nMore often than not, you’ll either have set up a remote repository already (e.g. on Azure DevOps, GitHub or GitLab) or someone else will have. So we’ll start on how to get a copy of that you can work with to edit and run code. For this you’ll need to create a local copy somewhere where you have the software necessary to edit and run your code (e.g. R-Studio if you’re using R code). In Git parlance, creating a local copy is called “cloning” and you can do this using the git clone command.\nLet’s try this with the sandbox repo. Every repo has a URL which you can use to clone it. Navigate to the sandbox repo webpage and click the &lt;&gt; Code button near the top right. This will show a HTTPS URL that you can copy - copy this to your clipboard.\n\nGit bashGitHub DesktopR-StudioVisual Studio Code\n\n\nNow open git bash and run through the following steps.\n\nnavigate to where you want to clone the repo, e.g.\n\ncd ~/repos/ (this navigates to the repos directory in your home directory if it exists)\n\nRun git clone ..., replacing ... with the URL you copied from the repo home page, e.g.:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\n\nSwitch into the new repository, e.g.:\n\ncd git-academy-sandbox"
-  },
-  {
-    "objectID": "ch2-git-basics/basic-workflow.html#cloning-a-repository",
-    "href": "ch2-git-basics/basic-workflow.html#cloning-a-repository",
-    "title": "Covering the basics",
-    "section": "",
-    "text": "More often than not, you’ll either have set up a remote repository already (e.g. on Azure DevOps, GitHub or GitLab) or someone else will have. So we’ll start on how to get a copy of that you can work with to edit and run code. For this you’ll need to create a local copy somewhere where you have the software necessary to edit and run your code (e.g. R-Studio if you’re using R code). In Git parlance, creating a local copy is called “cloning” and you can do this using the git clone command.\nLet’s try this with the sandbox repo. Every repo has a URL which you can use to clone it. Navigate to the sandbox repo webpage and click the &lt;&gt; Code button near the top right. This will show a HTTPS URL that you can copy - copy this to your clipboard.\n\nGit bashGitHub DesktopR-StudioVisual Studio Code\n\n\nNow open git bash and run through the following steps.\n\nnavigate to where you want to clone the repo, e.g.\n\ncd ~/repos/ (this navigates to the repos directory in your home directory if it exists)\n\nRun git clone ..., replacing ... with the URL you copied from the repo home page, e.g.:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\n\nSwitch into the new repository, e.g.:\n\ncd git-academy-sandbox"
-  },
-  {
-    "objectID": "ch2-git-basics/syncing.html",
-    "href": "ch2-git-basics/syncing.html",
-    "title": "DfE Git Academy",
-    "section": "",
-    "text": "Back to top"
+    "text": "Aims and scope\nGit Academy is intended to provide a pathway to learning how to use Git and DevOps, starting from beginner level, but with useful jumping in points up to and intermediate level.\nIt isn’t intended to be an exhaustive reference guide, more a development journey with sign-posting to useful resources that can help you pick up both a practical working knowledge of Git alongside a conceptual understanding of what it does and how it works.\nAs with git itself, there’ll be branching off points to explore different subjects so if there’s something specific you want to explore further beyond the basics, you should be able to do that.\nSome of the topics that we deal with are:\n\nthe basics of adding and committing, plus syncing between local and remote repos using push and pull\nusing branches - how to branch, when to branch, how to organise your work, how to merge branches and how to put in a review process using pull requests.\nHow to navigate your history / git tree and undo / revert changes.\nUsing DevOps to manage your workflows and the security of your remote repositories\nAutomating testing and deployments in DevOps\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "pre-requisites.html",
@@ -120,77 +78,50 @@
     ]
   },
   {
-    "objectID": "ch5-navigating/the-head.html",
-    "href": "ch5-navigating/the-head.html",
+    "objectID": "ch1-introduction/git-versus-devops.html",
+    "href": "ch1-introduction/git-versus-devops.html",
     "title": "DfE Git Academy",
     "section": "",
     "text": "Back to top"
   },
   {
-    "objectID": "ch2-git-basics/cloning.html#introduction",
-    "href": "ch2-git-basics/cloning.html#introduction",
+    "objectID": "ch1-introduction/why-use-git.html",
+    "href": "ch1-introduction/why-use-git.html",
+    "title": "Why is Git important?",
+    "section": "",
+    "text": "Why is Git important?\nGit is a software that offers a comprehensive solution for collaborative work, version control, accountability, disaster recovery, and knowledge retention. Using Git strengthens QA practices and ensures you’re working in line with RAP principles. Here’s why Git holds particular importance for analysts in the civil service:\n\n\n\nCollaboration\n\n\nGit enables collaboration by allowing team members to work on the same project simultaneously from any location. It tracks changes made by each contributor, highlighting ‘conflicts’, before merging contributions into one final product. The ability to work on multiple branches simultaneously saves analysts time (no waiting for colleagues to finish one part before moving on). Cloud-hosted repositories also enable other analysts to view your code (with the correct permissions), enabling knowledge-sharing and transparency. Git’s collaborative features and online repository platforms enable automated checks and QA through pull requests/peer reviews, supporting compliance with the code of practice.\n\n\n\n\nExperiment\n\n\nGit’s ‘branching’ system creates parallel versions of projects, allowing analysts to experiment, try different approaches, or add potential new features without fear of breaking anything on the ‘main branch’.\n\n\n\n\nVersion control\n\n\nGit provides a version control system that keeps a historical record of all changes made to files in the repository. Analysts can easily revert to previous versions/past methodologies, compare changes, and identify the source of any issues. Git best practices (regular commits, useful branch names and commit messages) ensure that analysts can easily track and manage changes, allowing them to focus more on analysis and less on document management.\n\n\n\n\nAudit trails and accountability\n\n\nGit’s commit history and branching system create an audit trail of every change made to a project, and who made it. This audit trail helps analysts demonstrate the evolution of their work, which is essential when justifying decisions, responding to inquiries, or conducting internal reviews. The visible history removes uncertainty and again saves time otherwise spent figuring out what changes others made. Git’s commit messages simplify the process of justifying decisions, responding to inquiries, and conducting internal reviews, streamlining daily tasks. This also aids QA as it links closely to the key outcomes of the DfE QA framework (i.e. analysis is transparent and accountable).\n\n\n\n\nDisaster recovery\n\n\nData loss or file corruption can have severe consequences in the civil service, where data integrity is critical. I’m sure we’ve all had tech-disasters where we’ve lost the files/code scripts we spent the whole day working on! Git repositories can be hosted on remote servers or cloud platforms, ensuring that data is safely stored and backed up. Committing work regularly (every 30 minutes) ensures it never gets lost, as every commit is recoverable. In DfE we use Azure DevOps for internal/sensitive repositories and GitHub for public repositories. This minimizes the risk of data loss due to hardware failures or other unforeseen events, providing peace of mind for analysts and their supervisors, knowing that their work is safeguarded against corruption or unforeseen events.\n\n\n\n\nSkills development\n\n\nGit is a widely used tool in the tech industry and beyond in both public and private sectors. Learning Git not only benefits analysts in their current roles but also enhances their future career prospects. As the civil service increasingly incorporates technology and data-driven approaches, proficiency in Git can open doors to a broader range of opportunities within and outside the government sector.\n\n\n\n\nKnowledge loss & high turnover\n\n\nHigh-turnover rates and knowledge loss are common challenges in the civil service. Git’s audit trails and commit messages serve as a knowledge repository, preserving the history of decisions, methodologies, and changes. When new analysts join the team, this historical context proves invaluable in supporting their onboarding process and reducing the knowledge gap.\n\nIn summary, Git is an essential tool for analysts in the civil service because it facilitates collaborative work, ensures version control, maintains accountability and audit trails, supports disaster recovery, and promotes skill development. Embracing Git as part of their toolkit empowers civil service analysts to work more efficiently, maintain data integrity, and adapt to the evolving demands of the modern public sector.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "git-refresher/clone-a-repo.html#introduction",
+    "href": "git-refresher/clone-a-repo.html#introduction",
     "title": "Cloning an Existing Repository",
     "section": "Introduction",
-    "text": "Introduction\nThis section will guide you through the process of cloning a GitHub repository (repo). A repo contains all of your code, your files and each file’s version history. Repos can have multiple collaborators and can be either private or public. You can find out more about GitHub repos on GitHub Docs.\nIf you have a repo on Azure DevOps, GitHub or GitLab, you generally can’t edit or run your work on those platforms, so if you need to work with the contents of a repo, you’ll usually need to make a clone.\nThere are several ways to clone an existing repo. Below, you’ll find two methods. The first uses Rstudio and the second uses Git Bash. Start with step 1, which is the same for both methods, and then decide which method to follow. Once you have successfully cloned, you should see the files appear in the location you have chosen to store your repo."
-  },
-  {
-    "objectID": "ch2-git-basics/cloning.html#step-1-get-the-repository-clone-link",
-    "href": "ch2-git-basics/cloning.html#step-1-get-the-repository-clone-link",
-    "title": "Cloning an Existing Repository",
-    "section": "Step 1: Get the repository clone link",
-    "text": "Step 1: Get the repository clone link\na. Go to the git-academy-sandbox repository page on GitHub.\nb. Click the “Code” button and copy the URL (HTTPS link).\n\nTo Clone Using Git Bash:Or, to Clone Using RStudio:\n\n\n\nStep 2a: Open folder and Git Bash\nNavigate to the folder on your device where you want to clone the repo. Right-click in the directory and select “Git Bash Here”.\n\n\n\nStep 2b: Clone the Repository in Git Bash\n\nIn the Git Bash window that opens, use the `git clone` command followed by the URL you copied from GitHub. For this repo, we would enter:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\nYou will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.\n\n\nStep 2c: Verify the clone in Git Bash\n\nNavigate into the repo by typing cd git-academy-sandbox and pressing enter.\nYou should now see the current branch name (e.g. main) at the end of the file path as below:\n\n\n\n\n\n\n\nType git log and press enter to view recent commits. Press q when you are ready to exit git log.\nType git status and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven’t made any changes yet).\n\n\n\n\n\nStep 2a: Open RStudio\nOpen RStudio on your device.\n\n\nStep 2b: Clone the Repository in RStudio\n\nIn RStudio, go to File &gt; New Project &gt; Version Control &gt; Git.\nPaste the URL you copied from GitHub into the “Repository URL” field.\nChoose a directory on your device where you want to save the repo.\nClick “Create Project”.\n\n\n\n\nStep 2c: Verify the Clone\nCheck the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio."
-  },
-  {
-    "objectID": "ch2-git-basics/cloning.html#conclusion",
-    "href": "ch2-git-basics/cloning.html#conclusion",
-    "title": "Cloning an Existing Repository",
-    "section": "Conclusion",
-    "text": "Conclusion\nYou have successfully cloned a GitHub repository! Continue on to learn how to create branches."
-  },
-  {
-    "objectID": "ch8-automations/github-automated-tests.html",
-    "href": "ch8-automations/github-automated-tests.html",
-    "title": "DfE Git Academy",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "ch1-introduction/aims-scope.html",
-    "href": "ch1-introduction/aims-scope.html",
-    "title": "Aims and scope",
-    "section": "",
-    "text": "Aims and scope\nGit Academy is intended to provide a pathway to learning how to use Git and DevOps, starting from beginner level, but with useful jumping in points up to and intermediate level.\nIt isn’t intended to be an exhaustive reference guide, more a development journey with sign-posting to useful resources that can help you pick up both a practical working knowledge of Git alongside a conceptual understanding of what it does and how it works.\nAs with git itself, there’ll be branching off points to explore different subjects so if there’s something specific you want to explore further beyond the basics, you should be able to do that.\nSome of the topics that we deal with are:\n\nthe basics of adding and committing, plus syncing between local and remote repos using push and pull\nusing branches - how to branch, when to branch, how to organise your work, how to merge branches and how to put in a review process using pull requests.\nHow to navigate your history / git tree and undo / revert changes.\nUsing DevOps to manage your workflows and the security of your remote repositories\nAutomating testing and deployments in DevOps\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "ch6-security/azure-managing-access.html",
-    "href": "ch6-security/azure-managing-access.html",
-    "title": "DfE Git Academy",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "ch7-task-management/azure-boards.html",
-    "href": "ch7-task-management/azure-boards.html",
-    "title": "DfE Git Academy",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "git-refresher/clone-a-repo.html",
-    "href": "git-refresher/clone-a-repo.html",
-    "title": "DfE Git Academy",
-    "section": "",
-    "text": "Back to top",
+    "text": "Introduction\nThis section will guide you through the process of cloning a GitHub repository (repo). A repo contains all of your code, your files and each file’s version history. Repos can have multiple collaborators and can be either private or public. You can find out more about GitHub repos on GitHub Docs.\nIf you have a repo on Azure DevOps, GitHub or GitLab, you generally can’t edit or run your work on those platforms, so if you need to work with the contents of a repo, you’ll usually need to make a clone.\nThere are several ways to clone an existing repo. Below, you’ll find two methods. The first uses Rstudio and the second uses Git Bash. Start with step 1, which is the same for both methods, and then decide which method to follow. Once you have successfully cloned, you should see the files appear in the location you have chosen to store your repo.",
     "crumbs": [
       "Git basics refresher",
-      "clone-a-repo.html"
+      "Cloning an Existing Repository"
     ]
   },
   {
-    "objectID": "ch3-using-branches/creating-branches.html",
-    "href": "ch3-using-branches/creating-branches.html",
-    "title": "DfE Git Academy",
-    "section": "",
-    "text": "Back to top"
+    "objectID": "git-refresher/clone-a-repo.html#step-1-get-the-repository-clone-link",
+    "href": "git-refresher/clone-a-repo.html#step-1-get-the-repository-clone-link",
+    "title": "Cloning an Existing Repository",
+    "section": "Step 1: Get the repository clone link",
+    "text": "Step 1: Get the repository clone link\na. Go to the git-academy-sandbox repository page on GitHub.\nb. Click the “Code” button and copy the URL (HTTPS link).\n\nTo Clone Using Git Bash:Or, to Clone Using RStudio:\n\n\n\nStep 2a: Open folder and Git Bash\nNavigate to the folder on your device where you want to clone the repo. Right-click in the directory and select “Git Bash Here”.\n\n\n\nStep 2b: Clone the Repository in Git Bash\n\nIn the Git Bash window that opens, use the `git clone` command followed by the URL you copied from GitHub. For this repo, we would enter:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\nYou will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.\n\n\nStep 2c: Verify the clone in Git Bash\n\nNavigate into the repo by typing cd git-academy-sandbox and pressing enter.\nYou should now see the current branch name (e.g. main) at the end of the file path as below:\n\n\n\n\n\n\n\nType git log and press enter to view recent commits. Press q when you are ready to exit git log.\nType git status and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven’t made any changes yet).\n\n\n\n\n\nStep 2a: Open RStudio\nOpen RStudio on your device.\n\n\nStep 2b: Clone the Repository in RStudio\n\nIn RStudio, go to File &gt; New Project &gt; Version Control &gt; Git.\nPaste the URL you copied from GitHub into the “Repository URL” field.\nChoose a directory on your device where you want to save the repo.\nClick “Create Project”.\n\n\n\n\nStep 2c: Verify the Clone\nCheck the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.",
+    "crumbs": [
+      "Git basics refresher",
+      "Cloning an Existing Repository"
+    ]
+  },
+  {
+    "objectID": "git-refresher/clone-a-repo.html#conclusion",
+    "href": "git-refresher/clone-a-repo.html#conclusion",
+    "title": "Cloning an Existing Repository",
+    "section": "Conclusion",
+    "text": "Conclusion\nYou have successfully cloned a GitHub repository! Continue on to learn how to create branches.",
+    "crumbs": [
+      "Git basics refresher",
+      "Cloning an Existing Repository"
+    ]
   }
 ]
