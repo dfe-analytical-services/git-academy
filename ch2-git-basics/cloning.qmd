@@ -4,7 +4,9 @@ title: "Cloning an Existing Repository"
 
 ## Introduction
 
-This section will guide you through the process of cloning a GitHub repository. If you have a repository on Azure DevOps, GitHub or GitLab, you generally can't edit or run your work on those platforms, so if you need to work with the contents of a repo, you'll usually need to make a clone.
+This section will guide you through the process of cloning a GitHub repository. A repository contains all of your code, your files and each file's version history. Repositories can have multiple collaborators and can be either private or public. You can find out more about GitHub repositories on [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
+
+If you have a repository on Azure DevOps, GitHub or GitLab, you generally can't edit or run your work on those platforms, so if you need to work with the contents of a repo, you'll usually need to make a clone.
 
 There are several ways to clone an existing repository. Below, you'll find two methods. The first uses Rstudio and the second uses Git Bash. Start with step 1, which is the same for both methods, and then decide which method to follow. Once you have successfully cloned, you should see the files appear in the location you have chosen to store your repository.
 
@@ -39,7 +41,7 @@ You will need to right-click to paste, as the keyboard shortcut will not work in
 
 -   You should now see the current branch name (e.g. main) at the end of the file path as below:
 
-![](images/git_clone.png)
+![](images/git_clone.png){fig-align="center"}
 
 -   Type **git log** and press enter to view recent commits. Press **q** when you are ready to exit git log.
 -   Type **git status** and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
