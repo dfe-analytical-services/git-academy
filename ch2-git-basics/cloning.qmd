@@ -5,11 +5,11 @@ title: "Cloning an Existing Repository"
 ---
 ## Introduction
 
-This section will guide you through the process of cloning a GitHub repository. A repository contains all of your code, your files and each file's version history. Repositories can have multiple collaborators and can be either private or public. You can find out more about GitHub repositories on [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
+This section will guide you through the process of cloning a GitHub repository (repo). A repo contains all of your code, your files and each file's version history. Repos can have multiple collaborators and can be either private or public. You can find out more about GitHub repos on [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
 
-If you have a repository on Azure DevOps, GitHub or GitLab, you generally can't edit or run your work on those platforms, so if you need to work with the contents of a repo, you'll usually need to make a clone.
+If you have a repo on Azure DevOps, GitHub or GitLab, you generally can't edit or run your work on those platforms, so if you need to work with the contents of a repo, you'll usually need to make a clone.
 
-There are several ways to clone an existing repository. Below, you'll find two methods. The first uses Rstudio and the second uses Git Bash. Start with step 1, which is the same for both methods, and then decide which method to follow. Once you have successfully cloned, you should see the files appear in the location you have chosen to store your repository.
+There are several ways to clone an existing repo. Below, you'll find two methods. The first uses Rstudio and the second uses Git Bash. Start with step 1, which is the same for both methods, and then decide which method to follow. Once you have successfully cloned, you should see the files appear in the location you have chosen to store your repo.
 
 ## Step 1: Get the repository clone link
 
@@ -22,13 +22,13 @@ b\. Click the "Code" button and copy the URL (HTTPS link).
 
 ### Step 2a: Open folder and Git Bash
 
-Navigate to the folder on your device where you want to clone the repository. Right-click in the directory and select "Git Bash Here".
+Navigate to the folder on your device where you want to clone the repo. Right-click in the directory and select "Git Bash Here".
 
 ![](images/gitbash_here.png){width="343"}
 
 ### Step 2b: Clone the Repository in Git Bash
 
--   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repository, we would write:
+-   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repo, we would write:
 
 ``` bash
 git clone https://github.com/dfe-analytical-services/git-academy-sandbox.git
@@ -59,7 +59,7 @@ Open RStudio on your device.
 
 -   Paste the URL you copied from GitHub into the "Repository URL" field.
 
--   Choose a directory on your device where you want to save the repository.
+-   Choose a directory on your device where you want to save the repo.
 
 -   Click "Create Project".
 
@@ -67,7 +67,7 @@ Open RStudio on your device.
 
 ### Step 2c: Verify the Clone
 
-Check the Files pane in RStudio to see if the repository files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
+Check the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
 
 ![](images/R_files_post_clone.png)
 :::
