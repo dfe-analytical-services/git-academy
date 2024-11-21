@@ -127,11 +127,25 @@
     "text": "Back to top"
   },
   {
-    "objectID": "ch2-git-basics/cloning.html",
-    "href": "ch2-git-basics/cloning.html",
-    "title": "DfE Git Academy",
-    "section": "",
-    "text": "Back to top"
+    "objectID": "ch2-git-basics/cloning.html#introduction",
+    "href": "ch2-git-basics/cloning.html#introduction",
+    "title": "Cloning an Existing Repository",
+    "section": "Introduction",
+    "text": "Introduction\nThis section will guide you through the process of cloning a GitHub repository (repo). A repo contains all of your code, your files and each file’s version history. Repos can have multiple collaborators and can be either private or public. You can find out more about GitHub repos on GitHub Docs.\nIf you have a repo on Azure DevOps, GitHub or GitLab, you generally can’t edit or run your work on those platforms, so if you need to work with the contents of a repo, you’ll usually need to make a clone.\nThere are several ways to clone an existing repo. Below, you’ll find two methods. The first uses Rstudio and the second uses Git Bash. Start with step 1, which is the same for both methods, and then decide which method to follow. Once you have successfully cloned, you should see the files appear in the location you have chosen to store your repo."
+  },
+  {
+    "objectID": "ch2-git-basics/cloning.html#step-1-get-the-repository-clone-link",
+    "href": "ch2-git-basics/cloning.html#step-1-get-the-repository-clone-link",
+    "title": "Cloning an Existing Repository",
+    "section": "Step 1: Get the repository clone link",
+    "text": "Step 1: Get the repository clone link\na. Go to the git-academy-sandbox repository page on GitHub.\nb. Click the “Code” button and copy the URL (HTTPS link).\n\nTo Clone Using Git Bash:Or, to Clone Using RStudio:\n\n\n\nStep 2a: Open folder and Git Bash\nNavigate to the folder on your device where you want to clone the repo. Right-click in the directory and select “Git Bash Here”.\n\n\n\nStep 2b: Clone the Repository in Git Bash\n\nIn the Git Bash window that opens, use the `git clone` command followed by the URL you copied from GitHub. For this repo, we would enter:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\nYou will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.\n\n\nStep 2c: Verify the clone in Git Bash\n\nNavigate into the repo by typing cd git-academy-sandbox and pressing enter.\nYou should now see the current branch name (e.g. main) at the end of the file path as below:\n\n\n\n\n\n\n\nType git log and press enter to view recent commits. Press q when you are ready to exit git log.\nType git status and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven’t made any changes yet).\n\n\n\n\n\nStep 2a: Open RStudio\nOpen RStudio on your device.\n\n\nStep 2b: Clone the Repository in RStudio\n\nIn RStudio, go to File &gt; New Project &gt; Version Control &gt; Git.\nPaste the URL you copied from GitHub into the “Repository URL” field.\nChoose a directory on your device where you want to save the repo.\nClick “Create Project”.\n\n\n\n\nStep 2c: Verify the Clone\nCheck the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio."
+  },
+  {
+    "objectID": "ch2-git-basics/cloning.html#conclusion",
+    "href": "ch2-git-basics/cloning.html#conclusion",
+    "title": "Cloning an Existing Repository",
+    "section": "Conclusion",
+    "text": "Conclusion\nYou have successfully cloned a GitHub repository! Continue on to learn how to create branches."
   },
   {
     "objectID": "ch8-automations/github-automated-tests.html",
