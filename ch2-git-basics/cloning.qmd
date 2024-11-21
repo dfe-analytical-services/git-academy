@@ -28,7 +28,7 @@ Navigate to the folder on your device where you want to clone the repo. Right-cl
 
 ### Step 2b: Clone the Repository in Git Bash
 
--   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repo, we would write:
+-   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repo, we would enter:
 
 ``` bash
 git clone https://github.com/dfe-analytical-services/git-academy-sandbox.git
