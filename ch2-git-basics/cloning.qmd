@@ -21,6 +21,8 @@ b\. Click the "Code" button and copy the URL (HTTPS link).
 
 Navigate to the folder on your device where you want to clone the repository. Right-click in the directory and select "Git Bash Here".
 
+![](images/gitbash_here.png){width="343"}
+
 ### Step 2b: Clone the Repository in Git Bash
 
 -   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repository, we would write:
@@ -57,9 +59,13 @@ Open RStudio on your computer.
 
 -   Click "Create Project".
 
+![](images/R_clone.png){width="467"}
+
 ### Step 2c: Verify the Clone
 
 Check the Files pane in RStudio to see if the repository files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
+
+![](images/R_files_post_clone.png)
 :::
 
 ## Conclusion
