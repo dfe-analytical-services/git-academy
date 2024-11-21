@@ -1,0 +1,18 @@
+--- 
+title: "Moving between branches"
+---
+
+...
+
+::: panel-tabset
+## Git Bash
+
+## GitHub Desktop
+
+## VS Code
+
+## RStudio
+
+## PyCharm
+
+:::

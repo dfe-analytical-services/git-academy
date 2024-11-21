@@ -1,0 +1,18 @@
+--- 
+title: "Recording changes"
+---
+
+...
+
+::: panel-tabset
+## Git Bash
+
+## GitHub Desktop
+
+## VS Code
+
+## RStudio
+
+## PyCharm
+
+:::
