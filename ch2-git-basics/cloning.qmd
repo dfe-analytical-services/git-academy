@@ -19,25 +19,27 @@ b\. Click the "Code" button and copy the URL (HTTPS link).
 
 ### Step 2a: Open folder and Git Bash
 
-Navigate to the folder where you want to clone the repository. Right-click in the directory and select "Git Bash Here".
+Navigate to the folder on your device where you want to clone the repository. Right-click in the directory and select "Git Bash Here".
 
 ### Step 2b: Clone the Repository in Git Bash
 
 -   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repository, we would write:
 
-``` bash 
+``` bash
 git clone https://github.com/dfe-analytical-services/git-academy-sandbox.git
 ```
 
-You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash.
+You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.
 
 ### Step 2c: Verify the clone in Git Bash
 
--   Navigate into the repo by typing **cd git-academy-sandbox**.
+-   Navigate into the repo by typing **cd git-academy-sandbox** and pressing enter.
 
--   You should now see the current branch name (e.g. main) at the end of the file path.
+-   You should now see the current branch name (e.g. main) at the end of the file path as below:
 
--   Type **git log** to view recent commits or **git status** to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
+![](images/git_clone.png)
+
+-   Type **git log** and press enter to view recent commits. Press **q** when you are ready to exit git log. Type **git status** and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
 
 ## Or, to Clone Using RStudio:
 
