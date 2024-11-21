@@ -41,7 +41,8 @@ You will need to right-click to paste, as the keyboard shortcut will not work in
 
 ![](images/git_clone.png)
 
--   Type **git log** and press enter to view recent commits. Press **q** when you are ready to exit git log. Type **git status** and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
+-   Type **git log** and press enter to view recent commits. Press **q** when you are ready to exit git log.
+-   Type **git status** and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
 
 ## Or, to Clone Using RStudio:
 
@@ -55,7 +56,7 @@ Open RStudio on your computer.
 
 -   Paste the URL you copied from GitHub into the "Repository URL" field.
 
--   Choose a directory on your computer where you want to save the repository.
+-   Choose a directory on your device where you want to save the repository.
 
 -   Click "Create Project".
 
