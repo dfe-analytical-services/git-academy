@@ -1,11 +1,36 @@
---- 
+---
 title: "Moving between branches"
 ---
 
-...
+Switching branches is useful for when we might need to pause our work on one branch and continue working on an issue in another branch. Before you switch branches it is important to commit and push the changes in the branch you're currently in. It's also important to pull changes after you switch to your new branch.
+
+There are several ways to move between branches.
 
 ::: panel-tabset
 ## Git Bash
+
+In Git bash, you can switch branches using one of `git check out` or `git switch` followed by the name of the branch you want to switch to.
+
+
+### Step 1a: Check that you're in your repo's directory
+
+`pwd`
+
+### Step 1b: Navigate to repo's directory 
+
+If you're in the correct directory, skip this step. If you're not, navigate to your repo's directory by using the cd command.
+
+`cd path/to/repo/`
+
+### Step 2:
+
+Open git bash and type the following:
+
+`git checkout <github_username>_git-bash_stage_1`
+
+OR
+
+`git switch <github_username>_git-bash_stage_1`
 
 ## GitHub Desktop
 
@@ -13,6 +38,17 @@ title: "Moving between branches"
 
 ## RStudio
 
+-   Go to the right hand side of RStudio and click on the Git tab.
+
+-   Hover the mouse pointer over the drop menu you will see a tooltip that says Switch branch.
+
+-   Click on `<github_username>_rstudio_stage_1`
+
+    -   The example in the screenshot below show a branch name specific to another user. You need to click on your own branch.
+
+![](images/r_switch_branch.png)
+
 ## PyCharm
+
 
 :::

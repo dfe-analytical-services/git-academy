@@ -7,6 +7,35 @@ title: "Recording changes"
 ::: panel-tabset
 ## Git Bash
 
+### Step 1a: Check that you're in your repo's directory
+
+`pwd`
+
+### Step 1b: Navigate to repo's directory 
+
+If you're in the correct directory, skip this step. If you're not, navigate to your repo's directory by using the cd command.
+
+`cd path/to/repo/`
+
+
+### Step 2: Check which files have changed.
+
+`git status`
+
+### Step 3: Stage the changes you want to commit
+
+one file at a time: `git add <filename>`
+OR
+to add all changes: `git add .`
+
+### Step 4: Commit Changes with a message
+
+`git commit -m "Your commit message"`
+
+### Step 5: Push Changes to the remote repo.
+
+`git push origin <branch-name>`
+
 ## GitHub Desktop
 
 ## VS Code
