@@ -1,11 +1,31 @@
---- 
+---
 title: "Syncing to the remote"
 ---
 
-...
+This section will guide you through syncing your local repo to the remote one.
+
+Any change made so far is only being applied to the local copy of the repository (i.e. the copy on your laptop). To apply your changes to the remote repository (i.e. on GitHub or Dev Ops), you need to “push” the changes.
+
+After [recording your changes](recording-changes.html), follow the instructions below to sync to the remote.
 
 ::: panel-tabset
 ## Git Bash
+
+### Step 1a: Check that you're in your repo's directory
+
+`pwd`
+
+### Step 1b: Navigate to repo's directory
+
+If you're in the correct directory, skip this step. If you're not, navigate to your repo's directory by using the cd command below.
+
+`cd path/to/repo/`
+
+### Step 3: Sync remote repo with your local one
+
+This step is for updating your remote repo with the changes you made to your local one. You need to do this after committing changes.
+
+`git push origin <branch-name>`
 
 ## GitHub Desktop
 
@@ -13,6 +33,13 @@ title: "Syncing to the remote"
 
 ## RStudio
 
-## PyCharm
+Click the green upwards arrow to push your changes to the remote repo. You can do this from the commit window as shown in the image below.
 
+![](images/r_push_1.png)
+
+You can also do this from the side panel after closing the commit window as shown in the image below.
+
+![](images/r_push_2.png)
+
+## PyCharm
 :::

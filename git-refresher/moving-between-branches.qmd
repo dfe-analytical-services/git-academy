@@ -2,9 +2,9 @@
 title: "Moving between branches"
 ---
 
-Switching branches is useful for when we might need to pause our work on one branch and continue working on an issue in another branch. Before you switch branches it is important to commit and push the changes in the branch you're currently in. It's also important to pull changes after you switch to your new branch.
+This section will guide you through switching branches in your repo. 
 
-There are several ways to move between branches.
+Switching branches is useful for when we might need to pause our work on one branch and continue working on an issue in another branch. Before you switch branches it is important to commit and push the changes in the branch you're currently in. It's also important to pull changes after you switch to your new branch.
 
 ::: panel-tabset
 ## Git Bash
@@ -22,15 +22,20 @@ If you're in the correct directory, skip this step. If you're not, navigate to y
 
 `cd path/to/repo/`
 
-### Step 2:
-
-Open git bash and type the following:
+### Step 2: Switch branches 
 
 `git checkout <github_username>_git-bash_stage_1`
 
 OR
 
 `git switch <github_username>_git-bash_stage_1`
+
+### Step 3: Sync local repo with the remote one
+
+This step is for updating your local repo with the changes made to the remote one. It's best practice to do this after switching branches to make sure that you have the latest version of the code and to avoid conflicts. 
+
+`git pull origin <branch-name>`
+
 
 ## GitHub Desktop
 

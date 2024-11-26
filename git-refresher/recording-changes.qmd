@@ -1,8 +1,10 @@
---- 
+---
 title: "Recording changes"
 ---
 
-...
+This section will guide you through recording changes you make to your repo.
+
+These steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.
 
 ::: panel-tabset
 ## Git Bash
@@ -11,12 +13,11 @@ title: "Recording changes"
 
 `pwd`
 
-### Step 1b: Navigate to repo's directory 
+### Step 1b: Navigate to repo's directory
 
-If you're in the correct directory, skip this step. If you're not, navigate to your repo's directory by using the cd command.
+If you're in the correct directory, skip this step. If you're not, navigate to your repo's directory by using the cd command below.
 
 `cd path/to/repo/`
-
 
 ### Step 2: Check which files have changed.
 
@@ -24,17 +25,11 @@ If you're in the correct directory, skip this step. If you're not, navigate to y
 
 ### Step 3: Stage the changes you want to commit
 
-one file at a time: `git add <filename>`
-OR
-to add all changes: `git add .`
+one file at a time: `git add <filename>` OR to add all changes: `git add .`
 
 ### Step 4: Commit Changes with a message
 
 `git commit -m "Your commit message"`
-
-### Step 5: Push Changes to the remote repo.
-
-`git push origin <branch-name>`
 
 ## GitHub Desktop
 
@@ -42,6 +37,19 @@ to add all changes: `git add .`
 
 ## RStudio
 
-## PyCharm
+Tick the files you want to record the changes for.
 
+Click the commit button. It has a tick mark on two sheets of paper.
+
+![](images/r_commit.png)
+
+Write a short message to describe the changes you made.
+
+Click "Commit".
+
+![](images/r_commit_msg.png)
+
+Note that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.
+
+## PyCharm
 :::
