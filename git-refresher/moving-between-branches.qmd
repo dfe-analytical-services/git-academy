@@ -2,7 +2,7 @@
 title: "Moving between branches"
 ---
 
-This section will guide you through switching branches in your repo. 
+This section will guide you through switching branches in your repo.
 
 Switching branches is useful for when we might need to pause our work on one branch and continue working on an issue in another branch. Before you switch branches it is important to commit and push the changes in the branch you're currently in. It's also important to pull changes after you switch to your new branch.
 
@@ -11,18 +11,17 @@ Switching branches is useful for when we might need to pause our work on one bra
 
 In Git bash, you can switch branches using one of `git check out` or `git switch` followed by the name of the branch you want to switch to.
 
-
 ### Step 1a: Check that you're in your repo's directory
 
 `pwd`
 
-### Step 1b: Navigate to repo's directory 
+### Step 1b: Navigate to repo's directory
 
 If you're in the correct directory, skip this step. If you're not, navigate to your repo's directory by using the cd command.
 
 `cd path/to/repo/`
 
-### Step 2: Switch branches 
+### Step 2: Switch branches
 
 `git checkout <github_username>_git-bash_stage_1`
 
@@ -32,10 +31,9 @@ OR
 
 ### Step 3: Sync local repo with the remote one
 
-This step is for updating your local repo with the changes made to the remote one. It's best practice to do this after switching branches to make sure that you have the latest version of the code and to avoid conflicts. 
+This step is for updating your local repo with the changes made to the remote one. It's best practice to do this after switching branches to make sure that you have the latest version of the code and to avoid conflicts.
 
 `git pull origin <branch-name>`
-
 
 ## GitHub Desktop
 
@@ -55,5 +53,9 @@ This step is for updating your local repo with the changes made to the remote on
 
 ## PyCharm
 
+![](images/pycharm_switch_branch.png)
 
+![](images/pycharm_pull.png)
 :::
+
+

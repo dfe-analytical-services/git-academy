@@ -42,4 +42,12 @@ You can also do this from the side panel after closing the commit window as show
 ![](images/r_push_2.png)
 
 ## PyCharm
+
+![](images/pycharm_push1_1.png)
+
+![](images/pycharm_push1_2.png)
+
+![](images/pycharm_push2.png)
+
+
 :::
