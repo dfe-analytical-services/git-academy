@@ -25,7 +25,11 @@ If you're in the correct directory, skip this step. If you're not, navigate to y
 
 ### Step 3: Stage the changes you want to commit
 
-one file at a time: `git add <filename>` OR to add all changes: `git add .`
+-   To add changes to one file at a time: `git add <filename>`
+
+OR
+
+-   To add all changes: `git add .`
 
 ### Step 4: Commit Changes with a message
 
@@ -37,15 +41,18 @@ one file at a time: `git add <filename>` OR to add all changes: `git add .`
 
 ## RStudio
 
-Tick the files you want to record the changes for.
+### Step 1: Select the files you want to record changes for
 
-Click the commit button. It has a tick mark on two sheets of paper.
+-   Tick the files you want to record the changes for.
+-   Click the commit button. It has a tick mark on two sheets of paper.
 
 ![](images/r_commit.png)
 
-Write a short message to describe the changes you made.
+### Step 2: Describe changes and commit
 
-Click "Commit".
+-   Write a short message to describe the changes you made.
+
+-   Click "Commit".
 
 ![](images/r_commit_msg.png)
 
@@ -53,10 +60,23 @@ Note that you can see the changes made by comparing the green (current version) 
 
 ## PyCharm
 
+### Step 1: Open the commit window
+
+-   Click on the branches drop down menu at the top of the screen and click "Commit".
+
+OR
+
+-   Click on the symbol shown in the image below in the sidebar.
+
 ![](images/pycharm_commit.png){width="461"}
 
+### Step 2: Describe changes and commit
+
+-   Tick the files you wish to record changes for.
+
+-   Write a short message to describe the changes you made.
+
+-   Click "Commit".
+
 ![](images/pycharm_commit_msg.png)
-
 :::
-
-

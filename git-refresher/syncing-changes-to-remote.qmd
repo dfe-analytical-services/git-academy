@@ -6,7 +6,7 @@ This section will guide you through syncing your local repo to the remote one.
 
 Any change made so far is only being applied to the local copy of the repository (i.e. the copy on your laptop). To apply your changes to the remote repository (i.e. on GitHub or Dev Ops), you need to “push” the changes.
 
-After [recording your changes](recording-changes.html), follow the instructions below to sync to the remote.
+Having [recorded your changes](recording-changes.html), follow the instructions below to sync to the remote.
 
 ::: panel-tabset
 ## Git Bash
@@ -37,17 +37,27 @@ Click the green upwards arrow to push your changes to the remote repo. You can d
 
 ![](images/r_push_1.png)
 
+### Alternative method
+
 You can also do this from the side panel after closing the commit window as shown in the image below.
 
 ![](images/r_push_2.png)
 
 ## PyCharm
 
+-   Click on the branches drop down menu at the top of the screen and click "Push".
+
+-   A screen will pop up with your previous committed changes.
+
+-   Click "Push".
+
 ![](images/pycharm_push1_1.png)
 
 ![](images/pycharm_push1_2.png)
 
+### Alternative method
+
+Alternatively you can push and commit your changes at the same time from the commit window by clicking "Commit and Push" after you write your commit message.
+
 ![](images/pycharm_push2.png)
-
-
 :::

@@ -21,19 +21,24 @@ If you're in the correct directory, skip this step. If you're not, navigate to y
 
 `cd path/to/repo/`
 
-### Step 2: Switch branches
+### Step 2: Sync local repo with the remote one
+
+This step is for updating your local repo with the changes made to the remote one. This ensures that:
+
+```         
+-   you have a full list of remote branches.
+-   you have the latest changes in the code to avoid conflicts. 
+```
+
+`git pull origin <branch-name>`
+
+### Step 3: Switch branches
 
 `git checkout <github_username>_git-bash_stage_1`
 
 OR
 
 `git switch <github_username>_git-bash_stage_1`
-
-### Step 3: Sync local repo with the remote one
-
-This step is for updating your local repo with the changes made to the remote one. It's best practice to do this after switching branches to make sure that you have the latest version of the code and to avoid conflicts.
-
-`git pull origin <branch-name>`
 
 ## GitHub Desktop
 
@@ -43,7 +48,12 @@ This step is for updating your local repo with the changes made to the remote on
 
 -   Go to the right hand side of RStudio and click on the Git tab.
 
--   Hover the mouse pointer over the drop menu you will see a tooltip that says Switch branch.
+-   Click on the downwards arrow to "pull" the latest changes from the remote repo. This ensures that:
+
+    -   you have a full list of remote branches.
+    -   you have the latest changes in the code to avoid conflicts.
+
+-   Click on the drop down menu of branches. Usually "main" is the default branch shown before switching.
 
 -   Click on `<github_username>_rstudio_stage_1`
 
@@ -53,9 +63,14 @@ This step is for updating your local repo with the changes made to the remote on
 
 ## PyCharm
 
+-   Click on the branches drop down menu at the top of the screen.
+
+-   Click the Fetch icon to "pull" the latest changes from the remote repo. This ensures that:
+
+    -   you have a full list of remote branches.
+    -   you have the latest changes in the code to avoid conflicts.
+
+-   Click on your branch and then click "Checkout".
+
 ![](images/pycharm_switch_branch.png)
-
-![](images/pycharm_pull.png)
 :::
-
-
