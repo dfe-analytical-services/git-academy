@@ -9,36 +9,17 @@ Switching branches is useful for when we might need to pause our work on one bra
 ::: panel-tabset
 ## Git Bash
 
-In Git bash, you can switch branches using one of `git check out` or `git switch` followed by the name of the branch you want to switch to.
+First you need to update your local repo with the changes made to the remote one. This ensures that you have a full list of remote branches and the latest changes in the code to avoid conflicts. Enter the command below:
 
-### Step 1a: Check that you're in your repo's directory
+`git pull <github_id>_main`
 
-`pwd`
+In Git bash, you can switch branches using one of `git check out` or `git switch` followed by the name of the branch you want to switch to so choose either of the following options to enter:
 
-### Step 1b: Navigate to repo's directory
-
-If you're in the correct directory, skip this step. If you're not, navigate to your repo's directory by using the cd command.
-
-`cd path/to/repo/`
-
-### Step 2: Sync local repo with the remote one
-
-This step is for updating your local repo with the changes made to the remote one. This ensures that:
-
-```         
--   you have a full list of remote branches.
--   you have the latest changes in the code to avoid conflicts. 
-```
-
-`git pull origin <branch-name>`
-
-### Step 3: Switch branches
-
-`git checkout <github_username>_git-bash_stage_1`
+`git checkout <github_id>_main`
 
 OR
 
-`git switch <github_username>_git-bash_stage_1`
+`git switch <github_id>_main`
 
 ## GitHub Desktop
 
@@ -55,11 +36,11 @@ OR
 
 -   Click on the drop down menu of branches. Usually "main" is the default branch shown before switching.
 
--   Click on `<github_username>_rstudio_stage_1`
+-   Click on `<github_id>_main`
 
     -   The example in the screenshot below show a branch name specific to another user. You need to click on your own branch.
 
-![](images/r_switch_branch.png)
+![](images/r_switch_branch.png){fig-alt="The Git panel in RStudio with red rectangles highlighting the downwards pull arrow, the branches drop down menu and an example of a branch we want to switch to."}
 
 ## PyCharm
 
@@ -70,7 +51,11 @@ OR
     -   you have a full list of remote branches.
     -   you have the latest changes in the code to avoid conflicts.
 
--   Click on your branch and then click "Checkout".
+-   Click on "Remote" to see the full list of remote branches if you can't already.
 
-![](images/pycharm_switch_branch.png)
+-   Click on `<github_id>_main` and then click "Checkout".
+
+    -   The example in the screenshot below show a branch name specific to another user. You need to click on your own branch.
+
+![](images/pycharm_switch_branch.png){fig-alt="Highlighting PyCharm's branches dropdown menu, the Remote drop down sub menu, branch names and the Checkout option."}
 :::

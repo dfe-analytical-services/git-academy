@@ -11,21 +11,13 @@ Having [recorded your changes](recording-changes.html), follow the instructions 
 ::: panel-tabset
 ## Git Bash
 
-### Step 1a: Check that you're in your repo's directory
+The first time you update your remote repo with the changes you committed to your local one (aka push the changes), use the command below:
 
-`pwd`
+`git push --set-upstream <github_id>_main`
 
-### Step 1b: Navigate to repo's directory
+If you want to push changes you committed after that, use the following command:
 
-If you're in the correct directory, skip this step. If you're not, navigate to your repo's directory by using the cd command below.
-
-`cd path/to/repo/`
-
-### Step 3: Sync remote repo with your local one
-
-This step is for updating your remote repo with the changes you made to your local one. You need to do this after committing changes.
-
-`git push origin <branch-name>`
+`git push`
 
 ## GitHub Desktop
 
@@ -35,13 +27,13 @@ This step is for updating your remote repo with the changes you made to your loc
 
 Click the green upwards arrow to push your changes to the remote repo. You can do this from the commit window as shown in the image below.
 
-![](images/r_push_1.png)
+![](images/r_push_1.png){fig-alt="Highlighting the upwards arrow for pushing changes to remote repos in the RStudio's Review Changes window."}
 
 ### Alternative method
 
 You can also do this from the side panel after closing the commit window as shown in the image below.
 
-![](images/r_push_2.png)
+![](images/r_push_2.png){fig-alt="Highlighting the upwards arrow for pushing changes to remote repos in RStudio's Git window. It is there to show an alternative way of pushing changes to remote repos."}
 
 ## PyCharm
 
@@ -51,13 +43,13 @@ You can also do this from the side panel after closing the commit window as show
 
 -   Click "Push".
 
-![](images/pycharm_push1_1.png)
+![](images/pycharm_push1_1.png){fig-alt="Highlighting the Push option in the branch drop down menu."}
 
-![](images/pycharm_push1_2.png)
+![](images/pycharm_push1_2.png){fig-alt="Highlighting the Push button in the Push Commits to git-academy-sandbox pop up window that appears after completeing the previous step."}
 
 ### Alternative method
 
 Alternatively you can push and commit your changes at the same time from the commit window by clicking "Commit and Push" after you write your commit message.
 
-![](images/pycharm_push2.png)
+![](images/pycharm_push2.png){fig-alt="Highlighting the Commit and Push button in the Commit pop up window that appears after following the steps in recoding changes part of this guide."}
 :::
