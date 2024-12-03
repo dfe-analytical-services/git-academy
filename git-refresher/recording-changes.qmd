@@ -68,7 +68,7 @@ OR
 
 ![](images/pycharm_commit.png){fig-alt="Highlighting the two ways to open the commit window." width="461"}
 
--   Tick the files you wish to record changes for.
+-   In the "Commit" pop up window, tick the files you wish to record changes for if they're not already ticked.
 
 -   Write a short message to describe the changes you made.
 
