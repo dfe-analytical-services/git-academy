@@ -6,13 +6,22 @@ title: "Exploring a repository on Github"
 
 ## Introduction
 
-In this section we will be exploring different aspects of a GitHub repository, including viewing branches, code and history. We will also look at editing the logbook and making a commit to record these tasks. 
+In this section we will be exploring different aspects of a GitHub repository, including viewing branches, code and history. We will also look at editing the logbook and making a commit to record these tasks.
 
-## Viewing different branches 
+## Viewing different branches
+
+To view the different branches available in a GitHub repository, follow these steps:
+
+1.  Navigate to the repository on Github. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox)
+
+2.  Click on the Branches tab below the title of the repository
+
+![](images/view_branches_in_GitHub.png)
+
+3.  A list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents, search branches using the search box or just see your own branches by moving to the 'Yours' tab.
 
 ## Viewing code
 
-## Viewing history 
+## Viewing history
 
-## Editing the logbook on GitHub and making a commit 
-
+## Editing the logbook on GitHub and making a commit
