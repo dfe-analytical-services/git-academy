@@ -1,0 +1,18 @@
+---
+title: "Exploring a repository on Github"
+---
+
+------------------------------------------------------------------------
+
+## Introduction
+
+In this section we will be exploring different aspects of a GitHub repository, including viewing branches, code and history. We will also look at editing the logbook and making a commit to record these tasks. 
+
+## Viewing different branches 
+
+## Viewing code
+
+## Viewing history 
+
+## Editing the logbook on GitHub and making a commit 
+
