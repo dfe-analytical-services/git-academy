@@ -11,15 +11,15 @@ Switching branches is useful for when we might need to pause our work on one bra
 
 First you need to update your local repo with the changes made to the remote one. This ensures that you have a full list of remote branches and the latest changes in the code to avoid conflicts. Enter the command below:
 
-`git pull <github_id>_main`
+`git pull`
 
-In Git bash, you can switch branches using one of `git check out` or `git switch` followed by the name of the branch you want to switch to so choose either of the following options to enter:
+In Git Bash, you can switch branches using either of the following options:
 
-`git checkout <github_id>_main`
+`git checkout`
 
 OR
 
-`git switch <github_id>_main`
+`git switch`
 
 ## GitHub Desktop
 

@@ -15,7 +15,7 @@ The first time you update your remote repo with the changes you committed to you
 
 `git push --set-upstream origin <github_id>_main`
 
-If you want to push changes you committed after that, use the following command:
+After that, if you want to push changes you committed in the same branch use the following command:
 
 `git push`
 
