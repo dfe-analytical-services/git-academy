@@ -16,11 +16,23 @@ To view the different branches available in a GitHub repository, follow these st
 
 2.  Click on the Branches tab below the title of the repository
 
-![](images/view_branches_in_GitHub.png)
+![](images/view_branches_in_GitHub.png){fig-alt="Image is a screenshot of the git-academy-sandbox repository main page, with a highlight around the 'Branches' button."}
 
 3.  A list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents, search branches using the search box or just see your own branches by moving to the 'Yours' tab.
 
 ## Viewing code
+
+To view the code on your repo: 
+
+1.  Navigate to the repository on Github. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox)
+
+2. Ensure you are on the 'code' tab at the top of the page. 
+
+3. Navigate to the branch that you want to view the code for using the drop-down. 
+
+4. Click on a file to view the code. 
+
+5. Once you have clicked on a file, you can navigate through different files, change branches or search for a file using Files pane.
 
 ## Viewing history
 
