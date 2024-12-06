@@ -13,7 +13,7 @@ Having [recorded your changes](recording-changes.html), follow the instructions 
 
 The first time you update your remote repo with the changes you committed to your local one (aka push the changes), use the command below:
 
-`git push --set-upstream <github_id>_main`
+`git push --set-upstream origin <github_id>_main`
 
 If you want to push changes you committed after that, use the following command:
 
