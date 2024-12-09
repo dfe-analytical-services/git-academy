@@ -14,26 +14,64 @@ To view the different branches available in a GitHub repository, follow these st
 
 1.  Navigate to the repository on Github. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox)
 
-2.  Click on the Branches tab below the title of the repository
+2.  Click on the Branches button below the title of the repository
 
 ![](images/view_branches_in_GitHub.png){fig-alt="Image is a screenshot of the git-academy-sandbox repository main page, with a highlight around the 'Branches' button."}
 
-3.  A list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents, search branches using the search box or just see your own branches by moving to the 'Yours' tab.
+3.  A list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents. You can search branches using the search box or just see your own branches by moving to the 'Yours' tab.
 
 ## Viewing code
 
-To view the code on your repo: 
+To view the code on your repo:
 
 1.  Navigate to the repository on Github. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox)
 
-2. Ensure you are on the 'code' tab at the top of the page. 
+2.  Ensure you are on the 'code' tab at the top of the page.
 
-3. Navigate to the branch that you want to view the code for using the drop-down. 
+![](images/repo_code_tab.png){fig-alt="Image shows git-academy-sandbox repository on GitHub with the 'Branches' button highlighted"}
 
-4. Click on a file to view the code. 
+3.  Navigate to the branch that you want to view the code for using the drop-down.
 
-5. Once you have clicked on a file, you can navigate through different files, change branches or search for a file using Files pane.
+![](images/viewing_branches_drop_down.png){fig-alt="Image shows a screengrab of the git-academy-sandbox repository, with the branches drop-down selected"}
+
+3.  Select the branch that you are interested in.
+
+4.  Click on a file to view the most up-to-date synced code for the branch you have selected.
+
+5.  Once you have clicked on a file, you can navigate through different files, change branches or search for a file using Files pane.
+
+![](images/files_pane.png){fig-alt="Image is a screengrab from git-academy-sandbox repository, showing the files pane that shows when viewing files in a branch"}
 
 ## Viewing history
 
+1.  Navigate to the repository on GitHub.
+
+2.  Select the branch you would like to see history for from the "Branch" drop down menu.
+
+![](images/viewing_branches_drop_down.png){fig-alt="Image shows a screengrab of the git-academy-sandbox repository, with the branches drop-down selected"}
+
+3.  Click on the "Commits" button, usually found near the top of the repository page.
+
+![](images/commits_button.png){fig-alt="Image shows a screengrab from the git-academy-sandbox repository, highlighting the commits button which appears when a branch is selected"}
+
+3.  A list of all commits made to the branch will be displayed.
+
+4.  You can click on each commit to see the history of the branch. You are able to see the date each commit was made, the files and changes made and any commit messages.
+
 ## Editing the logbook on GitHub and making a commit
+
+1.  Navigate to the repository on GitHub.
+
+2.  Ensure you are on your `<github_username>_main` branch.
+
+3.  Locate the git-academy-log.md file and click on it.
+
+4.  Click the pencil icon (✏️) to edit the file.
+
+5.  Put an 'X' in each box under Exploring a repository on GitHub
+
+6.  Find the "Commit changes" button.
+
+7.  Enter a commit message describing the changes.
+
+8.  Click "Commit changes" to save your edits and create a new commit.
