@@ -6,19 +6,19 @@ title: "Exploring a repository on Github"
 
 ## Introduction
 
-In this section we will be exploring different aspects of a GitHub repository, including viewing branches, code and history. We will also look at editing the logbook and making a commit to record these tasks.
+In this section we will be exploring different aspects of a GitHub repository, including viewing branches, code and history. We will edit the logbook and make a commit to record these tasks.
 
 ## Viewing different branches {#viewing-different-branches}
 
 To view the different branches available in a GitHub repository, follow these steps:
 
-1.  Navigate to the repository on GitHub. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox)
+1.  Navigate to the repository on GitHub. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox).
 
-2.  Click on the Branches button below the title of the repository
+2.  Click on the 'Branches' button below the title of the repository as below:
 
 ![](images/view_branches_in_GitHub.png){fig-alt="Screenshot of the git-academy-sandbox repository main page, highlighting the 'Branches' button."}
 
-3.  A list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents. You can search branches using the search box or just see your own branches by moving to the 'Yours' tab. 
+3. A list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents. You can search branches using the search box or just see your own branches by moving to the 'Yours' tab. 
 
 ::: {.callout-note}
 ## Default Branch
@@ -29,13 +29,13 @@ The default branch is like the main version of your project. It's usually called
 
 To view the code on your repo:
 
-1.  Navigate to the repository on GitHub. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox)
+1.  Navigate to the repository on GitHub. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox).
 
 2.  Ensure you are on the 'code' tab at the top of the page.
 
 ![](images/repo_code_tab.png){fig-alt="Screenshot of the git-academy-sandbox repository on GitHub, highlighting the 'Code' tab."}
 
-3. Navigate to the branch you previously created i.e. `<github_id>_main`. You can do this by clicking on the branches button again as in #viewing-different-branches and selecting your branch, or using the branch drop-down as below to click on your branch: 
+3. Navigate to the branch you previously created i.e. `<github_id>_main`. You can do this by clicking on the branches button again as in [viewing different branches](#viewing-different-branches) and selecting your branch, or using the branch drop-down as below to click on your branch: 
 
 ![](images/viewing_branches_drop_down.png){fig-alt="Screenshot of the git-academy-sandbox repository on GitHub, displaying the branches drop-down menu with 'main' selected."}
 
@@ -50,52 +50,52 @@ To view the code on your repo:
 6. Once you have clicked on a file, you can navigate through different files, change branches or search for a file using Files pane.
 
 ![](images/files_pane.png){fig-alt="Screenshot of the git-academy-sandbox repository on GitHub, displaying the files pane as seen when viewing files in a branch."}
+
 7. You will need to switch to the code tab to view and edit the raw contents of the file. The preview tab will show you a preview for supported files like Markdown and the blame tab shows line by line revision history, tracking who made each change and when.
 
 
-## Viewing history
+## Viewing history {#viewing-history}
 
-1.  Navigate to the repository on Github. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox)
+1.  Navigate to the repository on GitHub. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox)
 
-2.  Select the branch you would like to see history for from the "Branch" drop down menu, in this case, the <github_username>_main you created. 
+2.  Select the branch you would like to see history for from the 'Branch' drop down menu, in this case, the `<github_id>_main` branch you created. 
 
 ![](images/viewing_branches_drop_down.png){fig-alt="Image shows a screengrab of the git-academy-sandbox repository, with the branches drop-down selected"}
 
-3.  Click on the "Commits" button, usually found near the top of the repository page.
+3.  Click on the 'Commits' button, usually found near the top of the repository page.
 
 ![](images/commits_button.png){fig-alt="Screenshot of the git-academy-sandbox repository, highlighting the 'Commits' button that appears when a branch is selected."}
 
-3.  A list of all commits made to the branch will be displayed. You'll also be able to see the commits made to the main branch from which your branch was created. 
+4.  A list of all commits made to the branch will be displayed. You'll also be able to see the commits made to the main branch from which your branch was created. 
 
 ![](images/commit_list.png){fig-alt="Screenshot of the git-academy-sandbox repository, showing the commit list for the selected branch."}
 
-4.  You can click on each commit to see the history of the branch. You are able to see the date each commit was made, the files and changes made and any commit messages.
+5. You can click on each commit to see the history of the branch. You are able to see the date each commit was made, the files and changes made and any commit messages.
 
-5. You can also use the Blame tab to view the history of each file, as in the Viewing history section. 
+6. You can also use the Blame tab to view the history of each file, as in [viewing history](#viewing-history). 
 
 ## Editing the logbook on GitHub and making a commit
 
-1.  Navigate to the repository on Github. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox)
+1.  Navigate to the repository on Github. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox).
 
 2.  Ensure you are on your `<github_username>_main` branch by using the branches drop-down. 
 
-3.  Locate the git-academy-log.md file and click on it.
+3.  Locate the git-academy-log.md file and click on it as below:
 
 ![](images/git_log.png){fig-alt="Screenshot of the git-academy-sandbox repository on GitHub, with the lsnaathorst-main branch selected and the git-academy-log.md being selected."}
-
 
 4.  Click the pencil icon (✏️), usually located on the right-hand side, to edit the file.
 
 ![](images/edit_file.png){fig-alt="Screenshot of the git-academy-sandbox repository on GitHub, showing the git-academy-log.md file and the pencil icon (✏️) for editing the file."}
 
-5. Put an 'X' in each box under Exploring a repository on GitHub
+5. Put an 'X' in each box under 'Exploring a repository' on GitHub.
 
 ![](images/x_in_exploring_boxes.png){fig-alt="Screenshot of the git-academy-log.md file on GitHub with an 'x' added to all instances of 'exploring a repository."}
 
-6.  Find the "Commit changes" button, normally at the top right of the page. 
+6.  Find the 'Commit changes' button, normally at the top right of the page. 
 
 ![](images/commit_changes_button.png){fig-alt="Screenshot of the 'Commit changes' button on the git-academy-log.md file on GitHub, which shoes after making changes in edit mode."}
 
 7.  Enter a commit message describing the changes.
 
-8.  Click "Commit changes" to save your edits and create a new commit. When you view the git-academy-log file, you should see that the boxes under 'Exploring a repository on Github' are now ticked. 
+8.  Click 'Commit changes' to save your edits and create a new commit. When you view the git-academy-log file, you should see that the boxes under 'Exploring a repository on Github' are now ticked. 
