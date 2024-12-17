@@ -2,16 +2,18 @@
 title: "Moving between branches"
 ---
 
-Now you've made and recorded some changes on your working branch, we can look at how to move between branches and what that looks like in terms of file changes.
+Now that you've made and [recorded some changes](recording-changes.html) on your working branch and [synced them to the remote repo](syncing-changes-to-remote.html), we can look at how to move between branches and what that looks like in terms of file changes.
 
 Switching branches is useful for when we might need to pause our work on one branch and continue working on an issue in another branch. Before you switch branches it is important to commit the changes you made in the branch you're currently in. It's also important to pull changes after you switch to your new branch.
 
 ::: panel-tabset
 ## Git Bash
 
-First you need to update your local repo with the changes made to the remote one. This ensures that you have a full list of remote branches and the latest changes in the code to avoid conflicts. Enter the command below:
+First you need to update your local repo with the changes made to the remote one. This ensures that you have a full list of remote branches and the latest changes in the code to avoid conflicts. 
 
-`git pull`
+-   Enter the command below to update your local repo:
+
+      `git pull`
 
 -   Switch to the main branch by using this command:
 
@@ -25,7 +27,9 @@ First you need to update your local repo with the changes made to the remote one
       
 -   Check the "git-academy-log.md" file and you'll see your edits have returned.
 
-Alternatively, the `git switch` command can generally be used interchangeably with the git checkout command for switching branches
+### Alternative method
+
+You can also use the `git switch` command interchangeably with the git checkout command for switching branches.
 
 ## GitHub Desktop
 
