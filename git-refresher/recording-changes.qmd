@@ -11,7 +11,7 @@ Having [created your own branch](making-a-branch.html), follow the instructions 
 ::: callout-tip
 ## Edit your git-academy-log file
 
--   Put an x inside the brackets for the "Clone git-academy-sandbox" and "Create a new branch in GitHub (\<github_id\>\_main)".
+-   Put an x inside the brackets for the "Clone git-academy-sandbox" and "Create a new branch in GitHub (\<github_username\>/main)".
 
 -   Save the file.
 :::
@@ -27,7 +27,7 @@ Having [created your own branch](making-a-branch.html), follow the instructions 
 
     -   To add changes to one file at a time:
 
-        `git add <filename>`
+        `git add git-academy-log.md`
 
     OR
 
@@ -64,7 +64,7 @@ Note that you can see the changes made by comparing the green (current version) 
 
 OR
 
--   Click on the symbol shown in the image below in the sidebar.
+-   Click on the symbol that shows a circle flanked by two lines in the sidebar as shown in the image below.
 
 ![](images/pycharm_commit.png){fig-alt="Highlighting the two ways to open the commit window." width="461"}
 

@@ -2,9 +2,9 @@
 title: "Moving between branches"
 ---
 
-This section will guide you through switching branches in your repo.
+Now you've made and recorded some changes on your working branch, we can look at how to move between branches and what that looks like in terms of file changes.
 
-Switching branches is useful for when we might need to pause our work on one branch and continue working on an issue in another branch. Before you switch branches it is important to commit and push the changes in the branch you're currently in. It's also important to pull changes after you switch to your new branch.
+Switching branches is useful for when we might need to pause our work on one branch and continue working on an issue in another branch. Before you switch branches it is important to commit the changes you made in the branch you're currently in. It's also important to pull changes after you switch to your new branch.
 
 ::: panel-tabset
 ## Git Bash
@@ -13,13 +13,19 @@ First you need to update your local repo with the changes made to the remote one
 
 `git pull`
 
-In Git Bash, you can switch branches using either of the following options:
+-   Switch to the main branch by using this command:
 
-`git checkout`
+      `git checkout main`
 
-OR
+-   Check the "git-academy-log.md" file and you'll see your edits have disappeared. 
 
-`git switch`
+-   Switch back to your branch by using this command:
+
+      `git checkout <github_username>/main`
+      
+-   Check the "git-academy-log.md" file and you'll see your edits have returned.
+
+Alternatively, the `git switch` command can generally be used interchangeably with the git checkout command for switching branches
 
 ## GitHub Desktop
 
@@ -34,13 +40,23 @@ OR
     -   you have a full list of remote branches.
     -   you have the latest changes in the code to avoid conflicts.
 
--   Click on the drop down menu of branches. Usually "main" is the default branch shown before switching.
+-   Click on the drop down menu of branches.
 
--   Click on `<github_id>_main`
+-   Click on `main`
 
-    -   The example in the screenshot below show a branch name specific to another user. You need to click on your own branch.
+![](images/r_switch_branch_main.png){fig-alt="The Git panel in RStudio with red rectangles highlighting the downwards pull arrow, the branches drop down menu and the branch called main that we want to switch to."}
 
-![](images/r_switch_branch.png){fig-alt="The Git panel in RStudio with red rectangles highlighting the downwards pull arrow, the branches drop down menu and an example of a branch we want to switch to."}
+-   Check the "git-academy-log.md" file and you'll see your edits have disappeared. 
+
+-   Click on the drop down menu of branches.
+
+-   Click on `<github_username>/main`
+
+![](images/r_switch_branch_own_branch.png){fig-alt="The Git panel in RStudio with red rectangles highlighting the branches drop down menu and an example of a user branch that we want to switch to."}
+      
+-   Check the "git-academy-log.md" file and you'll see your edits have returned.
+
+
 
 ## PyCharm
 
@@ -53,9 +69,20 @@ OR
 
 -   Click on "Remote" to see the full list of remote branches if you can't already.
 
--   Click on `<github_id>_main` and then click "Checkout".
+-   Click on `main`and then click "Checkout".
 
-    -   The example in the screenshot below show a branch name specific to another user. You need to click on your own branch.
+![](images/pycharm_switch_main.png){fig-alt="Highlighting PyCharm's branches dropdown menu, the Remote drop down sub menu, the branch called main and the Checkout option that appears when you click on that branch."}
 
-![](images/pycharm_switch_branch.png){fig-alt="Highlighting PyCharm's branches dropdown menu, the Remote drop down sub menu, branch names and the Checkout option."}
+-   Check the "git-academy-log.md" file and you'll see your edits have disappeared. 
+
+![](images/pycharm_switch_own_branch.png){fig-alt="Highlighting PyCharm's branches dropdown menu, the Remote drop down sub menu, an example of a user specific branch and the Checkout option that appears when you click on that branch."}
+
+-   Click on the branches drop down menu at the top of the screen.
+
+-   Click on `<github_username>/main` and then click "Checkout".
+      
+-   Check the "git-academy-log.md" file and you'll see your edits have returned.
+
+
+
 :::

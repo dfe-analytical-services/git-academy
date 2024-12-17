@@ -4,7 +4,7 @@ title: "Syncing to the remote"
 
 This section will guide you through syncing your local repo to the remote one.
 
-Any change made so far is only being applied to the local copy of the repository (i.e. the copy on your laptop). To apply your changes to the remote repository (i.e. on GitHub or Dev Ops), you need to “push” the changes.
+Any change made so far is only being applied to the local copy of the repository (i.e. the copy on your laptop). To apply your changes to the remote repository (i.e. on GitHub or Azure DevOps), you need to “push” the changes.
 
 Having [recorded your changes](recording-changes.html), follow the instructions below to sync to the remote.
 
@@ -13,7 +13,7 @@ Having [recorded your changes](recording-changes.html), follow the instructions 
 
 The first time you update your remote repo with the changes you committed to your local one (aka push the changes), use the command below:
 
-`git push --set-upstream origin <github_id>_main`
+`git push --set-upstream origin <github_username>/main`
 
 After that, if you want to push changes you committed in the same branch use the following command:
 
