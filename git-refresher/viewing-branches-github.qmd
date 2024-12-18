@@ -2,8 +2,6 @@
 title: "Viewing branches on GitHub"
 ---
 
-------------------------------------------------------------------------
-
 To view the different branches available in a GitHub repository, follow these steps:
 
 1.  Navigate to the repository on GitHub. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox).

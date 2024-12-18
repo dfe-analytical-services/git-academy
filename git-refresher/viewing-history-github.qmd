@@ -1,10 +1,6 @@
 ---
-title: "Viewing history"
+title: "Viewing history on GitHub"
 ---
-
-------------------------------------------------------------------------
-
-## Viewing history {#viewing-history}
 
 1.  Ensure you are still on the GitHub site for the github-sandbox repository. 
 

@@ -2,7 +2,6 @@
 title: "Editing a file on GitHub"
 ---
 
-------------------------------------------------------------------------
 
 In this section, we’ll walk through the steps to edit a file on GitHub. We’ll use the example of editing the git-academy-log.md file in the github-sandbox repository. This process can be applied to any file in any repository.
 
