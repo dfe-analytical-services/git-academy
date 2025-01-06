@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,12 +38,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8eef5ae80df721a84869b784b4d5419f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8eef5ae80df721a84869b784b4d5419f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a1028ff20c2804d89c2e9207d2a2e032.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-1f380eefaf014a52643289e24f88c233.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -252,12 +252,17 @@ cookieconsent.run({
 </header>
 
 
-<p>…</p>
+<p>This section will guide you through syncing your local repo to the remote one.</p>
+<p>Any change made so far is only being applied to the local copy of the repository (i.e.&nbsp;the copy on your laptop). To apply your changes to the remote repository (i.e.&nbsp;on GitHub or Azure DevOps), you need to “push” the changes.</p>
+<p>Having <a href="recording-changes.html">recorded your changes</a>, follow the instructions below to sync to the remote.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-
+<p>The first time you update your remote repo with the changes you committed to your local one (aka push the changes), use the command below:</p>
+<p><code>git push --set-upstream origin &lt;github_username&gt;/main</code></p>
+<p>After that, if you want to push changes you committed in the same branch use the following command:</p>
+<p><code>git push</code></p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 
@@ -266,10 +271,27 @@ cookieconsent.run({
 
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-
+<p>Click the green upwards arrow to push your changes to the remote repo. You can do this from the commit window as shown in the image below.</p>
+<p><img src="images/r_push_1.png" class="img-fluid" alt="Highlighting the upwards arrow for pushing changes to remote repos in the RStudio's Review Changes window."></p>
+<section id="alternative-method" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-method">Alternative method</h3>
+<p>You can also do this from the side panel after closing the commit window as shown in the image below.</p>
+<p><img src="images/r_push_2.png" class="img-fluid" alt="Highlighting the upwards arrow for pushing changes to remote repos in RStudio's Git window. It is there to show an alternative way of pushing changes to remote repos."></p>
+</section>
 </div>
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-
+<ul>
+<li><p>Click on the branches drop down menu at the top of the screen and click “Push”.</p></li>
+<li><p>A screen will pop up with your previous committed changes.</p></li>
+<li><p>Click “Push”.</p></li>
+</ul>
+<p><img src="images/pycharm_push1_1.png" class="img-fluid" alt="Highlighting the Push option in the branch drop down menu."></p>
+<p><img src="images/pycharm_push1_2.png" class="img-fluid" alt="Highlighting the Push button in the Push Commits to git-academy-sandbox pop up window that appears after completeing the previous step."></p>
+<section id="alternative-method-1" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-method-1">Alternative method</h3>
+<p>Alternatively you can push and commit your changes at the same time from the commit window by clicking “Commit and Push” after you write your commit message.</p>
+<p><img src="images/pycharm_push2.png" class="img-fluid" alt="Highlighting the Commit and Push button in the Commit pop up window that appears after following the steps in recoding changes part of this guide."></p>
+</section>
 </div>
 </div>
 </div>
@@ -503,8 +525,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -615,7 +635,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

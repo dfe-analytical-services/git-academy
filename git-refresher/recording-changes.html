@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,12 +38,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8eef5ae80df721a84869b784b4d5419f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8eef5ae80df721a84869b784b4d5419f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a1028ff20c2804d89c2e9207d2a2e032.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-1f380eefaf014a52643289e24f88c233.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -252,12 +252,45 @@ cookieconsent.run({
 </header>
 
 
-<p>…</p>
+<p>This section will guide you through recording changes you make to your repo.</p>
+<p>These steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.</p>
+<p>Having <a href="making-a-branch.html">created your own branch</a>, follow the instructions below to make and record changes in your repo.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Edit your git-academy-log file
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Put an x inside the brackets for the “Clone git-academy-sandbox” and “Create a new branch in GitHub (&lt;github_username&gt;/main)”.</p></li>
+<li><p>Save the file.</p></li>
+</ul>
+</div>
+</div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-
+<ul>
+<li><p>Check which files have changed by entering this command in Git Bash:</p>
+<p><code>git status</code></p></li>
+<li><p>Stage the changes you want to commit by using one of the commands below.</p>
+<ul>
+<li><p>To add changes to one file at a time:</p>
+<p><code>git add git-academy-log.md</code></p></li>
+</ul>
+<p>OR</p>
+<ul>
+<li><p>To add all changes:</p>
+<p><code>git add .</code></p></li>
+</ul></li>
+<li><p>Commit changes with a message by entering:</p>
+<p><code>git commit -m "Checked clone sandbox and make new branch tasks"</code></p></li>
+</ul>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 
@@ -266,10 +299,33 @@ cookieconsent.run({
 
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-
+<ul>
+<li>In the Git panel of RStudio (see image below), tick the files you want to record the changes for.</li>
+<li>Click the commit button. It has a tick mark on two sheets of paper.</li>
+</ul>
+<p><img src="images/r_commit.png" class="img-fluid" alt="Higlighting the Commit button and an example of ticking changes in the Git panel in RStudio."></p>
+<ul>
+<li><p>Write a short message to describe the changes you made.</p></li>
+<li><p>Click “Commit”.</p></li>
+</ul>
+<p><img src="images/r_commit_msg.png" class="img-fluid" alt="Highlighting the commit message section and the Commit button in the RStudio: Review Changes pop up window that appears after completeing the last step."></p>
+<p>Note that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.</p>
 </div>
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-
+<ul>
+<li>Click on the branches drop down menu at the top of the screen and click “Commit”.</li>
+</ul>
+<p>OR</p>
+<ul>
+<li>Click on the symbol that shows a circle flanked by two lines in the sidebar as shown in the image below.</li>
+</ul>
+<p><img src="images/pycharm_commit.png" class="img-fluid" alt="Highlighting the two ways to open the commit window." width="461"></p>
+<ul>
+<li><p>In the “Commit” pop up window, tick the files you wish to record changes for if they’re not already ticked.</p></li>
+<li><p>Write a short message to describe the changes you made.</p></li>
+<li><p>Click “Commit”.</p></li>
+</ul>
+<p><img src="images/pycharm_commit_msg.png" class="img-fluid" alt="Highlighting the commit message section and the Commit button in the Commit pop up window that appears after completeing the last step."></p>
 </div>
 </div>
 </div>
@@ -503,8 +559,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -615,7 +669,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

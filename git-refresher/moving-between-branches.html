@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,12 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8eef5ae80df721a84869b784b4d5419f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8eef5ae80df721a84869b784b4d5419f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a1028ff20c2804d89c2e9207d2a2e032.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-1f380eefaf014a52643289e24f88c233.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -251,12 +251,27 @@ cookieconsent.run({
 </header>
 
 
-<p>…</p>
+<p>Now that you’ve made and <a href="recording-changes.html">recorded some changes</a> on your working branch and <a href="syncing-changes-to-remote.html">synced them to the remote repo</a>, we can look at how to move between branches and what that looks like in terms of file changes.</p>
+<p>Switching branches is useful for when we might need to pause our work on one branch and continue working on an issue in another branch. Before you switch branches it is important to commit the changes you made in the branch you’re currently in. It’s also important to pull changes after you switch to your new branch.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-
+<p>First you need to update your local repo with the changes made to the remote one. This ensures that you have a full list of remote branches and the latest changes in the code to avoid conflicts.</p>
+<ul>
+<li><p>Enter the command below to update your local repo:</p>
+<p><code>git pull</code></p></li>
+<li><p>Switch to the main branch by using this command:</p>
+<p><code>git checkout main</code></p></li>
+<li><p>Check the “git-academy-log.md” file and you’ll see your edits have disappeared.</p></li>
+<li><p>Switch back to your branch by using this command:</p>
+<p><code>git checkout &lt;github_username&gt;/main</code></p></li>
+<li><p>Check the “git-academy-log.md” file and you’ll see your edits have returned.</p></li>
+</ul>
+<section id="alternative-method" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-method">Alternative method</h3>
+<p>You can also use the <code>git switch</code> command interchangeably with the git checkout command for switching branches.</p>
+</section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 
@@ -265,10 +280,48 @@ cookieconsent.run({
 
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-
+<ul>
+<li><p>Go to the right hand side of RStudio and click on the Git tab.</p></li>
+<li><p>Click on the downwards arrow to “pull” the latest changes from the remote repo. This ensures that:</p>
+<ul>
+<li>you have a full list of remote branches.</li>
+<li>you have the latest changes in the code to avoid conflicts.</li>
+</ul></li>
+<li><p>Click on the drop down menu of branches.</p></li>
+<li><p>Click on <code>main</code></p></li>
+</ul>
+<p><img src="images/r_switch_branch_main.png" class="img-fluid" alt="The Git panel in RStudio with red rectangles highlighting the downwards pull arrow, the branches drop down menu and the branch called main that we want to switch to."></p>
+<ul>
+<li><p>Check the “git-academy-log.md” file and you’ll see your edits have disappeared.</p></li>
+<li><p>Click on the drop down menu of branches.</p></li>
+<li><p>Click on <code>&lt;github_username&gt;/main</code></p></li>
+</ul>
+<p><img src="images/r_switch_branch_own_branch.png" class="img-fluid" alt="The Git panel in RStudio with red rectangles highlighting the branches drop down menu and an example of a user branch that we want to switch to."></p>
+<ul>
+<li>Check the “git-academy-log.md” file and you’ll see your edits have returned.</li>
+</ul>
 </div>
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-
+<ul>
+<li><p>Click on the branches drop down menu at the top of the screen.</p></li>
+<li><p>Click the Fetch icon to “pull” the latest changes from the remote repo. This ensures that:</p>
+<ul>
+<li>you have a full list of remote branches.</li>
+<li>you have the latest changes in the code to avoid conflicts.</li>
+</ul></li>
+<li><p>Click on “Remote” to see the full list of remote branches if you can’t already.</p></li>
+<li><p>Click on <code>main</code>and then click “Checkout”.</p></li>
+</ul>
+<p><img src="images/pycharm_switch_main.png" class="img-fluid" alt="Highlighting PyCharm's branches dropdown menu, the Remote drop down sub menu, the branch called main and the Checkout option that appears when you click on that branch."></p>
+<ul>
+<li>Check the “git-academy-log.md” file and you’ll see your edits have disappeared.</li>
+</ul>
+<p><img src="images/pycharm_switch_own_branch.png" class="img-fluid" alt="Highlighting PyCharm's branches dropdown menu, the Remote drop down sub menu, an example of a user specific branch and the Checkout option that appears when you click on that branch."></p>
+<ul>
+<li><p>Click on the branches drop down menu at the top of the screen.</p></li>
+<li><p>Click on <code>&lt;github_username&gt;/main</code> and then click “Checkout”.</p></li>
+<li><p>Check the “git-academy-log.md” file and you’ll see your edits have returned.</p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -502,8 +555,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -614,7 +665,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
