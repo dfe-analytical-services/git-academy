@@ -1,8 +1,8 @@
 ---
-title: "Viewing branches on GitHub"
+title: "Switching branches on GitHub"
 ---
 
-To view the different branches available in a GitHub repository, follow these steps:
+To view and switch between the different branches available in a GitHub repository, follow these steps:
 
 1.  Navigate to the repository on GitHub. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox).
 
@@ -10,7 +10,7 @@ To view the different branches available in a GitHub repository, follow these st
 
 ![](images/view_branches_in_GitHub.png){fig-alt="Screenshot of the git-academy-sandbox repository main page, highlighting the 'Branches' button."}
 
-3. A list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents. You can search branches using the search box or just see your own branches by moving to the 'Yours' tab. 
+3. A list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents. You can search branches using the search box or just see your own, active or stale branches by moving through the tabs. 
 
 ::: {.callout-note}
 ## Default Branch
