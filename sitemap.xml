@@ -1,43 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/index.html</loc>
-    <lastmod>2025-01-06T10:14:12.407Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/clone-a-repo.html</loc>
-    <lastmod>2025-01-06T10:14:12.395Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/syncing-changes-to-remote.html</loc>
-    <lastmod>2025-01-06T10:14:12.407Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/why-use-git.html</loc>
-    <lastmod>2025-01-06T10:14:12.395Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/git-versus-devops.html</loc>
-    <lastmod>2025-01-06T10:14:12.395Z</lastmod>
-  </url>
-  <url>
     <loc>https://dfe-analytical-services.github.io/git-academy/pre-requisites.html</loc>
-    <lastmod>2025-01-06T10:14:12.407Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/aims-scope.html</loc>
-    <lastmod>2025-01-06T10:14:12.395Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/recording-changes.html</loc>
-    <lastmod>2025-01-06T10:14:12.407Z</lastmod>
+    <lastmod>2025-01-08T12:05:08.303Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/making-a-branch.html</loc>
-    <lastmod>2025-01-06T10:14:12.407Z</lastmod>
+    <lastmod>2025-01-08T12:05:08.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/syncing-changes-to-remote.html</loc>
+    <lastmod>2025-01-08T12:05:08.302Z</lastmod>
   </url>
   <url>
     <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/moving-between-branches.html</loc>
-    <lastmod>2025-01-06T10:14:12.407Z</lastmod>
+    <lastmod>2025-01-08T12:05:08.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/editing-file-github.html</loc>
+    <lastmod>2025-01-08T12:05:08.293Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/viewing-file-github.html</loc>
+    <lastmod>2025-01-08T12:05:08.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/git-versus-devops.html</loc>
+    <lastmod>2025-01-08T12:05:08.292Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/aims-scope.html</loc>
+    <lastmod>2025-01-08T12:05:08.292Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/ch1-introduction/why-use-git.html</loc>
+    <lastmod>2025-01-08T12:05:08.292Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/clone-a-repo.html</loc>
+    <lastmod>2025-01-08T12:05:08.293Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/viewing-history-github.html</loc>
+    <lastmod>2025-01-08T12:05:08.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/recording-changes.html</loc>
+    <lastmod>2025-01-08T12:05:08.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/git-refresher/viewing-branches-github.html</loc>
+    <lastmod>2025-01-08T12:05:08.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dfe-analytical-services.github.io/git-academy/index.html</loc>
+    <lastmod>2025-01-08T12:05:08.303Z</lastmod>
   </url>
 </urlset>
