@@ -4,7 +4,7 @@ title: "Switching branches on GitHub"
 
 To view and switch between the different branches available in a GitHub repository, follow these steps:
 
-1.  Navigate to the repository on GitHub. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox).
+1.  Navigate to the repository on GitHub. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox){target="_blank"}.
 
 2.  Click on the 'Branches' button below the title of the repository as below:
 
