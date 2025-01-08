@@ -25,4 +25,4 @@ To view a file on your repo:
 
 ![](images/files_pane.png){fig-alt="Screenshot of the git-academy-sandbox repository on GitHub, displaying the files pane as seen when viewing files in a branch."}
 
-7. You will need to switch to the code tab to view and edit the raw contents of the file. The preview tab will show you a preview for supported files like Markdown and Quarto and the blame tab shows line by line revision history, tracking who made each change and when.
+7. Each file will have a sub-set of the following views available to select above it: preview, code and blame. You will need to switch to the code view to see and edit the raw contents of the file. The preview view will show you a preview for supported files like Markdown and Quarto and the blame view shows line by line revision history, tracking who made each change and when.

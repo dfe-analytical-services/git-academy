@@ -28,3 +28,7 @@ In this section, we’ll walk through the steps to edit a file on GitHub. We’l
 7.  Enter a commit message describing the changes.
 
 8.  Click 'Commit changes' to save your edits and create a new commit. When you view the git-academy-log file, you should see that the boxes under 'Exploring a repository on Github' are now ticked. 
+
+::: {.callout-important}
+To view the online changes that you have made locally, you will need to pull. This ensures that your local repository is up-to-date with the latest changes from the online repository.
+:::
