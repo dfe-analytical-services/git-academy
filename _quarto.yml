@@ -59,6 +59,10 @@ website:
           - git-refresher/making-a-branch.qmd
           - git-refresher/recording-changes.qmd
           - git-refresher/syncing-changes-to-remote.qmd
+          - git-refresher/viewing-branches-github.qmd
+          - git-refresher/viewing-file-github.qmd
+          - git-refresher/editing-file-github.qmd
+          - git-refresher/viewing-history-github.qmd
           - git-refresher/moving-between-branches.qmd
 
 format:

@@ -59,6 +59,7 @@ Having [created your own branch](making-a-branch.html), follow the instructions 
 Note that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.
 
 ## PyCharm
+=======
 
 -   Click on the branches drop down menu at the top of the screen and click "Commit".
 
