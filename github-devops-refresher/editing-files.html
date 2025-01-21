@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Viewing a file on GitHub – DfE Git Academy</title>
+<title>Editing a file on GitHub – DfE Git Academy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../git-refresher/editing-file-github.html" rel="next">
-<link href="../git-refresher/viewing-branches-github.html" rel="prev">
+<link href="../github-devops-refresher/viewing-history.html" rel="next">
+<link href="../github-devops-refresher/viewing-files.html" rel="prev">
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -42,8 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8eef5ae80df721a84869b784b4d5419f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-cb9cd24f3314359cd2018024f9344b57.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-03a2d9934c6e6a87d7de98100d78972e.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-64e743cfa10eeafb681104b5b1345220.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f017da41ecac3dd26735ed108bef753c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -110,7 +110,7 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/viewing-file-github.html">Viewing a file on GitHub</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github-devops-refresher/navigating-branches.html">GitHub DevOps basics refresher</a></li><li class="breadcrumb-item"><a href="../github-devops-refresher/editing-files.html">Editing a file on GitHub</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -183,13 +183,13 @@ cookieconsent.run({
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Git basics refresher</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/clone-a-repo.html" class="sidebar-item-text sidebar-link">
@@ -205,7 +205,7 @@ cookieconsent.run({
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Recording changes</span></a>
+ <span class="menu-text">Recording changes (add and commit)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -216,32 +216,43 @@ cookieconsent.run({
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/viewing-branches-github.html" class="sidebar-item-text sidebar-link">
+  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Moving between branches</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">GitHub DevOps basics refresher</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../github-devops-refresher/navigating-branches.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Switching branches on GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/viewing-file-github.html" class="sidebar-item-text sidebar-link active">
+  <a href="../github-devops-refresher/viewing-files.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Viewing a file on GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/editing-file-github.html" class="sidebar-item-text sidebar-link">
+  <a href="../github-devops-refresher/editing-files.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Editing a file on GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/viewing-history-github.html" class="sidebar-item-text sidebar-link">
+  <a href="../github-devops-refresher/viewing-history.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Viewing history on GitHub</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Moving between branches</span></a>
   </div>
 </li>
       </ul>
@@ -257,9 +268,9 @@ cookieconsent.run({
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/viewing-file-github.html">Viewing a file on GitHub</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github-devops-refresher/navigating-branches.html">GitHub DevOps basics refresher</a></li><li class="breadcrumb-item"><a href="../github-devops-refresher/editing-files.html">Editing a file on GitHub</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Viewing a file on GitHub</h1>
+<h1 class="title">Editing a file on GitHub</h1>
 </div>
 
 
@@ -276,28 +287,42 @@ cookieconsent.run({
 </header>
 
 
-<p>To view a file on your repo:</p>
+<p>In this section, we’ll walk through the steps to edit a file on GitHub. We’ll use the example of editing the git-academy-log.md file in the github-sandbox repository. This process can be applied to any file in any repository.</p>
 <ol type="1">
 <li><p>Ensure you are still on the GitHub site for the github-sandbox repository.</p></li>
-<li><p>Navigate to the ‘code’ tab at the top of the page.</p></li>
+<li><p>Check you are on your <code>&lt;github_username&gt;/main</code> branch by using the branches drop-down.</p></li>
+<li><p>Locate the git-academy-log.md file and click on it as below:</p></li>
 </ol>
-<p><img src="images/repo_code_tab.png" class="img-fluid" alt="Screenshot of the git-academy-sandbox repository on GitHub, highlighting the 'Code' tab."></p>
-<ol start="3" type="1">
-<li>Find and select the branch you previously created i.e.&nbsp;<code>&lt;github_id&gt;/main</code>. You can do this by clicking on the branches button and selecting your branch, or using the branch drop-down as below to click on your branch:</li>
-</ol>
-<p><img src="images/viewing_branches_drop_down.png" class="img-fluid" alt="Screenshot of the git-academy-sandbox repository on GitHub, displaying the branches drop-down menu with 'main' selected."></p>
+<p><img src="images/git_log.png" class="img-fluid" alt="Screenshot of the git-academy-sandbox repository on GitHub, with the lsnaathorst-main branch selected and the git-academy-log.md being selected."></p>
 <ol start="4" type="1">
-<li>Once you have selected your branch, the drop-down will change to show your branch name as below:</li>
+<li>Click the pencil icon (✏️), usually located on the right-hand side, to edit the file.</li>
 </ol>
-<p><img src="images/branch_highlighted.png" class="img-fluid" alt="Screenshot of the git-academy-sandbox repository on GitHub, displaying the branches drop-down menu with 'lsnaathorst1/main' selected."></p>
+<p><img src="images/edit_file.png" class="img-fluid" alt="Screenshot of the git-academy-sandbox repository on GitHub, showing the git-academy-log.md file and the pencil icon (✏️) for editing the file."></p>
 <ol start="5" type="1">
-<li><p>Click on a file to view the most up-to-date synced code for the branch you have selected.</p></li>
-<li><p>Once you have clicked on a file, you can navigate through different files, change branches or search for a file using Files pane.</p></li>
+<li>Put an ‘X’ in each box under ‘Exploring a repository’ on GitHub.</li>
 </ol>
-<p><img src="images/files_pane.png" class="img-fluid" alt="Screenshot of the git-academy-sandbox repository on GitHub, displaying the files pane as seen when viewing files in a branch."></p>
+<p><img src="images/x_in_exploring_boxes.png" class="img-fluid" alt="Screenshot of the git-academy-log.md file on GitHub with an 'x' added to all instances of 'exploring a repository."></p>
+<ol start="6" type="1">
+<li>Find the ‘Commit changes’ button, normally at the top right of the page.</li>
+</ol>
+<p><img src="images/commit_changes_button.png" class="img-fluid" alt="Screenshot of the 'Commit changes' button on the git-academy-log.md file on GitHub, which shoes after making changes in edit mode."></p>
 <ol start="7" type="1">
-<li>Each file will have a sub-set of the following views available to select above it: preview, code and blame. You will need to switch to the code view to see and edit the raw contents of the file. The preview view will show you a preview for supported files like Markdown and Quarto and the blame view shows line by line revision history, tracking who made each change and when.</li>
+<li><p>Enter a commit message describing the changes.</p></li>
+<li><p>Click ‘Commit changes’ to save your edits and create a new commit. When you view the git-academy-log file, you should see that the boxes under ‘Exploring a repository on Github’ are now ticked.</p></li>
 </ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To view the online changes that you have made locally, you will need to pull. This ensures that your local repository is up-to-date with the latest changes from the online repository.</p>
+</div>
+</div>
 
 
 
@@ -865,13 +890,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../git-refresher/viewing-branches-github.html" class="pagination-link" aria-label="Switching branches on GitHub">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Switching branches on GitHub</span>
+      <a href="../github-devops-refresher/viewing-files.html" class="pagination-link" aria-label="Viewing a file on GitHub">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Viewing a file on GitHub</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../git-refresher/editing-file-github.html" class="pagination-link" aria-label="Editing a file on GitHub">
-        <span class="nav-page-text">Editing a file on GitHub</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../github-devops-refresher/viewing-history.html" class="pagination-link" aria-label="Viewing history on GitHub">
+        <span class="nav-page-text">Viewing history on GitHub</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -883,7 +908,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 
-<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/git-refresher/viewing-file-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/github-devops-refresher/editing-files.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
 <p>This page is maintained by statistics.development@education.gov.uk</p>
 </div>
