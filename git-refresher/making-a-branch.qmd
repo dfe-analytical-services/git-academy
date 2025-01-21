@@ -2,7 +2,7 @@
 title: "Making a new branch"
 ---
 
-In a Git repository, different versions of work are controlled by using what are
+In a Git [repository](../glossary.qmd#repository), different versions of work are controlled by using what are
 called "[branches](https://dfe-analytical-services.github.io/azure-devops-for-analysis/version-control-using-git---the-basics.html#making-branches)". Edits can be made to files on a branch and those will not 
 effect files on any other branch.
 

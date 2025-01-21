@@ -3,7 +3,7 @@ title: "Cloning a repository"
 ---
 
 ---
-To work on the contents of an existing Git [**repository**](glossary.html#repository), the first step will often be to [**"clone"**](glossary.html#clone) it to your local working environment (i.e. your laptop!).
+To work on the contents of an existing Git [**repository**](../glossary.html#repository), the first step will often be to [**"clone"**](../glossary.html#clone) it to your local working environment (i.e. your laptop!).
 
 ::: callout-tip
 ## Getting the clone URL
@@ -15,7 +15,7 @@ To clone a repo, you'll first need to find the necessary URL.
 :::
 
 ::: panel-tabset
-## Git Bash:
+## Git Bash
 
 Navigate to the folder on your device where you want to clone the repo. Right-click in the directory and select **Git Bash Here**.
 

@@ -2,7 +2,7 @@
 title: "Recording changes (add and commit)"
 ---
 
-This section will guide you through recording changes you make to your repo.
+This section will guide you through recording changes you make to your repo through the process of [**adding**](../glossary.html#add) and [**staging**](../glossary.html#stage) files.
 
 These steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.
 
