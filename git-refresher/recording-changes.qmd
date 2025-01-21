@@ -1,5 +1,5 @@
 ---
-title: "Recording changes"
+title: "Recording changes (add and commit)"
 ---
 
 This section will guide you through recording changes you make to your repo.
@@ -39,10 +39,6 @@ Having [created your own branch](making-a-branch.html), follow the instructions 
 
     `git commit -m "Checked clone sandbox and make new branch tasks"`
 
-## GitHub Desktop
-
-## VS Code
-
 ## RStudio
 
 -   In the Git panel of RStudio (see image below), tick the files you want to record the changes for.
@@ -58,8 +54,11 @@ Having [created your own branch](making-a-branch.html), follow the instructions 
 
 Note that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.
 
+## GitHub Desktop
+
+## VS Code
+
 ## PyCharm
-=======
 
 -   Click on the branches drop down menu at the top of the screen and click "Commit".
 
