@@ -66,7 +66,7 @@ OR
 
 -   Click on the symbol that shows a circle flanked by two lines in the sidebar as shown in the image below.
 
-![](images/pycharm_commit.png){fig-alt="Highlighting the two ways to open the commit window." width="461"}
+![](images/pycharm_commit.png){fig-alt="Highlighting the two ways to open the commit window." width="66%" fig-align="center"}
 
 -   In the "Commit" pop up window, tick the files you wish to record changes for if they're not already ticked.
 

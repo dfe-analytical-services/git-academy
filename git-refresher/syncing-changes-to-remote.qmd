@@ -43,13 +43,13 @@ You can also do this from the side panel after closing the commit window as show
 
 -   Click "Push".
 
-![](images/pycharm_push1_1.png){fig-alt="Highlighting the Push option in the branch drop down menu."}
+![](images/pycharm_push1_1.png){fig-alt="Highlighting the Push option in the branch drop down menu." fig-width="72%" fig-align="center"}
 
-![](images/pycharm_push1_2.png){fig-alt="Highlighting the Push button in the Push Commits to git-academy-sandbox pop up window that appears after completeing the previous step."}
+![](images/pycharm_push1_2.png){fig-alt="Highlighting the Push button in the Push Commits to git-academy-sandbox pop up window that appears after completeing the previous step."  fig-width="80%" fig-align="center"}
 
 ### Alternative method
 
 Alternatively you can push and commit your changes at the same time from the commit window by clicking "Commit and Push" after you write your commit message.
 
-![](images/pycharm_push2.png){fig-alt="Highlighting the Commit and Push button in the Commit pop up window that appears after following the steps in recoding changes part of this guide."}
+![](images/pycharm_push2.png){fig-alt="Highlighting the Commit and Push button in the Commit pop up window that appears after following the steps in recoding changes part of this guide." fig-width="80%" fig-align="center"}
 :::
