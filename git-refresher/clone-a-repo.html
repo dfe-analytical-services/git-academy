@@ -268,43 +268,42 @@ cookieconsent.run({
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github-devops-refresher/navigating-branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Switching branches on GitHub</span></a>
+ <span class="menu-text">Navigating branches</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github-devops-refresher/viewing-files.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Viewing a file on GitHub</span></a>
+ <span class="menu-text">Viewing files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github-devops-refresher/editing-files.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Editing a file on GitHub</span></a>
+ <span class="menu-text">Editing files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github-devops-refresher/viewing-history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Viewing history on GitHub</span></a>
+ <span class="menu-text">Viewing the history</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#step-1-get-the-repository-clone-link" id="toc-step-1-get-the-repository-clone-link" class="nav-link" data-scroll-target="#step-1-get-the-repository-clone-link">Step 1: Get the repository clone link</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/git-refresher/clone-a-repo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -329,22 +328,30 @@ cookieconsent.run({
 
 
 <hr>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This section will guide you through the process of cloning a GitHub repository (repo). A repo contains all of your code, your files and each file’s version history. Repos can have multiple collaborators and can be either private or public. You can find out more about GitHub repos on <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">GitHub Docs</a>.</p>
-<p>If you have a repo on Azure DevOps, GitHub or GitLab, you generally can’t edit or run your work on those platforms, so if you need to work with the contents of a repo, you’ll usually need to make a clone.</p>
-<p>There are several ways to clone an existing repo. Below, you’ll find two methods. The first uses Rstudio and the second uses Git Bash. Start with step 1, which is the same for both methods, and then decide which method to follow. Once you have successfully cloned, you should see the files appear in the location you have chosen to store your repo.</p>
-</section>
-<section id="step-1-get-the-repository-clone-link" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-get-the-repository-clone-link">Step 1: Get the repository clone link</h2>
-<p>a. Go to the <a href="https://github.com/dfe-analytical-services/git-academy-sandbox">git-academy-sandbox</a> repository page on GitHub.</p>
-<p>b. Click the “Code” button and copy the URL (HTTPS link).</p>
+<p>To work on the contents of an existing Git <a href="glossary.html#repository"><strong>repository</strong></a>, the first step will often be to <a href="glossary.html#clone"><strong>“clone”</strong></a> it to your local working environment (i.e.&nbsp;your laptop!).</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Getting the clone URL
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To clone a repo, you’ll first need to find the necessary URL.</p>
+<ul>
+<li><p>Go to the <a href="https://github.com/dfe-analytical-services/git-academy-sandbox">git-academy-sandbox</a> repository page on GitHub.</p></li>
+<li><p>Click the “Code” button and copy the URL (HTTPS link).</p></li>
+</ul>
+</div>
+</div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Navigate to the folder on your device where you want to clone the repo. Right-click in the directory and select <strong>Git Bash Here</strong>.</p>
-<p><img src="images/clone_gitbash-here.png" class="img-fluid" width="343"></p>
+<p><img src="images/clone_gitbash-here.png" class="img-fluid">{width=“60%”, fig-align=“center”}</p>
 <ul>
 <li>In the Git Bash window that opens, use the `git clone` command followed by the URL you copied from GitHub. For this repo, we would enter:</li>
 </ul>
@@ -371,7 +378,7 @@ cookieconsent.run({
 <li><p>Choose a directory on your device where you want to save the repo.</p></li>
 <li><p>Click “Create Project”.</p></li>
 </ul>
-<p><img src="images/clone_rstudio.png" class="img-fluid" width="467"></p>
+<p><img src="images/clone_rstudio.png" class="img-fluid">{width=“60%”, fig-align=“center”}</p>
 <p>Check the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.</p>
 <p><img src="images/clone_rstudio-files.png" class="img-fluid"></p>
 </div>
@@ -388,7 +395,6 @@ cookieconsent.run({
 </div>
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -972,7 +978,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/git-refresher/clone-a-repo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/git-refresher/clone-a-repo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
 <p>This page is maintained by statistics.development@education.gov.uk</p>
 </div>
