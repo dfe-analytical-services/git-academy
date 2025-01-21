@@ -19,7 +19,7 @@ To clone a repo, you'll first need to find the necessary URL.
 
 Navigate to the folder on your device where you want to clone the repo. Right-click in the directory and select **Git Bash Here**.
 
-![](images/clone_gitbash-here.png){width="60%", fig-align="center"}
+![](images/clone_gitbash-here.png){width="60%" fig-align="center"}
 
 -   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repo, we would enter:
 
@@ -48,7 +48,7 @@ You will need to right-click to paste, as the keyboard shortcut will not work in
 
 -   Click "Create Project".
 
-![](images/clone_rstudio.png){width="60%", fig-align="center"}
+![](images/clone_rstudio.png){width="60%" fig-align="center"}
 
 Check the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
 
