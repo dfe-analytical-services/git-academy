@@ -20,13 +20,9 @@ b\. Click the "Code" button and copy the URL (HTTPS link).
 ::: panel-tabset
 ## Git Bash:
 
-### Step 2a: Open folder and Git Bash
-
-Navigate to the folder on your device where you want to clone the repo. Right-click in the directory and select "Git Bash Here".
+Navigate to the folder on your device where you want to clone the repo. Right-click in the directory and select **Git Bash Here**.
 
 ![](images/clone_gitbash-here.png){width="343"}
-
-### Step 2b: Clone the Repository in Git Bash
 
 -   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repo, we would enter:
 
@@ -36,24 +32,16 @@ git clone https://github.com/dfe-analytical-services/git-academy-sandbox.git
 
 You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.
 
-### Step 2c: Verify the clone in Git Bash
-
--   Navigate into the repo by typing **cd git-academy-sandbox** and pressing enter.
+-   Navigate into the repo by typing `cd git-academy-sandbox` and pressing enter.
 
 -   You should now see the current branch name (e.g. main) at the end of the file path as below:
 
 ![](images/clone_gitbash-nav.png){fig-align="center"}
 
--   Type **git log** and press enter to view recent commits. Press **q** when you are ready to exit git log.
--   Type **git status** and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
+-   Type `git log` and press enter to view recent commits. Press **q** when you are ready to exit git log.
+-   Type `git status` and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
 
 ## RStudio
-
-### Step 2a: Open RStudio
-
-Open RStudio on your device.
-
-### Step 2b: Clone the Repository in RStudio
 
 -   In RStudio, go to **File \> New Project \> Version Control \> Git**.
 
@@ -63,9 +51,7 @@ Open RStudio on your device.
 
 -   Click "Create Project".
 
-![](images/clone_rstudio-here.png){width="467"}
-
-### Step 2c: Verify the Clone
+![](images/clone_rstudio.png){width="467"}
 
 Check the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
 
@@ -78,7 +64,3 @@ Check the Files pane in RStudio to see if the repo files have been cloned to you
 ## PyCharm
 
 :::
-
-## Conclusion
-
-You have successfully cloned a GitHub repository! Continue on to learn how to create branches.
