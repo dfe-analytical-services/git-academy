@@ -1,5 +1,5 @@
 ---
-title: "Editing a file on GitHub"
+title: "Editing files"
 ---
 
 

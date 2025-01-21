@@ -66,6 +66,7 @@ website:
           - github-devops-refresher/viewing-files.qmd
           - github-devops-refresher/editing-files.qmd
           - github-devops-refresher/viewing-history.qmd
+      - glossary.qmd
 
 format:
   html:

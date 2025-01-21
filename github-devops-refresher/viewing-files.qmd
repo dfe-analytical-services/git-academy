@@ -1,5 +1,5 @@
 ---
-title: "Viewing a file on GitHub"  
+title: "Viewing files"  
 ---
 
 To view a file on your repo:

@@ -1,5 +1,5 @@
 ---
-title: "Switching branches on GitHub"
+title: "Navigating branches"
 ---
 
 To view and switch between the different branches available in a GitHub repository, follow these steps:
