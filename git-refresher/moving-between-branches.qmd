@@ -31,10 +31,6 @@ First you need to update your local repo with the changes made to the remote one
 
 You can also use the `git switch` command interchangeably with the git checkout command for switching branches.
 
-## GitHub Desktop
-
-## VS Code
-
 ## RStudio
 
 -   Go to the right hand side of RStudio and click on the Git tab.
@@ -60,7 +56,9 @@ You can also use the `git switch` command interchangeably with the git checkout 
       
 -   Check the "git-academy-log.md" file and you'll see your edits have returned.
 
+## GitHub Desktop
 
+## VS Code
 
 ## PyCharm
 

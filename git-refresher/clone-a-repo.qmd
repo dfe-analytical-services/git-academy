@@ -47,11 +47,7 @@ You will need to right-click to paste, as the keyboard shortcut will not work in
 -   Type **git log** and press enter to view recent commits. Press **q** when you are ready to exit git log.
 -   Type **git status** and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
 
-## GitHub Desktop
-
-## VS Code
-
-## RStudio:
+## RStudio
 
 ### Step 2a: Open RStudio
 
@@ -74,6 +70,10 @@ Open RStudio on your device.
 Check the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.
 
 ![](images/clone_rstudio-files.png)
+
+## GitHub Desktop
+
+## VS Code
 
 ## PyCharm
 

@@ -24,6 +24,17 @@ personal main branch in the sandbox repository.
 git checkout -b <github_username>/main
 ```
 
+## RStudio
+
+In the Git panel, click the purple new branch symbol 
+![symbol containing two purple boxes branching from a diamond](images/new-branch_rstudio-button.png) 
+as circled in the screenshot below.
+
+Then enter your branch name as **`<github_username>/main`** (but replacing <github_id> 
+with your own GitHub username, e.g. `jsmith_main`)
+
+![Creating a new branch in RStudio](./images/new-branch_RStudio.png)
+
 ## GitHub Desktop
 
 Click **Branch** in the menu bar and then select **New branch...** as shown in 
@@ -50,17 +61,6 @@ shown as the branch you just created, meaning any changes you currently make
 will be applied to that new branch (and not main).
 
 ![Creating a new branch in VS Code](./images/new-branch_VSCode.png)
-
-## RStudio
-
-In the Git panel, click the purple new branch symbol 
-![symbol containing two purple boxes branching from a diamond](images/new-branch_rstudio-button.png) 
-as circled in the screenshot below.
-
-Then enter your branch name as **`<github_username>/main`** (but replacing <github_id> 
-with your own GitHub username, e.g. `jsmith_main`)
-
-![Creating a new branch in RStudio](./images/new-branch_RStudio.png)
 
 
 ## PyCharm

@@ -19,10 +19,6 @@ After that, if you want to push changes you committed in the same branch use the
 
 `git push`
 
-## GitHub Desktop
-
-## VS Code
-
 ## RStudio
 
 Click the green upwards arrow to push your changes to the remote repo. You can do this from the commit window as shown in the image below.
@@ -34,6 +30,10 @@ Click the green upwards arrow to push your changes to the remote repo. You can d
 You can also do this from the side panel after closing the commit window as shown in the image below.
 
 ![](images/r_push_2.png){fig-alt="Highlighting the upwards arrow for pushing changes to remote repos in RStudio's Git window. It is there to show an alternative way of pushing changes to remote repos."}
+
+## GitHub Desktop
+
+## VS Code
 
 ## PyCharm
 
