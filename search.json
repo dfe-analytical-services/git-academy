@@ -87,7 +87,7 @@
     "href": "git-refresher/recording-changes.html",
     "title": "Recording changes (add and commit)",
     "section": "",
-    "text": "This section will guide you through recording changes you make to your repo.\nThese steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.\nHaving created your own branch, follow the instructions below to make and record changes in your repo.\n\n\n\n\n\n\nEdit your git-academy-log file\n\n\n\n\nPut an x inside the brackets for the “Clone git-academy-sandbox” and “Create a new branch in GitHub (&lt;github_username&gt;/main)”.\nSave the file.\n\n\n\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\n\nCheck which files have changed by entering this command in Git Bash:\ngit status\nStage the changes you want to commit by using one of the commands below.\n\nTo add changes to one file at a time:\ngit add git-academy-log.md\n\nOR\n\nTo add all changes:\ngit add .\n\nCommit changes with a message by entering:\ngit commit -m \"Checked clone sandbox and make new branch tasks\"\n\n\n\n\nIn the Git panel of RStudio (see image below), tick the files you want to record the changes for.\nClick the commit button. It has a tick mark on two sheets of paper.\n\n\n\nWrite a short message to describe the changes you made.\nClick “Commit”.\n\n\nNote that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.\n\n\n\n\n\n\n\n\n\nClick on the branches drop down menu at the top of the screen and click “Commit”.\n\nOR\n\nClick on the symbol that shows a circle flanked by two lines in the sidebar as shown in the image below.\n\n\n\nIn the “Commit” pop up window, tick the files you wish to record changes for if they’re not already ticked.\nWrite a short message to describe the changes you made.\nClick “Commit”.\n\n\n\n\n\n\n\n\n Back to top",
+    "text": "This section will guide you through recording changes you make to your repo through the process of adding and staging files.\nThese steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.\nHaving created your own branch, follow the instructions below to make and record changes in your repo.\n\n\n\n\n\n\nEdit your git-academy-log file\n\n\n\n\nPut an x inside the brackets for the “Clone git-academy-sandbox” and “Create a new branch in GitHub (&lt;github_username&gt;/main)”.\nSave the file.\n\n\n\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\n\nCheck which files have changed by entering this command in Git Bash:\ngit status\nStage the changes you want to commit by using one of the commands below.\n\nTo add changes to one file at a time:\ngit add git-academy-log.md\n\nOR\n\nTo add all changes:\ngit add .\n\nCommit changes with a message by entering:\ngit commit -m \"Checked clone sandbox and make new branch tasks\"\n\n\n\n\nIn the Git panel of RStudio (see image below), tick the files you want to record the changes for.\nClick the commit button. It has a tick mark on two sheets of paper.\n\n\n\nWrite a short message to describe the changes you made.\nClick “Commit”.\n\n\nNote that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.\n\n\n\n\n\n\n\n\n\nClick on the branches drop down menu at the top of the screen and click “Commit”.\n\nOR\n\nClick on the symbol that shows a circle flanked by two lines in the sidebar as shown in the image below.\n\n\n\nIn the “Commit” pop up window, tick the files you wish to record changes for if they’re not already ticked.\nWrite a short message to describe the changes you made.\nClick “Commit”.\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Git basics refresher",
       "Recording changes (add and commit)"
@@ -98,7 +98,7 @@
     "href": "git-refresher/clone-a-repo.html",
     "title": "Cloning a repository",
     "section": "",
-    "text": "To work on the contents of an existing Git repository, the first step will often be to “clone” it to your local working environment (i.e. your laptop!).\n\n\n\n\n\n\nGetting the clone URL\n\n\n\nTo clone a repo, you’ll first need to find the necessary URL.\n\nGo to the git-academy-sandbox repository page on GitHub.\nClick the “Code” button and copy the URL (HTTPS link).\n\n\n\n\nGit Bash:RStudioGitHub DesktopVS CodePyCharm\n\n\nNavigate to the folder on your device where you want to clone the repo. Right-click in the directory and select Git Bash Here.\n{width=“60%”, fig-align=“center”}\n\nIn the Git Bash window that opens, use the `git clone` command followed by the URL you copied from GitHub. For this repo, we would enter:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\nYou will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.\n\nNavigate into the repo by typing cd git-academy-sandbox and pressing enter.\nYou should now see the current branch name (e.g. main) at the end of the file path as below:\n\n\n\n\n\n\n\nType git log and press enter to view recent commits. Press q when you are ready to exit git log.\nType git status and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven’t made any changes yet).\n\n\n\n\nIn RStudio, go to File &gt; New Project &gt; Version Control &gt; Git.\nPaste the URL you copied from GitHub into the “Repository URL” field.\nChoose a directory on your device where you want to save the repo.\nClick “Create Project”.\n\n{width=“60%”, fig-align=“center”}\nCheck the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "text": "To work on the contents of an existing Git repository, the first step will often be to “clone” it to your local working environment (i.e. your laptop!).\n\n\n\n\n\n\nGetting the clone URL\n\n\n\nTo clone a repo, you’ll first need to find the necessary URL.\n\nGo to the git-academy-sandbox repository page on GitHub.\nClick the “Code” button and copy the URL (HTTPS link).\n\n\n\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\nNavigate to the folder on your device where you want to clone the repo. Right-click in the directory and select Git Bash Here.\n{width=“60%”, fig-align=“center”}\n\nIn the Git Bash window that opens, use the `git clone` command followed by the URL you copied from GitHub. For this repo, we would enter:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\nYou will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.\n\nNavigate into the repo by typing cd git-academy-sandbox and pressing enter.\nYou should now see the current branch name (e.g. main) at the end of the file path as below:\n\n\n\n\n\n\n\nType git log and press enter to view recent commits. Press q when you are ready to exit git log.\nType git status and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven’t made any changes yet).\n\n\n\n\nIn RStudio, go to File &gt; New Project &gt; Version Control &gt; Git.\nPaste the URL you copied from GitHub into the “Repository URL” field.\nChoose a directory on your device where you want to save the repo.\nClick “Create Project”.\n\n{width=“60%”, fig-align=“center”}\nCheck the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Git basics refresher",
       "Cloning a repository"
@@ -126,6 +126,26 @@
     "text": "Back to top"
   },
   {
+    "objectID": "glossary.html#add",
+    "href": "glossary.html#add",
+    "title": "Glossary",
+    "section": "Add",
+    "text": "Add\nAdding is the process of identifying to Git which files you would like to include in a given commit.\n\n\n\n\n\n\nTip\n\n\n\nAdd and stage are synonymous",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#commit",
+    "href": "glossary.html#commit",
+    "title": "Glossary",
+    "section": "Commit",
+    "text": "Commit\nCommitting is where you record changes in the Git history. This is one of the most important aspects to understand when using Git. A commit provides a single point in the version control history and when navigating back through the history, you can only navigate to changes that are part of a commit.",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
     "objectID": "glossary.html#clone",
     "href": "glossary.html#clone",
     "title": "Glossary",
@@ -141,6 +161,16 @@
     "title": "Glossary",
     "section": "Repository",
     "text": "Repository\nA repository (or repo) is effectively a project folder. A given repostory would usually contain all the work for a specific project (e.g. a data pipeline, an R-Shiny app, etc).",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#stage",
+    "href": "glossary.html#stage",
+    "title": "Glossary",
+    "section": "Stage",
+    "text": "Stage\nStaging is the process of identifying to Git which files you would like to include in a given commit.\n\n\n\n\n\n\nTip\n\n\n\nAdd and stage are synonymous",
     "crumbs": [
       "Glossary"
     ]
