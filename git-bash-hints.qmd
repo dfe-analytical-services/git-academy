@@ -3,22 +3,21 @@ title: "Git Bash Hints"
 editor: visual
 ---
 
-This page will cover a few useful commands that you can use in Git bash.
+This page will cover a few useful commands that you can use in Git Bash. 
 
-## Viewing Files and Directories
+:::{.callout-note}
 
-The commands in this section help you list and view the contents of directories, providing detailed information about files and sub-directories.
+You will see many generalised paths, directory names, file names, etc. on this page. For example, you will see something like `cd /path_to/working_directory/you_want` where you would need to replace the `/path_to/working_directory/you_want` part with a path that is applicable to your work.
 
-```{r, eval = FALSE}
-
-```
-
+:::
 
 ## Checking and Navigating Directories
 
 The commands in this section allow you to check and change your current working directory, moving between different folders in your file system.
 
-To check your working directory, we would enter the following in Git bash: 
+`pwd`: This stands for "print working directory", so it will show you your current working directory for Git.
+
+You can use it by entering the following in the terminal: 
 
 ```{r, eval = FALSE}
 
@@ -26,9 +25,10 @@ pwd
 
 ```
 
-`pwd` stands for "print working directory" so it will show you your current working directory for Git.
 
-To change your working directory, we would enter the following in Git bash and replace `/path_to/working_directory/you_want` with the actual path: 
+`cd`: This stands for "change directory", so it will point to where you want your directory to be.
+
+To change your working directory, we would amend the code below to reflect the path of the working directory we want and enter it into the terminal: 
 
 ```{r, eval = FALSE}
 
@@ -36,7 +36,30 @@ cd /path_to/working_directory/you_want
 
 ```
 
-`cd` stands for "change directory" so it will point to where you want your directory to be. 
+ 
+## Viewing Files and Directories
+
+The commands in this section help you list and view the contents of directories, providing detailed information about files and sub-directories.
+
+`ls`: This stands for "listing".
+
+To list all files or sub-directories, we would type the following in the terminal: 
+
+```{r, eval = FALSE}
+
+ls
+
+```
+
+
+To list all files or sub-directories, including hidden files, we would type the following in the terminal: 
+
+```{r, eval=FALSE}
+
+ls -a
+
+```
+
 
 ## Creating and Removing Files and Directories
 
@@ -44,7 +67,10 @@ cd /path_to/working_directory/you_want
 
 The commands in this section enable you to create new directories, remove files, and delete empty directories.
 
-To create a directory, we would enter the following into Git bash*: 
+
+`mkdir`: This stands for "make directory".
+
+To create a directory, we would amend the code below to reflect the path we want and the new directory name and enter it into the terminal: 
 
 ```{r, eval=FALSE}
 
@@ -52,13 +78,16 @@ mkdir /path_to_the_directory_you_want_to_create/new_directory_name
 
 ```
 
-*We would replace `/path_to_the_directory_you_want_to_create/` with an actual path and `new_directory_name` to an actual directory name.
-
-`mkdir` stands for "make directory. 
-
 ### Removing directories 
 
-To remove a directory and its contents, we would enter the following* into Git bash: 
+:::{.callout-important}
+
+Make sure you're in the correct directory/using the correct path before using commands in this section.
+:::
+
+`rm`: This stands for "remove" and we can use it to remove files and directories.
+
+To remove a directory and its contents, we would amend the code below to reflect the path and the directory we want and enter it into the terminal: 
 
 
 ```{r, eval=FALSE}
@@ -69,13 +98,9 @@ rm -r /path_to_the_directory/directory_name
 
 ### Removing files
 
-Assuming we're already in the directory we want, we can remove a file from it by entering the following into Git bash: 
+ 
+Assuming we're already in the directory we want, we can remove a file from it by amending the code below to reflect the file name we want to remove, and its extension and then enter it into the terminal: 
 
-
-:::{.callout-important}
-
-Make sure you're in the correct directory before using this command
-:::
 
 ```{r, eval=FALSE}
 
@@ -83,18 +108,81 @@ rm -r file_name.extention
 
 ```
 
-You need to make sure to include the extension of the file in the command or it will not work. 
+You need to make sure to include the extension of the file in the command, or it will not work. 
 
 ## Viewing File Contents
 
+:::{.callout-important}
+
+Make sure you're in the correct directory/using the correct path before using commands in this section.
+:::
+
 The commands in this section allow you to display the contents of files, either in full or in parts, for easy reading and inspection.
+
+To display the first 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
+
+
+```{r, eval=FALSE}
+
+head file_name.extention
+
+```
+
+
+To display the bottom 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
+
+```{r, eval=FALSE}
+
+tail file_name.extention
+
+```
+
+To display the contents of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
+
+```{r, eval=FALSE}
+
+cat file_name.extention
+
+```
 
 ## Searching and Finding Files
 
-The commands in this section help you search for files and directories based on patterns and search within files for specific text.
+:::{.callout-important}
 
-## Permissions and Ownership
+Make sure you're in the correct directory/using the correct path before using commands in this section.
+:::
 
-The commands in this section enable you to change file permissions and ownership, controlling access and modifying file attributes.
+You can look for files in your repository that match a certain pattern by using `git grep`. We would amend the code below by replacing `"pattern"` with the term or pattern we want to search for in files. 
 
-*We would replace /path_to_the_directory/ and directory_name with the actual directory. 
+
+```{r, eval=FALSE}
+
+git grep "pattern"
+
+```
+
+You can utilise all of regex's capabilities to locate precisely what you're looking for because regular expressions are supported.
+
+## Creating Files
+
+:::{.callout-important}
+
+Make sure you're in the correct directory/using the correct path before using commands in this section.
+:::
+
+The commands in this section enable you to  create an empty file or update the timestamp of an existing file. We do this by entering the following this command template `touch <file_name.extention>` where you replace file_name with the name of the file you want to create and `extention` with the extension for the type of file you want to create. 
+
+
+For example, if we want to create a `txt` type file called `example`, then we would type the following in the terminal:
+
+
+```{r, eval=FALSE}
+
+touch example.txt
+
+```
+
+
+If you use the `touch` command with a file that already exists, then the timestamp for when that file was last modified will be updated to when you executed that command. 
+
+For example, if I had a file called `example.txt` that already existed in my directory and its timestamp for when it was last modified was 27/01/2025 at 09:00 AM. Then I used the command `touch example.txt` on 28/01/2024 at 10:30 AM, the timestamp for that file will be modified to reflect the time I entered the command (28/01/2024 at 10:30 AM).
