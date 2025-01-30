@@ -3,21 +3,21 @@ title: "BASH Academy"
 editor: visual
 ---
 
-This page will cover a few useful commands that you can use in Git BASH. 
+This page will cover a few useful commands that you can use in Git BASH.
 
-:::{.callout-note}
-
+::: callout-note
 You will see many generalised paths, directory names, file names, etc. on this page. For example, you will see something like `cd /path_to/working_directory/you_want` where you would need to replace the `/path_to/working_directory/you_want` part with a path that is applicable to your work.
-
 :::
 
 ## Checking and Navigating Directories
 
 The commands in this section allow you to check and change your current working directory, moving between different folders in your file system.
 
+### Checking directories
+
 `pwd`: This stands for "print working directory", so it will show you your current working directory for Git.
 
-You can use it by entering the following in the terminal: 
+You can use it by entering the following in the terminal:
 
 ```{bash eval = FALSE}
 
@@ -25,72 +25,95 @@ pwd
 
 ```
 
+### Changing directories
 
 `cd`: This stands for "change directory", so it will point to where you want your directory to be.
 
-To change your working directory, we would amend the code below to reflect the path of the working directory we want and enter it into the terminal: 
+In this section, we will use `/home/user/projects/my_project` as our path example. Please note that this is just an example path and may not work on your system.
 
-```{r, eval = FALSE}
+To change your working directory, you can use either an absolute or a relative file path. Here's how you can do it:
 
-cd /path_to/working_directory/you_want
+#### Using an absolute path:
+
+An absolute path specifies the full path from the root directory.
+
+```{bash eval = FALSE}
+cd /home/user/projects/my_project
 
 ```
 
- 
+#### Using a relative path:
+
+Relative paths specify the path in relation to your current directory, allowing you to navigate efficiently within the file system.
+
+##### Navigating into a folder:
+
+```{bash eval = FALSE}
+cd subfolder
+
+```
+
+-   This command navigates into a folder named `subfolder` inside `my_project`.
+
+-   Resulting path: `/home/user/projects/my_project/subfolder`.
+
+##### Navigating out of a folder (up one level):
+
+```{bash eval = FALSE}
+cd ..
+```
+
+This command moves up one level from my_project to projects. Resulting path: `/home/user/projects`
+
 ## Viewing Files and Directories
 
 The commands in this section help you list and view the contents of directories, providing detailed information about files and sub-directories.
 
 `ls`: This stands for "listing".
 
-To list all files or sub-directories, we would type the following in the terminal: 
+To list all files or sub-directories, we would type the following in the terminal:
 
-```{r, eval = FALSE}
+```{bash eval = FALSE}
 
 ls
 
 ```
 
+To list all files or sub-directories, including hidden files, we would type the following in the terminal:
 
-To list all files or sub-directories, including hidden files, we would type the following in the terminal: 
-
-```{r, eval=FALSE}
+```{bash eval = FALSE}
 
 ls -a
 
 ```
 
-
 ## Creating and Removing Files and Directories
 
-### Creating directories 
+### Creating directories
 
 The commands in this section enable you to create new directories, remove files, and delete empty directories.
 
-
 `mkdir`: This stands for "make directory".
 
-To create a directory, we would amend the code below to reflect the path we want and the new directory name and enter it into the terminal: 
+To create a directory, we would amend the code below to reflect the path we want and the new directory name and enter it into the terminal:
 
-```{r, eval=FALSE}
+```{bash eval = FALSE}
 
 mkdir /path_to_the_directory_you_want_to_create/new_directory_name
 
 ```
 
-### Removing directories 
+### Removing directories
 
-:::{.callout-important}
-
+::: callout-important
 Make sure you're in the correct directory/using the correct path before using commands in this section.
 :::
 
 `rm`: This stands for "remove" and we can use it to remove files and directories.
 
-To remove a directory and its contents, we would amend the code below to reflect the path and the directory we want and enter it into the terminal: 
+To remove a directory and its contents, we would amend the code below to reflect the path and the directory we want and enter it into the terminal:
 
-
-```{r, eval=FALSE}
+```{bash eval = FALSE}
 
 rm -r /path_to_the_directory/directory_name
 
@@ -98,22 +121,19 @@ rm -r /path_to_the_directory/directory_name
 
 ### Removing files
 
- 
-Assuming we're already in the directory we want, we can remove a file from it by amending the code below to reflect the file name we want to remove, and its extension and then enter it into the terminal: 
+Assuming we're already in the directory we want, we can remove a file from it by amending the code below to reflect the file name we want to remove, and its extension and then enter it into the terminal:
 
-
-```{r, eval=FALSE}
+```{bash eval = FALSE}
 
 rm -r file_name.extention
 
 ```
 
-You need to make sure to include the extension of the file in the command, or it will not work. 
+You need to make sure to include the extension of the file in the command, or it will not work.
 
 ## Viewing File Contents
 
-:::{.callout-important}
-
+::: callout-important
 Make sure you're in the correct directory/using the correct path before using commands in this section.
 :::
 
@@ -121,17 +141,15 @@ The commands in this section allow you to display the contents of files, either 
 
 To display the first 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
 
-
-```{r, eval=FALSE}
+```{bash eval = FALSE}
 
 head file_name.extention
 
 ```
 
-
 To display the bottom 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
 
-```{r, eval=FALSE}
+```{bash eval = FALSE}
 
 tail file_name.extention
 
@@ -139,7 +157,7 @@ tail file_name.extention
 
 To display the contents of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
 
-```{r, eval=FALSE}
+```{bash eval = FALSE}
 
 cat file_name.extention
 
@@ -147,15 +165,13 @@ cat file_name.extention
 
 ## Searching and Finding Files
 
-:::{.callout-important}
-
+::: callout-important
 Make sure you're in the correct directory/using the correct path before using commands in this section.
 :::
 
-You can look for files in your repository that match a certain pattern by using `git grep`. We would amend the code below by replacing `"pattern"` with the term or pattern we want to search for in files. 
+You can look for files in your repository that match a certain pattern by using `git grep`. We would amend the code below by replacing `"pattern"` with the term or pattern we want to search for in files.
 
-
-```{r, eval=FALSE}
+```{bash eval = FALSE}
 
 git grep "pattern"
 
@@ -165,24 +181,20 @@ You can utilise all of regex's capabilities to locate precisely what you're look
 
 ## Creating Files
 
-:::{.callout-important}
-
+::: callout-important
 Make sure you're in the correct directory/using the correct path before using commands in this section.
 :::
 
-The commands in this section enable you to  create an empty file or update the timestamp of an existing file. We do this by entering the following this command template `touch <file_name.extention>` where you replace file_name with the name of the file you want to create and `extention` with the extension for the type of file you want to create. 
-
+The commands in this section enable you to create an empty file or update the timestamp of an existing file. We do this by entering the following this command template `touch <file_name.extention>` where you replace file_name with the name of the file you want to create and `extention` with the extension for the type of file you want to create.
 
 For example, if we want to create a `txt` type file called `example`, then we would type the following in the terminal:
 
-
-```{r, eval=FALSE}
+```{bash eval = FALSE}
 
 touch example.txt
 
 ```
 
-
-If you use the `touch` command with a file that already exists, then the timestamp for when that file was last modified will be updated to when you executed that command. 
+If you use the `touch` command with a file that already exists, then the timestamp for when that file was last modified will be updated to when you executed that command.
 
 For example, if I had a file called `example.txt` that already existed in my directory and its timestamp for when it was last modified was 27/01/2025 at 09:00 AM. Then I used the command `touch example.txt` on 28/01/2024 at 10:30 AM, the timestamp for that file will be modified to reflect the time I entered the command (28/01/2024 at 10:30 AM).
