@@ -3,7 +3,7 @@ title: "BASH Academy"
 editor: visual
 ---
 
-This page will cover a few useful commands that you can use in Git Bash. 
+This page will cover a few useful commands that you can use in Git BASH. 
 
 :::{.callout-note}
 
