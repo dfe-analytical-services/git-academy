@@ -19,7 +19,7 @@ The commands in this section allow you to check and change your current working 
 
 You can use it by entering the following in the terminal: 
 
-```{r, eval = FALSE}
+```{bash eval = FALSE}
 
 pwd
 
