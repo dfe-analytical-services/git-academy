@@ -42,7 +42,6 @@ git push -u origin <github_username>/development
 ``` bash
 git branch
 ```
-:::
 
 ## RStudio
 

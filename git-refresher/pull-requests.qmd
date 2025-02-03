@@ -1,0 +1,58 @@
+--- 
+title: "Pull requests"
+---
+
+A pull request allows you to notify your team about changes you've committed and pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add any necessary follow-up commits before the changes are merged into the main branch.
+
+Now you have made changes in your [development branch](making-a-development-branch), we will practice this by merging the changes into your main branch using a pull request.
+
+::: panel-tabset
+## Git Bash
+
+1. Ensure you are on the development branch. 
+
+``` bash
+git checkout -b <github_username>/development
+```
+
+2. Check all your latest changes are pushed to the remote repository if you haven't already. 
+``` bash
+git push origin <github_username>/development
+```
+3. Create your pull request, adding a title and a description of your changes 
+
+``` bash
+gh pr create --base <github_id>/main --head <github_id>/development --title "Your PR Title" --body "Description of your changes"
+```
+
+## Rstudio and GitHub Website
+
+1. In the Git panel, ensure you are on the development branch. 
+2. Check you have pushed any changes to the remote repository if you haven't already. 
+3. Go to the [git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox) repository page on GitHub.
+4. Switch to your development branch by clicking on the branch drop down and selecting your development branch (<github_username>/development).
+
+5. Open a pull request by clicking the "New pull request" button.
+
+6. Ensure the base branch is set to your own main branch (<github_username>/main)  and the compare branch is set to your development branch (<github_username>/development).
+
+Create Pull Request: Click the "Create pull request" button. Add a title and description for your pull request, then click "Create pull request" again to confirm.
+
+## GitHub Desktop
+
+1. Ensure you are on the development branch. 
+
+2. Click on the 'Branch' menu and 'Create pull request' 
+
+3. Click 'open in browser'. This will open GitHub in your web browser with the pull request form pre-filled. 
+
+4. Add a title and description for you pull request and then click 'Create pull request' 
+
+## VS Code 
+
+## PyCharm 
+
+
+
+
+

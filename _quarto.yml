@@ -60,6 +60,8 @@ website:
           - git-refresher/recording-changes.qmd
           - git-refresher/syncing-changes-to-remote.qmd
           - git-refresher/moving-between-branches.qmd
+          - git-refresher/making-a-development-branch.qmd
+          - git-refresher/pull-requests.qmd
       - section: "GitHub DevOps basics refresher"
         contents:
           - github-devops-refresher/navigating-branches.qmd
