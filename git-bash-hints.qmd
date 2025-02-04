@@ -8,8 +8,15 @@ execute:
 
 This page will cover a few useful commands that you can use in Git BASH.
 
-::: callout-note
 You will see many generalised paths, directory names, file names, etc. on this page. For example, you will see something like `cd /path_to/working_directory/you_want` where you would need to replace the `/path_to/working_directory/you_want` part with a path that is applicable to your work.
+
+
+::: callout-important
+
+## OneDrive
+
+When using Git commands like `find`, `ls` or `grep` in OneDrive, be cautious as OneDrive's file synchronization can interfere with Git operations, potentially leading to conflicts or data corruption. Additionally, OneDrive will download all files to search them, which can consume significant bandwidth and storage. It's advisable to pause OneDrive syncing or use a local directory for Git repositories to avoid these issues.
+
 :::
 
 ## Checking and Navigating Directories
