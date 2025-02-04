@@ -43,6 +43,8 @@ git push -u origin <github_username>/development
 git branch
 ```
 
+![Creating a new branch in GitBash](./images/dev_branch_GitBash.png)
+
 ## RStudio
 
 Ensure you are on your personal main branch.
@@ -51,7 +53,7 @@ In the Git panel, click the purple new branch symbol ![symbol containing two pur
 
 Then enter your development branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith_development`)
 
-![Creating a new branch in RStudio](./images/new-branch_RStudio.png)
+![Creating a new branch in RStudio](./images/dev_branch_RStudio.png)
 
 ## GitHub Desktop
 
@@ -59,7 +61,7 @@ Click **Branch** in the menu bar and then select **New branch...** as shown in t
 
 Then enter your branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith_main`)
 
-![Creating a new branch in GitHub Desktop](./images/new-branch_GitHubDesktop.png)
+![Creating a new branch in GitHub Desktop](./images/dev_branch_GitHubDesktop.png)
 
 ## VS Code
 
@@ -69,16 +71,15 @@ Click **+ Create new branch...** and then enter your branch name as **`<github_u
 
 You should now see the branch name listed in the bottom left of the window frame shown as the branch you just created, meaning any changes you currently make will be applied to that new development branch (and not the main branch, or your personal main branch).
 
-![Creating a new branch in VS Code](./images/new-branch_VSCode.png)
 
 ## PyCharm
 
-Open up the Git panel in PyCharm and you should see something like the screenshot below. Right click on **main** and select **New branch from '\<github_id\>/main'...**.
+Open up the Git panel in PyCharm and you should see something like the screenshot below. Right click on your **`<github_username>/main`** branch and select **New branch from '\<github_id\>/main'...**.
 
 Then enter your branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith_development`).
 
-![Creating a new branch in PyCharm](./images/new-branch_PyCharm.png)
+![Creating a new branch in PyCharm](./images/dev_branch_PyCharm.png)
 
 :::
 
-Now you have made your development branch, go to your git log and update tick the 'making a development branch' box. Use the [recording changes](recording-changes) section for a reminder on how to make and save changes.
+Now you have made your development branch, go to your git log and update tick the 'making a development branch' box. Use the [recording changes](recording-changes) section for a reminder on how to make and save changes. Ensure to commit your changes. 

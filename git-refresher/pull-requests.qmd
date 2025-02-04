@@ -53,6 +53,8 @@ Create Pull Request: Click the "Create pull request" button. Add a title and des
 ## PyCharm 
 
 
+When making a pull request, you can add in required and optional reviewers. This will alert those you tag that a pull request has been created and is ready to review. 
+
 
 
 
