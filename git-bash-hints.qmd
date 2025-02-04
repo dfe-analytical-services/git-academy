@@ -1,6 +1,9 @@
 ---
 title: "BASH Academy"
 editor: visual
+engine: knitr
+execute:
+  eval: false
 ---
 
 This page will cover a few useful commands that you can use in Git BASH.
@@ -19,7 +22,7 @@ The commands in this section allow you to check and change your current working 
 
 You can use it by entering the following in the terminal:
 
-```{bash eval = FALSE}
+```{bash }
 
 pwd
 
@@ -37,7 +40,7 @@ To change your working directory, you can use either an absolute or a relative f
 
 An absolute path specifies the full path from the root directory.
 
-```{bash eval = FALSE}
+```{bash }
 cd /home/user/projects/my_project
 
 ```
@@ -48,7 +51,7 @@ Relative paths specify the path in relation to your current directory, allowing 
 
 ##### Navigating into a folder:
 
-```{bash eval = FALSE}
+```{bash }
 cd subfolder
 
 ```
@@ -59,11 +62,23 @@ cd subfolder
 
 ##### Navigating out of a folder (up one level):
 
-```{bash eval = FALSE}
+```{bash }
 cd ..
 ```
 
 This command moves up one level from my_project to projects. Resulting path: `/home/user/projects`
+
+### Auto complete
+
+Tab completion is a feature that allows you to auto-complete file and directory names by pressing the Tab key. If there are multiple matches, pressing Tab twice will list all possible completions.
+
+
+```{bash }
+
+# Type 'cd /path/to/dir' and press 'Tab' to auto-complete the directory name.
+cd /path/to/dir
+
+```
 
 ## Viewing Files and Directories
 
@@ -73,7 +88,7 @@ The commands in this section help you list and view the contents of directories,
 
 To list all files or sub-directories, we would type the following in the terminal:
 
-```{bash eval = FALSE}
+```{bash }
 
 ls
 
@@ -81,13 +96,34 @@ ls
 
 To list all files or sub-directories, including hidden files, we would type the following in the terminal:
 
-```{bash eval = FALSE}
+```{bash }
 
 ls -a
 
 ```
 
+You can add more options to `ls` to control how to list files. We can use `-ltrh` options modify the output of `ls`:
+
+-   `l`: Use a long listing format.
+-   `t`: Sort by modification time, newest first.
+-   `r`: Reverse the order while sorting.
+-   `h`: Display sizes in a human-readable format.
+
+To list the contents of the specified directory in long format, sorted by modification time (newest last), in reverse order, with human-readable file sizes, we would type the following in the terminal: 
+
+```{bash }
+
+ls -ltrh /path/to/directory
+
+
+```
+
+
 ## Creating and Removing Files and Directories
+
+::: callout-important
+Make sure you're in the correct directory/using the correct path before using commands in this section.
+:::
 
 ### Creating directories
 
@@ -95,13 +131,61 @@ The commands in this section enable you to create new directories, remove files,
 
 `mkdir`: This stands for "make directory".
 
-To create a directory, we would amend the code below to reflect the path we want and the new directory name and enter it into the terminal:
+To create a directory, we would amend the code below to reflect the new directory name and enter it into the terminal:
 
-```{bash eval = FALSE}
+```{bash }
 
-mkdir /path_to_the_directory_you_want_to_create/new_directory_name
+mkdir new_directory_name
 
 ```
+
+This will create a new directory in your current working directory.
+
+### Creating files
+
+#### `echo`
+
+The echo command is used to display a line of text or a variable value. It can also be used to create files by redirecting the output to a file.
+
+To create a file named hello.txt and writes "Hello, World!" into it, we would enter the following in the terminal:
+
+
+```{bash }
+
+echo "Hello, World!" > hello.txt
+
+
+```
+
+To append text to an existing file instead of overwriting it, you can use the \>\> operator:
+
+
+```{bash }
+
+echo "This is additional text." >> hello.txt
+
+```
+
+This command adds "This is additional text." to the end of the hello.txt file without overwriting its existing content.
+
+`touch`
+
+The command in this section enable you to create an empty file or update the timestamp of an existing file. We do this by entering the following this command template `touch <file_name.extention>` where you replace file_name with the name of the file you want to create and `extention` with the extension for the type of file you want to create.
+
+For example, if we want to create a `txt` type file called `example`, then we would type the following in the terminal:
+
+```{bash }
+
+touch example.txt
+
+```
+
+If you use the `touch` command with a file that already exists, then the timestamp for when that file was last modified will be updated to when you executed that command.
+
+For example, if I had a file called `example.txt` that already existed in my directory and its timestamp for when it was last modified was 27/01/2025 at 09:00 AM. Then I used the command `touch example.txt` on 28/01/2024 at 10:30 AM, the timestamp for that file will be modified to reflect the time I entered the command (28/01/2024 at 10:30 AM).
+
+
+
 
 ### Removing directories
 
@@ -113,9 +197,16 @@ Make sure you're in the correct directory/using the correct path before using co
 
 To remove a directory and its contents, we would amend the code below to reflect the path and the directory we want and enter it into the terminal:
 
-```{bash eval = FALSE}
+:::{.callout-warning}
 
-rm -r /path_to_the_directory/directory_name
+## Using recursive mode 
+
+Be cautious when using the rm -r command in Git Bash, as it recursively deletes the specified directory and all its contents. This action is irreversible, so double-check the directory path to avoid accidentally deleting important files or directories.
+:::
+
+```{bash }
+
+rm -r path_to_the_directory/directory_name
 
 ```
 
@@ -123,9 +214,9 @@ rm -r /path_to_the_directory/directory_name
 
 Assuming we're already in the directory we want, we can remove a file from it by amending the code below to reflect the file name we want to remove, and its extension and then enter it into the terminal:
 
-```{bash eval = FALSE}
+```{bash }
 
-rm -r file_name.extention
+rm file_name.extention
 
 ```
 
@@ -141,23 +232,39 @@ The commands in this section allow you to display the contents of files, either 
 
 To display the first 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
 
-```{bash eval = FALSE}
+```{bash }
 
 head file_name.extention
 
 ```
 
+You can also customise the amount of lines you want to view by adding `-number of lines` after `head`. For example, if we want to view the first 12 lines of a file, we use: 
+
+```{bash }
+
+head -12 file_name.extention
+
+```
+
 To display the bottom 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
 
-```{bash eval = FALSE}
+```{bash }
 
 tail file_name.extention
 
 ```
 
+You can also customise the amount of lines you want to view by adding `-number of lines` after `tail`. For example, if we want to view the last 3 lines of a file, we use: 
+
+```{bash }
+
+tail -3 file_name.extention
+
+```
+
 To display the contents of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
 
-```{bash eval = FALSE}
+```{bash }
 
 cat file_name.extention
 
@@ -165,13 +272,15 @@ cat file_name.extention
 
 ## Searching and Finding Files
 
+### Finding files by patterns
+
 ::: callout-important
 Make sure you're in the correct directory/using the correct path before using commands in this section.
 :::
 
 You can look for files in your repository that match a certain pattern by using `git grep`. We would amend the code below by replacing `"pattern"` with the term or pattern we want to search for in files.
 
-```{bash eval = FALSE}
+```{bash }
 
 git grep "pattern"
 
@@ -179,22 +288,16 @@ git grep "pattern"
 
 You can utilise all of regex's capabilities to locate precisely what you're looking for because regular expressions are supported.
 
-## Creating Files
+### Finding files by name of file type
 
-::: callout-important
-Make sure you're in the correct directory/using the correct path before using commands in this section.
-:::
+The `find` command is used to search for files and directories within a directory hierarchy.
 
-The commands in this section enable you to create an empty file or update the timestamp of an existing file. We do this by entering the following this command template `touch <file_name.extention>` where you replace file_name with the name of the file you want to create and `extention` with the extension for the type of file you want to create.
+This command searches for all `.txt` files within the specified directory and its subdirectories.
 
-For example, if we want to create a `txt` type file called `example`, then we would type the following in the terminal:
+```{bash }
 
-```{bash eval = FALSE}
+find . -name "*.txt"
 
-touch example.txt
 
 ```
 
-If you use the `touch` command with a file that already exists, then the timestamp for when that file was last modified will be updated to when you executed that command.
-
-For example, if I had a file called `example.txt` that already existed in my directory and its timestamp for when it was last modified was 27/01/2025 at 09:00 AM. Then I used the command `touch example.txt` on 28/01/2024 at 10:30 AM, the timestamp for that file will be modified to reflect the time I entered the command (28/01/2024 at 10:30 AM).
