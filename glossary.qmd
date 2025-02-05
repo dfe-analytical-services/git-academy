@@ -24,6 +24,10 @@ Cloning a repository is the process of creating a copy of a repository folder sy
 
 Pulling updates your current local working branch with any changes from the remote branch. You should pull every day that you interact with a repository, at the minimum. 
 
+## Pull request 
+
+A pull request is a method used in Git to propose changes to a branch. It allows collaborators to review and discuss changes before merging into the main branch. 
+
 ## Push
 
 Pushing is the process of updating the remote branch with local commits. 

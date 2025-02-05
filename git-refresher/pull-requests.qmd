@@ -2,9 +2,11 @@
 title: "Pull requests"
 ---
 
-A pull request allows you to notify your team about changes you've committed and pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add any necessary follow-up commits before the changes are merged into the main branch.
+A [pull request](../glossary.html#pull_request)  allows you to notify your team about changes you've committed and pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add any necessary follow-up commits before the changes are merged into the main branch.
 
 Now you have made changes in your [development branch](making-a-development-branch), we will practice this by merging the changes into your main branch using a pull request.
+
+## Creating pull requests
 
 ::: panel-tabset
 ## Git Bash
@@ -15,28 +17,38 @@ Now you have made changes in your [development branch](making-a-development-bran
 git checkout -b <github_username>/development
 ```
 
-2. Check all your latest changes are pushed to the remote repository if you haven't already. 
+2. Check all your latest changes are pushed to the remote repository. 
 ``` bash
 git push origin <github_username>/development
 ```
 3. Create your pull request, adding a title and a description of your changes 
 
 ``` bash
-gh pr create --base <github_id>/main --head <github_id>/development --title "Your PR Title" --body "Description of your changes"
+gh pr create --base <github_id>/main --head <github_id>/development --title "Update to log book" --body "Updating logbook to reflect completing the development branch task."
 ```
 
 ## Rstudio and GitHub Website
 
 1. In the Git panel, ensure you are on the development branch. 
-2. Check you have pushed any changes to the remote repository if you haven't already. 
+2. Check you have pushed your latest changes to the remote repository by clicking the green 'Push' button in the Git window.
 3. Go to the [git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox) repository page on GitHub.
-4. Switch to your development branch by clicking on the branch drop down and selecting your development branch (<github_username>/development).
+4. Navigate to the Pull requests tab underneath the repository title. 
+
+![](images/pull_requests_tab.png){fig-alt="Higlighting the Pull requests tab on GitHub."}
+
 
 5. Open a pull request by clicking the "New pull request" button.
 
 6. Ensure the base branch is set to your own main branch (<github_username>/main)  and the compare branch is set to your development branch (<github_username>/development).
 
-Create Pull Request: Click the "Create pull request" button. Add a title and description for your pull request, then click "Create pull request" again to confirm.
+![](images/pull_request_branch_selection.png){fig-alt="Higlighting where to change the base and compare branches once you have pressed the 'create a pull request' button on GitHub."}
+
+
+7. Create Pull Request: Click the "Create pull request" button. Add a title and description for your pull request. You may wish to explain what changes and been made, and why. 
+
+8. You don't need to add any reviewers in this training, but please do take a moment to notice where you can add team mates to review your pull requests in your own work to the right of the description. Any reviewers you add will be notified by email that there is a pull request for them to review.  
+
+9. Once you are happy with your title and description, click 'Create pull request' to confirm. 
 
 ## GitHub Desktop
 
@@ -51,9 +63,11 @@ Create Pull Request: Click the "Create pull request" button. Add a title and des
 ## VS Code 
 
 ## PyCharm 
+::: 
+
+## Reviewing pull requests
 
 
-When making a pull request, you can add in required and optional reviewers. This will alert those you tag that a pull request has been created and is ready to review. 
 
 
 

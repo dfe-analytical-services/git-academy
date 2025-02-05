@@ -58,7 +58,7 @@ Having [created your own branch](making-a-branch.html), follow the instructions 
 
 Note that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.
 
-- Then either push up your changes to the remote directly from the commit box using the green 'push' upwards arrow in the top right corner, or close the box and push using the 'push' green arrow in the git window. 
+- Then either push up your changes to the remote directly from the commit box using the green 'push' upwards arrow in the top right corner, or close the box and push using the 'push' green arrow in the Git window. 
 
 ## GitHub Desktop
 
@@ -81,5 +81,7 @@ OR
 -   Click "Commit".
 
 ![](images/pycharm_commit_msg.png){fig-alt="Highlighting the commit message section and the Commit button in the Commit pop up window that appears after completeing the last step."}
+
 -   Push the committed changes to the remote repository by clicking the "Push" button in the top-right corner of the PyCharm window.
+
 :::

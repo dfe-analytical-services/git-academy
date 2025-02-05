@@ -4,11 +4,13 @@ title: "Making a development branch"
 
 This section will guide you through how to create a development branch, taking the main branch you created as a base.
 
-When you create a git project, it will automatically create a "main" (sometimes "master") branch for you. This is where the code that has been QA'd and you are happy with should sit.
+When you create a Git project, it will automatically create a "main" (sometimes "master") branch for you. This is where the code that has been QA'd and you are happy with should sit.
 
 It is good practice to have at least one other branch. Having two branches means that if anything goes wrong in the "development branch", the "main" branch is still unaffected and runs without issue. This lets you test and QA the code more thoroughly before merging into your main branch.
 
-Chose a method below to create your development branch:
+::: callout-tip
+Chose one method below to create your development branch. Then follow the instructions at the bottom of this page to update your logbook.
+:::
 
 ::: panel-tabset
 ## Git Bash
@@ -82,4 +84,7 @@ Then enter your branch name as **`<github_username>/development`** (but replacin
 
 :::
 
-Now you have made your development branch, go to your git log and update tick the 'making a development branch' box. Use the [recording changes](recording-changes) section for a reminder on how to make and save changes. Ensure to commit your changes. 
+::: callout-tip
+## Edit your git-academy-log file
+Now you have made your development branch, go to your git log and update tick the 'making a development branch' box. Use the [recording changes](recording-changes) section for a reminder on how to make and save changes. Ensure to commit and push your changes.
+:::
