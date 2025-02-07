@@ -260,7 +260,6 @@ You can also customise the number of lines you want to view by adding `-number o
 
 ```{bash }
 tail -3 file_name.extention
-
 ```
 
 To display the contents of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
