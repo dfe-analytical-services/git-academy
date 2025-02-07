@@ -169,7 +169,6 @@ The command in this section enables you to create an empty file or update the ti
 For example, if we want to create a `txt` type file called `example`, then we would type the following in the terminal:
 
 ```{bash }
-
 touch example.txt
 ```
 
