@@ -172,7 +172,6 @@ For example, if we want to create a `txt` type file called `example`, then we wo
 ```{bash }
 
 touch example.txt
-
 ```
 
 If you use the `touch` command with a file that already exists, then the timestamp for when that file was last modified will be updated to when you executed that command.
