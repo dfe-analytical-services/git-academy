@@ -163,7 +163,7 @@ echo "This is additional text." >> hello.txt
 
 This command adds "This is additional text." to the end of the hello.txt file without overwriting its existing content.
 
-`touch`
+#### `touch`
 
 The command in this section enables you to create an empty file or update the timestamp of an existing file. We do this by entering the following this command template `touch <file_name.extention>` where you replace file_name with the name of the file you want to create and `extention` with the extension for the type of file you want to create.
 
