@@ -15,7 +15,7 @@ You will see many generalised paths, directory names, file names, etc. on this p
 
 ## OneDrive
 
-When using Git commands like `find`, `ls` or `grep` in OneDrive, be cautious as OneDrive's file synchronization can interfere with Git operations, potentially leading to conflicts or data corruption. Additionally, OneDrive will download all files to search them, which can consume significant bandwidth and storage. It's advisable to pause OneDrive syncing or use a local directory for Git repositories to avoid these issues.
+Avoid using Bash commands like `find`, `ls` or `grep` within OneDrive folders unless OneDrive syncing is switched off. OneDrive will download all files to search them, which can consume significant bandwidth and storage. It's advisable to pause OneDrive syncing if working with Bash commands within your local OneDrive folders.
 
 :::
 
