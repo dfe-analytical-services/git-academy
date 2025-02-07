@@ -227,7 +227,6 @@ The commands in this section allow you to display the contents of files, either 
 To display the first 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:
 
 ```{bash }
-
 head file_name.extention
 
 ```
