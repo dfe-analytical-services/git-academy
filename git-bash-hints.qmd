@@ -198,7 +198,6 @@ Be cautious when using the rm -r command in Git Bash, as it recursively deletes 
 
 ```{bash }
 rm -r path_to_the_directory/directory_name
-
 ```
 
 ### Removing files
