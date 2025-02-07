@@ -135,7 +135,6 @@ To create a directory, we would amend the code below to reflect the new director
 
 ```{bash }
 mkdir new_directory_name
-
 ```
 
 This will create a new directory in your current working directory.
