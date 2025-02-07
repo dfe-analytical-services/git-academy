@@ -101,7 +101,6 @@ ls
 To list all files or sub-directories, including hidden files, we would type the following in the terminal:
 
 ```{bash }
-
 ls -a
 
 ```
