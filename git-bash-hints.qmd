@@ -261,7 +261,6 @@ tail file_name.extention
 You can also customise the number of lines you want to view by adding `-number of lines` after `tail`. For example, if we want to view the last 3 lines of a file, we use: 
 
 ```{bash }
-
 tail -3 file_name.extention
 
 ```
