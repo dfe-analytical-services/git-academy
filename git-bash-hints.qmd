@@ -280,7 +280,7 @@ You can look for files in your repository that match a certain pattern by using 
 
 ```{bash }
 
-git grep "pattern"
+grep "pattern" filename
 
 ```
 
