@@ -158,7 +158,6 @@ To append text to an existing file instead of overwriting it, you can use the \>
 ```{bash }
 
 echo "This is additional text." >> hello.txt
-
 ```
 
 This command adds "This is additional text." to the end of the hello.txt file without overwriting its existing content.
