@@ -206,7 +206,6 @@ Assuming we're already in the directory we want, we can remove a file from it by
 
 ```{bash }
 rm file_name.extention
-
 ```
 
 You need to make sure to include the extension of the file in the command, or it will not work.
