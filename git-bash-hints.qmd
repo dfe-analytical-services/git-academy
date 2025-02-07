@@ -95,7 +95,6 @@ The commands in this section help you list and view the contents of directories,
 To list all files or sub-directories, we would type the following in the terminal:
 
 ```{bash }
-
 ls
 
 ```
