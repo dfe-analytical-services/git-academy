@@ -25,7 +25,7 @@ The commands in this section allow you to check and change your current working 
 
 ### Checking directories
 
-`pwd`: This stands for "print working directory", so it will show you your current working directory for Git.
+`pwd`: This stands for "print working directory", so it will show you your current working directory within the terminal.
 
 You can use it by entering the following in the terminal:
 
