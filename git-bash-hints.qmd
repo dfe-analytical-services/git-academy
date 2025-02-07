@@ -114,7 +114,6 @@ You can add more options to `ls` to control how to list files. We can use `-ltrh
 To list the contents of the specified directory in long format, sorted by modification time (newest last), in reverse order, with human-readable file sizes, we would type the following in the terminal: 
 
 ```{bash }
-
 ls -ltrh /path/to/directory
 
 
