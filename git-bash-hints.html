@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Making a new branch – DfE Git Academy</title>
+<title>BASH Academy – DfE Git Academy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,27 +57,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../git-refresher/recording-changes.html" rel="next">
-<link href="../git-refresher/clone-a-repo.html" rel="prev">
-<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8eef5ae80df721a84869b784b4d5419f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8eef5ae80df721a84869b784b4d5419f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-64e743cfa10eeafb681104b5b1345220.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-f017da41ecac3dd26735ed108bef753c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8eef5ae80df721a84869b784b4d5419f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8eef5ae80df721a84869b784b4d5419f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-64e743cfa10eeafb681104b5b1345220.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-f017da41ecac3dd26735ed108bef753c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -144,7 +142,9 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/making-a-branch.html">Making a new branch</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      DfE Git Academy
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -159,7 +159,7 @@ cookieconsent.run({
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">DfE Git Academy</a> 
+      <a href="./">DfE Git Academy</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="mailto:statistics.development@education.gov.uk" title="Email us" class="quarto-navigation-tool px-1" aria-label="Email us"><i class="bi bi-envelope"></i></a>
     <div class="dropdown">
@@ -205,52 +205,52 @@ cookieconsent.run({
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-requisites.html" class="sidebar-item-text sidebar-link">
+  <a href="./pre-requisites.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Pre-requisities</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Git basics refresher</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/clone-a-repo.html" class="sidebar-item-text sidebar-link">
+  <a href="./git-refresher/clone-a-repo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cloning a repository</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/making-a-branch.html" class="sidebar-item-text sidebar-link active">
+  <a href="./git-refresher/making-a-branch.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Making a new branch</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
+  <a href="./git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Recording changes (add and commit)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/syncing-changes-to-remote.html" class="sidebar-item-text sidebar-link">
+  <a href="./git-refresher/syncing-changes-to-remote.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syncing to the remote</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
+  <a href="./git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Moving between branches</span></a>
   </div>
 </li>
@@ -267,25 +267,25 @@ cookieconsent.run({
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../github-devops-refresher/navigating-branches.html" class="sidebar-item-text sidebar-link">
+  <a href="./github-devops-refresher/navigating-branches.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Navigating branches</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../github-devops-refresher/viewing-files.html" class="sidebar-item-text sidebar-link">
+  <a href="./github-devops-refresher/viewing-files.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Viewing files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../github-devops-refresher/editing-files.html" class="sidebar-item-text sidebar-link">
+  <a href="./github-devops-refresher/editing-files.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Editing files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../github-devops-refresher/viewing-history.html" class="sidebar-item-text sidebar-link">
+  <a href="./github-devops-refresher/viewing-history.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Viewing the history</span></a>
   </div>
 </li>
@@ -293,7 +293,7 @@ cookieconsent.run({
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../glossary.html" class="sidebar-item-text sidebar-link">
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
   </div>
 </li>
@@ -302,15 +302,40 @@ cookieconsent.run({
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#checking-and-navigating-directories" id="toc-checking-and-navigating-directories" class="nav-link active" data-scroll-target="#checking-and-navigating-directories">Checking and Navigating Directories</a>
+  <ul class="collapse">
+  <li><a href="#checking-directories" id="toc-checking-directories" class="nav-link" data-scroll-target="#checking-directories">Checking directories</a></li>
+  <li><a href="#changing-directories" id="toc-changing-directories" class="nav-link" data-scroll-target="#changing-directories">Changing directories</a></li>
+  <li><a href="#auto-complete" id="toc-auto-complete" class="nav-link" data-scroll-target="#auto-complete">Auto complete</a></li>
+  </ul></li>
+  <li><a href="#viewing-files-and-directories" id="toc-viewing-files-and-directories" class="nav-link" data-scroll-target="#viewing-files-and-directories">Viewing Files and Directories</a></li>
+  <li><a href="#creating-and-removing-files-and-directories" id="toc-creating-and-removing-files-and-directories" class="nav-link" data-scroll-target="#creating-and-removing-files-and-directories">Creating and Removing Files and Directories</a>
+  <ul class="collapse">
+  <li><a href="#creating-directories" id="toc-creating-directories" class="nav-link" data-scroll-target="#creating-directories">Creating directories</a></li>
+  <li><a href="#creating-files" id="toc-creating-files" class="nav-link" data-scroll-target="#creating-files">Creating files</a></li>
+  <li><a href="#removing-files" id="toc-removing-files" class="nav-link" data-scroll-target="#removing-files">Removing files</a></li>
+  <li><a href="#removing-directories" id="toc-removing-directories" class="nav-link" data-scroll-target="#removing-directories">Removing directories</a></li>
+  </ul></li>
+  <li><a href="#viewing-file-contents" id="toc-viewing-file-contents" class="nav-link" data-scroll-target="#viewing-file-contents">Viewing File Contents</a></li>
+  <li><a href="#searching-and-finding-files" id="toc-searching-and-finding-files" class="nav-link" data-scroll-target="#searching-and-finding-files">Searching and Finding Files</a>
+  <ul class="collapse">
+  <li><a href="#finding-files-by-patterns" id="toc-finding-files-by-patterns" class="nav-link" data-scroll-target="#finding-files-by-patterns">Finding files by patterns</a></li>
+  <li><a href="#finding-files-by-name-of-file-type" id="toc-finding-files-by-name-of-file-type" class="nav-link" data-scroll-target="#finding-files-by-name-of-file-type">Finding files by name of file type</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/git-bash-hints.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/making-a-branch.html">Making a new branch</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Making a new branch</h1>
+<h1 class="title">BASH Academy</h1>
 </div>
 
 
@@ -327,61 +352,266 @@ cookieconsent.run({
 </header>
 
 
-<p>In a Git <a href="../glossary.html#repository">repository</a>, different versions of work are controlled by using what are called “<a href="https://dfe-analytical-services.github.io/azure-devops-for-analysis/version-control-using-git---the-basics.html#making-branches">branches</a>”. Edits can be made to files on a branch and those will not effect files on any other branch.</p>
-<p>Most repositories will have a “main” branch. This is considered the central latest working version of your work. When editing work, we generally don’t make edits directly on the main branch. Instead we create specific branches for specific chunks of work.</p>
-<p>Having <a href="clone-a-repo.html">cloned the git-academy-sandbox repository</a>, now make a new branch to work in.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Replace <code>&lt;github_id&gt;</code> in the below with your GitHub username to make your own personal main branch in the sandbox repository.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This page will cover a few useful commands that you can use in Git BASH.</p>
+<p>You will see many generalised paths, directory names, file names, etc. on this page. For example, you will see something like <code>cd /path_to/working_directory/you_want</code> where you would need to replace the <code>/path_to/working_directory/you_want</code> part with a path that is applicable to your work.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>In the Git panel, click the purple new branch symbol <img src="images/new-branch_rstudio-button.png" class="img-fluid" alt="symbol containing two purple boxes branching from a diamond"> as circled in the screenshot below.</p>
-<p>Then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_main</code>)</github_id></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/new-branch_RStudio.png" class="img-fluid figure-img"></p>
-<figcaption>Creating a new branch in RStudio</figcaption>
-</figure>
+<div class="callout-title-container flex-fill">
+OneDrive
 </div>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Click <strong>Branch</strong> in the menu bar and then select <strong>New branch…</strong> as shown in the screenshot below.</p>
-<p>Then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_main</code>)</github_id></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/new-branch_GitHubDesktop.png" class="img-fluid figure-img"></p>
-<figcaption>Creating a new branch in GitHub Desktop</figcaption>
-</figure>
+<div class="callout-body-container callout-body">
+<p>Avoid using Bash commands like <code>find</code>, <code>ls</code> or <code>grep</code> within OneDrive folders unless OneDrive syncing is switched off. OneDrive will download all files to search them, which can consume significant bandwidth and storage. It’s advisable to pause OneDrive syncing if working with Bash commands within your local OneDrive folders.</p>
 </div>
 </div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p>The current branch (<strong>main</strong>) should be listed in the very bottom left hand corner of the VS Code window frame. If you left click on this, you should then see a menu appear at the top of the VS Code window with some branch options (as shown in the screen shot below).</p>
-<p>Click <strong>+ Create new branch…</strong> and then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_main</code>).</github_id></p>
-<p>You should now see the branch name listed in the bottom left of the window frame shown as the branch you just created, meaning any changes you currently make will be applied to that new branch (and not main).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/new-branch_VSCode.png" class="img-fluid figure-img"></p>
-<figcaption>Creating a new branch in VS Code</figcaption>
-</figure>
+<section id="checking-and-navigating-directories" class="level2">
+<h2 class="anchored" data-anchor-id="checking-and-navigating-directories">Checking and Navigating Directories</h2>
+<p>The commands in this section allow you to check and change your current working directory, moving between different folders in your file system.</p>
+<section id="checking-directories" class="level3">
+<h3 class="anchored" data-anchor-id="checking-directories">Checking directories</h3>
+<p><code>pwd</code>: This stands for “print working directory”, so it will show you your current working directory within the terminal.</p>
+<p>You can use it by entering the following in the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="changing-directories" class="level3">
+<h3 class="anchored" data-anchor-id="changing-directories">Changing directories</h3>
+<p><code>cd</code>: This stands for “change directory”, so it will point to where you want your directory to be.</p>
+<p>In this section, we will use <code>/home/user/projects/my_project</code> as our path example. Please note that this is just an example path and may not work on your system.</p>
+<p>To change your working directory, you can use either an absolute or a relative file path. Here’s how you can do it:</p>
+<section id="using-an-absolute-path" class="level4">
+<h4 class="anchored" data-anchor-id="using-an-absolute-path">Using an absolute path:</h4>
+<p>An absolute path specifies the full path from the root directory.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /home/user/projects/my_project</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="using-a-relative-path" class="level4">
+<h4 class="anchored" data-anchor-id="using-a-relative-path">Using a relative path:</h4>
+<p>Relative paths specify the path in relation to your current directory, allowing you to navigate efficiently within the file system.</p>
+<section id="navigating-into-a-folder" class="level5">
+<h5 class="anchored" data-anchor-id="navigating-into-a-folder">Navigating into a folder:</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> subfolder</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>This command navigates into a folder named <code>subfolder</code> inside <code>my_project</code>.</p></li>
+<li><p>Resulting path: <code>/home/user/projects/my_project/subfolder</code>.</p></li>
+</ul>
+</section>
+<section id="navigating-out-of-a-folder-up-one-level" class="level5">
+<h5 class="anchored" data-anchor-id="navigating-out-of-a-folder-up-one-level">Navigating out of a folder (up one level):</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This command moves up one level from my_project to projects. Resulting path: <code>/home/user/projects</code></p>
+</section>
+</section>
+</section>
+<section id="auto-complete" class="level3">
+<h3 class="anchored" data-anchor-id="auto-complete">Auto complete</h3>
+<p>Tab completion is a feature that allows you to auto-complete file and directory names by pressing the Tab key. If there are multiple matches, pressing Tab twice will list all possible completions.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Type 'cd /path/to/dir' and press 'Tab' to auto-complete the directory name.</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /path/to/dir</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="viewing-files-and-directories" class="level2">
+<h2 class="anchored" data-anchor-id="viewing-files-and-directories">Viewing Files and Directories</h2>
+<p>The commands in this section help you list and view the contents of directories, providing detailed information about files and sub-directories.</p>
+<p><code>ls</code>: This stands for “listing”.</p>
+<p>To list all files or sub-directories, we would type the following in the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To list all files or sub-directories, including hidden files, we would type the following in the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can add more options to <code>ls</code> to control how to list files. We can use <code>-ltrh</code> options modify the output of <code>ls</code>:</p>
+<ul>
+<li><code>l</code>: Use a long listing format.</li>
+<li><code>t</code>: Sort by modification time, newest first.</li>
+<li><code>r</code>: Reverse the order while sorting.</li>
+<li><code>h</code>: Display sizes in a human-readable format.</li>
+</ul>
+<p>To list the contents of the specified directory in long format, sorted by modification time (newest last), in reverse order, with human-readable file sizes, we would type the following in the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-ltrh</span> /path/to/directory</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="creating-and-removing-files-and-directories" class="level2">
+<h2 class="anchored" data-anchor-id="creating-and-removing-files-and-directories">Creating and Removing Files and Directories</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
 </div>
 </div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-<p>Open up the Git panel in PyCharm and you should see something like the screenshot below. Right click on <strong>main</strong> and select <strong>New branch from ‘origin/main’…</strong>.</p>
-<p>Then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_main</code>).</github_id></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/new-branch_PyCharm.png" class="img-fluid figure-img"></p>
-<figcaption>Creating a new branch in PyCharm</figcaption>
-</figure>
+<div class="callout-body-container callout-body">
+<p>Make sure you’re in the correct directory/using the correct path before using commands in this section.</p>
 </div>
 </div>
+<section id="creating-directories" class="level3">
+<h3 class="anchored" data-anchor-id="creating-directories">Creating directories</h3>
+<p>The commands in this section enable you to create new directories, remove files, and delete empty directories.</p>
+<p><code>mkdir</code>: This stands for “make directory”.</p>
+<p>To create a directory, we would amend the code below to reflect the new directory name and enter it into the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> new_directory_name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>This will create a new directory in your current working directory.</p>
+</section>
+<section id="creating-files" class="level3">
+<h3 class="anchored" data-anchor-id="creating-files">Creating files</h3>
+<section id="echo" class="level4">
+<h4 class="anchored" data-anchor-id="echo"><code>echo</code></h4>
+<p>The echo command is used to display a line of text or a variable value. It can also be used to create files by redirecting the output to a file.</p>
+<p>To create a file named hello.txt and writes “Hello, World!” into it, we would enter the following in the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Hello, World!"</span> <span class="op">&gt;</span> hello.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To append text to an existing file instead of overwriting it, you can use the &gt;&gt; operator:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"This is additional text."</span> <span class="op">&gt;&gt;</span> hello.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This command adds “This is additional text.” to the end of the hello.txt file without overwriting its existing content.</p>
+</section>
+<section id="touch" class="level4">
+<h4 class="anchored" data-anchor-id="touch"><code>touch</code></h4>
+<p>The command in this section enables you to create an empty file or update the timestamp of an existing file. We do this by entering the following this command template <code>touch &lt;file_name.extention&gt;</code> where you replace file_name with the name of the file you want to create and <code>extention</code> with the extension for the type of file you want to create.</p>
+<p>For example, if we want to create a <code>txt</code> type file called <code>example</code>, then we would type the following in the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> example.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>If you use the <code>touch</code> command with a file that already exists, then the timestamp for when that file was last modified will be updated to when you executed that command.</p>
+<p>For example, if I had a file called <code>example.txt</code> that already existed in my directory and its timestamp for when it was last modified was 27/01/2025 at 09:00 AM. Then I used the command <code>touch example.txt</code> on 28/01/2024 at 10:30 AM, the timestamp for that file will be modified to reflect the time I entered the command (28/01/2024 at 10:30 AM).</p>
+</section>
+</section>
+<section id="removing-files" class="level3">
+<h3 class="anchored" data-anchor-id="removing-files">Removing files</h3>
+<p>Assuming we’re already in the directory we want, we can remove a file from it by amending the code below to reflect the file name we want to remove, and its extension and then enter it into the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> file_name.extention</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You need to make sure to include the extension of the file in the command, or it will not work.</p>
+</section>
+<section id="removing-directories" class="level3">
+<h3 class="anchored" data-anchor-id="removing-directories">Removing directories</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Make sure you’re in the correct directory/using the correct path before using commands in this section.</p>
+</div>
+</div>
+<p><code>rm</code>: This stands for “remove” and we can use it to remove files and directories.</p>
+<p>To remove a directory and its contents, we would amend the code below to reflect the path and the directory we want and enter it into the terminal:</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Using recursive mode
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Be cautious when using the rm -r command in Git Bash, as it recursively deletes the specified directory and all its contents. This action is irreversible, so double-check the directory path to avoid accidentally deleting important files or directories.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-r</span> path_to_the_directory/directory_name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="viewing-file-contents" class="level2">
+<h2 class="anchored" data-anchor-id="viewing-file-contents">Viewing File Contents</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Make sure you’re in the correct directory/using the correct path before using commands in this section.</p>
+</div>
+</div>
+<p>The commands in this section allow you to display the contents of files, either in full or in parts, for easy reading and inspection.</p>
+<p>To display the first 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span> file_name.extention</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can also customise the number of lines you want to view by adding <code>-number of lines</code> after <code>head</code>. For example, if we want to view the first 12 lines of a file, we use:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span> <span class="at">-12</span> file_name.extention</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To display the bottom 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span> file_name.extention</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can also customise the number of lines you want to view by adding <code>-number of lines</code> after <code>tail</code>. For example, if we want to view the last 3 lines of a file, we use:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span> <span class="at">-3</span> file_name.extention</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To display the contents of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> file_name.extention</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="searching-and-finding-files" class="level2">
+<h2 class="anchored" data-anchor-id="searching-and-finding-files">Searching and Finding Files</h2>
+<section id="finding-files-by-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="finding-files-by-patterns">Finding files by patterns</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Make sure you’re in the correct directory/using the correct path before using commands in this section.</p>
+</div>
+</div>
+<p>You can look for files in your repository that match a certain pattern by using <code>git grep</code>. We would amend the code below by replacing <code>"pattern"</code> with the term or pattern we want to search for in files.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"pattern"</span> filename</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can utilise all of regex’s capabilities to locate precisely what you’re looking for because regular expressions are supported.</p>
+</section>
+<section id="finding-files-by-name-of-file-type" class="level3">
+<h3 class="anchored" data-anchor-id="finding-files-by-name-of-file-type">Finding files by name of file type</h3>
+<p>The <code>find</code> command is used to search for files and directories within a directory hierarchy.</p>
+<p>This command searches for all <code>.txt</code> files within the specified directory and its subdirectories.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> . <span class="at">-name</span> <span class="st">"*.txt"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -945,18 +1175,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../git-refresher/clone-a-repo.html" class="pagination-link" aria-label="Cloning a repository">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Cloning a repository</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../git-refresher/recording-changes.html" class="pagination-link" aria-label="Recording changes (add and commit)">
-        <span class="nav-page-text">Recording changes (add and commit)</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -965,7 +1183,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 
-<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/git-refresher/making-a-branch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/git-bash-hints.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
 <p>This page is maintained by statistics.development@education.gov.uk</p>
 </div>

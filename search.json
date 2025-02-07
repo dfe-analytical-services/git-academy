@@ -1,131 +1,5 @@
 [
   {
-    "objectID": "pre-requisites.html",
-    "href": "pre-requisites.html",
-    "title": "Pre-requisities",
-    "section": "",
-    "text": "Download Git from the Git website downloads page. Click the “Download for…” button in the monitor image and this will download the install script.\n\n\n\n\n\n\nTip\n\n\n\nThe install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.",
-    "crumbs": [
-      "Pre-requisities"
-    ]
-  },
-  {
-    "objectID": "pre-requisites.html#git",
-    "href": "pre-requisites.html#git",
-    "title": "Pre-requisities",
-    "section": "",
-    "text": "Download Git from the Git website downloads page. Click the “Download for…” button in the monitor image and this will download the install script.\n\n\n\n\n\n\nTip\n\n\n\nThe install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.",
-    "crumbs": [
-      "Pre-requisities"
-    ]
-  },
-  {
-    "objectID": "pre-requisites.html#github",
-    "href": "pre-requisites.html#github",
-    "title": "Pre-requisities",
-    "section": "GitHub",
-    "text": "GitHub\nYou’ll need a GitHub account to work through the examples used with our git-academy-sandbox repository.\nYou’ll then need to e-mail us with your GitHub username and ask to be added to the Git Academy users team on dfe-analytical services.",
-    "crumbs": [
-      "Pre-requisities"
-    ]
-  },
-  {
-    "objectID": "pre-requisites.html#running-git-commands",
-    "href": "pre-requisites.html#running-git-commands",
-    "title": "Pre-requisities",
-    "section": "Running Git commands",
-    "text": "Running Git commands\nThere are a few options for running Git commands once you’ve installed Git. The panels below give the most commonly used options that we recommend for working through Git Academy.\n\nGit BASHGitHub DesktopIDE Git integration\n\n\nGit BASH is a terminal prompt that you can use to run Git commands. It comes with Git, so you’ll have it as soon as you’ve installed Git. It gives you access to all Git commands as well as other system commands (such as creating files, navigating through your folders, making directories, removing files and many, many other things).\n\n\nIf writing commands into a terminal isn’t your thing, then a good (language-agnostic) alternative to Git BASH is to use the GitHub Desktop application. This can be downloaded from GitHub and provides access to a wide range of Git commands, whilst providing user-friendly views of the tracking status and changes of your files.\n\n\nMost modern IDEs (e.g. VS Code, R-Studio, PyCharm) provide some level of Git integration. IDEs often offer a more limited range of Git commands than Git BASH and GitHub Desktop, but work well for basic Git workflows (such as cloning, tracking changes, creating branches and syncing with your remote repository) and provide enough functionality to follow most of Git Academy without you needing to resort to typing commands into Git BASH.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThere is no single preferred option for running Git commands. Whichever option you find works best for you is fine to use, whether it’s command line based or a graphical user interface. Some will offer additional functionality, but all shuould provide enough functionality for day-to-day tasks.",
-    "crumbs": [
-      "Pre-requisities"
-    ]
-  },
-  {
-    "objectID": "pre-requisites.html#text-editor-or-ide",
-    "href": "pre-requisites.html#text-editor-or-ide",
-    "title": "Pre-requisities",
-    "section": "Text editor or IDE",
-    "text": "Text editor or IDE\nWe’ve tried to keep Git Academy software-agnostic as much as possible, so you should be able to work through most of the material using any text editor or IDE. The main files you’ll need to edit will contain markdown, which you can edit in any of the following (some of which also provide Git integration).\n\nWindows NotepadVS CodeR-StudioPyCharm\n\n\nWindows Notepad and Notepad++ are good to use if you don’t have a preferred language that you’d usually work in such as R or Python. There’s no Git integration though, so you’ll need to use Git BASH or GitHub Desktop to run Git commands.\n\n\nVS Code is a flexible IDE usable with a range of languages and is available for use on DfE systems on request. It provides Git integration along with markdown file rendering (shortcut: Ctrl+K V), so is a great option for working through Git Academy.\n\n\nR-Studio is an R IDE and is available from the DfE Software Centre in Windows. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.\n\n\nPyCharm Community Edition is a Python IDE and is available from the DfE Software Centre. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.",
-    "crumbs": [
-      "Pre-requisities"
-    ]
-  },
-  {
-    "objectID": "github-devops-refresher/navigating-branches.html",
-    "href": "github-devops-refresher/navigating-branches.html",
-    "title": "Navigating branches",
-    "section": "",
-    "text": "To view and switch between the different branches available in a GitHub repository, follow these steps:\n\nNavigate to the repository on GitHub. In this case, Git-academy-sandbox.\nClick on the ‘Branches’ button below the title of the repository as below:\n\n\n\nA list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents. You can search branches using the search box or just see your own, active or stale branches by moving through the tabs.\n\n\n\n\n\n\n\nDefault Branch\n\n\n\nThe default branch is like the main version of your project. It’s usually called main, but sometimes it might have a different name. This is the branch where the latest, most stable version of your project lives. When you want to make changes to code, you usually create your own branch from main.\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "GitHub DevOps basics refresher",
-      "Navigating branches"
-    ]
-  },
-  {
-    "objectID": "github-devops-refresher/viewing-files.html",
-    "href": "github-devops-refresher/viewing-files.html",
-    "title": "Viewing files",
-    "section": "",
-    "text": "To view a file on your repo:\n\nEnsure you are still on the GitHub site for the github-sandbox repository.\nNavigate to the ‘code’ tab at the top of the page.\n\n\n\nFind and select the branch you previously created i.e. &lt;github_id&gt;/main. You can do this by clicking on the branches button and selecting your branch, or using the branch drop-down as below to click on your branch:\n\n\n\nOnce you have selected your branch, the drop-down will change to show your branch name as below:\n\n\n\nClick on a file to view the most up-to-date synced code for the branch you have selected.\nOnce you have clicked on a file, you can navigate through different files, change branches or search for a file using Files pane.\n\n\n\nEach file will have a sub-set of the following views available to select above it: preview, code and blame. You will need to switch to the code view to see and edit the raw contents of the file. The preview view will show you a preview for supported files like Markdown and Quarto and the blame view shows line by line revision history, tracking who made each change and when.\n\n\n\n\n Back to top",
-    "crumbs": [
-      "GitHub DevOps basics refresher",
-      "Viewing files"
-    ]
-  },
-  {
-    "objectID": "git-refresher/making-a-branch.html",
-    "href": "git-refresher/making-a-branch.html",
-    "title": "Making a new branch",
-    "section": "",
-    "text": "In a Git repository, different versions of work are controlled by using what are called “branches”. Edits can be made to files on a branch and those will not effect files on any other branch.\nMost repositories will have a “main” branch. This is considered the central latest working version of your work. When editing work, we generally don’t make edits directly on the main branch. Instead we create specific branches for specific chunks of work.\nHaving cloned the git-academy-sandbox repository, now make a new branch to work in.\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\nReplace &lt;github_id&gt; in the below with your GitHub username to make your own personal main branch in the sandbox repository.\ngit checkout -b &lt;github_username&gt;/main\n\n\nIn the Git panel, click the purple new branch symbol  as circled in the screenshot below.\nThen enter your branch name as &lt;github_username&gt;/main (but replacing  with your own GitHub username, e.g. jsmith_main)\n\n\n\nCreating a new branch in RStudio\n\n\n\n\nClick Branch in the menu bar and then select New branch… as shown in the screenshot below.\nThen enter your branch name as &lt;github_username&gt;/main (but replacing  with your own GitHub username, e.g. jsmith_main)\n\n\n\nCreating a new branch in GitHub Desktop\n\n\n\n\nThe current branch (main) should be listed in the very bottom left hand corner of the VS Code window frame. If you left click on this, you should then see a menu appear at the top of the VS Code window with some branch options (as shown in the screen shot below).\nClick + Create new branch… and then enter your branch name as &lt;github_username&gt;/main (but replacing  with your own GitHub username, e.g. jsmith_main).\nYou should now see the branch name listed in the bottom left of the window frame shown as the branch you just created, meaning any changes you currently make will be applied to that new branch (and not main).\n\n\n\nCreating a new branch in VS Code\n\n\n\n\nOpen up the Git panel in PyCharm and you should see something like the screenshot below. Right click on main and select New branch from ‘origin/main’….\nThen enter your branch name as &lt;github_username&gt;/main (but replacing  with your own GitHub username, e.g. jsmith_main).\n\n\n\nCreating a new branch in PyCharm\n\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Git basics refresher",
-      "Making a new branch"
-    ]
-  },
-  {
-    "objectID": "git-refresher/recording-changes.html",
-    "href": "git-refresher/recording-changes.html",
-    "title": "Recording changes (add and commit)",
-    "section": "",
-    "text": "This section will guide you through recording changes you make to your repo through the process of adding and staging files.\nThese steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.\nHaving created your own branch, follow the instructions below to make and record changes in your repo.\n\n\n\n\n\n\nEdit your git-academy-log file\n\n\n\n\nPut an x inside the brackets for the “Clone git-academy-sandbox” and “Create a new branch in GitHub (&lt;github_username&gt;/main)”.\nSave the file.\n\n\n\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\n\nCheck which files have changed by entering this command in Git Bash:\ngit status\nStage the changes you want to commit by using one of the commands below.\n\nTo add changes to one file at a time:\ngit add git-academy-log.md\n\nOR\n\nTo add all changes:\ngit add .\n\nCommit changes with a message by entering:\ngit commit -m \"Checked clone sandbox and make new branch tasks\"\n\n\n\n\nIn the Git panel of RStudio (see image below), tick the files you want to record the changes for.\nClick the commit button. It has a tick mark on two sheets of paper.\n\n\n\nWrite a short message to describe the changes you made.\nClick “Commit”.\n\n\nNote that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.\n\n\n\n\n\n\n\n\n\nClick on the branches drop down menu at the top of the screen and click “Commit”.\n\nOR\n\nClick on the symbol that shows a circle flanked by two lines in the sidebar as shown in the image below.\n\n\n\n\n\n\n\nIn the “Commit” pop up window, tick the files you wish to record changes for if they’re not already ticked.\nWrite a short message to describe the changes you made.\nClick “Commit”.\n\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Git basics refresher",
-      "Recording changes (add and commit)"
-    ]
-  },
-  {
-    "objectID": "git-refresher/clone-a-repo.html",
-    "href": "git-refresher/clone-a-repo.html",
-    "title": "Cloning a repository",
-    "section": "",
-    "text": "To work on the contents of an existing Git repository, the first step will often be to “clone” it to your local working environment (i.e. your laptop!).\n\n\n\n\n\n\nGetting the clone URL\n\n\n\nTo clone a repo, you’ll first need to find the necessary URL.\n\nGo to the git-academy-sandbox repository page on GitHub.\nClick the “Code” button and copy the URL (HTTPS link).\n\n\n\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\nNavigate to the folder on your device where you want to clone the repo. Right-click in the directory and select Git Bash Here.\n\n\n\n\n\n\nIn the Git Bash window that opens, use the `git clone` command followed by the URL you copied from GitHub. For this repo, we would enter:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\nYou will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.\n\nNavigate into the repo by typing cd git-academy-sandbox and pressing enter.\nYou should now see the current branch name (e.g. main) at the end of the file path as below:\n\n\n\n\n\n\n\nType git log and press enter to view recent commits. Press q when you are ready to exit git log.\nType git status and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven’t made any changes yet).\n\n\n\n\nIn RStudio, go to File &gt; New Project &gt; Version Control &gt; Git.\nPaste the URL you copied from GitHub into the “Repository URL” field.\nChoose a directory on your device where you want to save the repo.\nClick “Create Project”.\n\n\n\n\n\n\nCheck the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Git basics refresher",
-      "Cloning a repository"
-    ]
-  },
-  {
-    "objectID": "ch1-introduction/why-use-git.html",
-    "href": "ch1-introduction/why-use-git.html",
-    "title": "Why is Git important?",
-    "section": "",
-    "text": "Why is Git important?\nGit is a software that offers a comprehensive solution for collaborative work, version control, accountability, disaster recovery, and knowledge retention. Using Git strengthens QA practices and ensures you’re working in line with RAP principles. Here’s why Git holds particular importance for analysts in the civil service:\n\n\n\nCollaboration\n\n\nGit enables collaboration by allowing team members to work on the same project simultaneously from any location. It tracks changes made by each contributor, highlighting ‘conflicts’, before merging contributions into one final product. The ability to work on multiple branches simultaneously saves analysts time (no waiting for colleagues to finish one part before moving on). Cloud-hosted repositories also enable other analysts to view your code (with the correct permissions), enabling knowledge-sharing and transparency. Git’s collaborative features and online repository platforms enable automated checks and QA through pull requests/peer reviews, supporting compliance with the code of practice.\n\n\n\n\nExperiment\n\n\nGit’s ‘branching’ system creates parallel versions of projects, allowing analysts to experiment, try different approaches, or add potential new features without fear of breaking anything on the ‘main branch’.\n\n\n\n\nVersion control\n\n\nGit provides a version control system that keeps a historical record of all changes made to files in the repository. Analysts can easily revert to previous versions/past methodologies, compare changes, and identify the source of any issues. Git best practices (regular commits, useful branch names and commit messages) ensure that analysts can easily track and manage changes, allowing them to focus more on analysis and less on document management.\n\n\n\n\nAudit trails and accountability\n\n\nGit’s commit history and branching system create an audit trail of every change made to a project, and who made it. This audit trail helps analysts demonstrate the evolution of their work, which is essential when justifying decisions, responding to inquiries, or conducting internal reviews. The visible history removes uncertainty and again saves time otherwise spent figuring out what changes others made. Git’s commit messages simplify the process of justifying decisions, responding to inquiries, and conducting internal reviews, streamlining daily tasks. This also aids QA as it links closely to the key outcomes of the DfE QA framework (i.e. analysis is transparent and accountable).\n\n\n\n\nDisaster recovery\n\n\nData loss or file corruption can have severe consequences in the civil service, where data integrity is critical. I’m sure we’ve all had tech-disasters where we’ve lost the files/code scripts we spent the whole day working on! Git repositories can be hosted on remote servers or cloud platforms, ensuring that data is safely stored and backed up. Committing work regularly (every 30 minutes) ensures it never gets lost, as every commit is recoverable. In DfE we use Azure DevOps for internal/sensitive repositories and GitHub for public repositories. This minimizes the risk of data loss due to hardware failures or other unforeseen events, providing peace of mind for analysts and their supervisors, knowing that their work is safeguarded against corruption or unforeseen events.\n\n\n\n\nSkills development\n\n\nGit is a widely used tool in the tech industry and beyond in both public and private sectors. Learning Git not only benefits analysts in their current roles but also enhances their future career prospects. As the civil service increasingly incorporates technology and data-driven approaches, proficiency in Git can open doors to a broader range of opportunities within and outside the government sector.\n\n\n\n\nKnowledge loss & high turnover\n\n\nHigh-turnover rates and knowledge loss are common challenges in the civil service. Git’s audit trails and commit messages serve as a knowledge repository, preserving the history of decisions, methodologies, and changes. When new analysts join the team, this historical context proves invaluable in supporting their onboarding process and reducing the knowledge gap.\n\nIn summary, Git is an essential tool for analysts in the civil service because it facilitates collaborative work, ensures version control, maintains accountability and audit trails, supports disaster recovery, and promotes skill development. Embracing Git as part of their toolkit empowers civil service analysts to work more efficiently, maintain data integrity, and adapt to the evolving demands of the modern public sector.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "ch1-introduction/aims-scope.html",
-    "href": "ch1-introduction/aims-scope.html",
-    "title": "Aims and scope",
-    "section": "",
-    "text": "Aims and scope\nGit Academy is intended to provide a pathway to learning how to use Git and DevOps, starting from beginner level, but with useful jumping in points up to and intermediate level.\nIt isn’t intended to be an exhaustive reference guide, more a development journey with sign-posting to useful resources that can help you pick up both a practical working knowledge of Git alongside a conceptual understanding of what it does and how it works.\nAs with git itself, there’ll be branching off points to explore different subjects so if there’s something specific you want to explore further beyond the basics, you should be able to do that.\nSome of the topics that we deal with are:\n\nthe basics of adding and committing, plus syncing between local and remote repos using push and pull\nusing branches - how to branch, when to branch, how to organise your work, how to merge branches and how to put in a review process using pull requests.\nHow to navigate your history / git tree and undo / revert changes.\nUsing DevOps to manage your workflows and the security of your remote repositories\nAutomating testing and deployments in DevOps\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "ch1-introduction/git-versus-devops.html",
-    "href": "ch1-introduction/git-versus-devops.html",
-    "title": "DfE Git Academy",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
     "objectID": "glossary.html#add",
     "href": "glossary.html#add",
     "title": "Glossary",
@@ -176,14 +50,71 @@
     ]
   },
   {
-    "objectID": "git-refresher/moving-between-branches.html",
-    "href": "git-refresher/moving-between-branches.html",
-    "title": "Moving between branches",
+    "objectID": "ch1-introduction/git-versus-devops.html",
+    "href": "ch1-introduction/git-versus-devops.html",
+    "title": "DfE Git Academy",
     "section": "",
-    "text": "Now that you’ve made and recorded some changes on your working branch and synced them to the remote repo, we can look at how to move between branches and what that looks like in terms of file changes.\nSwitching branches is useful for when we might need to pause our work on one branch and continue working on an issue in another branch. Before you switch branches it is important to commit the changes you made in the branch you’re currently in. It’s also important to pull changes after you switch to your new branch.\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\nFirst you need to update your local repo with the changes made to the remote one. This ensures that you have a full list of remote branches and the latest changes in the code to avoid conflicts.\n\nEnter the command below to update your local repo:\ngit pull\nSwitch to the main branch by using this command:\ngit checkout main\nCheck the “git-academy-log.md” file and you’ll see your edits have disappeared.\nSwitch back to your branch by using this command:\ngit checkout &lt;github_username&gt;/main\nCheck the “git-academy-log.md” file and you’ll see your edits have returned.\n\n\nAlternative method\nYou can also use the git switch command interchangeably with the git checkout command for switching branches.\n\n\n\n\nGo to the right hand side of RStudio and click on the Git tab.\nClick on the downwards arrow to “pull” the latest changes from the remote repo. This ensures that:\n\nyou have a full list of remote branches.\nyou have the latest changes in the code to avoid conflicts.\n\nClick on the drop down menu of branches.\nClick on main\n\n\n\nCheck the “git-academy-log.md” file and you’ll see your edits have disappeared.\nClick on the drop down menu of branches.\nClick on &lt;github_username&gt;/main\n\n\n\nCheck the “git-academy-log.md” file and you’ll see your edits have returned.\n\n\n\n\n\n\n\n\n\n\nClick on the branches drop down menu at the top of the screen.\nClick the Fetch icon to “pull” the latest changes from the remote repo. This ensures that:\n\nyou have a full list of remote branches.\nyou have the latest changes in the code to avoid conflicts.\n\nClick on “Remote” to see the full list of remote branches if you can’t already.\nClick on mainand then click “Checkout”.\n\n\n\nCheck the “git-academy-log.md” file and you’ll see your edits have disappeared.\n\n\n\nClick on the branches drop down menu at the top of the screen.\nClick on &lt;github_username&gt;/main and then click “Checkout”.\nCheck the “git-academy-log.md” file and you’ll see your edits have returned.\n\n\n\n\n\n\n\n Back to top",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "pre-requisites.html",
+    "href": "pre-requisites.html",
+    "title": "Pre-requisities",
+    "section": "",
+    "text": "Download Git from the Git website downloads page. Click the “Download for…” button in the monitor image and this will download the install script.\n\n\n\n\n\n\nTip\n\n\n\nThe install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.",
+    "crumbs": [
+      "Pre-requisities"
+    ]
+  },
+  {
+    "objectID": "pre-requisites.html#git",
+    "href": "pre-requisites.html#git",
+    "title": "Pre-requisities",
+    "section": "",
+    "text": "Download Git from the Git website downloads page. Click the “Download for…” button in the monitor image and this will download the install script.\n\n\n\n\n\n\nTip\n\n\n\nThe install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.",
+    "crumbs": [
+      "Pre-requisities"
+    ]
+  },
+  {
+    "objectID": "pre-requisites.html#github",
+    "href": "pre-requisites.html#github",
+    "title": "Pre-requisities",
+    "section": "GitHub",
+    "text": "GitHub\nYou’ll need a GitHub account to work through the examples used with our git-academy-sandbox repository.\nYou’ll then need to e-mail us with your GitHub username and ask to be added to the Git Academy users team on dfe-analytical services.",
+    "crumbs": [
+      "Pre-requisities"
+    ]
+  },
+  {
+    "objectID": "pre-requisites.html#running-git-commands",
+    "href": "pre-requisites.html#running-git-commands",
+    "title": "Pre-requisities",
+    "section": "Running Git commands",
+    "text": "Running Git commands\nThere are a few options for running Git commands once you’ve installed Git. The panels below give the most commonly used options that we recommend for working through Git Academy.\n\nGit BASHGitHub DesktopIDE Git integration\n\n\nGit BASH is a terminal prompt that you can use to run Git commands. It comes with Git, so you’ll have it as soon as you’ve installed Git. It gives you access to all Git commands as well as other system commands (such as creating files, navigating through your folders, making directories, removing files and many, many other things).\n\n\nIf writing commands into a terminal isn’t your thing, then a good (language-agnostic) alternative to Git BASH is to use the GitHub Desktop application. This can be downloaded from GitHub and provides access to a wide range of Git commands, whilst providing user-friendly views of the tracking status and changes of your files.\n\n\nMost modern IDEs (e.g. VS Code, R-Studio, PyCharm) provide some level of Git integration. IDEs often offer a more limited range of Git commands than Git BASH and GitHub Desktop, but work well for basic Git workflows (such as cloning, tracking changes, creating branches and syncing with your remote repository) and provide enough functionality to follow most of Git Academy without you needing to resort to typing commands into Git BASH.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThere is no single preferred option for running Git commands. Whichever option you find works best for you is fine to use, whether it’s command line based or a graphical user interface. Some will offer additional functionality, but all shuould provide enough functionality for day-to-day tasks.",
+    "crumbs": [
+      "Pre-requisities"
+    ]
+  },
+  {
+    "objectID": "pre-requisites.html#text-editor-or-ide",
+    "href": "pre-requisites.html#text-editor-or-ide",
+    "title": "Pre-requisities",
+    "section": "Text editor or IDE",
+    "text": "Text editor or IDE\nWe’ve tried to keep Git Academy software-agnostic as much as possible, so you should be able to work through most of the material using any text editor or IDE. The main files you’ll need to edit will contain markdown, which you can edit in any of the following (some of which also provide Git integration).\n\nWindows NotepadVS CodeR-StudioPyCharm\n\n\nWindows Notepad and Notepad++ are good to use if you don’t have a preferred language that you’d usually work in such as R or Python. There’s no Git integration though, so you’ll need to use Git BASH or GitHub Desktop to run Git commands.\n\n\nVS Code is a flexible IDE usable with a range of languages and is available for use on DfE systems on request. It provides Git integration along with markdown file rendering (shortcut: Ctrl+K V), so is a great option for working through Git Academy.\n\n\nR-Studio is an R IDE and is available from the DfE Software Centre in Windows. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.\n\n\nPyCharm Community Edition is a Python IDE and is available from the DfE Software Centre. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.",
+    "crumbs": [
+      "Pre-requisities"
+    ]
+  },
+  {
+    "objectID": "git-refresher/clone-a-repo.html",
+    "href": "git-refresher/clone-a-repo.html",
+    "title": "Cloning a repository",
+    "section": "",
+    "text": "To work on the contents of an existing Git repository, the first step will often be to “clone” it to your local working environment (i.e. your laptop!).\n\n\n\n\n\n\nGetting the clone URL\n\n\n\nTo clone a repo, you’ll first need to find the necessary URL.\n\nGo to the git-academy-sandbox repository page on GitHub.\nClick the “Code” button and copy the URL (HTTPS link).\n\n\n\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\nNavigate to the folder on your device where you want to clone the repo. Right-click in the directory and select Git Bash Here.\n\n\n\n\n\n\nIn the Git Bash window that opens, use the `git clone` command followed by the URL you copied from GitHub. For this repo, we would enter:\n\ngit clone https://github.com/dfe-analytical-services/git-academy-sandbox.git\nYou will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.\n\nNavigate into the repo by typing cd git-academy-sandbox and pressing enter.\nYou should now see the current branch name (e.g. main) at the end of the file path as below:\n\n\n\n\n\n\n\nType git log and press enter to view recent commits. Press q when you are ready to exit git log.\nType git status and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven’t made any changes yet).\n\n\n\n\nIn RStudio, go to File &gt; New Project &gt; Version Control &gt; Git.\nPaste the URL you copied from GitHub into the “Repository URL” field.\nChoose a directory on your device where you want to save the repo.\nClick “Create Project”.\n\n\n\n\n\n\nCheck the Files pane in RStudio to see if the repo files have been cloned to your local machine. The files pane normally opens in the right-hand bottom corner of RStudio.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Git basics refresher",
-      "Moving between branches"
+      "Cloning a repository"
     ]
   },
   {
@@ -198,13 +129,14 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "DfE Git Academy",
+    "objectID": "git-refresher/moving-between-branches.html",
+    "href": "git-refresher/moving-between-branches.html",
+    "title": "Moving between branches",
     "section": "",
-    "text": "Welcome to the DfE’s Git Academy. This is a collection of interactive tasks you can work through to help learn and practice using Git. Many use a supporting repository called git-academy-sandbox where you can practice using Git in a contained practice environment.\nYou should be able to follow through tasks in order to jump in at specific jump in points where you feel you need to target your learning.\nThis isn’t aimed at being a comprehensive reference guide however. If you need reference material for using Git in the DfE, then we recommend looking through the Azure DevOps for Analysis guide.\n\n\n\n Back to top",
+    "text": "Now that you’ve made and recorded some changes on your working branch and synced them to the remote repo, we can look at how to move between branches and what that looks like in terms of file changes.\nSwitching branches is useful for when we might need to pause our work on one branch and continue working on an issue in another branch. Before you switch branches it is important to commit the changes you made in the branch you’re currently in. It’s also important to pull changes after you switch to your new branch.\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\nFirst you need to update your local repo with the changes made to the remote one. This ensures that you have a full list of remote branches and the latest changes in the code to avoid conflicts.\n\nEnter the command below to update your local repo:\ngit pull\nSwitch to the main branch by using this command:\ngit checkout main\nCheck the “git-academy-log.md” file and you’ll see your edits have disappeared.\nSwitch back to your branch by using this command:\ngit checkout &lt;github_username&gt;/main\nCheck the “git-academy-log.md” file and you’ll see your edits have returned.\n\n\nAlternative method\nYou can also use the git switch command interchangeably with the git checkout command for switching branches.\n\n\n\n\nGo to the right hand side of RStudio and click on the Git tab.\nClick on the downwards arrow to “pull” the latest changes from the remote repo. This ensures that:\n\nyou have a full list of remote branches.\nyou have the latest changes in the code to avoid conflicts.\n\nClick on the drop down menu of branches.\nClick on main\n\n\n\nCheck the “git-academy-log.md” file and you’ll see your edits have disappeared.\nClick on the drop down menu of branches.\nClick on &lt;github_username&gt;/main\n\n\n\nCheck the “git-academy-log.md” file and you’ll see your edits have returned.\n\n\n\n\n\n\n\n\n\n\nClick on the branches drop down menu at the top of the screen.\nClick the Fetch icon to “pull” the latest changes from the remote repo. This ensures that:\n\nyou have a full list of remote branches.\nyou have the latest changes in the code to avoid conflicts.\n\nClick on “Remote” to see the full list of remote branches if you can’t already.\nClick on mainand then click “Checkout”.\n\n\n\nCheck the “git-academy-log.md” file and you’ll see your edits have disappeared.\n\n\n\nClick on the branches drop down menu at the top of the screen.\nClick on &lt;github_username&gt;/main and then click “Checkout”.\nCheck the “git-academy-log.md” file and you’ll see your edits have returned.\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Welcome"
+      "Git basics refresher",
+      "Moving between branches"
     ]
   },
   {
@@ -219,6 +151,59 @@
     ]
   },
   {
+    "objectID": "github-devops-refresher/navigating-branches.html",
+    "href": "github-devops-refresher/navigating-branches.html",
+    "title": "Navigating branches",
+    "section": "",
+    "text": "To view and switch between the different branches available in a GitHub repository, follow these steps:\n\nNavigate to the repository on GitHub. In this case, Git-academy-sandbox.\nClick on the ‘Branches’ button below the title of the repository as below:\n\n\n\nA list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents. You can search branches using the search box or just see your own, active or stale branches by moving through the tabs.\n\n\n\n\n\n\n\nDefault Branch\n\n\n\nThe default branch is like the main version of your project. It’s usually called main, but sometimes it might have a different name. This is the branch where the latest, most stable version of your project lives. When you want to make changes to code, you usually create your own branch from main.\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "GitHub DevOps basics refresher",
+      "Navigating branches"
+    ]
+  },
+  {
+    "objectID": "git-bash-hints.html",
+    "href": "git-bash-hints.html",
+    "title": "BASH Academy",
+    "section": "",
+    "text": "This page will cover a few useful commands that you can use in Git BASH.\nYou will see many generalised paths, directory names, file names, etc. on this page. For example, you will see something like cd /path_to/working_directory/you_want where you would need to replace the /path_to/working_directory/you_want part with a path that is applicable to your work."
+  },
+  {
+    "objectID": "git-bash-hints.html#checking-and-navigating-directories",
+    "href": "git-bash-hints.html#checking-and-navigating-directories",
+    "title": "BASH Academy",
+    "section": "Checking and Navigating Directories",
+    "text": "Checking and Navigating Directories\nThe commands in this section allow you to check and change your current working directory, moving between different folders in your file system.\n\nChecking directories\npwd: This stands for “print working directory”, so it will show you your current working directory within the terminal.\nYou can use it by entering the following in the terminal:\n\npwd\n\n\n\nChanging directories\ncd: This stands for “change directory”, so it will point to where you want your directory to be.\nIn this section, we will use /home/user/projects/my_project as our path example. Please note that this is just an example path and may not work on your system.\nTo change your working directory, you can use either an absolute or a relative file path. Here’s how you can do it:\n\nUsing an absolute path:\nAn absolute path specifies the full path from the root directory.\n\ncd /home/user/projects/my_project\n\n\n\nUsing a relative path:\nRelative paths specify the path in relation to your current directory, allowing you to navigate efficiently within the file system.\n\nNavigating into a folder:\n\ncd subfolder\n\n\nThis command navigates into a folder named subfolder inside my_project.\nResulting path: /home/user/projects/my_project/subfolder.\n\n\n\nNavigating out of a folder (up one level):\n\ncd ..\n\nThis command moves up one level from my_project to projects. Resulting path: /home/user/projects\n\n\n\n\nAuto complete\nTab completion is a feature that allows you to auto-complete file and directory names by pressing the Tab key. If there are multiple matches, pressing Tab twice will list all possible completions.\n\n\n# Type 'cd /path/to/dir' and press 'Tab' to auto-complete the directory name.\ncd /path/to/dir"
+  },
+  {
+    "objectID": "git-bash-hints.html#viewing-files-and-directories",
+    "href": "git-bash-hints.html#viewing-files-and-directories",
+    "title": "BASH Academy",
+    "section": "Viewing Files and Directories",
+    "text": "Viewing Files and Directories\nThe commands in this section help you list and view the contents of directories, providing detailed information about files and sub-directories.\nls: This stands for “listing”.\nTo list all files or sub-directories, we would type the following in the terminal:\n\nls\n\nTo list all files or sub-directories, including hidden files, we would type the following in the terminal:\n\nls -a\n\nYou can add more options to ls to control how to list files. We can use -ltrh options modify the output of ls:\n\nl: Use a long listing format.\nt: Sort by modification time, newest first.\nr: Reverse the order while sorting.\nh: Display sizes in a human-readable format.\n\nTo list the contents of the specified directory in long format, sorted by modification time (newest last), in reverse order, with human-readable file sizes, we would type the following in the terminal:\n\nls -ltrh /path/to/directory"
+  },
+  {
+    "objectID": "git-bash-hints.html#creating-and-removing-files-and-directories",
+    "href": "git-bash-hints.html#creating-and-removing-files-and-directories",
+    "title": "BASH Academy",
+    "section": "Creating and Removing Files and Directories",
+    "text": "Creating and Removing Files and Directories\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\n\nCreating directories\nThe commands in this section enable you to create new directories, remove files, and delete empty directories.\nmkdir: This stands for “make directory”.\nTo create a directory, we would amend the code below to reflect the new directory name and enter it into the terminal:\n\nmkdir new_directory_name\n\nThis will create a new directory in your current working directory.\n\n\nCreating files\n\necho\nThe echo command is used to display a line of text or a variable value. It can also be used to create files by redirecting the output to a file.\nTo create a file named hello.txt and writes “Hello, World!” into it, we would enter the following in the terminal:\n\necho \"Hello, World!\" &gt; hello.txt\n\nTo append text to an existing file instead of overwriting it, you can use the &gt;&gt; operator:\n\n\necho \"This is additional text.\" &gt;&gt; hello.txt\n\nThis command adds “This is additional text.” to the end of the hello.txt file without overwriting its existing content.\n\n\ntouch\nThe command in this section enables you to create an empty file or update the timestamp of an existing file. We do this by entering the following this command template touch &lt;file_name.extention&gt; where you replace file_name with the name of the file you want to create and extention with the extension for the type of file you want to create.\nFor example, if we want to create a txt type file called example, then we would type the following in the terminal:\n\ntouch example.txt\n\nIf you use the touch command with a file that already exists, then the timestamp for when that file was last modified will be updated to when you executed that command.\nFor example, if I had a file called example.txt that already existed in my directory and its timestamp for when it was last modified was 27/01/2025 at 09:00 AM. Then I used the command touch example.txt on 28/01/2024 at 10:30 AM, the timestamp for that file will be modified to reflect the time I entered the command (28/01/2024 at 10:30 AM).\n\n\n\nRemoving files\nAssuming we’re already in the directory we want, we can remove a file from it by amending the code below to reflect the file name we want to remove, and its extension and then enter it into the terminal:\n\nrm file_name.extention\n\nYou need to make sure to include the extension of the file in the command, or it will not work.\n\n\nRemoving directories\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\nrm: This stands for “remove” and we can use it to remove files and directories.\nTo remove a directory and its contents, we would amend the code below to reflect the path and the directory we want and enter it into the terminal:\n\n\n\n\n\n\nUsing recursive mode\n\n\n\nBe cautious when using the rm -r command in Git Bash, as it recursively deletes the specified directory and all its contents. This action is irreversible, so double-check the directory path to avoid accidentally deleting important files or directories.\n\n\n\nrm -r path_to_the_directory/directory_name"
+  },
+  {
+    "objectID": "git-bash-hints.html#viewing-file-contents",
+    "href": "git-bash-hints.html#viewing-file-contents",
+    "title": "BASH Academy",
+    "section": "Viewing File Contents",
+    "text": "Viewing File Contents\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\nThe commands in this section allow you to display the contents of files, either in full or in parts, for easy reading and inspection.\nTo display the first 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:\n\nhead file_name.extention\n\nYou can also customise the number of lines you want to view by adding -number of lines after head. For example, if we want to view the first 12 lines of a file, we use:\n\nhead -12 file_name.extention\n\nTo display the bottom 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:\n\ntail file_name.extention\n\nYou can also customise the number of lines you want to view by adding -number of lines after tail. For example, if we want to view the last 3 lines of a file, we use:\n\ntail -3 file_name.extention\n\nTo display the contents of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:\n\ncat file_name.extention"
+  },
+  {
+    "objectID": "git-bash-hints.html#searching-and-finding-files",
+    "href": "git-bash-hints.html#searching-and-finding-files",
+    "title": "BASH Academy",
+    "section": "Searching and Finding Files",
+    "text": "Searching and Finding Files\n\nFinding files by patterns\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\nYou can look for files in your repository that match a certain pattern by using git grep. We would amend the code below by replacing \"pattern\" with the term or pattern we want to search for in files.\n\ngrep \"pattern\" filename\n\nYou can utilise all of regex’s capabilities to locate precisely what you’re looking for because regular expressions are supported.\n\n\nFinding files by name of file type\nThe find command is used to search for files and directories within a directory hierarchy.\nThis command searches for all .txt files within the specified directory and its subdirectories.\n\nfind . -name \"*.txt\""
+  },
+  {
     "objectID": "github-devops-refresher/viewing-history.html",
     "href": "github-devops-refresher/viewing-history.html",
     "title": "Viewing the history",
@@ -228,5 +213,62 @@
       "GitHub DevOps basics refresher",
       "Viewing the history"
     ]
+  },
+  {
+    "objectID": "github-devops-refresher/viewing-files.html",
+    "href": "github-devops-refresher/viewing-files.html",
+    "title": "Viewing files",
+    "section": "",
+    "text": "To view a file on your repo:\n\nEnsure you are still on the GitHub site for the github-sandbox repository.\nNavigate to the ‘code’ tab at the top of the page.\n\n\n\nFind and select the branch you previously created i.e. &lt;github_id&gt;/main. You can do this by clicking on the branches button and selecting your branch, or using the branch drop-down as below to click on your branch:\n\n\n\nOnce you have selected your branch, the drop-down will change to show your branch name as below:\n\n\n\nClick on a file to view the most up-to-date synced code for the branch you have selected.\nOnce you have clicked on a file, you can navigate through different files, change branches or search for a file using Files pane.\n\n\n\nEach file will have a sub-set of the following views available to select above it: preview, code and blame. You will need to switch to the code view to see and edit the raw contents of the file. The preview view will show you a preview for supported files like Markdown and Quarto and the blame view shows line by line revision history, tracking who made each change and when.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "GitHub DevOps basics refresher",
+      "Viewing files"
+    ]
+  },
+  {
+    "objectID": "git-refresher/recording-changes.html",
+    "href": "git-refresher/recording-changes.html",
+    "title": "Recording changes (add and commit)",
+    "section": "",
+    "text": "This section will guide you through recording changes you make to your repo through the process of adding and staging files.\nThese steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.\nHaving created your own branch, follow the instructions below to make and record changes in your repo.\n\n\n\n\n\n\nEdit your git-academy-log file\n\n\n\n\nPut an x inside the brackets for the “Clone git-academy-sandbox” and “Create a new branch in GitHub (&lt;github_username&gt;/main)”.\nSave the file.\n\n\n\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\n\nCheck which files have changed by entering this command in Git Bash:\ngit status\nStage the changes you want to commit by using one of the commands below.\n\nTo add changes to one file at a time:\ngit add git-academy-log.md\n\nOR\n\nTo add all changes:\ngit add .\n\nCommit changes with a message by entering:\ngit commit -m \"Checked clone sandbox and make new branch tasks\"\n\n\n\n\nIn the Git panel of RStudio (see image below), tick the files you want to record the changes for.\nClick the commit button. It has a tick mark on two sheets of paper.\n\n\n\nWrite a short message to describe the changes you made.\nClick “Commit”.\n\n\nNote that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.\n\n\n\n\n\n\n\n\n\nClick on the branches drop down menu at the top of the screen and click “Commit”.\n\nOR\n\nClick on the symbol that shows a circle flanked by two lines in the sidebar as shown in the image below.\n\n\n\n\n\n\n\nIn the “Commit” pop up window, tick the files you wish to record changes for if they’re not already ticked.\nWrite a short message to describe the changes you made.\nClick “Commit”.\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Git basics refresher",
+      "Recording changes (add and commit)"
+    ]
+  },
+  {
+    "objectID": "git-refresher/making-a-branch.html",
+    "href": "git-refresher/making-a-branch.html",
+    "title": "Making a new branch",
+    "section": "",
+    "text": "In a Git repository, different versions of work are controlled by using what are called “branches”. Edits can be made to files on a branch and those will not effect files on any other branch.\nMost repositories will have a “main” branch. This is considered the central latest working version of your work. When editing work, we generally don’t make edits directly on the main branch. Instead we create specific branches for specific chunks of work.\nHaving cloned the git-academy-sandbox repository, now make a new branch to work in.\n\nGit BashRStudioGitHub DesktopVS CodePyCharm\n\n\nReplace &lt;github_id&gt; in the below with your GitHub username to make your own personal main branch in the sandbox repository.\ngit checkout -b &lt;github_username&gt;/main\n\n\nIn the Git panel, click the purple new branch symbol  as circled in the screenshot below.\nThen enter your branch name as &lt;github_username&gt;/main (but replacing  with your own GitHub username, e.g. jsmith_main)\n\n\n\nCreating a new branch in RStudio\n\n\n\n\nClick Branch in the menu bar and then select New branch… as shown in the screenshot below.\nThen enter your branch name as &lt;github_username&gt;/main (but replacing  with your own GitHub username, e.g. jsmith_main)\n\n\n\nCreating a new branch in GitHub Desktop\n\n\n\n\nThe current branch (main) should be listed in the very bottom left hand corner of the VS Code window frame. If you left click on this, you should then see a menu appear at the top of the VS Code window with some branch options (as shown in the screen shot below).\nClick + Create new branch… and then enter your branch name as &lt;github_username&gt;/main (but replacing  with your own GitHub username, e.g. jsmith_main).\nYou should now see the branch name listed in the bottom left of the window frame shown as the branch you just created, meaning any changes you currently make will be applied to that new branch (and not main).\n\n\n\nCreating a new branch in VS Code\n\n\n\n\nOpen up the Git panel in PyCharm and you should see something like the screenshot below. Right click on main and select New branch from ‘origin/main’….\nThen enter your branch name as &lt;github_username&gt;/main (but replacing  with your own GitHub username, e.g. jsmith_main).\n\n\n\nCreating a new branch in PyCharm\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Git basics refresher",
+      "Making a new branch"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DfE Git Academy",
+    "section": "",
+    "text": "Welcome to the DfE’s Git Academy. This is a collection of interactive tasks you can work through to help learn and practice using Git. Many use a supporting repository called git-academy-sandbox where you can practice using Git in a contained practice environment.\nYou should be able to follow through tasks in order to jump in at specific jump in points where you feel you need to target your learning.\nThis isn’t aimed at being a comprehensive reference guide however. If you need reference material for using Git in the DfE, then we recommend looking through the Azure DevOps for Analysis guide.\n\n\n\n Back to top",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "ch1-introduction/why-use-git.html",
+    "href": "ch1-introduction/why-use-git.html",
+    "title": "Why is Git important?",
+    "section": "",
+    "text": "Why is Git important?\nGit is a software that offers a comprehensive solution for collaborative work, version control, accountability, disaster recovery, and knowledge retention. Using Git strengthens QA practices and ensures you’re working in line with RAP principles. Here’s why Git holds particular importance for analysts in the civil service:\n\n\n\nCollaboration\n\n\nGit enables collaboration by allowing team members to work on the same project simultaneously from any location. It tracks changes made by each contributor, highlighting ‘conflicts’, before merging contributions into one final product. The ability to work on multiple branches simultaneously saves analysts time (no waiting for colleagues to finish one part before moving on). Cloud-hosted repositories also enable other analysts to view your code (with the correct permissions), enabling knowledge-sharing and transparency. Git’s collaborative features and online repository platforms enable automated checks and QA through pull requests/peer reviews, supporting compliance with the code of practice.\n\n\n\n\nExperiment\n\n\nGit’s ‘branching’ system creates parallel versions of projects, allowing analysts to experiment, try different approaches, or add potential new features without fear of breaking anything on the ‘main branch’.\n\n\n\n\nVersion control\n\n\nGit provides a version control system that keeps a historical record of all changes made to files in the repository. Analysts can easily revert to previous versions/past methodologies, compare changes, and identify the source of any issues. Git best practices (regular commits, useful branch names and commit messages) ensure that analysts can easily track and manage changes, allowing them to focus more on analysis and less on document management.\n\n\n\n\nAudit trails and accountability\n\n\nGit’s commit history and branching system create an audit trail of every change made to a project, and who made it. This audit trail helps analysts demonstrate the evolution of their work, which is essential when justifying decisions, responding to inquiries, or conducting internal reviews. The visible history removes uncertainty and again saves time otherwise spent figuring out what changes others made. Git’s commit messages simplify the process of justifying decisions, responding to inquiries, and conducting internal reviews, streamlining daily tasks. This also aids QA as it links closely to the key outcomes of the DfE QA framework (i.e. analysis is transparent and accountable).\n\n\n\n\nDisaster recovery\n\n\nData loss or file corruption can have severe consequences in the civil service, where data integrity is critical. I’m sure we’ve all had tech-disasters where we’ve lost the files/code scripts we spent the whole day working on! Git repositories can be hosted on remote servers or cloud platforms, ensuring that data is safely stored and backed up. Committing work regularly (every 30 minutes) ensures it never gets lost, as every commit is recoverable. In DfE we use Azure DevOps for internal/sensitive repositories and GitHub for public repositories. This minimizes the risk of data loss due to hardware failures or other unforeseen events, providing peace of mind for analysts and their supervisors, knowing that their work is safeguarded against corruption or unforeseen events.\n\n\n\n\nSkills development\n\n\nGit is a widely used tool in the tech industry and beyond in both public and private sectors. Learning Git not only benefits analysts in their current roles but also enhances their future career prospects. As the civil service increasingly incorporates technology and data-driven approaches, proficiency in Git can open doors to a broader range of opportunities within and outside the government sector.\n\n\n\n\nKnowledge loss & high turnover\n\n\nHigh-turnover rates and knowledge loss are common challenges in the civil service. Git’s audit trails and commit messages serve as a knowledge repository, preserving the history of decisions, methodologies, and changes. When new analysts join the team, this historical context proves invaluable in supporting their onboarding process and reducing the knowledge gap.\n\nIn summary, Git is an essential tool for analysts in the civil service because it facilitates collaborative work, ensures version control, maintains accountability and audit trails, supports disaster recovery, and promotes skill development. Embracing Git as part of their toolkit empowers civil service analysts to work more efficiently, maintain data integrity, and adapt to the evolving demands of the modern public sector.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "ch1-introduction/aims-scope.html",
+    "href": "ch1-introduction/aims-scope.html",
+    "title": "Aims and scope",
+    "section": "",
+    "text": "Aims and scope\nGit Academy is intended to provide a pathway to learning how to use Git and DevOps, starting from beginner level, but with useful jumping in points up to and intermediate level.\nIt isn’t intended to be an exhaustive reference guide, more a development journey with sign-posting to useful resources that can help you pick up both a practical working knowledge of Git alongside a conceptual understanding of what it does and how it works.\nAs with git itself, there’ll be branching off points to explore different subjects so if there’s something specific you want to explore further beyond the basics, you should be able to do that.\nSome of the topics that we deal with are:\n\nthe basics of adding and committing, plus syncing between local and remote repos using push and pull\nusing branches - how to branch, when to branch, how to organise your work, how to merge branches and how to put in a review process using pull requests.\nHow to navigate your history / git tree and undo / revert changes.\nUsing DevOps to manage your workflows and the security of your remote repositories\nAutomating testing and deployments in DevOps\n\n\n\n\n\n Back to top"
   }
 ]
