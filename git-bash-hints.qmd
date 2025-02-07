@@ -268,7 +268,6 @@ To display the contents of a file, we would amend the code below to reflect the 
 
 ```{bash }
 cat file_name.extention
-
 ```
 
 ## Searching and Finding Files
