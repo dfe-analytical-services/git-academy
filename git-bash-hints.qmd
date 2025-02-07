@@ -135,7 +135,6 @@ The commands in this section enable you to create new directories, remove files,
 To create a directory, we would amend the code below to reflect the new directory name and enter it into the terminal:
 
 ```{bash }
-
 mkdir new_directory_name
 
 ```
