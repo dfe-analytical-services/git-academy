@@ -22,7 +22,7 @@ Cloning a repository is the process of creating a copy of a repository folder sy
 
 ## Pull
 
-Pulling updates your current local working branch with any changes from the remote branch. You should pull every day that you interact with a repository, at the minimum. 
+Performing a "pull" updates your current local working branch with any changes from the remote branch. If you're working with other people on a project, you should pull every day that you interact with a repository, at the minimum.
 
 ## Pull request 
 
