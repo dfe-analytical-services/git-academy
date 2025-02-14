@@ -1,0 +1,65 @@
+--- 
+title: "Creating pull requests"
+---
+
+::: callout-information
+You will need two branches to merge to be able to create a pull request. If you haven't already, follow the steps in [making a branch](../git-refresher/making-a-branch.qmd), [recording changes](../git-refresher/recording-changes.qmd) and [create more branches](../git-refresher/making-more-branches.qmd) to be able to create and complete a mock pull request 
+:::
+
+A [pull request](../glossary.html#pull_request)  allows you to notify your team about changes you've committed and pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add any necessary follow-up commits before the changes are merged into the main branch.
+
+Now you have made changes in your [development branch](making-a-development-branch), we will practice this by merging the changes into your main branch using a pull request.
+
+## Creating pull requests
+
+Once you have made all the changes you want to include in this batch of work, you'll bundle all of your commits together into a pull request for review.
+
+::: {.callout-note}
+Before attempting to create your pull request, make sure to have pushed any changes on the branches involved to the remote repo on GitHub
+:::
+
+::: panel-tabset
+## Git Bash
+
+Create your pull request, adding a title and a description of your changes 
+
+``` bash
+gh pr create --base <github_id>/main --head <github_id>/development --title "Update to log book" --body "Updating logbook to reflect completing the development branch task."
+```
+
+## GitHub Website
+
+1. Go to the [git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox) repository page on GitHub.
+
+2. Navigate to the Pull requests tab underneath the repository title. 
+![](images/pull_requests_tab.png){fig-alt="Higlighting the Pull requests tab on GitHub."}
+
+3. Open a pull request by clicking the "New pull request" button.
+
+4. Ensure the base branch is set to your own main branch (<github_username>/main)  and the compare branch is set to your development branch (<github_username>/development).
+
+![](images/pull_request_branch_selection.png){fig-alt="Higlighting where to change the base and compare branches once you have pressed the 'create a pull request' button on GitHub."}
+
+
+5. Create Pull Request: Click the "Create pull request" button. Add a title and description for your pull request. You may wish to explain what changes and been made, and why. 
+
+6. You don't need to add any reviewers in this training, but please do take a moment to notice where you can add team mates to review your pull requests in your own work to the right of the description. Any reviewers you add will be notified by email that there is a pull request for them to review.
+
+7. Once you are happy with your title and description, click 'Create pull request' to confirm. 
+
+8. You will then want to check whether there are any merge conflicts. If there are merge conflicts, they will need resolving before you are able to complete your pull request. 
+
+## GitHub Desktop
+
+1. Ensure you are on the development branch. 
+
+2. Click on the 'Branch' menu and 'Create pull request' 
+
+3. Click 'open in browser'. This will open GitHub in your web browser with the pull request form pre-filled. 
+
+4. Add a title and description for you pull request and then click 'Create pull request' 
+
+## VS Code 
+
+## PyCharm 
+::: 

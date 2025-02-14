@@ -1,8 +1,8 @@
 ---
-title: "Recording changes (add and commit)"
+title: "Recording changes (add, commit and push)"
 ---
 
-This section will guide you through recording changes you make to your repo through the process of [**adding**](../glossary.html#add) and [**staging**](../glossary.html#stage) files.
+This section will guide you through recording changes you make to your repo through the process of [**adding**](../glossary.html#add), [**staging**](../glossary.html#stage) and [**pushing**](../glossary.html#push) files. 
 
 These steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.
 
@@ -38,6 +38,10 @@ Having [created your own branch](making-a-branch.html), follow the instructions 
 -   Commit changes with a message by entering:
 
     `git commit -m "Checked clone sandbox and make new branch tasks"`
+    
+- Push the changes to the remote repository 
+       `git push origin <github_username>/main`
+
 
 ## RStudio
 
@@ -53,6 +57,8 @@ Having [created your own branch](making-a-branch.html), follow the instructions 
 ![](images/r_commit_msg.png){fig-alt="Highlighting the commit message section and the Commit button in the RStudio: Review Changes pop up window that appears after completeing the last step."}
 
 Note that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.
+
+- Then either push up your changes to the remote directly from the commit box using the green 'push' upwards arrow in the top right corner, or close the box and push using the 'push' green arrow in the Git window. 
 
 ## GitHub Desktop
 
@@ -75,4 +81,7 @@ OR
 -   Click "Commit".
 
 ![](images/pycharm_commit_msg.png){fig-alt="Highlighting the commit message section and the Commit button in the Commit pop up window that appears after completeing the last step."}
+
+-   Push the committed changes to the remote repository by clicking the "Push" button in the top-right corner of the PyCharm window.
+
 :::

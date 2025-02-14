@@ -20,9 +20,21 @@ Committing is where you record changes in the Git history. This is one of the mo
 
 Cloning a repository is the process of creating a copy of a repository folder system on your local working environment (e.g. your laptop computer).
 
+## Pull
+
+Performing a "pull" updates your current local working branch with any changes from the remote branch. If you're working with other people on a project, you should pull every day that you interact with a repository, at the minimum.
+
+## Pull request 
+
+A pull request is a method used in Git to propose changes to a branch. It allows collaborators to review and discuss changes before merging into the main branch. 
+
+## Push
+
+Pushing is the process of updating the remote branch with local commits. 
+
 ## Repository
 
-A repository (or repo) is effectively a project folder. A given repostory would usually contain all the work for a specific project (e.g. a data pipeline, an R-Shiny app, etc).
+A repository (or repo) is effectively a project folder. A given repository would usually contain all the work for a specific project (e.g. a data pipeline, an R-Shiny app, etc).
 
 ## Stage
 

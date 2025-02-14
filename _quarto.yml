@@ -52,7 +52,7 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - href: pre-requisites.qmd
+      - href: prerequisites.qmd
       - section: "Git basics refresher"
         contents:
           - git-refresher/clone-a-repo.qmd
@@ -60,12 +60,16 @@ website:
           - git-refresher/recording-changes.qmd
           - git-refresher/syncing-changes-to-remote.qmd
           - git-refresher/moving-between-branches.qmd
+          - git-refresher/making-more-branches.qmd
+    
       - section: "GitHub DevOps basics refresher"
         contents:
           - github-devops-refresher/navigating-branches.qmd
           - github-devops-refresher/viewing-files.qmd
           - github-devops-refresher/editing-files.qmd
           - github-devops-refresher/viewing-history.qmd
+          - github-devops-refresher/pull-requests.qmd
+          - github-devops-refresher/reviewing-pull-requests.qmd
       - glossary.qmd
 
 format:
