@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Recording changes (add, commit and push) – DfE Git Academy</title>
+<title>Reviewing pull requests – DfE Git Academy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../git-refresher/syncing-changes-to-remote.html" rel="next">
-<link href="../git-refresher/making-a-branch.html" rel="prev">
+<link href="../glossary.html" rel="next">
+<link href="../github-devops-refresher/pull-requests.html" rel="prev">
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -110,7 +110,7 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/recording-changes.html">Recording changes (add, commit and push)</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github-devops-refresher/navigating-branches.html">GitHub DevOps basics refresher</a></li><li class="breadcrumb-item"><a href="../github-devops-refresher/reviewing-pull-requests.html">Reviewing pull requests</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -183,13 +183,13 @@ cookieconsent.run({
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Git basics refresher</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/clone-a-repo.html" class="sidebar-item-text sidebar-link">
@@ -204,7 +204,7 @@ cookieconsent.run({
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link active">
+  <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Recording changes (add, commit and push)</span></a>
   </div>
 </li>
@@ -230,13 +230,13 @@ cookieconsent.run({
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">GitHub DevOps basics refresher</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github-devops-refresher/navigating-branches.html" class="sidebar-item-text sidebar-link">
@@ -269,7 +269,7 @@ cookieconsent.run({
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../github-devops-refresher/reviewing-pull-requests.html" class="sidebar-item-text sidebar-link">
+  <a href="../github-devops-refresher/reviewing-pull-requests.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Reviewing pull requests</span></a>
   </div>
 </li>
@@ -286,15 +286,21 @@ cookieconsent.run({
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#github-website" id="toc-github-website" class="nav-link active" data-scroll-target="#github-website">GitHub Website</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/github-devops-refresher/reviewing-pull-requests.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/recording-changes.html">Recording changes (add, commit and push)</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github-devops-refresher/navigating-branches.html">GitHub DevOps basics refresher</a></li><li class="breadcrumb-item"><a href="../github-devops-refresher/reviewing-pull-requests.html">Reviewing pull requests</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Recording changes (add, commit and push)</h1>
+<h1 class="title">Reviewing pull requests</h1>
 </div>
 
 
@@ -311,96 +317,31 @@ cookieconsent.run({
 </header>
 
 
-<p>This section will guide you through recording changes you make to your repo through the process of <a href="../glossary.html#add"><strong>adding</strong></a>, <a href="../glossary.html#stage"><strong>staging</strong></a> and <a href="../glossary.html#push"><strong>pushing</strong></a> files.</p>
-<p>These steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.</p>
-<p>Having <a href="making-a-branch.html">created your own branch</a>, follow the instructions below to make and record changes in your repo.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Edit your git-academy-log file
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><p>Put an x inside the brackets for the “Clone git-academy-sandbox” and “Create a new branch in GitHub (&lt;github_username&gt;/main)”.</p></li>
-<li><p>Save the file.</p></li>
-</ul>
-</div>
-</div>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ul>
-<li><p>Check which files have changed by entering this command in Git Bash:</p>
-<p><code>git status</code></p></li>
-<li><p>Stage the changes you want to commit by using one of the commands below.</p>
-<ul>
-<li><p>To add changes to one file at a time:</p>
-<p><code>git add git-academy-log.md</code></p></li>
-</ul>
-<p>OR</p>
-<ul>
-<li><p>To add all changes:</p>
-<p><code>git add .</code></p></li>
-</ul></li>
-<li><p>Commit changes with a message by entering:</p>
-<p><code>git commit -m "Checked clone sandbox and make new branch tasks"</code></p></li>
-<li><p>Push the changes to the remote repository <code>git push origin &lt;github_username&gt;/main</code></p></li>
-</ul>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<ul>
-<li>In the Git panel of RStudio (see image below), tick the files you want to record the changes for.</li>
-<li>Click the commit button. It has a tick mark on two sheets of paper.</li>
-</ul>
-<p><img src="images/r_commit.png" class="img-fluid" alt="Higlighting the Commit button and an example of ticking changes in the Git panel in RStudio."></p>
-<ul>
-<li><p>Write a short message to describe the changes you made.</p></li>
-<li><p>Click “Commit”.</p></li>
-</ul>
-<p><img src="images/r_commit_msg.png" class="img-fluid" alt="Highlighting the commit message section and the Commit button in the RStudio: Review Changes pop up window that appears after completeing the last step."></p>
-<p>Note that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.</p>
-<ul>
-<li>Then either push up your changes to the remote directly from the commit box using the green ‘push’ upwards arrow in the top right corner, or close the box and push using the ‘push’ green arrow in the Git window.</li>
-</ul>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-
-</div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-<ul>
-<li>Click on the branches drop down menu at the top of the screen and click “Commit”.</li>
-</ul>
-<p>OR</p>
-<ul>
-<li>Click on the symbol that shows a circle flanked by two lines in the sidebar as shown in the image below.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pycharm_commit.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:66.0%" alt="Highlighting the two ways to open the commit window."></p>
-</figure>
-</div>
-<ul>
-<li><p>In the “Commit” pop up window, tick the files you wish to record changes for if they’re not already ticked.</p></li>
-<li><p>Write a short message to describe the changes you made.</p></li>
-<li><p>Click “Commit”.</p></li>
-</ul>
-<p><img src="images/pycharm_commit_msg.png" class="img-fluid" alt="Highlighting the commit message section and the Commit button in the Commit pop up window that appears after completeing the last step."></p>
-<ul>
-<li>Push the committed changes to the remote repository by clicking the “Push” button in the top-right corner of the PyCharm window.</li>
-</ul>
-</div>
-</div>
-</div>
+<p>When a pull request is created, it’s important to review the changes carefully. This process helps ensure that the code meets the project’s standards and doesn’t introduce any new issues. During the review, you can discuss the changes with the author, suggest improvements, and request additional commits if necessary.</p>
+<p>We will practice this by reviewing the pull request you have just made in <a href="../github-devops-refresher/pull-requests.html">creating pull requests</a>.</p>
+<section id="github-website" class="level3">
+<h3 class="anchored" data-anchor-id="github-website">GitHub Website</h3>
+<ol type="1">
+<li><p>Go back to the <a href="https://github.com/dfe-analytical-services/git-academy-sandbox">git-academy-sandbox</a> repository overview page on GitHub, as if you have just come to find the pull request your colleague has asked you to review.</p></li>
+<li><p>Navigate to the ‘Pull requests’ tab.</p></li>
+<li><p>Click on the pull request you want to review, in this case the one you created above.</p></li>
+</ol>
+<p><img src="images/pull-request-in-GitHub.png" class="img-fluid" alt="Higlighting where open pull requests show in GitHub once the Pull request tab has been opened."></p>
+<ol start="4" type="1">
+<li>Review the changes by looking at the “Files changed” tab. You can see a side-by-side comparison of the changes made. Add comments by clicking the “+” icon next to the lines of code you want to comment on.</li>
+</ol>
+<p><img src="images/pull-request-files-changed.png" class="img-fluid" alt="Higlighting where to view comparison of changes made and make comments on a pull request."></p>
+<ol start="5" type="1">
+<li><p>When reviewing pull requests, you may also wish to view changes locally to check the code runs and view any outputs.You can do this by pulling and changing to the branch that is being requested to be merged in.</p></li>
+<li><p>Once you have reviewed the changes, you can leave general feedback, approve or request changes by clicking the ‘review changes’ button.</p></li>
+</ol>
+<p><img src="images/pull-request-review.png" class="img-fluid" alt="Higlighting where to provide general feedback, request changes or approve on a pull request."></p>
+<ol start="7" type="1">
+<li>Once you are happy with the changes, you should approve the pull request. The person who created the request will then get an email letting them know their changes have been approved. It can also be helpful to send them a direct message to let them know you have reviewed their PR! They can then go back and complete the request.</li>
+</ol>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -966,13 +907,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../git-refresher/making-a-branch.html" class="pagination-link" aria-label="Making a new branch">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Making a new branch</span>
+      <a href="../github-devops-refresher/pull-requests.html" class="pagination-link" aria-label="Creating pull requests">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Creating pull requests</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../git-refresher/syncing-changes-to-remote.html" class="pagination-link" aria-label="Syncing to the remote">
-        <span class="nav-page-text">Syncing to the remote</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../glossary.html" class="pagination-link" aria-label="Glossary">
+        <span class="nav-page-text">Glossary</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -984,7 +925,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 
-<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/git-refresher/recording-changes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/github-devops-refresher/reviewing-pull-requests.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
 <p>This page is maintained by statistics.development@education.gov.uk</p>
 </div>

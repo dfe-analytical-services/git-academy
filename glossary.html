@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./github-devops-refresher/viewing-history.html" rel="prev">
+<link href="./github-devops-refresher/reviewing-pull-requests.html" rel="prev">
 <script src="site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -41,8 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8eef5ae80df721a84869b784b4d5419f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-64e743cfa10eeafb681104b5b1345220.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-f017da41ecac3dd26735ed108bef753c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-146c3522f2790d7af7b5b1edaaa2bbf2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b58da7d297b987fcb4e50ef22033e264.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -176,8 +176,8 @@ cookieconsent.run({
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pre-requisites.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pre-requisities</span></a>
+  <a href="./prerequisites.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prerequisites</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -204,7 +204,7 @@ cookieconsent.run({
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Recording changes (add and commit)</span></a>
+ <span class="menu-text">Recording changes (add, commit and push)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -217,6 +217,12 @@ cookieconsent.run({
   <div class="sidebar-item-container"> 
   <a href="./git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Moving between branches</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./git-refresher/making-more-branches.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Making more branches</span></a>
   </div>
 </li>
       </ul>
@@ -254,6 +260,18 @@ cookieconsent.run({
  <span class="menu-text">Viewing the history</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./github-devops-refresher/pull-requests.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Creating pull requests</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./github-devops-refresher/reviewing-pull-requests.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reviewing pull requests</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -275,6 +293,9 @@ cookieconsent.run({
   <li><a href="#add" id="toc-add" class="nav-link active" data-scroll-target="#add">Add</a></li>
   <li><a href="#commit" id="toc-commit" class="nav-link" data-scroll-target="#commit">Commit</a></li>
   <li><a href="#clone" id="toc-clone" class="nav-link" data-scroll-target="#clone">Clone</a></li>
+  <li><a href="#pull" id="toc-pull" class="nav-link" data-scroll-target="#pull">Pull</a></li>
+  <li><a href="#pull-request" id="toc-pull-request" class="nav-link" data-scroll-target="#pull-request">Pull request</a></li>
+  <li><a href="#push" id="toc-push" class="nav-link" data-scroll-target="#push">Push</a></li>
   <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository</a></li>
   <li><a href="#stage" id="toc-stage" class="nav-link" data-scroll-target="#stage">Stage</a></li>
   </ul>
@@ -328,9 +349,21 @@ Tip
 <h2 class="anchored" data-anchor-id="clone">Clone</h2>
 <p>Cloning a repository is the process of creating a copy of a repository folder system on your local working environment (e.g.&nbsp;your laptop computer).</p>
 </section>
+<section id="pull" class="level2">
+<h2 class="anchored" data-anchor-id="pull">Pull</h2>
+<p>Performing a “pull” updates your current local working branch with any changes from the remote branch. If you’re working with other people on a project, you should pull every day that you interact with a repository, at the minimum.</p>
+</section>
+<section id="pull-request" class="level2">
+<h2 class="anchored" data-anchor-id="pull-request">Pull request</h2>
+<p>A pull request is a method used in Git to propose changes to a branch. It allows collaborators to review and discuss changes before merging into the main branch.</p>
+</section>
+<section id="push" class="level2">
+<h2 class="anchored" data-anchor-id="push">Push</h2>
+<p>Pushing is the process of updating the remote branch with local commits.</p>
+</section>
 <section id="repository" class="level2">
 <h2 class="anchored" data-anchor-id="repository">Repository</h2>
-<p>A repository (or repo) is effectively a project folder. A given repostory would usually contain all the work for a specific project (e.g.&nbsp;a data pipeline, an R-Shiny app, etc).</p>
+<p>A repository (or repo) is effectively a project folder. A given repository would usually contain all the work for a specific project (e.g.&nbsp;a data pipeline, an R-Shiny app, etc).</p>
 </section>
 <section id="stage" class="level2">
 <h2 class="anchored" data-anchor-id="stage">Stage</h2>
@@ -916,8 +949,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./github-devops-refresher/viewing-history.html" class="pagination-link" aria-label="Viewing the history">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Viewing the history</span>
+      <a href="./github-devops-refresher/reviewing-pull-requests.html" class="pagination-link" aria-label="Reviewing pull requests">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Reviewing pull requests</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

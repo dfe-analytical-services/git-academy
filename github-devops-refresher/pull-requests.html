@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pre-requisities – DfE Git Academy</title>
+<title>Creating pull requests – DfE Git Academy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,30 +20,64 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./git-refresher/clone-a-repo.html" rel="next">
-<link href="./index.html" rel="prev">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-8eef5ae80df721a84869b784b4d5419f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8eef5ae80df721a84869b784b4d5419f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-64e743cfa10eeafb681104b5b1345220.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-f017da41ecac3dd26735ed108bef753c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../github-devops-refresher/reviewing-pull-requests.html" rel="next">
+<link href="../github-devops-refresher/viewing-history.html" rel="prev">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8eef5ae80df721a84869b784b4d5419f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8eef5ae80df721a84869b784b4d5419f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-146c3522f2790d7af7b5b1edaaa2bbf2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-b58da7d297b987fcb4e50ef22033e264.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -110,7 +144,7 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pre-requisites.html">Pre-requisities</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github-devops-refresher/navigating-branches.html">GitHub DevOps basics refresher</a></li><li class="breadcrumb-item"><a href="../github-devops-refresher/pull-requests.html">Creating pull requests</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,7 +159,7 @@ cookieconsent.run({
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">DfE Git Academy</a> 
+      <a href="../">DfE Git Academy</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="mailto:statistics.development@education.gov.uk" title="Email us" class="quarto-navigation-tool px-1" aria-label="Email us"><i class="bi bi-envelope"></i></a>
     <div class="dropdown">
@@ -171,14 +205,14 @@ cookieconsent.run({
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pre-requisites.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Pre-requisities</span></a>
+  <a href="../prerequisites.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prerequisites</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -192,74 +226,92 @@ cookieconsent.run({
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./git-refresher/clone-a-repo.html" class="sidebar-item-text sidebar-link">
+  <a href="../git-refresher/clone-a-repo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cloning a repository</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./git-refresher/making-a-branch.html" class="sidebar-item-text sidebar-link">
+  <a href="../git-refresher/making-a-branch.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Making a new branch</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Recording changes (add and commit)</span></a>
+  <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recording changes (add, commit and push)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./git-refresher/syncing-changes-to-remote.html" class="sidebar-item-text sidebar-link">
+  <a href="../git-refresher/syncing-changes-to-remote.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syncing to the remote</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
+  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Moving between branches</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git-refresher/making-more-branches.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Making more branches</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">GitHub DevOps basics refresher</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-devops-refresher/navigating-branches.html" class="sidebar-item-text sidebar-link">
+  <a href="../github-devops-refresher/navigating-branches.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Navigating branches</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-devops-refresher/viewing-files.html" class="sidebar-item-text sidebar-link">
+  <a href="../github-devops-refresher/viewing-files.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Viewing files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-devops-refresher/editing-files.html" class="sidebar-item-text sidebar-link">
+  <a href="../github-devops-refresher/editing-files.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Editing files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-devops-refresher/viewing-history.html" class="sidebar-item-text sidebar-link">
+  <a href="../github-devops-refresher/viewing-history.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Viewing the history</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../github-devops-refresher/pull-requests.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Creating pull requests</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../github-devops-refresher/reviewing-pull-requests.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reviewing pull requests</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+  <a href="../glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
   </div>
 </li>
@@ -273,19 +325,16 @@ cookieconsent.run({
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#git" id="toc-git" class="nav-link active" data-scroll-target="#git">Git</a></li>
-  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a></li>
-  <li><a href="#running-git-commands" id="toc-running-git-commands" class="nav-link" data-scroll-target="#running-git-commands">Running Git commands</a></li>
-  <li><a href="#text-editor-or-ide" id="toc-text-editor-or-ide" class="nav-link" data-scroll-target="#text-editor-or-ide">Text editor or IDE</a></li>
+  <li><a href="#creating-pull-requests" id="toc-creating-pull-requests" class="nav-link active" data-scroll-target="#creating-pull-requests">Creating pull requests</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/pre-requisites.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/github-devops-refresher/pull-requests.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github-devops-refresher/navigating-branches.html">GitHub DevOps basics refresher</a></li><li class="breadcrumb-item"><a href="../github-devops-refresher/pull-requests.html">Creating pull requests</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Pre-requisities</h1>
+<h1 class="title">Creating pull requests</h1>
 </div>
 
 
@@ -302,45 +351,14 @@ cookieconsent.run({
 </header>
 
 
-<section id="git" class="level2">
-<h2 class="anchored" data-anchor-id="git">Git</h2>
-<p>Download Git from the <a href="https://git-scm.com/downloads">Git website downloads page</a>. Click the “Download for…” button in the monitor image and this will download the install script.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="callout-information">
+<p>You will need two branches to merge to be able to create a pull request. If you haven’t already, follow the steps in <a href="../git-refresher/making-a-branch.html">making a branch</a>, <a href="../git-refresher/recording-changes.html">recording changes</a> and <a href="../git-refresher/making-more-branches.html">create more branches</a> to be able to create and complete a mock pull request</p>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.</p>
-</div>
-</div>
-</section>
-<section id="github" class="level2">
-<h2 class="anchored" data-anchor-id="github">GitHub</h2>
-<p>You’ll need a GitHub account to work through the examples used with our <a href="https://github.com/dfe-analytical-services/git-academy-sandbox">git-academy-sandbox</a> repository.</p>
-<p>You’ll then need to <a href="mailto:statistics.development@education.gov.uk">e-mail us</a> with your GitHub username and ask to be added to the <a href="https://github.com/orgs/dfe-analytical-services/teams/git-academy-users">Git Academy users</a> team on <a href="https://github.com/dfe-analytical-services">dfe-analytical services</a>.</p>
-</section>
-<section id="running-git-commands" class="level2">
-<h2 class="anchored" data-anchor-id="running-git-commands">Running Git commands</h2>
-<p>There are a few options for running Git commands once you’ve installed Git. The panels below give the most commonly used options that we recommend for working through Git Academy.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git BASH</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">IDE Git integration</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Git BASH is a terminal prompt that you can use to run Git commands. It comes with Git, so you’ll have it as soon as you’ve installed Git. It gives you access to all Git commands as well as other system commands (such as creating files, navigating through your folders, making directories, removing files and many, many other things).</p>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>If writing commands into a terminal isn’t your thing, then a good (language-agnostic) alternative to Git BASH is to use the GitHub Desktop application. This can be downloaded from GitHub and provides access to a wide range of Git commands, whilst providing user-friendly views of the tracking status and changes of your files.</p>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Most modern IDEs (e.g.&nbsp;VS Code, R-Studio, PyCharm) provide some level of Git integration. IDEs often offer a more limited range of Git commands than Git BASH and GitHub Desktop, but work well for basic Git workflows (such as cloning, tracking changes, creating branches and syncing with your remote repository) and provide enough functionality to follow most of Git Academy without you needing to resort to typing commands into Git BASH.</p>
-</div>
-</div>
-</div>
+<p>A <a href="../glossary.html#pull_request">pull request</a> allows you to notify your team about changes you’ve committed and pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add any necessary follow-up commits before the changes are merged into the main branch.</p>
+<p>Now you have made changes in your <a href="making-a-development-branch">development branch</a>, we will practice this by merging the changes into your main branch using a pull request.</p>
+<section id="creating-pull-requests" class="level2">
+<h2 class="anchored" data-anchor-id="creating-pull-requests">Creating pull requests</h2>
+<p>Once you have made all the changes you want to include in this batch of work, you’ll bundle all of your commits together into a pull request for review.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -351,27 +369,44 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>There is no single preferred option for running Git commands. Whichever option you find works best for you is fine to use, whether it’s command line based or a graphical user interface. Some will offer additional functionality, but all shuould provide enough functionality for day-to-day tasks.</p>
+<p>Before attempting to create your pull request, make sure to have pushed any changes on the branches involved to the remote repo on GitHub</p>
 </div>
 </div>
-</section>
-<section id="text-editor-or-ide" class="level2">
-<h2 class="anchored" data-anchor-id="text-editor-or-ide">Text editor or IDE</h2>
-<p>We’ve tried to keep Git Academy software-agnostic as much as possible, so you should be able to work through most of the material using any text editor or IDE. The main files you’ll need to edit will contain markdown, which you can edit in any of the following (some of which also provide Git integration).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Windows Notepad</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">R-Studio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">PyCharm</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">GitHub Website</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>Windows Notepad and Notepad++ are good to use if you don’t have a preferred language that you’d usually work in such as R or Python. There’s no Git integration though, so you’ll need to use Git BASH or GitHub Desktop to run Git commands.</p>
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Create your pull request, adding a title and a description of your changes</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gh</span> pr create <span class="at">--base</span> <span class="op">&lt;</span>github_id<span class="op">&gt;</span>/main <span class="at">--head</span> <span class="op">&lt;</span>github_id<span class="op">&gt;</span>/development <span class="at">--title</span> <span class="st">"Update to log book"</span> <span class="at">--body</span> <span class="st">"Updating logbook to reflect completing the development branch task."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<p>VS Code is a flexible IDE usable with a range of languages and is available for use on DfE systems on request. It provides Git integration along with markdown file rendering (shortcut: Ctrl+K V), so is a great option for working through Git Academy.</p>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ol type="1">
+<li><p>Go to the <a href="https://github.com/dfe-analytical-services/git-academy-sandbox">git-academy-sandbox</a> repository page on GitHub.</p></li>
+<li><p>Navigate to the Pull requests tab underneath the repository title. <img src="images/pull_requests_tab.png" class="img-fluid" alt="Higlighting the Pull requests tab on GitHub."></p></li>
+<li><p>Open a pull request by clicking the “New pull request” button.</p></li>
+<li><p>Ensure the base branch is set to your own main branch (<github_username>/main) and the compare branch is set to your development branch (<github_username>/development).</github_username></github_username></p></li>
+</ol>
+<p><img src="images/pull_request_branch_selection.png" class="img-fluid" alt="Higlighting where to change the base and compare branches once you have pressed the 'create a pull request' button on GitHub."></p>
+<ol start="5" type="1">
+<li><p>Create Pull Request: Click the “Create pull request” button. Add a title and description for your pull request. You may wish to explain what changes and been made, and why.</p></li>
+<li><p>You don’t need to add any reviewers in this training, but please do take a moment to notice where you can add team mates to review your pull requests in your own work to the right of the description. Any reviewers you add will be notified by email that there is a pull request for them to review.</p></li>
+<li><p>Once you are happy with your title and description, click ‘Create pull request’ to confirm.</p></li>
+<li><p>You will then want to check whether there are any merge conflicts. If there are merge conflicts, they will need resolving before you are able to complete your pull request.</p></li>
+</ol>
 </div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<p>R-Studio is an R IDE and is available from the DfE Software Centre in Windows. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.</p>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<ol type="1">
+<li><p>Ensure you are on the development branch.</p></li>
+<li><p>Click on the ‘Branch’ menu and ‘Create pull request’</p></li>
+<li><p>Click ‘open in browser’. This will open GitHub in your web browser with the pull request form pre-filled.</p></li>
+<li><p>Add a title and description for you pull request and then click ‘Create pull request’</p></li>
+</ol>
 </div>
-<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
-<p>PyCharm Community Edition is a Python IDE and is available from the DfE Software Centre. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.</p>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+
 </div>
 </div>
 </div>
@@ -943,13 +978,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Welcome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="../github-devops-refresher/viewing-history.html" class="pagination-link" aria-label="Viewing the history">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Viewing the history</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./git-refresher/clone-a-repo.html" class="pagination-link" aria-label="Cloning a repository">
-        <span class="nav-page-text">Cloning a repository</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../github-devops-refresher/reviewing-pull-requests.html" class="pagination-link" aria-label="Reviewing pull requests">
+        <span class="nav-page-text">Reviewing pull requests</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -961,7 +996,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/pre-requisites.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/github-devops-refresher/pull-requests.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
 <p>This page is maintained by statistics.development@education.gov.uk</p>
 </div>

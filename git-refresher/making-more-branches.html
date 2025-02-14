@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Recording changes (add, commit and push) – DfE Git Academy</title>
+<title>Making more branches – DfE Git Academy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -29,8 +63,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../git-refresher/syncing-changes-to-remote.html" rel="next">
-<link href="../git-refresher/making-a-branch.html" rel="prev">
+<link href="../github-devops-refresher/navigating-branches.html" rel="next">
+<link href="../git-refresher/moving-between-branches.html" rel="prev">
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -110,7 +144,7 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/recording-changes.html">Recording changes (add, commit and push)</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/making-more-branches.html">Making more branches</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -204,7 +238,7 @@ cookieconsent.run({
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link active">
+  <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Recording changes (add, commit and push)</span></a>
   </div>
 </li>
@@ -222,7 +256,7 @@ cookieconsent.run({
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-refresher/making-more-branches.html" class="sidebar-item-text sidebar-link">
+  <a href="../git-refresher/making-more-branches.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Making more branches</span></a>
   </div>
 </li>
@@ -292,9 +326,9 @@ cookieconsent.run({
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/recording-changes.html">Recording changes (add, commit and push)</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/making-more-branches.html">Making more branches</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Recording changes (add, commit and push)</h1>
+<h1 class="title">Making more branches</h1>
 </div>
 
 
@@ -311,9 +345,99 @@ cookieconsent.run({
 </header>
 
 
-<p>This section will guide you through recording changes you make to your repo through the process of <a href="../glossary.html#add"><strong>adding</strong></a>, <a href="../glossary.html#stage"><strong>staging</strong></a> and <a href="../glossary.html#push"><strong>pushing</strong></a> files.</p>
-<p>These steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.</p>
-<p>Having <a href="making-a-branch.html">created your own branch</a>, follow the instructions below to make and record changes in your repo.</p>
+<p>This section will guide you through how to create more branches, taking the main branch you created as a base.</p>
+<p>When you create a Git project, it will automatically create a “main” (sometimes “master”) branch for you. This is where the code that has been QA’d and you are happy with should sit.</p>
+<p>It is good practice to create a branch whenever you have a change to make to your work. Having two branches means that if anything goes wrong in the “development branch”, the “main” branch is still unaffected and runs without issue. This lets you test and QA the code more thoroughly before merging into your main branch.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Chose one method below to create your new branch, which we will call “development”. Then follow the instructions at the bottom of this page to update your logbook.</p>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ol type="1">
+<li>Ensure you’re on your own personal main branch that you created in <a href="#making-a-branch">making a branch</a>. If you aren’t sure use:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Pull the latest changes from the remote repository.</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>Create your new development branch</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/development</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li>Push the new branch to the remote repository:</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/development</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="5" type="1">
+<li>Check that the new branch shows in the branch list.</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/dev_branch_GitBash.png" class="img-fluid figure-img"></p>
+<figcaption>Creating a new branch in GitBash</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ol type="1">
+<li><p>Ensure you are on your personal main branch.</p></li>
+<li><p>In the Git panel, click the purple new branch symbol <img src="images/new-branch_rstudio-button.png" class="img-fluid" alt="symbol containing two purple boxes branching from a diamond"> as to the left of the username in the screenshot below.</p></li>
+<li><p>Then enter your development branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_development</code>)</github_id></p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/dev_branch_RStudio.png" class="img-fluid figure-img"></p>
+<figcaption>Creating a new branch in RStudio</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<ol type="1">
+<li><p>Click <strong>Branch</strong> in the menu bar and then select <strong>New branch…</strong> as shown in the screenshot below.</p></li>
+<li><p>Then enter your branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_main</code>)</github_id></p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/dev_branch_GitHubDesktop.png" class="img-fluid figure-img"></p>
+<figcaption>Creating a new branch in GitHub Desktop</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<ol type="1">
+<li><p>The current branch <strong><code>(&lt;github_username&gt;main)</code></strong> should be listed in the very bottom left hand corner of the VS Code window frame. If you left click on this, you should then see a menu appear at the top of the VS Code window with some branch options (as shown in the screen shot below).</p></li>
+<li><p>Click <strong>+ Create new branch…</strong> and then enter your branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_development</code>).</github_id></p></li>
+<li><p>You should now see the branch name listed in the bottom left of the window frame shown as the branch you just created, meaning any changes you currently make will be applied to that new development branch (and not the main branch, or your personal main branch).</p></li>
+</ol>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<ol type="1">
+<li><p>Open up the Git panel in PyCharm and you should see something like the screenshot below. Right click on your <strong><code>&lt;github_username&gt;/main</code></strong> branch and select <strong>New branch from ‘&lt;github_id&gt;/main’…</strong>.</p></li>
+<li><p>Then enter your branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_development</code>).</github_id></p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/dev_branch_PyCharm.png" class="img-fluid figure-img"></p>
+<figcaption>Creating a new branch in PyCharm</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -324,79 +448,7 @@ Edit your git-academy-log file
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><p>Put an x inside the brackets for the “Clone git-academy-sandbox” and “Create a new branch in GitHub (&lt;github_username&gt;/main)”.</p></li>
-<li><p>Save the file.</p></li>
-</ul>
-</div>
-</div>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ul>
-<li><p>Check which files have changed by entering this command in Git Bash:</p>
-<p><code>git status</code></p></li>
-<li><p>Stage the changes you want to commit by using one of the commands below.</p>
-<ul>
-<li><p>To add changes to one file at a time:</p>
-<p><code>git add git-academy-log.md</code></p></li>
-</ul>
-<p>OR</p>
-<ul>
-<li><p>To add all changes:</p>
-<p><code>git add .</code></p></li>
-</ul></li>
-<li><p>Commit changes with a message by entering:</p>
-<p><code>git commit -m "Checked clone sandbox and make new branch tasks"</code></p></li>
-<li><p>Push the changes to the remote repository <code>git push origin &lt;github_username&gt;/main</code></p></li>
-</ul>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<ul>
-<li>In the Git panel of RStudio (see image below), tick the files you want to record the changes for.</li>
-<li>Click the commit button. It has a tick mark on two sheets of paper.</li>
-</ul>
-<p><img src="images/r_commit.png" class="img-fluid" alt="Higlighting the Commit button and an example of ticking changes in the Git panel in RStudio."></p>
-<ul>
-<li><p>Write a short message to describe the changes you made.</p></li>
-<li><p>Click “Commit”.</p></li>
-</ul>
-<p><img src="images/r_commit_msg.png" class="img-fluid" alt="Highlighting the commit message section and the Commit button in the RStudio: Review Changes pop up window that appears after completeing the last step."></p>
-<p>Note that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.</p>
-<ul>
-<li>Then either push up your changes to the remote directly from the commit box using the green ‘push’ upwards arrow in the top right corner, or close the box and push using the ‘push’ green arrow in the Git window.</li>
-</ul>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-
-</div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-<ul>
-<li>Click on the branches drop down menu at the top of the screen and click “Commit”.</li>
-</ul>
-<p>OR</p>
-<ul>
-<li>Click on the symbol that shows a circle flanked by two lines in the sidebar as shown in the image below.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pycharm_commit.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:66.0%" alt="Highlighting the two ways to open the commit window."></p>
-</figure>
-</div>
-<ul>
-<li><p>In the “Commit” pop up window, tick the files you wish to record changes for if they’re not already ticked.</p></li>
-<li><p>Write a short message to describe the changes you made.</p></li>
-<li><p>Click “Commit”.</p></li>
-</ul>
-<p><img src="images/pycharm_commit_msg.png" class="img-fluid" alt="Highlighting the commit message section and the Commit button in the Commit pop up window that appears after completeing the last step."></p>
-<ul>
-<li>Push the committed changes to the remote repository by clicking the “Push” button in the top-right corner of the PyCharm window.</li>
-</ul>
-</div>
+<p>Now you have made your development branch, go to your git log and update tick the ‘making a development branch’ box. Use the <a href="recording-changes">recording changes</a> section for a reminder on how to make and save changes. Ensure to commit and push your changes.</p>
 </div>
 </div>
 
@@ -966,13 +1018,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../git-refresher/making-a-branch.html" class="pagination-link" aria-label="Making a new branch">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Making a new branch</span>
+      <a href="../git-refresher/moving-between-branches.html" class="pagination-link" aria-label="Moving between branches">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Moving between branches</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../git-refresher/syncing-changes-to-remote.html" class="pagination-link" aria-label="Syncing to the remote">
-        <span class="nav-page-text">Syncing to the remote</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../github-devops-refresher/navigating-branches.html" class="pagination-link" aria-label="Navigating branches">
+        <span class="nav-page-text">Navigating branches</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -984,7 +1036,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 
-<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/git-refresher/recording-changes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/dfe-analytical-services/git-academy/edit/main/git-refresher/making-more-branches.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dfe-analytical-services/git-academy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
 <p>This page is maintained by statistics.development@education.gov.uk</p>
 </div>
