@@ -41,6 +41,7 @@ vignettes/*.pdf
 
 # pkgdown site
 docs/
+site_libs/
 
 # translation temp files
 po/*~
@@ -50,3 +51,5 @@ rsconnect/
 
 */*_files
 */*.html
+/.quarto/
+_site/

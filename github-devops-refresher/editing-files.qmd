@@ -1,0 +1,34 @@
+---
+title: "Editing files"
+---
+
+
+In this section, we’ll walk through the steps to edit a file on GitHub. We’ll use the example of editing the git-academy-log.md file in the github-sandbox repository. This process can be applied to any file in any repository.
+
+1. Ensure you are still on the GitHub site for the github-sandbox repository. 
+
+2. Check you are on your `<github_username>/main` branch by using the branches drop-down. 
+
+3.  Locate the git-academy-log.md file and click on it as below:
+
+![](images/git_log.png){fig-alt="Screenshot of the git-academy-sandbox repository on GitHub, with the lsnaathorst-main branch selected and the git-academy-log.md being selected."}
+
+4.  Click the pencil icon (✏️), usually located on the right-hand side, to edit the file.
+
+![](images/edit_file.png){fig-alt="Screenshot of the git-academy-sandbox repository on GitHub, showing the git-academy-log.md file and the pencil icon (✏️) for editing the file."}
+
+5. Put an 'X' in each box under 'Exploring a repository' on GitHub.
+
+![](images/x_in_exploring_boxes.png){fig-alt="Screenshot of the git-academy-log.md file on GitHub with an 'x' added to all instances of 'exploring a repository."}
+
+6.  Find the 'Commit changes' button, normally at the top right of the page. 
+
+![](images/commit_changes_button.png){fig-alt="Screenshot of the 'Commit changes' button on the git-academy-log.md file on GitHub, which shoes after making changes in edit mode."}
+
+7.  Enter a commit message describing the changes.
+
+8.  Click 'Commit changes' to save your edits and create a new commit. When you view the git-academy-log file, you should see that the boxes under 'Exploring a repository on Github' are now ticked. 
+
+::: {.callout-important}
+To view the online changes that you have made locally, you will need to pull. This ensures that your local repository is up-to-date with the latest changes from the online repository.
+:::

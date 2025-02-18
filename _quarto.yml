@@ -1,0 +1,87 @@
+project: 
+  type: website
+  
+website: 
+  page-navigation: true
+  back-to-top-navigation: true
+  title: "DfE Git Academy" 
+  site-url: "https://dfe-analytical-services.github.io/git-academy"
+  repo-url: https://github.com/dfe-analytical-services/git-academy
+  repo-actions: [edit, issue]
+  google-analytics: "G-xxxxxxxxx"
+  cookie-consent: 
+    style: headline
+    palette: dark
+
+  page-footer:
+    right: "This page is maintained by statistics.development@education.gov.uk"
+    left: "Department for Education, 2024"
+  
+  search:
+    location: navbar
+    type: textbox
+          
+  sidebar:
+    pinned: true
+    align: center
+    tools:
+      - icon: envelope
+        href: mailto:statistics.development@education.gov.uk
+        text: "Email us"
+      - icon: microsoft-teams
+        menu: 
+          - text: "DfE analysts network"
+            href: https://teams.microsoft.com/l/team/19%3a50f82a2718184a0e98ba86c3d411a02f%40thread.skype/conversations?groupId=6572094f-43a3-4537-bcf0-fc27dc6557ed&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9
+            target: _blank
+          - text: "Statistics production"
+            href: https://teams.microsoft.com/l/team/19%3ae3c8551e86094e259a60848fcff4dbc1%40thread.skype/conversations?groupId=679b2376-8c8c-4062-a1c9-0744ce5ac88f&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9
+            target: _blank
+
+      - icon: github
+        menu:
+          - href: https://github.com/dfe-analytical-services/git-academy
+            target: _blank
+            text: "Source code"
+          - href: https://github.com/dfe-analytical-services/git-academy/issues/new
+            target: _blank
+            text: "Suggest changes"
+            
+    style: "floating"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Welcome
+      - href: prerequisites.qmd
+      - section: "Git basics refresher"
+        contents:
+          - git-refresher/clone-a-repo.qmd
+          - git-refresher/making-a-branch.qmd
+          - git-refresher/recording-changes.qmd
+          - git-refresher/syncing-changes-to-remote.qmd
+          - git-refresher/moving-between-branches.qmd
+          - git-refresher/making-more-branches.qmd
+    
+      - section: "GitHub DevOps basics refresher"
+        contents:
+          - github-devops-refresher/navigating-branches.qmd
+          - github-devops-refresher/viewing-files.qmd
+          - github-devops-refresher/editing-files.qmd
+          - github-devops-refresher/viewing-history.qmd
+          - github-devops-refresher/pull-requests.qmd
+          - github-devops-refresher/reviewing-pull-requests.qmd
+      - glossary.qmd
+
+format:
+  html:
+    theme:
+      light: [united, theme-light.scss]
+      dark: [cyborg, theme-dark.scss]
+    code-copy: true
+    highlight-style: printing
+    code-overflow: wrap
+    toc: true
+
+filters:
+  - quarto
+  

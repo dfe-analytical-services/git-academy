@@ -1,0 +1,45 @@
+---
+title: Glossary
+---
+
+---
+
+## Add
+
+Adding is the process of identifying to Git which files you would like to include in a given [commit](glossary.html#commit).
+
+::: callout-tip
+Add and stage are synonymous
+:::
+
+## Commit
+
+Committing is where you record changes in the Git history. This is one of the most important aspects to understand when using Git. A commit provides a single point in the version control history and when navigating back through the history, you can only navigate to changes that are part of a commit.
+
+## Clone
+
+Cloning a repository is the process of creating a copy of a repository folder system on your local working environment (e.g. your laptop computer).
+
+## Pull
+
+Performing a "pull" updates your current local working branch with any changes from the remote branch. If you're working with other people on a project, you should pull every day that you interact with a repository, at the minimum.
+
+## Pull request 
+
+A pull request is a method used in Git to propose changes to a branch. It allows collaborators to review and discuss changes before merging into the main branch. 
+
+## Push
+
+Pushing is the process of updating the remote branch with local commits. 
+
+## Repository
+
+A repository (or repo) is effectively a project folder. A given repository would usually contain all the work for a specific project (e.g. a data pipeline, an R-Shiny app, etc).
+
+## Stage
+
+Staging is the process of identifying to Git which files you would like to include in a given [commit](glossary.html#commit).
+
+::: callout-tip
+Add and stage are synonymous
+:::

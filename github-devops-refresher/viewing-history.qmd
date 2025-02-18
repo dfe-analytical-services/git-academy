@@ -1,0 +1,20 @@
+---
+title: "Viewing the history"
+---
+
+1.  Ensure you are still on the GitHub site for the github-sandbox repository. 
+
+2.  Select the branch you would like to see history for from the 'Branch' drop down menu, in this case, the `<github_id>/main` branch you created. 
+
+![](images/viewing_branches_drop_down.png){fig-alt="Image shows a screengrab of the git-academy-sandbox repository, with the branches drop-down selected"}
+
+3.  Click on the 'Commits' button, usually found near the top of the repository page.
+
+![](images/commits_button.png){fig-alt="Screenshot of the git-academy-sandbox repository, highlighting the 'Commits' button that appears when a branch is selected."}
+
+4.  A list of all commits made to the branch will be displayed. You'll also be able to see the commits made to the main branch from which your branch was created. 
+
+![](images/commit_list.png){fig-alt="Screenshot of the git-academy-sandbox repository, showing the commit list for the selected branch."}
+
+5. You can click on each commit to see the history of the branch. You are able to see the date each commit was made, the files and changes made and any commit messages.
+
