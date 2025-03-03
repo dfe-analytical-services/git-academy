@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -72,12 +72,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8eef5ae80df721a84869b784b4d5419f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8eef5ae80df721a84869b784b4d5419f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1e797c79b2c232c5b667cf2e204d33ae.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-1e797c79b2c232c5b667cf2e204d33ae.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-146c3522f2790d7af7b5b1edaaa2bbf2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b58da7d297b987fcb4e50ef22033e264.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-17d2ad6c6e145a6254933a1324c3fbe0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-73c99345f17c25da4b435dffcc6da716.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -396,7 +396,7 @@ Note
 <ol type="1">
 <li><p>Ensure you are on your personal main branch.</p></li>
 <li><p>In the Git panel, click the purple new branch symbol <img src="images/new-branch_rstudio-button.png" class="img-fluid" alt="symbol containing two purple boxes branching from a diamond"> as to the left of the username in the screenshot below.</p></li>
-<li><p>Then enter your development branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_development</code>)</github_id></p></li>
+<li><p>Then enter your development branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith/development</code>)</github_id></p></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -408,7 +408,7 @@ Note
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <ol type="1">
 <li><p>Click <strong>Branch</strong> in the menu bar and then select <strong>New branch…</strong> as shown in the screenshot below.</p></li>
-<li><p>Then enter your branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_main</code>)</github_id></p></li>
+<li><p>Then enter your branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith/main</code>)</github_id></p></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -420,21 +420,16 @@ Note
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <ol type="1">
 <li><p>The current branch <strong><code>(&lt;github_username&gt;main)</code></strong> should be listed in the very bottom left hand corner of the VS Code window frame. If you left click on this, you should then see a menu appear at the top of the VS Code window with some branch options (as shown in the screen shot below).</p></li>
-<li><p>Click <strong>+ Create new branch…</strong> and then enter your branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_development</code>).</github_id></p></li>
+<li><p>Click <strong>+ Create new branch…</strong> and then enter your branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith/development</code>).</github_id></p></li>
 <li><p>You should now see the branch name listed in the bottom left of the window frame shown as the branch you just created, meaning any changes you currently make will be applied to that new development branch (and not the main branch, or your personal main branch).</p></li>
 </ol>
 </div>
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <ol type="1">
 <li><p>Open up the Git panel in PyCharm and you should see something like the screenshot below. Right click on your <strong><code>&lt;github_username&gt;/main</code></strong> branch and select <strong>New branch from ‘&lt;github_id&gt;/main’…</strong>.</p></li>
-<li><p>Then enter your branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith_development</code>).</github_id></p></li>
+<li><p>Then enter your branch name as <strong><code>&lt;github_username&gt;/development</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith/development</code>).</github_id></p></li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/dev_branch_PyCharm.png" class="img-fluid figure-img"></p>
-<figcaption>Creating a new branch in PyCharm</figcaption>
-</figure>
-</div>
+<p><img src="./images/dev_branch_PyCharm.png" class="img-fluid" alt="Creating a development branch in PyCharm based on an existing branch."></p>
 </div>
 </div>
 </div>
