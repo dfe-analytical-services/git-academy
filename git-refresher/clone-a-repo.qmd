@@ -60,4 +60,16 @@ Check the Files pane in RStudio to see if the repo files have been cloned to you
 
 ## PyCharm
 
+-   In PyCharm, go to **File \> Project from Version Control**. 
+
+![](images/pycharm_clone_repo_1.png){fig-alt="A screenshot showing the PyCharm interface with the File menu open and the Project from Version Control option highlighted."}
+
+-   Paste the URL you copied from GitHub into the "URL" field and choose a directory on your device where you want to save the repo. 
+
+    -   If you change the directory, you need to ensure to create a folder with the same name as the repository as it will not be automatically done for you. 
+
+-   Click "Clone".
+
+![](images/pycharm_clone_repo_2.png){fig-alt="A screenshot showing the PyCharm interface with the URL field filled in and the Clone button highlighted."}
+
 :::
