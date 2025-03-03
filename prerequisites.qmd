@@ -15,13 +15,13 @@ editor, which Git sets to Vim. We strongly recommend changing this to Notepad or
 Notepad++ as Vim is very user-unfriendly for the average user.
 :::
 
-## GitHub
+## GitHub Account
 
 You'll need a GitHub account to work through the examples used with our 
 [git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox) 
-repository.
+repository. Create an account from the [GitHub homepage](https://github.com/).
 
-You'll then need to [e-mail us](mailto:statistics.development@education.gov.uk)
+Once you've set up an account, [e-mail us](mailto:statistics.development@education.gov.uk)
 with your GitHub username and ask to be added to the [Git Academy users](https://github.com/orgs/dfe-analytical-services/teams/git-academy-users) 
 team on [dfe-analytical services](https://github.com/dfe-analytical-services).
 
@@ -29,33 +29,33 @@ team on [dfe-analytical services](https://github.com/dfe-analytical-services).
 
 There are a few options for running Git commands once you've installed Git. The
 panels below give the most commonly used options that we recommend for working 
-through Git Academy.
+with Git in the DfE.
 
 ::: panel-tabset
-### Git BASH
+### IDE Git integration
 
-Git BASH is a terminal prompt that you can use to run Git commands. It comes 
-with Git, so you'll have it as soon as you've installed Git. It gives you access 
-to all Git commands as well as other system commands (such as creating files,
-navigating through your folders, making directories, removing files and many, 
-many other things).
+Most modern IDEs (e.g. **VS Code**, **R-Studio**, **PyCharm**) provide some level of 
+Git integration. IDEs often offer a more limited range of Git commands than Git 
+Bash and GitHub Desktop, but work well for basic Git workflows (such as cloning,
+tracking changes, creating branches and syncing with your remote repository) and 
+provide enough functionality to follow most of Git Academy without you needing 
+to resort to typing commands into Git Bash.
+
+### (Git) Bash
+
+Bash is a terminal prompt that you can use to run Git commands. A version of the 
+Bash terminal (called Git Bash) comes with Git, so you'll have it as soon as you've 
+installed Git. It gives you access to all Git commands as well as other Bash commands
+for file management etc (such as creating files, navigating through your folders, 
+making directories, removing files and many, many other things).
 
 ### GitHub Desktop
 
 If writing commands into a terminal isn't your thing, then a good 
-(language-agnostic) alternative to Git BASH is to use the GitHub Desktop 
+(language-agnostic) alternative to Git Bash is to use the GitHub Desktop 
 application. This can be downloaded from GitHub and provides access to a wide 
 range of Git commands, whilst providing user-friendly views of the tracking 
 status and changes of your files.
-
-### IDE Git integration
-
-Most modern IDEs (e.g. VS Code, R-Studio, PyCharm) provide some level of 
-Git integration. IDEs often offer a more limited range of Git commands than Git 
-BASH and GitHub Desktop, but work well for basic Git workflows (such as cloning,
-tracking changes, creating branches and syncing with your remote repository) and 
-provide enough functionality to follow most of Git Academy without you needing 
-to resort to typing commands into Git BASH.
 :::
 
 ::: {.callout-note}
@@ -64,7 +64,6 @@ you find works best for you is fine to use, whether it's command line based or
 a graphical user interface. Some will offer additional functionality, but all 
 shuould provide enough functionality for day-to-day tasks.
 :::
-
 
 ## Text editor or IDE
 
@@ -78,7 +77,7 @@ edit in any of the following (some of which also provide Git integration).
 
 Windows Notepad and Notepad++ are good to use if you don't have a preferred 
 language that you'd usually work in such as R or Python. There's no Git 
-integration though, so you'll need to use Git BASH or GitHub Desktop to run 
+integration though, so you'll need to use Git Bash or GitHub Desktop to run 
 Git commands.
 
 ### VS Code

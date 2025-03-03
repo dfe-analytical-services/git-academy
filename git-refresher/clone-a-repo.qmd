@@ -5,7 +5,7 @@ title: "Cloning a repository"
 ---
 To work on the contents of an existing Git [**repository**](../glossary.html#repository), the first step will often be to [**"clone"**](../glossary.html#clone) it to your local working environment (i.e. your laptop!).
 
-::: callout-tip
+::: callout-caution
 ## Getting the clone URL
 To clone a repo, you'll first need to find the necessary URL. 
 
@@ -17,26 +17,31 @@ To clone a repo, you'll first need to find the necessary URL.
 ::: panel-tabset
 ## Git Bash
 
-Navigate to the folder on your device where you want to clone the repo. Right-click in the directory and select **Git Bash Here**.
+Open the Git Bash terminal and create a folder to store your repos if you haven't already:
 
-![](images/clone_gitbash-here.png){width="60%" fig-align="center"}
 
--   In the Git Bash window that opens, use the \`git clone\` command followed by the URL you copied from GitHub. For this repo, we would enter:
+``` bash
+cd ~/
+mkdir repos
+cd repos
+```
+
+Now clone the repository using the following command (which includes the repository URL you should have copied using the steps earlier in this page) and then change directory (`cd`) into the folder that creates:
 
 ``` bash
 git clone https://github.com/dfe-analytical-services/git-academy-sandbox.git
+cd git-academy-sandbox
 ```
 
-You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.
-
--   Navigate into the repo by typing `cd git-academy-sandbox` and pressing enter.
-
--   You should now see the current branch name (e.g. main) at the end of the file path as below:
+After following the above steps, you should now see the current branch name (e.g. main) at the end of the file path as below:
 
 ![](images/clone_gitbash-nav.png){fig-align="center"}
 
--   Type `git log` and press enter to view recent commits. Press **q** when you are ready to exit git log.
--   Type `git status` and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
+:::: callout-tip
+-   Enter `ls` to *list* what files and folders are present in the repo folder.
+-   Type `git log` to view recent commits. Press **q** when you are ready to exit the Git log.
+-   Type `git status` to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven't made any changes yet).
+::::
 
 ## RStudio
 

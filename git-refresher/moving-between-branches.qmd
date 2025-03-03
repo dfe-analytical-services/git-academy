@@ -9,27 +9,23 @@ Switching branches is useful for when we might need to pause our work on one bra
 ::: panel-tabset
 ## Git Bash
 
-First you need to update your local repo with the changes made to the remote one. This ensures that you have a full list of remote branches and the latest changes in the code to avoid conflicts. 
+Assuming you've not skipped any steps, you should now have at least 3 branches that you've had active during this tutorial: `main`, `<github_username>/main` and `<github_username>/development`.
 
--   Enter the command below to update your local repo:
+Use `git checkout` to switch between these branches.
 
-      `git pull`
+- `git checkout main`
+- `git checkout <github_username>/main`
+- `git checkout <github_username>/development`
 
--   Switch to the main branch by using this command:
+replacing `<github_username>` with your own username.
 
-      `git checkout main`
+:::: callout-tip
+Check the contents of the **git-academy-log.md** file each time you switch branches and you should see changes occur everytime you switch.
+::::
 
--   Check the "git-academy-log.md" file and you'll see your edits have disappeared. 
-
--   Switch back to your branch by using this command:
-
-      `git checkout <github_username>/main`
-      
--   Check the "git-academy-log.md" file and you'll see your edits have returned.
-
-### Alternative method
-
+:::: callout-note
 You can also use the `git switch` command interchangeably with the git checkout command for switching branches.
+::::
 
 ## RStudio
 

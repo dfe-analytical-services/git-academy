@@ -13,15 +13,18 @@ library(quarto)
 ---
 
 Welcome to the DfE's Git Academy. This is a collection of interactive tasks you 
-can work through to help learn and practice using Git. Many use a supporting 
-repository called 
+can work through to help learn and practice using Git. As this is intended to be
+a practical guide, we provide the 
 [git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox) 
-where you can practice using Git in a contained practice environment.
+repository where you can practice using Git in a contained environment.
 
-You should be able to follow through tasks in order to jump in at specific 
-jump in points where you feel you need to target your learning.
+You can follow through tasks in order or in some cases jump in at specific points 
+where you feel you need to target your learning.
 
-This isn't aimed at being a comprehensive reference guide however. If you need
+:::: {.callout-note}
+This isn't aimed at being a comprehensive reference guide. If you need more extensive
 reference material for using Git in the DfE, then we recommend looking through
 the 
 [Azure DevOps for Analysis guide](https://dfe-analytical-services.github.io/azure-devops-for-analysis/).
+::::
+
