@@ -64,7 +64,7 @@ git push -u origin <github_username>/development
 
 2. Then enter your branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith/development`).
 
-![](./images/dev_branch_PyCharm.png){fig-alt="Creating a development branch in PyCharm based on an existing branch."}
+![](./images/dev_branch_pycharm.png){fig-alt="Creating a development branch in PyCharm based on an existing branch."}
 
 :::
 

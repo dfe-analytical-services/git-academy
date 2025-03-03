@@ -70,6 +70,7 @@ website:
           - github-devops-refresher/viewing-history.qmd
           - github-devops-refresher/pull-requests.qmd
           - github-devops-refresher/reviewing-pull-requests.qmd
+      - bash-hints.qmd
       - glossary.qmd
 
 format:
