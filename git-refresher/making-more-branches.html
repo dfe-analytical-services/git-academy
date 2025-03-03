@@ -63,8 +63,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../github-devops-refresher/navigating-branches.html" rel="next">
-<link href="../git-refresher/moving-between-branches.html" rel="prev">
+<link href="../git-refresher/moving-between-branches.html" rel="next">
+<link href="../git-refresher/syncing-changes-to-remote.html" rel="prev">
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -104,14 +104,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LVK5Y6NNFT"></script>
 
 <script type="text/plain" cookie-consent="tracking">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-xxxxxxxxx', { 'anonymize_ip': true});
+gtag('config', 'G-LVK5Y6NNFT', { 'anonymize_ip': true});
 </script>
 
 <script type="text/javascript" charset="UTF-8">
@@ -239,25 +239,25 @@ cookieconsent.run({
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Recording changes (add, commit and push)</span></a>
+ <span class="menu-text">Recording changes (add and commit)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/syncing-changes-to-remote.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Syncing to the remote</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Moving between branches</span></a>
+ <span class="menu-text">Syncing to the remote (push)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/making-more-branches.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Making more branches</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Moving between branches</span></a>
   </div>
 </li>
       </ul>
@@ -347,7 +347,7 @@ cookieconsent.run({
 
 <p>This section will guide you through how to create more branches, taking the main branch you created as a base.</p>
 <p>When you create a Git project, it will automatically create a “main” (sometimes “master”) branch for you. This is where the code that has been QA’d and you are happy with should sit.</p>
-<p>It is good practice to create a branch whenever you have a change to make to your work. Having two branches means that if anything goes wrong in the “development branch”, the “main” branch is still unaffected and runs without issue. This lets you test and QA the code more thoroughly before merging into your main branch.</p>
+<p>It is good practice to create a branch whenever you have a change to make to your work. Having two branches means that if anything goes wrong in the “development branch”, the “main” branch is still unaffected and runs without issue. This lets you test and QA the code more thoroughly before merging into your main branch, whilst anyone coming to the repo will know that whatever is on the main is the latest “production” version.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -365,32 +365,12 @@ Note
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ol type="1">
-<li>Ensure you’re on your own personal main branch that you created in <a href="#making-a-branch">making a branch</a>. If you aren’t sure use:</li>
-</ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="2" type="1">
-<li>Pull the latest changes from the remote repository.</li>
-</ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="3" type="1">
-<li>Create your new development branch</li>
-</ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/development</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="4" type="1">
-<li>Push the new branch to the remote repository:</li>
-</ol>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/development</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="5" type="1">
-<li>Check that the new branch shows in the branch list.</li>
-</ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/dev_branch_GitBash.png" class="img-fluid figure-img"></p>
-<figcaption>Creating a new branch in GitBash</figcaption>
-</figure>
-</div>
+<p>Ensure that you’re on your own personal main branch that you created in <a href="#making-a-branch">making a branch</a>, i.e.&nbsp;<code>&lt;github_username&gt;/main</code>.</p>
+<p>Create a new branch ready to make changes:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/development</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The branchname in brackets should now show the name of your new branch, which means any changes you <a href="../glossary.html#commit">commit</a> now will be applied to this branch and not your previous branch.</p>
+<p>As before, you can sync this new branch to the remote repository by pushing:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/development</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <ol type="1">
@@ -433,7 +413,7 @@ Note
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -443,7 +423,7 @@ Edit your git-academy-log file
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Now you have made your development branch, go to your git log and update tick the ‘making a development branch’ box. Use the <a href="recording-changes">recording changes</a> section for a reminder on how to make and save changes. Ensure to commit and push your changes.</p>
+<p>Now you have made your development branch, go to your git log and update tick the ‘making a second branch’ box, before <a href="recording-changes">adding, committing and pushing the changes</a>.</p>
 </div>
 </div>
 
@@ -1013,13 +993,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../git-refresher/moving-between-branches.html" class="pagination-link" aria-label="Moving between branches">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Moving between branches</span>
+      <a href="../git-refresher/syncing-changes-to-remote.html" class="pagination-link" aria-label="Syncing to the remote (push)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Syncing to the remote (push)</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../github-devops-refresher/navigating-branches.html" class="pagination-link" aria-label="Navigating branches">
-        <span class="nav-page-text">Navigating branches</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../git-refresher/moving-between-branches.html" class="pagination-link" aria-label="Moving between branches">
+        <span class="nav-page-text">Moving between branches</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

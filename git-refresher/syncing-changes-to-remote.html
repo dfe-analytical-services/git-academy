@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Syncing to the remote – DfE Git Academy</title>
+<title>Syncing to the remote (push) – DfE Git Academy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../git-refresher/moving-between-branches.html" rel="next">
+<link href="../git-refresher/making-more-branches.html" rel="next">
 <link href="../git-refresher/recording-changes.html" rel="prev">
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
@@ -70,14 +70,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LVK5Y6NNFT"></script>
 
 <script type="text/plain" cookie-consent="tracking">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-xxxxxxxxx', { 'anonymize_ip': true});
+gtag('config', 'G-LVK5Y6NNFT', { 'anonymize_ip': true});
 </script>
 
 <script type="text/javascript" charset="UTF-8">
@@ -110,7 +110,7 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/syncing-changes-to-remote.html">Syncing to the remote</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/syncing-changes-to-remote.html">Syncing to the remote (push)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -205,25 +205,25 @@ cookieconsent.run({
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Recording changes (add, commit and push)</span></a>
+ <span class="menu-text">Recording changes (add and commit)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/syncing-changes-to-remote.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Syncing to the remote</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Moving between branches</span></a>
+ <span class="menu-text">Syncing to the remote (push)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/making-more-branches.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Making more branches</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Moving between branches</span></a>
   </div>
 </li>
       </ul>
@@ -292,9 +292,9 @@ cookieconsent.run({
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/syncing-changes-to-remote.html">Syncing to the remote</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/syncing-changes-to-remote.html">Syncing to the remote (push)</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Syncing to the remote</h1>
+<h1 class="title">Syncing to the remote (push)</h1>
 </div>
 
 
@@ -311,9 +311,9 @@ cookieconsent.run({
 </header>
 
 
-<p>This section will guide you through syncing your local repo to the remote one.</p>
-<p>Any change made so far is only being applied to the local copy of the repository (i.e.&nbsp;the copy on your laptop). To apply your changes to the remote repository (i.e.&nbsp;on GitHub or Azure DevOps), you need to “push” the changes.</p>
-<p>Having <a href="recording-changes.html">recorded your changes</a>, follow the instructions below to sync to the remote.</p>
+<p>This section will guide you through syncing your local repo to the remote one, also known as <a href="../glossary.html#push">pushing</a>.</p>
+<p>Any change made so far is only being applied to the local copy of the repository (i.e.&nbsp;the copy on your laptop). To apply your changes to the remote repository (i.e.&nbsp;on GitHub or Azure DevOps), you need to <strong>“push”</strong> the changes.</p>
+<p>Having <a href="recording-changes.html">recorded your changes</a>, follow the instructions below to push to the remote.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
 <div class="tab-content">
@@ -933,13 +933,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../git-refresher/recording-changes.html" class="pagination-link" aria-label="Recording changes (add, commit and push)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Recording changes (add, commit and push)</span>
+      <a href="../git-refresher/recording-changes.html" class="pagination-link" aria-label="Recording changes (add and commit)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Recording changes (add and commit)</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../git-refresher/moving-between-branches.html" class="pagination-link" aria-label="Moving between branches">
-        <span class="nav-page-text">Moving between branches</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../git-refresher/making-more-branches.html" class="pagination-link" aria-label="Making more branches">
+        <span class="nav-page-text">Making more branches</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

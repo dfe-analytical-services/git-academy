@@ -104,14 +104,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LVK5Y6NNFT"></script>
 
 <script type="text/plain" cookie-consent="tracking">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-xxxxxxxxx', { 'anonymize_ip': true});
+gtag('config', 'G-LVK5Y6NNFT', { 'anonymize_ip': true});
 </script>
 
 <script type="text/javascript" charset="UTF-8">
@@ -239,25 +239,25 @@ cookieconsent.run({
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Recording changes (add, commit and push)</span></a>
+ <span class="menu-text">Recording changes (add and commit)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/syncing-changes-to-remote.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Syncing to the remote</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Moving between branches</span></a>
+ <span class="menu-text">Syncing to the remote (push)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/making-more-branches.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Making more branches</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Moving between branches</span></a>
   </div>
 </li>
       </ul>
@@ -347,7 +347,7 @@ cookieconsent.run({
 
 <hr>
 <p>To work on the contents of an existing Git <a href="../glossary.html#repository"><strong>repository</strong></a>, the first step will often be to <a href="../glossary.html#clone"><strong>“clone”</strong></a> it to your local working environment (i.e.&nbsp;your laptop!).</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -368,30 +368,36 @@ Getting the clone URL
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Navigate to the folder on your device where you want to clone the repo. Right-click in the directory and select <strong>Git Bash Here</strong>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/clone_gitbash-here.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
-</figure>
-</div>
-<ul>
-<li>In the Git Bash window that opens, use the `git clone` command followed by the URL you copied from GitHub. For this repo, we would enter:</li>
-</ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/dfe-analytical-services/git-academy-sandbox.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You will need to right-click to paste, as the keyboard shortcut will not work in Git Bash and then press enter.</p>
-<ul>
-<li><p>Navigate into the repo by typing <code>cd git-academy-sandbox</code> and pressing enter.</p></li>
-<li><p>You should now see the current branch name (e.g.&nbsp;main) at the end of the file path as below:</p></li>
-</ul>
+<p>Open the Git Bash terminal and create a folder to store your repos if you haven’t already:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> repos</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> repos</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now clone the repository using the following command (which includes the repository URL you should have copied using the steps earlier in this page) and then change directory (<code>cd</code>) into the folder that creates:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/dfe-analytical-services/git-academy-sandbox.git</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> git-academy-sandbox</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>After following the above steps, you should now see the current branch name (e.g.&nbsp;main) at the end of the file path as below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/clone_gitbash-nav.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li>Type <code>git log</code> and press enter to view recent commits. Press <strong>q</strong> when you are ready to exit git log.</li>
-<li>Type <code>git status</code> and press enter to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven’t made any changes yet).</li>
+<li>Enter <code>ls</code> to <em>list</em> what files and folders are present in the repo folder.</li>
+<li>Type <code>git log</code> to view recent commits. Press <strong>q</strong> when you are ready to exit the Git log.</li>
+<li>Type <code>git status</code> to check the state of the cloned repository (at this point, it should say everything is up to date, as you haven’t made any changes yet).</li>
 </ul>
+</div>
+</div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <ul>

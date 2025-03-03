@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Recording changes (add, commit and push) – DfE Git Academy</title>
+<title>Recording changes (add and commit) – DfE Git Academy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,14 +70,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LVK5Y6NNFT"></script>
 
 <script type="text/plain" cookie-consent="tracking">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-xxxxxxxxx', { 'anonymize_ip': true});
+gtag('config', 'G-LVK5Y6NNFT', { 'anonymize_ip': true});
 </script>
 
 <script type="text/javascript" charset="UTF-8">
@@ -110,7 +110,7 @@ cookieconsent.run({
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/recording-changes.html">Recording changes (add, commit and push)</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/recording-changes.html">Recording changes (add and commit)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -205,25 +205,25 @@ cookieconsent.run({
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/recording-changes.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Recording changes (add, commit and push)</span></a>
+ <span class="menu-text">Recording changes (add and commit)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/syncing-changes-to-remote.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Syncing to the remote</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Moving between branches</span></a>
+ <span class="menu-text">Syncing to the remote (push)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../git-refresher/making-more-branches.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Making more branches</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git-refresher/moving-between-branches.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Moving between branches</span></a>
   </div>
 </li>
       </ul>
@@ -292,9 +292,9 @@ cookieconsent.run({
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/recording-changes.html">Recording changes (add, commit and push)</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../git-refresher/clone-a-repo.html">Git basics refresher</a></li><li class="breadcrumb-item"><a href="../git-refresher/recording-changes.html">Recording changes (add and commit)</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Recording changes (add, commit and push)</h1>
+<h1 class="title">Recording changes (add and commit)</h1>
 </div>
 
 
@@ -311,10 +311,10 @@ cookieconsent.run({
 </header>
 
 
-<p>This section will guide you through recording changes you make to your repo through the process of <a href="../glossary.html#add"><strong>adding</strong></a>, <a href="../glossary.html#stage"><strong>staging</strong></a> and <a href="../glossary.html#push"><strong>pushing</strong></a> files.</p>
+<p>This section will guide you through recording changes you make to your repo through the process of <a href="../glossary.html#add"><strong>adding</strong></a> and <a href="../glossary.html#commit"><strong>committing</strong></a> files.</p>
 <p>These steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.</p>
 <p>Having <a href="making-a-branch.html">created your own branch</a>, follow the instructions below to make and record changes in your repo.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -335,9 +335,7 @@ Edit your git-academy-log file
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <ul>
-<li><p>Check which files have changed by entering this command in Git Bash:</p>
-<p><code>git status</code></p></li>
-<li><p>Stage the changes you want to commit by using one of the commands below.</p>
+<li><p><strong>Stage</strong> the changes you want to commit by using one of the commands below.</p>
 <ul>
 <li><p>To add changes to one file at a time:</p>
 <p><code>git add git-academy-log.md</code></p></li>
@@ -347,10 +345,22 @@ Edit your git-academy-log file
 <li><p>To add all changes:</p>
 <p><code>git add .</code></p></li>
 </ul></li>
-<li><p>Commit changes with a message by entering:</p>
+<li><p><strong>Commit</strong> changes with a message by entering:</p>
 <p><code>git commit -m "Checked clone sandbox and make new branch tasks"</code></p></li>
-<li><p>Push the changes to the remote repository <code>git push origin &lt;github_username&gt;/main</code></p></li>
 </ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>At any point in the above steps, you can use the command <code>git status</code> to check on the status of any files with un-committed changes in your repository.</p>
+</div>
+</div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <ul>
@@ -364,9 +374,6 @@ Edit your git-academy-log file
 </ul>
 <p><img src="images/r_commit_msg.png" class="img-fluid" alt="Highlighting the commit message section and the Commit button in the RStudio: Review Changes pop up window that appears after completeing the last step."></p>
 <p>Note that you can see the changes made by comparing the green (current version) and the red (old version) highlighted sections.</p>
-<ul>
-<li>Then either push up your changes to the remote directly from the commit box using the green ‘push’ upwards arrow in the top right corner, or close the box and push using the ‘push’ green arrow in the Git window.</li>
-</ul>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 
@@ -393,9 +400,6 @@ Edit your git-academy-log file
 <li><p>Click “Commit”.</p></li>
 </ul>
 <p><img src="images/pycharm_commit_msg.png" class="img-fluid" alt="Highlighting the commit message section and the Commit button in the Commit pop up window that appears after completeing the last step."></p>
-<ul>
-<li>Push the committed changes to the remote repository by clicking the “Push” button in the top-right corner of the PyCharm window.</li>
-</ul>
 </div>
 </div>
 </div>
@@ -971,8 +975,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../git-refresher/syncing-changes-to-remote.html" class="pagination-link" aria-label="Syncing to the remote">
-        <span class="nav-page-text">Syncing to the remote</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../git-refresher/syncing-changes-to-remote.html" class="pagination-link" aria-label="Syncing to the remote (push)">
+        <span class="nav-page-text">Syncing to the remote (push)</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
