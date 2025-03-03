@@ -1,169 +1,146 @@
 [
   {
-    "objectID": "glossary.html#add",
-    "href": "glossary.html#add",
-    "title": "Glossary",
-    "section": "Add",
-    "text": "Add\nAdding is the process of identifying to Git which files you would like to include in a given commit.\n\n\n\n\n\n\nTip\n\n\n\nAdd and stage are synonymous",
-    "crumbs": [
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "glossary.html#commit",
-    "href": "glossary.html#commit",
-    "title": "Glossary",
-    "section": "Commit",
-    "text": "Commit\nCommitting is where you record changes in the Git history. This is one of the most important aspects to understand when using Git. A commit provides a single point in the version control history and when navigating back through the history, you can only navigate to changes that are part of a commit.",
-    "crumbs": [
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "glossary.html#clone",
-    "href": "glossary.html#clone",
-    "title": "Glossary",
-    "section": "Clone",
-    "text": "Clone\nCloning a repository is the process of creating a copy of a repository folder system on your local working environment (e.g. your laptop computer).",
-    "crumbs": [
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "glossary.html#pull",
-    "href": "glossary.html#pull",
-    "title": "Glossary",
-    "section": "Pull",
-    "text": "Pull\nPerforming a “pull” updates your current local working branch with any changes from the remote branch. If you’re working with other people on a project, you should pull every day that you interact with a repository, at the minimum.",
-    "crumbs": [
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "glossary.html#pull-request",
-    "href": "glossary.html#pull-request",
-    "title": "Glossary",
-    "section": "Pull request",
-    "text": "Pull request\nA pull request is a method used in Git to propose changes to a branch. It allows collaborators to review and discuss changes before merging into the main branch.",
-    "crumbs": [
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "glossary.html#push",
-    "href": "glossary.html#push",
-    "title": "Glossary",
-    "section": "Push",
-    "text": "Push\nPushing is the process of updating the remote branch with local commits.",
-    "crumbs": [
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "glossary.html#repository",
-    "href": "glossary.html#repository",
-    "title": "Glossary",
-    "section": "Repository",
-    "text": "Repository\nA repository (or repo) is effectively a project folder. A given repository would usually contain all the work for a specific project (e.g. a data pipeline, an R-Shiny app, etc).",
-    "crumbs": [
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "glossary.html#stage",
-    "href": "glossary.html#stage",
-    "title": "Glossary",
-    "section": "Stage",
-    "text": "Stage\nStaging is the process of identifying to Git which files you would like to include in a given commit.\n\n\n\n\n\n\nTip\n\n\n\nAdd and stage are synonymous",
-    "crumbs": [
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "github-devops-refresher/reviewing-pull-requests.html",
-    "href": "github-devops-refresher/reviewing-pull-requests.html",
-    "title": "Reviewing pull requests",
-    "section": "",
-    "text": "When a pull request is created, it’s important to review the changes carefully. This process helps ensure that the code meets the project’s standards and doesn’t introduce any new issues. During the review, you can discuss the changes with the author, suggest improvements, and request additional commits if necessary.\nWe will practice this by reviewing the pull request you have just made in creating pull requests.\n\nGitHub Website\n\nGo back to the git-academy-sandbox repository overview page on GitHub, as if you have just come to find the pull request your colleague has asked you to review.\nNavigate to the ‘Pull requests’ tab.\nClick on the pull request you want to review, in this case the one you created above.\n\n\n\nReview the changes by looking at the “Files changed” tab. You can see a side-by-side comparison of the changes made. Add comments by clicking the “+” icon next to the lines of code you want to comment on.\n\n\n\nWhen reviewing pull requests, you may also wish to view changes locally to check the code runs and view any outputs.You can do this by pulling and changing to the branch that is being requested to be merged in.\nOnce you have reviewed the changes, you can leave general feedback, approve or request changes by clicking the ‘review changes’ button.\n\n\n\nOnce you are happy with the changes, you should approve the pull request. The person who created the request will then get an email letting them know their changes have been approved. It can also be helpful to send them a direct message to let them know you have reviewed their PR! They can then go back and complete the request.\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "GitHub DevOps basics refresher",
-      "Reviewing pull requests"
-    ]
-  },
-  {
-    "objectID": "github-devops-refresher/viewing-files.html",
-    "href": "github-devops-refresher/viewing-files.html",
-    "title": "Viewing files",
-    "section": "",
-    "text": "To view a file on your repo:\n\nEnsure you are still on the GitHub site for the github-sandbox repository.\nNavigate to the ‘code’ tab at the top of the page.\n\n\n\nFind and select the branch you previously created i.e. &lt;github_id&gt;/main. You can do this by clicking on the branches button and selecting your branch, or using the branch drop-down as below to click on your branch:\n\n\n\nOnce you have selected your branch, the drop-down will change to show your branch name as below:\n\n\n\nClick on a file to view the most up-to-date synced code for the branch you have selected.\nOnce you have clicked on a file, you can navigate through different files, change branches or search for a file using Files pane.\n\n\n\nEach file will have a sub-set of the following views available to select above it: preview, code and blame. You will need to switch to the code view to see and edit the raw contents of the file. The preview view will show you a preview for supported files like Markdown and Quarto and the blame view shows line by line revision history, tracking who made each change and when.\n\n\n\n\n Back to top",
-    "crumbs": [
-      "GitHub DevOps basics refresher",
-      "Viewing files"
-    ]
-  },
-  {
-    "objectID": "github-devops-refresher/pull-requests.html",
-    "href": "github-devops-refresher/pull-requests.html",
-    "title": "Creating pull requests",
-    "section": "",
-    "text": "You will need two branches to merge to be able to create a pull request. If you haven’t already, follow the steps in making a branch, recording changes and create more branches to be able to create and complete a mock pull request\nA pull request allows you to notify your team about changes you’ve committed and pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add any necessary follow-up commits before the changes are merged into the main branch.\nNow you have made changes in your development branch, we will practice this by merging the changes into your main branch using a pull request.",
-    "crumbs": [
-      "GitHub DevOps basics refresher",
-      "Creating pull requests"
-    ]
-  },
-  {
-    "objectID": "github-devops-refresher/pull-requests.html#creating-pull-requests",
-    "href": "github-devops-refresher/pull-requests.html#creating-pull-requests",
-    "title": "Creating pull requests",
-    "section": "Creating pull requests",
-    "text": "Creating pull requests\nOnce you have made all the changes you want to include in this batch of work, you’ll bundle all of your commits together into a pull request for review.\n\n\n\n\n\n\nNote\n\n\n\nBefore attempting to create your pull request, make sure to have pushed any changes on the branches involved to the remote repo on GitHub\n\n\n\nGit BashGitHub WebsiteGitHub DesktopVS CodePyCharm\n\n\nCreate your pull request, adding a title and a description of your changes\ngh pr create --base &lt;github_id&gt;/main --head &lt;github_id&gt;/development --title \"Update to log book\" --body \"Updating logbook to reflect completing the development branch task.\"\n\n\n\nGo to the git-academy-sandbox repository page on GitHub.\nNavigate to the Pull requests tab underneath the repository title. \nOpen a pull request by clicking the “New pull request” button.\nEnsure the base branch is set to your own main branch (/main) and the compare branch is set to your development branch (/development).\n\n\n\nCreate Pull Request: Click the “Create pull request” button. Add a title and description for your pull request. You may wish to explain what changes and been made, and why.\nYou don’t need to add any reviewers in this training, but please do take a moment to notice where you can add team mates to review your pull requests in your own work to the right of the description. Any reviewers you add will be notified by email that there is a pull request for them to review.\nOnce you are happy with your title and description, click ‘Create pull request’ to confirm.\nYou will then want to check whether there are any merge conflicts. If there are merge conflicts, they will need resolving before you are able to complete your pull request.\n\n\n\n\nEnsure you are on the development branch.\nClick on the ‘Branch’ menu and ‘Create pull request’\nClick ‘open in browser’. This will open GitHub in your web browser with the pull request form pre-filled.\nAdd a title and description for you pull request and then click ‘Create pull request’",
-    "crumbs": [
-      "GitHub DevOps basics refresher",
-      "Creating pull requests"
-    ]
-  },
-  {
-    "objectID": "git-bash-hints.html",
-    "href": "git-bash-hints.html",
+    "objectID": "bash-hints.html",
+    "href": "bash-hints.html",
     "title": "BASH Academy",
     "section": "",
-    "text": "This page will cover a few useful commands that you can use in Git BASH.\nYou will see many generalised paths, directory names, file names, etc. on this page. For example, you will see something like cd /path_to/working_directory/you_want where you would need to replace the /path_to/working_directory/you_want part with a path that is applicable to your work."
+    "text": "This page will cover a few useful commands that you can use in Git BASH.\nYou will see many generalised paths, directory names, file names, etc. on this page. For example, you will see something like cd /path_to/working_directory/you_want where you would need to replace the /path_to/working_directory/you_want part with a path that is applicable to your work.",
+    "crumbs": [
+      "BASH Academy"
+    ]
   },
   {
-    "objectID": "git-bash-hints.html#checking-and-navigating-directories",
-    "href": "git-bash-hints.html#checking-and-navigating-directories",
+    "objectID": "bash-hints.html#checking-and-navigating-directories",
+    "href": "bash-hints.html#checking-and-navigating-directories",
     "title": "BASH Academy",
     "section": "Checking and Navigating Directories",
-    "text": "Checking and Navigating Directories\nThe commands in this section allow you to check and change your current working directory, moving between different folders in your file system.\n\nChecking directories\npwd: This stands for “print working directory”, so it will show you your current working directory within the terminal.\nYou can use it by entering the following in the terminal:\n\npwd\n\n\n\nChanging directories\ncd: This stands for “change directory”, so it will point to where you want your directory to be.\nIn this section, we will use /home/user/projects/my_project as our path example. Please note that this is just an example path and may not work on your system.\nTo change your working directory, you can use either an absolute or a relative file path. Here’s how you can do it:\n\nUsing an absolute path:\nAn absolute path specifies the full path from the root directory.\n\ncd /home/user/projects/my_project\n\n\n\nUsing a relative path:\nRelative paths specify the path in relation to your current directory, allowing you to navigate efficiently within the file system.\n\nNavigating into a folder:\n\ncd subfolder\n\n\nThis command navigates into a folder named subfolder inside my_project.\nResulting path: /home/user/projects/my_project/subfolder.\n\n\n\nNavigating out of a folder (up one level):\n\ncd ..\n\nThis command moves up one level from my_project to projects. Resulting path: /home/user/projects\n\n\n\n\nAuto complete\nTab completion is a feature that allows you to auto-complete file and directory names by pressing the Tab key. If there are multiple matches, pressing Tab twice will list all possible completions.\n\n\n# Type 'cd /path/to/dir' and press 'Tab' to auto-complete the directory name.\ncd /path/to/dir"
+    "text": "Checking and Navigating Directories\nThe commands in this section allow you to check and change your current working directory, moving between different folders in your file system.\n\nChecking directories\npwd: This stands for “print working directory”, so it will show you your current working directory within the terminal.\nYou can use it by entering the following in the terminal:\n\npwd\n\n\n\nChanging directories\ncd: This stands for “change directory”, so it will point to where you want your directory to be.\nIn this section, we will use /home/user/projects/my_project as our path example. Please note that this is just an example path and may not work on your system.\nTo change your working directory, you can use either an absolute or a relative file path. Here’s how you can do it:\n\nUsing an absolute path:\nAn absolute path specifies the full path from the root directory.\n\ncd /home/user/projects/my_project\n\n\n\nUsing a relative path:\nRelative paths specify the path in relation to your current directory, allowing you to navigate efficiently within the file system.\n\nNavigating into a folder:\n\ncd subfolder\n\n\nThis command navigates into a folder named subfolder inside my_project.\nResulting path: /home/user/projects/my_project/subfolder.\n\n\n\nNavigating out of a folder (up one level):\n\ncd ..\n\nThis command moves up one level from my_project to projects. Resulting path: /home/user/projects\n\n\n\n\nAuto complete\nTab completion is a feature that allows you to auto-complete file and directory names by pressing the Tab key. If there are multiple matches, pressing Tab twice will list all possible completions.\n\n\n# Type 'cd /path/to/dir' and press 'Tab' to auto-complete the directory name.\ncd /path/to/dir",
+    "crumbs": [
+      "BASH Academy"
+    ]
   },
   {
-    "objectID": "git-bash-hints.html#viewing-files-and-directories",
-    "href": "git-bash-hints.html#viewing-files-and-directories",
+    "objectID": "bash-hints.html#viewing-files-and-directories",
+    "href": "bash-hints.html#viewing-files-and-directories",
     "title": "BASH Academy",
     "section": "Viewing Files and Directories",
-    "text": "Viewing Files and Directories\nThe commands in this section help you list and view the contents of directories, providing detailed information about files and sub-directories.\nls: This stands for “listing”.\nTo list all files or sub-directories, we would type the following in the terminal:\n\nls\n\nTo list all files or sub-directories, including hidden files, we would type the following in the terminal:\n\nls -a\n\nYou can add more options to ls to control how to list files. We can use -ltrh options modify the output of ls:\n\nl: Use a long listing format.\nt: Sort by modification time, newest first.\nr: Reverse the order while sorting.\nh: Display sizes in a human-readable format.\n\nTo list the contents of the specified directory in long format, sorted by modification time (newest last), in reverse order, with human-readable file sizes, we would type the following in the terminal:\n\nls -ltrh /path/to/directory"
+    "text": "Viewing Files and Directories\nThe commands in this section help you list and view the contents of directories, providing detailed information about files and sub-directories.\nls: This stands for “listing”.\nTo list all files or sub-directories, we would type the following in the terminal:\n\nls\n\nTo list all files or sub-directories, including hidden files, we would type the following in the terminal:\n\nls -a\n\nYou can add more options to ls to control how to list files. We can use -ltrh options modify the output of ls:\n\nl: Use a long listing format.\nt: Sort by modification time, newest first.\nr: Reverse the order while sorting.\nh: Display sizes in a human-readable format.\n\nTo list the contents of the specified directory in long format, sorted by modification time (newest last), in reverse order, with human-readable file sizes, we would type the following in the terminal:\n\nls -ltrh /path/to/directory",
+    "crumbs": [
+      "BASH Academy"
+    ]
   },
   {
-    "objectID": "git-bash-hints.html#creating-and-removing-files-and-directories",
-    "href": "git-bash-hints.html#creating-and-removing-files-and-directories",
+    "objectID": "bash-hints.html#creating-and-removing-files-and-directories",
+    "href": "bash-hints.html#creating-and-removing-files-and-directories",
     "title": "BASH Academy",
     "section": "Creating and Removing Files and Directories",
-    "text": "Creating and Removing Files and Directories\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\n\nCreating directories\nThe commands in this section enable you to create new directories, remove files, and delete empty directories.\nmkdir: This stands for “make directory”.\nTo create a directory, we would amend the code below to reflect the new directory name and enter it into the terminal:\n\nmkdir new_directory_name\n\nThis will create a new directory in your current working directory.\n\n\nCreating files\n\necho\nThe echo command is used to display a line of text or a variable value. It can also be used to create files by redirecting the output to a file.\nTo create a file named hello.txt and writes “Hello, World!” into it, we would enter the following in the terminal:\n\necho \"Hello, World!\" &gt; hello.txt\n\nTo append text to an existing file instead of overwriting it, you can use the &gt;&gt; operator:\n\n\necho \"This is additional text.\" &gt;&gt; hello.txt\n\nThis command adds “This is additional text.” to the end of the hello.txt file without overwriting its existing content.\n\n\ntouch\nThe command in this section enables you to create an empty file or update the timestamp of an existing file. We do this by entering the following this command template touch &lt;file_name.extention&gt; where you replace file_name with the name of the file you want to create and extention with the extension for the type of file you want to create.\nFor example, if we want to create a txt type file called example, then we would type the following in the terminal:\n\ntouch example.txt\n\nIf you use the touch command with a file that already exists, then the timestamp for when that file was last modified will be updated to when you executed that command.\nFor example, if I had a file called example.txt that already existed in my directory and its timestamp for when it was last modified was 27/01/2025 at 09:00 AM. Then I used the command touch example.txt on 28/01/2024 at 10:30 AM, the timestamp for that file will be modified to reflect the time I entered the command (28/01/2024 at 10:30 AM).\n\n\n\nRemoving files\nAssuming we’re already in the directory we want, we can remove a file from it by amending the code below to reflect the file name we want to remove, and its extension and then enter it into the terminal:\n\nrm file_name.extention\n\nYou need to make sure to include the extension of the file in the command, or it will not work.\n\n\nRemoving directories\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\nrm: This stands for “remove” and we can use it to remove files and directories.\nTo remove a directory and its contents, we would amend the code below to reflect the path and the directory we want and enter it into the terminal:\n\n\n\n\n\n\nUsing recursive mode\n\n\n\nBe cautious when using the rm -r command in Git Bash, as it recursively deletes the specified directory and all its contents. This action is irreversible, so double-check the directory path to avoid accidentally deleting important files or directories.\n\n\n\nrm -r path_to_the_directory/directory_name"
+    "text": "Creating and Removing Files and Directories\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\n\nCreating directories\nThe commands in this section enable you to create new directories, remove files, and delete empty directories.\nmkdir: This stands for “make directory”.\nTo create a directory, we would amend the code below to reflect the new directory name and enter it into the terminal:\n\nmkdir new_directory_name\n\nThis will create a new directory in your current working directory.\n\n\nCreating files\n\necho\nThe echo command is used to display a line of text or a variable value. It can also be used to create files by redirecting the output to a file.\nTo create a file named hello.txt and writes “Hello, World!” into it, we would enter the following in the terminal:\n\necho \"Hello, World!\" &gt; hello.txt\n\nTo append text to an existing file instead of overwriting it, you can use the &gt;&gt; operator:\n\n\necho \"This is additional text.\" &gt;&gt; hello.txt\n\nThis command adds “This is additional text.” to the end of the hello.txt file without overwriting its existing content.\n\n\ntouch\nThe command in this section enables you to create an empty file or update the timestamp of an existing file. We do this by entering the following this command template touch &lt;file_name.extention&gt; where you replace file_name with the name of the file you want to create and extention with the extension for the type of file you want to create.\nFor example, if we want to create a txt type file called example, then we would type the following in the terminal:\n\ntouch example.txt\n\nIf you use the touch command with a file that already exists, then the timestamp for when that file was last modified will be updated to when you executed that command.\nFor example, if I had a file called example.txt that already existed in my directory and its timestamp for when it was last modified was 27/01/2025 at 09:00 AM. Then I used the command touch example.txt on 28/01/2024 at 10:30 AM, the timestamp for that file will be modified to reflect the time I entered the command (28/01/2024 at 10:30 AM).\n\n\n\nRemoving files\nAssuming we’re already in the directory we want, we can remove a file from it by amending the code below to reflect the file name we want to remove, and its extension and then enter it into the terminal:\n\nrm file_name.extention\n\nYou need to make sure to include the extension of the file in the command, or it will not work.\n\n\nRemoving directories\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\nrm: This stands for “remove” and we can use it to remove files and directories.\nTo remove a directory and its contents, we would amend the code below to reflect the path and the directory we want and enter it into the terminal:\n\n\n\n\n\n\nUsing recursive mode\n\n\n\nBe cautious when using the rm -r command in Git Bash, as it recursively deletes the specified directory and all its contents. This action is irreversible, so double-check the directory path to avoid accidentally deleting important files or directories.\n\n\n\nrm -r path_to_the_directory/directory_name",
+    "crumbs": [
+      "BASH Academy"
+    ]
   },
   {
-    "objectID": "git-bash-hints.html#viewing-file-contents",
-    "href": "git-bash-hints.html#viewing-file-contents",
+    "objectID": "bash-hints.html#viewing-file-contents",
+    "href": "bash-hints.html#viewing-file-contents",
     "title": "BASH Academy",
     "section": "Viewing File Contents",
-    "text": "Viewing File Contents\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\nThe commands in this section allow you to display the contents of files, either in full or in parts, for easy reading and inspection.\nTo display the first 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:\n\nhead file_name.extention\n\nYou can also customise the number of lines you want to view by adding -number of lines after head. For example, if we want to view the first 12 lines of a file, we use:\n\nhead -12 file_name.extention\n\nTo display the bottom 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:\n\ntail file_name.extention\n\nYou can also customise the number of lines you want to view by adding -number of lines after tail. For example, if we want to view the last 3 lines of a file, we use:\n\ntail -3 file_name.extention\n\nTo display the contents of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:\n\ncat file_name.extention"
+    "text": "Viewing File Contents\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\nThe commands in this section allow you to display the contents of files, either in full or in parts, for easy reading and inspection.\nTo display the first 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:\n\nhead file_name.extention\n\nYou can also customise the number of lines you want to view by adding -number of lines after head. For example, if we want to view the first 12 lines of a file, we use:\n\nhead -12 file_name.extention\n\nTo display the bottom 10 lines of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:\n\ntail file_name.extention\n\nYou can also customise the number of lines you want to view by adding -number of lines after tail. For example, if we want to view the last 3 lines of a file, we use:\n\ntail -3 file_name.extention\n\nTo display the contents of a file, we would amend the code below to reflect the file name we want to view and its extension and then enter it into the terminal:\n\ncat file_name.extention",
+    "crumbs": [
+      "BASH Academy"
+    ]
   },
   {
-    "objectID": "git-bash-hints.html#searching-and-finding-files",
-    "href": "git-bash-hints.html#searching-and-finding-files",
+    "objectID": "bash-hints.html#searching-and-finding-files",
+    "href": "bash-hints.html#searching-and-finding-files",
     "title": "BASH Academy",
     "section": "Searching and Finding Files",
-    "text": "Searching and Finding Files\n\nFinding files by patterns\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\nYou can look for files in your repository that match a certain pattern by using git grep. We would amend the code below by replacing \"pattern\" with the term or pattern we want to search for in files.\n\ngrep \"pattern\" filename\n\nYou can utilise all of regex’s capabilities to locate precisely what you’re looking for because regular expressions are supported.\n\n\nFinding files by name of file type\nThe find command is used to search for files and directories within a directory hierarchy.\nThis command searches for all .txt files within the specified directory and its subdirectories.\n\nfind . -name \"*.txt\""
+    "text": "Searching and Finding Files\n\nFinding files by patterns\n\n\n\n\n\n\nImportant\n\n\n\nMake sure you’re in the correct directory/using the correct path before using commands in this section.\n\n\nYou can look for files in your repository that match a certain pattern by using git grep. We would amend the code below by replacing \"pattern\" with the term or pattern we want to search for in files.\n\ngrep \"pattern\" filename\n\nYou can utilise all of regex’s capabilities to locate precisely what you’re looking for because regular expressions are supported.\n\n\nFinding files by name of file type\nThe find command is used to search for files and directories within a directory hierarchy.\nThis command searches for all .txt files within the specified directory and its subdirectories.\n\nfind . -name \"*.txt\"",
+    "crumbs": [
+      "BASH Academy"
+    ]
+  },
+  {
+    "objectID": "prerequisites.html",
+    "href": "prerequisites.html",
+    "title": "Prerequisites",
+    "section": "",
+    "text": "Download Git from the Git website downloads page. Click the “Download for…” button in the monitor image and this will download the install script.\n\n\n\n\n\n\nTip\n\n\n\nThe install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.",
+    "crumbs": [
+      "Prerequisites"
+    ]
+  },
+  {
+    "objectID": "prerequisites.html#git",
+    "href": "prerequisites.html#git",
+    "title": "Prerequisites",
+    "section": "",
+    "text": "Download Git from the Git website downloads page. Click the “Download for…” button in the monitor image and this will download the install script.\n\n\n\n\n\n\nTip\n\n\n\nThe install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.",
+    "crumbs": [
+      "Prerequisites"
+    ]
+  },
+  {
+    "objectID": "prerequisites.html#github-account",
+    "href": "prerequisites.html#github-account",
+    "title": "Prerequisites",
+    "section": "GitHub Account",
+    "text": "GitHub Account\nYou’ll need a GitHub account to work through the examples used with our git-academy-sandbox repository. Create an account from the GitHub homepage.\nOnce you’ve set up an account, e-mail us with your GitHub username and ask to be added to the Git Academy users team on dfe-analytical services.",
+    "crumbs": [
+      "Prerequisites"
+    ]
+  },
+  {
+    "objectID": "prerequisites.html#running-git-commands",
+    "href": "prerequisites.html#running-git-commands",
+    "title": "Prerequisites",
+    "section": "Running Git commands",
+    "text": "Running Git commands\nThere are a few options for running Git commands once you’ve installed Git. The panels below give the most commonly used options that we recommend for working with Git in the DfE.\n\nIDE Git integration(Git) BashGitHub Desktop\n\n\nMost modern IDEs (e.g. VS Code, R-Studio, PyCharm) provide some level of Git integration. IDEs often offer a more limited range of Git commands than Git Bash and GitHub Desktop, but work well for basic Git workflows (such as cloning, tracking changes, creating branches and syncing with your remote repository) and provide enough functionality to follow most of Git Academy without you needing to resort to typing commands into Git Bash.\n\n\nBash is a terminal prompt that you can use to run Git commands. A version of the Bash terminal (called Git Bash) comes with Git, so you’ll have it as soon as you’ve installed Git. It gives you access to all Git commands as well as other Bash commands for file management etc (such as creating files, navigating through your folders, making directories, removing files and many, many other things).\n\n\nIf writing commands into a terminal isn’t your thing, then a good (language-agnostic) alternative to Git Bash is to use the GitHub Desktop application. This can be downloaded from GitHub and provides access to a wide range of Git commands, whilst providing user-friendly views of the tracking status and changes of your files.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThere is no single preferred option for running Git commands. Whichever option you find works best for you is fine to use, whether it’s command line based or a graphical user interface. Some will offer additional functionality, but all shuould provide enough functionality for day-to-day tasks.",
+    "crumbs": [
+      "Prerequisites"
+    ]
+  },
+  {
+    "objectID": "prerequisites.html#text-editor-or-ide",
+    "href": "prerequisites.html#text-editor-or-ide",
+    "title": "Prerequisites",
+    "section": "Text editor or IDE",
+    "text": "Text editor or IDE\nWe’ve tried to keep Git Academy software-agnostic as much as possible, so you should be able to work through most of the material using any text editor or IDE. The main files you’ll need to edit will contain markdown, which you can edit in any of the following (some of which also provide Git integration).\n\nWindows NotepadVS CodeR-StudioPyCharm\n\n\nWindows Notepad and Notepad++ are good to use if you don’t have a preferred language that you’d usually work in such as R or Python. There’s no Git integration though, so you’ll need to use Git Bash or GitHub Desktop to run Git commands.\n\n\nVS Code is a flexible IDE usable with a range of languages and is available for use on DfE systems on request. It provides Git integration along with markdown file rendering (shortcut: Ctrl+K V), so is a great option for working through Git Academy.\n\n\nR-Studio is an R IDE and is available from the DfE Software Centre in Windows. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.\n\n\nPyCharm Community Edition is a Python IDE and is available from the DfE Software Centre. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.",
+    "crumbs": [
+      "Prerequisites"
+    ]
+  },
+  {
+    "objectID": "github-devops-refresher/viewing-history.html",
+    "href": "github-devops-refresher/viewing-history.html",
+    "title": "Viewing the history",
+    "section": "",
+    "text": "Ensure you are still on the GitHub site for the github-sandbox repository.\nSelect the branch you would like to see history for from the ‘Branch’ drop down menu, in this case, the &lt;github_id&gt;/main branch you created.\n\n\n\nClick on the ‘Commits’ button, usually found near the top of the repository page.\n\n\n\nA list of all commits made to the branch will be displayed. You’ll also be able to see the commits made to the main branch from which your branch was created.\n\n\n\nYou can click on each commit to see the history of the branch. You are able to see the date each commit was made, the files and changes made and any commit messages.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "GitHub DevOps basics refresher",
+      "Viewing the history"
+    ]
+  },
+  {
+    "objectID": "github-devops-refresher/navigating-branches.html",
+    "href": "github-devops-refresher/navigating-branches.html",
+    "title": "Navigating branches",
+    "section": "",
+    "text": "To view and switch between the different branches available in a GitHub repository, follow these steps:\n\nNavigate to the repository on GitHub. In this case, Git-academy-sandbox.\nClick on the ‘Branches’ button below the title of the repository as below:\n\n\n\nA list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents. You can search branches using the search box or just see your own, active or stale branches by moving through the tabs.\n\n\n\n\n\n\n\nDefault Branch\n\n\n\nThe default branch is like the main version of your project. It’s usually called main, but sometimes it might have a different name. This is the branch where the latest, most stable version of your project lives. When you want to make changes to code, you usually create your own branch from main.\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "GitHub DevOps basics refresher",
+      "Navigating branches"
+    ]
+  },
+  {
+    "objectID": "github-devops-refresher/editing-files.html",
+    "href": "github-devops-refresher/editing-files.html",
+    "title": "Editing files",
+    "section": "",
+    "text": "In this section, we’ll walk through the steps to edit a file on GitHub. We’ll use the example of editing the git-academy-log.md file in the github-sandbox repository. This process can be applied to any file in any repository.\n\nEnsure you are still on the GitHub site for the github-sandbox repository.\nCheck you are on your &lt;github_username&gt;/main branch by using the branches drop-down.\nLocate the git-academy-log.md file and click on it as below:\n\n\n\nClick the pencil icon (✏️), usually located on the right-hand side, to edit the file.\n\n\n\nPut an ‘X’ in each box under ‘Exploring a repository’ on GitHub.\n\n\n\nFind the ‘Commit changes’ button, normally at the top right of the page.\n\n\n\nEnter a commit message describing the changes.\nClick ‘Commit changes’ to save your edits and create a new commit. When you view the git-academy-log file, you should see that the boxes under ‘Exploring a repository on Github’ are now ticked.\n\n\n\n\n\n\n\nImportant\n\n\n\nTo view the online changes that you have made locally, you will need to pull. This ensures that your local repository is up-to-date with the latest changes from the online repository.\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "GitHub DevOps basics refresher",
+      "Editing files"
+    ]
   },
   {
     "objectID": "git-refresher/making-a-branch.html",
@@ -263,86 +240,127 @@
     ]
   },
   {
-    "objectID": "github-devops-refresher/editing-files.html",
-    "href": "github-devops-refresher/editing-files.html",
-    "title": "Editing files",
+    "objectID": "github-devops-refresher/pull-requests.html",
+    "href": "github-devops-refresher/pull-requests.html",
+    "title": "Creating pull requests",
     "section": "",
-    "text": "In this section, we’ll walk through the steps to edit a file on GitHub. We’ll use the example of editing the git-academy-log.md file in the github-sandbox repository. This process can be applied to any file in any repository.\n\nEnsure you are still on the GitHub site for the github-sandbox repository.\nCheck you are on your &lt;github_username&gt;/main branch by using the branches drop-down.\nLocate the git-academy-log.md file and click on it as below:\n\n\n\nClick the pencil icon (✏️), usually located on the right-hand side, to edit the file.\n\n\n\nPut an ‘X’ in each box under ‘Exploring a repository’ on GitHub.\n\n\n\nFind the ‘Commit changes’ button, normally at the top right of the page.\n\n\n\nEnter a commit message describing the changes.\nClick ‘Commit changes’ to save your edits and create a new commit. When you view the git-academy-log file, you should see that the boxes under ‘Exploring a repository on Github’ are now ticked.\n\n\n\n\n\n\n\nImportant\n\n\n\nTo view the online changes that you have made locally, you will need to pull. This ensures that your local repository is up-to-date with the latest changes from the online repository.\n\n\n\n\n\n Back to top",
+    "text": "You will need two branches to merge to be able to create a pull request. If you haven’t already, follow the steps in making a branch, recording changes and create more branches to be able to create and complete a mock pull request\nA pull request allows you to notify your team about changes you’ve committed and pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add any necessary follow-up commits before the changes are merged into the main branch.\nNow you have made changes in your development branch, we will practice this by merging the changes into your main branch using a pull request.",
     "crumbs": [
       "GitHub DevOps basics refresher",
-      "Editing files"
+      "Creating pull requests"
     ]
   },
   {
-    "objectID": "github-devops-refresher/navigating-branches.html",
-    "href": "github-devops-refresher/navigating-branches.html",
-    "title": "Navigating branches",
-    "section": "",
-    "text": "To view and switch between the different branches available in a GitHub repository, follow these steps:\n\nNavigate to the repository on GitHub. In this case, Git-academy-sandbox.\nClick on the ‘Branches’ button below the title of the repository as below:\n\n\n\nA list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents. You can search branches using the search box or just see your own, active or stale branches by moving through the tabs.\n\n\n\n\n\n\n\nDefault Branch\n\n\n\nThe default branch is like the main version of your project. It’s usually called main, but sometimes it might have a different name. This is the branch where the latest, most stable version of your project lives. When you want to make changes to code, you usually create your own branch from main.\n\n\n\n\n\n Back to top",
+    "objectID": "github-devops-refresher/pull-requests.html#creating-pull-requests",
+    "href": "github-devops-refresher/pull-requests.html#creating-pull-requests",
+    "title": "Creating pull requests",
+    "section": "Creating pull requests",
+    "text": "Creating pull requests\nOnce you have made all the changes you want to include in this batch of work, you’ll bundle all of your commits together into a pull request for review.\n\n\n\n\n\n\nNote\n\n\n\nBefore attempting to create your pull request, make sure to have pushed any changes on the branches involved to the remote repo on GitHub\n\n\n\nGit BashGitHub WebsiteGitHub DesktopVS CodePyCharm\n\n\nCreate your pull request, adding a title and a description of your changes\ngh pr create --base &lt;github_id&gt;/main --head &lt;github_id&gt;/development --title \"Update to log book\" --body \"Updating logbook to reflect completing the development branch task.\"\n\n\n\nGo to the git-academy-sandbox repository page on GitHub.\nNavigate to the Pull requests tab underneath the repository title. \nOpen a pull request by clicking the “New pull request” button.\nEnsure the base branch is set to your own main branch (/main) and the compare branch is set to your development branch (/development).\n\n\n\nCreate Pull Request: Click the “Create pull request” button. Add a title and description for your pull request. You may wish to explain what changes and been made, and why.\nYou don’t need to add any reviewers in this training, but please do take a moment to notice where you can add team mates to review your pull requests in your own work to the right of the description. Any reviewers you add will be notified by email that there is a pull request for them to review.\nOnce you are happy with your title and description, click ‘Create pull request’ to confirm.\nYou will then want to check whether there are any merge conflicts. If there are merge conflicts, they will need resolving before you are able to complete your pull request.\n\n\n\n\nEnsure you are on the development branch.\nClick on the ‘Branch’ menu and ‘Create pull request’\nClick ‘open in browser’. This will open GitHub in your web browser with the pull request form pre-filled.\nAdd a title and description for you pull request and then click ‘Create pull request’",
     "crumbs": [
       "GitHub DevOps basics refresher",
-      "Navigating branches"
+      "Creating pull requests"
     ]
   },
   {
-    "objectID": "github-devops-refresher/viewing-history.html",
-    "href": "github-devops-refresher/viewing-history.html",
-    "title": "Viewing the history",
+    "objectID": "github-devops-refresher/viewing-files.html",
+    "href": "github-devops-refresher/viewing-files.html",
+    "title": "Viewing files",
     "section": "",
-    "text": "Ensure you are still on the GitHub site for the github-sandbox repository.\nSelect the branch you would like to see history for from the ‘Branch’ drop down menu, in this case, the &lt;github_id&gt;/main branch you created.\n\n\n\nClick on the ‘Commits’ button, usually found near the top of the repository page.\n\n\n\nA list of all commits made to the branch will be displayed. You’ll also be able to see the commits made to the main branch from which your branch was created.\n\n\n\nYou can click on each commit to see the history of the branch. You are able to see the date each commit was made, the files and changes made and any commit messages.\n\n\n\n\n Back to top",
+    "text": "To view a file on your repo:\n\nEnsure you are still on the GitHub site for the github-sandbox repository.\nNavigate to the ‘code’ tab at the top of the page.\n\n\n\nFind and select the branch you previously created i.e. &lt;github_id&gt;/main. You can do this by clicking on the branches button and selecting your branch, or using the branch drop-down as below to click on your branch:\n\n\n\nOnce you have selected your branch, the drop-down will change to show your branch name as below:\n\n\n\nClick on a file to view the most up-to-date synced code for the branch you have selected.\nOnce you have clicked on a file, you can navigate through different files, change branches or search for a file using Files pane.\n\n\n\nEach file will have a sub-set of the following views available to select above it: preview, code and blame. You will need to switch to the code view to see and edit the raw contents of the file. The preview view will show you a preview for supported files like Markdown and Quarto and the blame view shows line by line revision history, tracking who made each change and when.\n\n\n\n\n Back to top",
     "crumbs": [
       "GitHub DevOps basics refresher",
-      "Viewing the history"
+      "Viewing files"
     ]
   },
   {
-    "objectID": "prerequisites.html",
-    "href": "prerequisites.html",
-    "title": "Prerequisites",
+    "objectID": "github-devops-refresher/reviewing-pull-requests.html",
+    "href": "github-devops-refresher/reviewing-pull-requests.html",
+    "title": "Reviewing pull requests",
     "section": "",
-    "text": "Download Git from the Git website downloads page. Click the “Download for…” button in the monitor image and this will download the install script.\n\n\n\n\n\n\nTip\n\n\n\nThe install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.",
+    "text": "When a pull request is created, it’s important to review the changes carefully. This process helps ensure that the code meets the project’s standards and doesn’t introduce any new issues. During the review, you can discuss the changes with the author, suggest improvements, and request additional commits if necessary.\nWe will practice this by reviewing the pull request you have just made in creating pull requests.\n\nGitHub Website\n\nGo back to the git-academy-sandbox repository overview page on GitHub, as if you have just come to find the pull request your colleague has asked you to review.\nNavigate to the ‘Pull requests’ tab.\nClick on the pull request you want to review, in this case the one you created above.\n\n\n\nReview the changes by looking at the “Files changed” tab. You can see a side-by-side comparison of the changes made. Add comments by clicking the “+” icon next to the lines of code you want to comment on.\n\n\n\nWhen reviewing pull requests, you may also wish to view changes locally to check the code runs and view any outputs.You can do this by pulling and changing to the branch that is being requested to be merged in.\nOnce you have reviewed the changes, you can leave general feedback, approve or request changes by clicking the ‘review changes’ button.\n\n\n\nOnce you are happy with the changes, you should approve the pull request. The person who created the request will then get an email letting them know their changes have been approved. It can also be helpful to send them a direct message to let them know you have reviewed their PR! They can then go back and complete the request.\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Prerequisites"
+      "GitHub DevOps basics refresher",
+      "Reviewing pull requests"
     ]
   },
   {
-    "objectID": "prerequisites.html#git",
-    "href": "prerequisites.html#git",
-    "title": "Prerequisites",
-    "section": "",
-    "text": "Download Git from the Git website downloads page. Click the “Download for…” button in the monitor image and this will download the install script.\n\n\n\n\n\n\nTip\n\n\n\nThe install script asks lots of questions, but you’re generally fine to accept the defaults on all of these. The main one to watch out for is the default text editor, which Git sets to Vim. We strongly recommend changing this to Notepad or Notepad++ as Vim is very user-unfriendly for the average user.",
+    "objectID": "glossary.html#add",
+    "href": "glossary.html#add",
+    "title": "Glossary",
+    "section": "Add",
+    "text": "Add\nAdding is the process of identifying to Git which files you would like to include in a given commit.\n\n\n\n\n\n\nTip\n\n\n\nAdd and stage are synonymous",
     "crumbs": [
-      "Prerequisites"
+      "Glossary"
     ]
   },
   {
-    "objectID": "prerequisites.html#github-account",
-    "href": "prerequisites.html#github-account",
-    "title": "Prerequisites",
-    "section": "GitHub Account",
-    "text": "GitHub Account\nYou’ll need a GitHub account to work through the examples used with our git-academy-sandbox repository. Create an account from the GitHub homepage.\nOnce you’ve set up an account, e-mail us with your GitHub username and ask to be added to the Git Academy users team on dfe-analytical services.",
+    "objectID": "glossary.html#commit",
+    "href": "glossary.html#commit",
+    "title": "Glossary",
+    "section": "Commit",
+    "text": "Commit\nCommitting is where you record changes in the Git history. This is one of the most important aspects to understand when using Git. A commit provides a single point in the version control history and when navigating back through the history, you can only navigate to changes that are part of a commit.",
     "crumbs": [
-      "Prerequisites"
+      "Glossary"
     ]
   },
   {
-    "objectID": "prerequisites.html#running-git-commands",
-    "href": "prerequisites.html#running-git-commands",
-    "title": "Prerequisites",
-    "section": "Running Git commands",
-    "text": "Running Git commands\nThere are a few options for running Git commands once you’ve installed Git. The panels below give the most commonly used options that we recommend for working with Git in the DfE.\n\nIDE Git integration(Git) BashGitHub Desktop\n\n\nMost modern IDEs (e.g. VS Code, R-Studio, PyCharm) provide some level of Git integration. IDEs often offer a more limited range of Git commands than Git Bash and GitHub Desktop, but work well for basic Git workflows (such as cloning, tracking changes, creating branches and syncing with your remote repository) and provide enough functionality to follow most of Git Academy without you needing to resort to typing commands into Git Bash.\n\n\nBash is a terminal prompt that you can use to run Git commands. A version of the Bash terminal (called Git Bash) comes with Git, so you’ll have it as soon as you’ve installed Git. It gives you access to all Git commands as well as other Bash commands for file management etc (such as creating files, navigating through your folders, making directories, removing files and many, many other things).\n\n\nIf writing commands into a terminal isn’t your thing, then a good (language-agnostic) alternative to Git Bash is to use the GitHub Desktop application. This can be downloaded from GitHub and provides access to a wide range of Git commands, whilst providing user-friendly views of the tracking status and changes of your files.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThere is no single preferred option for running Git commands. Whichever option you find works best for you is fine to use, whether it’s command line based or a graphical user interface. Some will offer additional functionality, but all shuould provide enough functionality for day-to-day tasks.",
+    "objectID": "glossary.html#clone",
+    "href": "glossary.html#clone",
+    "title": "Glossary",
+    "section": "Clone",
+    "text": "Clone\nCloning a repository is the process of creating a copy of a repository folder system on your local working environment (e.g. your laptop computer).",
     "crumbs": [
-      "Prerequisites"
+      "Glossary"
     ]
   },
   {
-    "objectID": "prerequisites.html#text-editor-or-ide",
-    "href": "prerequisites.html#text-editor-or-ide",
-    "title": "Prerequisites",
-    "section": "Text editor or IDE",
-    "text": "Text editor or IDE\nWe’ve tried to keep Git Academy software-agnostic as much as possible, so you should be able to work through most of the material using any text editor or IDE. The main files you’ll need to edit will contain markdown, which you can edit in any of the following (some of which also provide Git integration).\n\nWindows NotepadVS CodeR-StudioPyCharm\n\n\nWindows Notepad and Notepad++ are good to use if you don’t have a preferred language that you’d usually work in such as R or Python. There’s no Git integration though, so you’ll need to use Git Bash or GitHub Desktop to run Git commands.\n\n\nVS Code is a flexible IDE usable with a range of languages and is available for use on DfE systems on request. It provides Git integration along with markdown file rendering (shortcut: Ctrl+K V), so is a great option for working through Git Academy.\n\n\nR-Studio is an R IDE and is available from the DfE Software Centre in Windows. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.\n\n\nPyCharm Community Edition is a Python IDE and is available from the DfE Software Centre. It provides Git integration along with markdown file rendering, so is a great option for working through Git Academy.",
+    "objectID": "glossary.html#pull",
+    "href": "glossary.html#pull",
+    "title": "Glossary",
+    "section": "Pull",
+    "text": "Pull\nPerforming a “pull” updates your current local working branch with any changes from the remote branch. If you’re working with other people on a project, you should pull every day that you interact with a repository, at the minimum.",
     "crumbs": [
-      "Prerequisites"
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#pull-request",
+    "href": "glossary.html#pull-request",
+    "title": "Glossary",
+    "section": "Pull request",
+    "text": "Pull request\nA pull request is a method used in Git to propose changes to a branch. It allows collaborators to review and discuss changes before merging into the main branch.",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#push",
+    "href": "glossary.html#push",
+    "title": "Glossary",
+    "section": "Push",
+    "text": "Push\nPushing is the process of updating the remote branch with local commits.",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#repository",
+    "href": "glossary.html#repository",
+    "title": "Glossary",
+    "section": "Repository",
+    "text": "Repository\nA repository (or repo) is effectively a project folder. A given repository would usually contain all the work for a specific project (e.g. a data pipeline, an R-Shiny app, etc).",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#stage",
+    "href": "glossary.html#stage",
+    "title": "Glossary",
+    "section": "Stage",
+    "text": "Stage\nStaging is the process of identifying to Git which files you would like to include in a given commit.\n\n\n\n\n\n\nTip\n\n\n\nAdd and stage are synonymous",
+    "crumbs": [
+      "Glossary"
     ]
   }
 ]
