@@ -6,7 +6,7 @@ This section will guide you through how to create more branches, taking the main
 
 When you create a Git project, it will automatically create a "main" (sometimes "master") branch for you. This is where the code that has been QA'd and you are happy with should sit.
 
-It is good practice to create a branch whenever you have a change to make to your work. Having two branches means that if anything goes wrong in the "development branch", the "main" branch is still unaffected and runs without issue. This lets you test and QA the code more thoroughly before merging into your main branch.
+It is good practice to create a branch whenever you have a change to make to your work. Having two branches means that if anything goes wrong in the "development branch", the "main" branch is still unaffected and runs without issue. This lets you test and QA the code more thoroughly before merging into your main branch, whilst anyone coming to the repo will know that whatever is on the main is the latest "production" version.
 
 ::: {.callout-note}
 Chose one method below to create your new branch, which we will call "development". Then follow the instructions at the bottom of this page to update your logbook.
@@ -15,37 +15,21 @@ Chose one method below to create your new branch, which we will call "developmen
 ::: panel-tabset
 ## Git Bash
 
-1.  Ensure you're on your own personal main branch that you created in [making a branch](#making-a-branch). If you aren't sure use:
+Ensure that you're on your own personal main branch that you created in [making a branch](#making-a-branch), i.e. `<github_username>/main`.
 
-``` bash
-git checkout -b <github_username>/main
-```
-
-2.  Pull the latest changes from the remote repository.
-
-``` bash
-git pull origin <github_username>/main
-```
-
-3.  Create your new development branch
+Create a new branch ready to make changes:
 
 ``` bash
 git checkout -b <github_username>/development
 ```
 
-4.  Push the new branch to the remote repository:
+The branchname in brackets should now show the name of your new branch, which means any changes you [commit](../glossary.html#commit) now will be applied to this branch and not your previous branch.
+
+As before, you can sync this new branch to the remote repository by pushing:
 
 ``` bash
 git push -u origin <github_username>/development
 ```
-
-5.  Check that the new branch shows in the branch list.
-
-``` bash
-git branch
-```
-
-![Creating a new branch in GitBash](./images/dev_branch_GitBash.png)
 
 ## RStudio
 
@@ -84,7 +68,7 @@ git branch
 
 :::
 
-::: callout-tip
+::: callout-caution
 ## Edit your git-academy-log file
-Now you have made your development branch, go to your git log and update tick the 'making a development branch' box. Use the [recording changes](recording-changes) section for a reminder on how to make and save changes. Ensure to commit and push your changes.
+Now you have made your development branch, go to your git log and update tick the 'making a second branch' box, before [adding, committing and pushing the changes](recording-changes).
 :::

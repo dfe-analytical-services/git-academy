@@ -22,7 +22,7 @@ You can follow through tasks in order or in some cases jump in at specific point
 where you feel you need to target your learning.
 
 :::: {.callout-note}
-This isn't aimed at being a comprehensive reference guide however. If you need
+This isn't aimed at being a comprehensive reference guide. If you need more extensive
 reference material for using Git in the DfE, then we recommend looking through
 the 
 [Azure DevOps for Analysis guide](https://dfe-analytical-services.github.io/azure-devops-for-analysis/).

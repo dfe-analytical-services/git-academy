@@ -8,7 +8,7 @@ website:
   site-url: "https://dfe-analytical-services.github.io/git-academy"
   repo-url: https://github.com/dfe-analytical-services/git-academy
   repo-actions: [edit, issue]
-  google-analytics: "G-xxxxxxxxx"
+  google-analytics: "G-LVK5Y6NNFT"
   cookie-consent: 
     style: headline
     palette: dark
@@ -59,8 +59,8 @@ website:
           - git-refresher/making-a-branch.qmd
           - git-refresher/recording-changes.qmd
           - git-refresher/syncing-changes-to-remote.qmd
-          - git-refresher/moving-between-branches.qmd
           - git-refresher/making-more-branches.qmd
+          - git-refresher/moving-between-branches.qmd
     
       - section: "GitHub DevOps basics refresher"
         contents:

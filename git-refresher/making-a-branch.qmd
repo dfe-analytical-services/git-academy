@@ -7,8 +7,8 @@ called "[branches](https://dfe-analytical-services.github.io/azure-devops-for-an
 effect files on any other branch.
 
 Most repositories will have a "main" branch. This is considered the central 
-latest working version of your work. When editing work, we generally don't make 
-edits directly on the main branch. Instead we create specific branches for 
+working (production) version of your work. When editing work, we generally don't 
+make edits directly on the main branch. Instead we create specific branches for 
 specific chunks of work.
 
 Having [cloned the git-academy-sandbox repository](clone-a-repo.html), 
@@ -23,6 +23,11 @@ personal main branch in the sandbox repository.
 ``` bash
 git checkout -b <github_username>/main
 ```
+
+:::: callout-tip
+If you run `git log` now, you'll see that the latest commit is labelled something along the lines of
+`HEAD -> <github_username>/main, ..., main`. This means that the active (or "head") state of the repo is set to being your new branch (which is currently identifical to the main branch that you just branched from).
+::::
 
 ## RStudio
 

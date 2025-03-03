@@ -29,7 +29,7 @@ team on [dfe-analytical services](https://github.com/dfe-analytical-services).
 
 There are a few options for running Git commands once you've installed Git. The
 panels below give the most commonly used options that we recommend for working 
-through Git Academy.
+with Git in the DfE.
 
 ::: panel-tabset
 ### IDE Git integration
@@ -64,7 +64,6 @@ you find works best for you is fine to use, whether it's command line based or
 a graphical user interface. Some will offer additional functionality, but all 
 shuould provide enough functionality for day-to-day tasks.
 :::
-
 
 ## Text editor or IDE
 

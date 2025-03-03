@@ -1,12 +1,12 @@
 ---
-title: "Syncing to the remote"
+title: "Syncing to the remote (push)"
 ---
 
-This section will guide you through syncing your local repo to the remote one.
+This section will guide you through syncing your local repo to the remote one, also known as [pushing](../glossary.html#push).
 
-Any change made so far is only being applied to the local copy of the repository (i.e. the copy on your laptop). To apply your changes to the remote repository (i.e. on GitHub or Azure DevOps), you need to “push” the changes.
+Any change made so far is only being applied to the local copy of the repository (i.e. the copy on your laptop). To apply your changes to the remote repository (i.e. on GitHub or Azure DevOps), you need to **“push”** the changes.
 
-Having [recorded your changes](recording-changes.html), follow the instructions below to sync to the remote.
+Having [recorded your changes](recording-changes.html), follow the instructions below to push to the remote.
 
 ::: panel-tabset
 ## Git Bash
