@@ -53,7 +53,7 @@ git branch
 
 2. In the Git panel, click the purple new branch symbol ![symbol containing two purple boxes branching from a diamond](images/new-branch_rstudio-button.png) as to the left of the username in the screenshot below.
 
-3. Then enter your development branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith_development`)
+3. Then enter your development branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith/development`)
 
 ![Creating a new branch in RStudio](./images/dev_branch_RStudio.png)
 
@@ -61,7 +61,7 @@ git branch
 
 1. Click **Branch** in the menu bar and then select **New branch...** as shown in the screenshot below.
 
-2. Then enter your branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith_main`)
+2. Then enter your branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith/main`)
 
 ![Creating a new branch in GitHub Desktop](./images/dev_branch_GitHubDesktop.png)
 
@@ -69,7 +69,7 @@ git branch
 
 1. The current branch **`(<github_username>main)`** should be listed in the very bottom left hand corner of the VS Code window frame. If you left click on this, you should then see a menu appear at the top of the VS Code window with some branch options (as shown in the screen shot below).
 
-2. Click **+ Create new branch...** and then enter your branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith_development`).
+2. Click **+ Create new branch...** and then enter your branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith/development`).
 
 3. You should now see the branch name listed in the bottom left of the window frame shown as the branch you just created, meaning any changes you currently make will be applied to that new development branch (and not the main branch, or your personal main branch).
 
@@ -78,9 +78,9 @@ git branch
 
 1. Open up the Git panel in PyCharm and you should see something like the screenshot below. Right click on your **`<github_username>/main`** branch and select **New branch from '\<github_id\>/main'...**.
 
-2. Then enter your branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith_development`).
+2. Then enter your branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith/development`).
 
-![Creating a new branch in PyCharm](./images/dev_branch_PyCharm.png)
+![](./images/dev_branch_PyCharm.png){fig-alt="Creating a development branch in PyCharm based on an existing branch."}
 
 :::
 
