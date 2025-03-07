@@ -21,7 +21,7 @@ Replace `<github_id>` in the below with your GitHub username to make your own
 personal main branch in the sandbox repository.
 
 ``` bash
-git checkout -b <github_username>/main
+git checkout -b <github_id>/main
 ```
 
 :::: callout-tip
