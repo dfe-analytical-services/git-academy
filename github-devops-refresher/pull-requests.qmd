@@ -15,7 +15,7 @@ Now you have made changes in your [development branch](making-a-development-bran
 Once you have made all the changes you want to include in this batch of work, you'll bundle all of your commits together into a pull request for review.
 
 ::: {.callout-note}
-Before attempting to create your pull request, make sure to have pushed any changes on the branches involved to the remote repo on GitHub
+Before attempting to create your pull request, make sure to have pushed any changes on the branches involved to the remote repo on GitHub. To refresh your memory on how to save, commit and push changes, see [recording changes](../git-refresher/recording-changes.qmd) and [syncing to the remote (push)](../git-refresher/syncing-changes-to-remote.qmd).
 :::
 
 ::: panel-tabset
