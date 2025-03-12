@@ -4,9 +4,9 @@ title: "Making more branches"
 
 This section will guide you through how to create more branches, taking the main branch you created as a base.
 
-When you create a Git project, it will automatically create a "main" (sometimes "master") branch for you. This is where the code that has been QA'd and you are happy with should sit.
+When you create a Git project, it will automatically create a "main" (sometimes "master") branch for you. This is where the code that has been quality assured and you are happy with should sit.
 
-It is good practice to create a branch whenever you have a change to make to your work. Having two branches means that if anything goes wrong in the "development branch", the "main" branch is still unaffected and runs without issue. This lets you test and QA the code more thoroughly before merging into your main branch, whilst anyone coming to the repo will know that whatever is on the main is the latest "production" version.
+It is good practice to create a branch whenever you have a change to make to your work. Having two branches means that if anything goes wrong in the "development branch", the "main" branch is still unaffected and runs without issue. This lets you test and quality assure the code more thoroughly before merging into your main branch, whilst anyone coming to the repo will know that whatever is on the main is the latest "production" version.
 
 ::: {.callout-note}
 Chose one method below to create your new branch, which we will call "development". Then follow the instructions at the bottom of this page to update your logbook.
