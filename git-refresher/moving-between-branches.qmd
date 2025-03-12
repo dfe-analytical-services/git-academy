@@ -9,7 +9,7 @@ Switching branches is useful for when we might need to pause our work on one bra
 ::: panel-tabset
 ## Git Bash
 
-Assuming you've not skipped any steps, you should now have at least 3 branches that you've had active during this tutorial: `main`, `<github_username>/main` and `<github_username>/development`.
+Assuming you've not skipped any steps, you should now have at least 2 branches that you've had created during this tutorial: `<github_username>/main` and `<github_username>/development`, as well as the original `main`, branch.
 
 Use `git checkout` to switch between these branches.
 
