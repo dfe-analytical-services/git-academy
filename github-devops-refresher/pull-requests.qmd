@@ -31,7 +31,7 @@ gh pr create --base <github_id>/main --head <github_id>/development --title "Upd
 
 1. Go to the [git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox) repository page on GitHub.
 
-2. Navigate to the Pull requests tab underneath the repository title. 
+2. Navigate to the pull requests tab underneath the repository title. 
 ![](images/pull_requests_tab.png){fig-alt="Higlighting the Pull requests tab on GitHub."}
 
 3. Open a pull request by clicking the "New pull request" button.
@@ -41,7 +41,7 @@ gh pr create --base <github_id>/main --head <github_id>/development --title "Upd
 ![](images/pull_request_branch_selection.png){fig-alt="Higlighting where to change the base and compare branches once you have pressed the 'create a pull request' button on GitHub."}
 
 
-5. Create Pull Request: Click the "Create pull request" button. Add a title and description for your pull request. You may wish to explain what changes and been made, and why. 
+5. Click the "Create pull request" button. Add a title and description for your pull request. You may wish to explain what changes and been made, and why. 
 
 6. You don't need to add any reviewers in this training, but please do take a moment to notice where you can add team mates to review your pull requests in your own work to the right of the description. Any reviewers you add will be notified by email that there is a pull request for them to review.
 
