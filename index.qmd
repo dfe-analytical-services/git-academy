@@ -28,3 +28,7 @@ the
 [Azure DevOps for Analysis guide](https://dfe-analytical-services.github.io/azure-devops-for-analysis/).
 ::::
 
+If at any point in this tutorial you're unsure of any terminology, there is a 
+[Glossary](https://dfe-analytical-services.github.io/git-academy/glossary.html)
+that contains all of the command words as well as a short description on what
+they are and why they are used.
