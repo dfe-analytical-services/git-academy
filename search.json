@@ -201,7 +201,7 @@
     "href": "index.html",
     "title": "DfE Git Academy",
     "section": "",
-    "text": "Welcome to the DfE’s Git Academy. This is a collection of interactive tasks you can work through to help learn and practice using Git. As this is intended to be a practical guide, we provide the git-academy-sandbox repository where you can practice using Git in a contained environment.\nYou can follow through tasks in order or in some cases jump in at specific points where you feel you need to target your learning.\n\n\n\n\n\n\nNote\n\n\n\nThis isn’t aimed at being a comprehensive reference guide. If you need more extensive reference material for using Git in the DfE, then we recommend looking through the Azure DevOps for Analysis guide.\n\n\n\n\n\n Back to top",
+    "text": "Welcome to the DfE’s Git Academy. This is a collection of interactive tasks you can work through to help learn and practice using Git. As this is intended to be a practical guide, we provide the git-academy-sandbox repository where you can practice using Git in a contained environment.\nYou can follow through tasks in order or in some cases jump in at specific points where you feel you need to target your learning.\n\n\n\n\n\n\nNote\n\n\n\nThis isn’t aimed at being a comprehensive reference guide. If you need more extensive reference material for using Git in the DfE, then we recommend looking through the Azure DevOps for Analysis guide.\n\n\nIf at any point in this tutorial you’re unsure of any terminology, there is a Glossary that contains all of the command words as well as a short description on what they are and why they are used.\n\n\n\n Back to top",
     "crumbs": [
       "Welcome"
     ]
