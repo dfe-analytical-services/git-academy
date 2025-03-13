@@ -58,6 +58,12 @@ Note that you can see the changes made by comparing the green (current version) 
 ## GitHub Desktop
 
 ## VS Code
+-  In the Source Control panel of VSCode, click the plus on the file to 'stage' it. (see image below.)
+Then write in your message above the big blue commit button, then click commit when you are ready.
+
+![](images/vscode_commit.png){fig-alt='Shows the user the + button to stage a file, as well as the location of the Source Control panel.'}
+
+You can view what has been added in green and what has been removed in red. (also shown with + and -)
 
 ## PyCharm
 
