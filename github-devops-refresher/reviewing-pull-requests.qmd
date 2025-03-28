@@ -15,7 +15,7 @@ We will practice this by reviewing the pull request you have just made in [creat
 
 3. Click on the pull request you want to review, in this case the one you created above. 
 
-![](images/pull-request-in-GitHub.png){fig-alt="Higlighting where open pull requests show in GitHub once the Pull request tab has been opened."}
+![](images/pull-request-in-GitHub.png){fig-alt="Higlighting where open pull requests show in GitHub once the pull request tab has been opened."}
 
 4. Review the changes by looking at the "Files changed" tab. You can see a side-by-side comparison of the changes made. Add comments by clicking the "+" icon next to the lines of code you want to comment on.
 
@@ -27,5 +27,5 @@ We will practice this by reviewing the pull request you have just made in [creat
 
 ![](images/pull-request-review.png){fig-alt="Higlighting where to provide general feedback, request changes or approve on a pull request."}
 
-7. Once you are happy with the changes, you should approve the pull request. The person who created the request will then get an email letting them know their changes have been approved. It can also be helpful to send them a direct message to let them know you have reviewed their PR! They can then go back and complete the request.  
+7. Once you are happy with the changes, you should approve the pull request. The person who created the request will then get an email letting them know their changes have been approved. It can also be helpful to send them a direct message to let them know you have reviewed their pull request! They can then go back and complete the request.  
 
