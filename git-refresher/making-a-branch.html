@@ -358,7 +358,7 @@ cookieconsent.run({
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Git Bash</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">GitHub Desktop</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">VS Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">PyCharm</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Replace <code>&lt;github_id&gt;</code> in the below with your GitHub username to make your own personal main branch in the sandbox repository.</p>
+<p>Replace <code>&lt;github_username&gt;</code> in the below with your GitHub username to make your own personal main branch in the sandbox repository.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> <span class="op">&lt;</span>github_username<span class="op">&gt;</span>/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -376,7 +376,7 @@ Tip
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>In the Git panel, click the purple new branch symbol <img src="images/new-branch_rstudio-button.png" class="img-fluid" alt="symbol containing two purple boxes branching from a diamond"> as circled in the screenshot below.</p>
-<p>Then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith/main</code>)</github_id></p>
+<p>Then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_username> with your own GitHub username, e.g.&nbsp;<code>jsmith/main</code>)</github_username></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./images/new-branch_RStudio.png" class="img-fluid figure-img"></p>
@@ -386,7 +386,7 @@ Tip
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Click <strong>Branch</strong> in the menu bar and then select <strong>New branch…</strong> as shown in the screenshot below.</p>
-<p>Then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith/main</code>)</github_id></p>
+<p>Then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_username> with your own GitHub username, e.g.&nbsp;<code>jsmith/main</code>)</github_username></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./images/new-branch_GitHubDesktop.png" class="img-fluid figure-img"></p>
@@ -396,7 +396,7 @@ Tip
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>The current branch (<strong>main</strong>) should be listed in the very bottom left hand corner of the VS Code window frame. If you left click on this, you should then see a menu appear at the top of the VS Code window with some branch options (as shown in the screen shot below).</p>
-<p>Click <strong>+ Create new branch…</strong> and then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith/main</code>).</github_id></p>
+<p>Click <strong>+ Create new branch…</strong> and then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_username> with your own GitHub username, e.g.&nbsp;<code>jsmith/main</code>).</github_username></p>
 <p>You should now see the branch name listed in the bottom left of the window frame shown as the branch you just created, meaning any changes you currently make will be applied to that new branch (and not main).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -408,7 +408,7 @@ Tip
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <ul>
 <li><p>Open up the Git panel in PyCharm and you should see something like the screenshot below. Right click on <strong>main</strong> and select <strong>New branch from ‘origin/main’…</strong>.</p></li>
-<li><p>Then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_id> with your own GitHub username, e.g.&nbsp;<code>jsmith/main</code>).</github_id></p></li>
+<li><p>Then enter your branch name as <strong><code>&lt;github_username&gt;/main</code></strong> (but replacing <github_username> with your own GitHub username, e.g.&nbsp;<code>jsmith/main</code>).</github_username></p></li>
 </ul>
 <p><img src="./images/new-branch_PyCharm.png" class="img-fluid" alt="A screenshot showing the PyCharm interface with the Git panel open and the New branch from 'origin/main'... option highlighted."></p>
 </div>
