@@ -17,7 +17,7 @@ now make a new branch to work in.
 ::: panel-tabset
 ## Git Bash
 
-Replace `<github_id>` in the below with your GitHub username to make your own 
+Replace `<github_username>` in the below with your GitHub username to make your own 
 personal main branch in the sandbox repository.
 
 ``` bash
@@ -35,7 +35,7 @@ In the Git panel, click the purple new branch symbol
 ![symbol containing two purple boxes branching from a diamond](images/new-branch_rstudio-button.png) 
 as circled in the screenshot below.
 
-Then enter your branch name as **`<github_username>/main`** (but replacing <github_id> 
+Then enter your branch name as **`<github_username>/main`** (but replacing <github_username> 
 with your own GitHub username, e.g. `jsmith/main`)
 
 ![Creating a new branch in RStudio](./images/new-branch_RStudio.png)
@@ -45,7 +45,7 @@ with your own GitHub username, e.g. `jsmith/main`)
 Click **Branch** in the menu bar and then select **New branch...** as shown in 
 the screenshot below.
 
-Then enter your branch name as **`<github_username>/main`** (but replacing <github_id> 
+Then enter your branch name as **`<github_username>/main`** (but replacing <github_username> 
 with your own GitHub username, e.g. `jsmith/main`)
 
 ![Creating a new branch in GitHub Desktop](./images/new-branch_GitHubDesktop.png)
@@ -58,7 +58,7 @@ see a menu appear at the top of the VS Code window with some branch options (as
 shown in the screen shot below).
 
 Click **+ Create new branch...** and then enter your branch name as 
-**`<github_username>/main`** (but replacing <github_id> with your own GitHub username, 
+**`<github_username>/main`** (but replacing <github_username> with your own GitHub username, 
 e.g. `jsmith/main`).
 
 You should now see the branch name listed in the bottom left of the window frame
@@ -74,7 +74,7 @@ will be applied to that new branch (and not main).
 screenshot below. Right click on **main** and select 
 **New branch from 'origin/main'...**.
 
--   Then enter your branch name as **`<github_username>/main`** (but replacing <github_id> 
+-   Then enter your branch name as **`<github_username>/main`** (but replacing <github_username> 
 with your own GitHub username, e.g. `jsmith/main`).
 
 ![](./images/new-branch_PyCharm.png){fig-alt="A screenshot showing the PyCharm interface with the Git panel open and the New branch from 'origin/main'... option highlighted."}
