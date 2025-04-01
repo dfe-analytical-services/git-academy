@@ -11,6 +11,8 @@ Having [created your own branch](making-a-branch.html), you should now record th
 ::: callout-caution
 ## Edit your git-academy-log file
 
+-   Open your `git-academy-log.md` file. You can do this either in the file explorer pane of the software you are using, or by double clicking on the file in the folder you have saved it in locally. 
+
 -   Put an x inside the brackets for the "Clone git-academy-sandbox" and "Create a new branch in GitHub (\<github_username\>/main)".
 
 -   Save the file.
