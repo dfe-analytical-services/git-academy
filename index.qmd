@@ -21,7 +21,7 @@ repository where you can practice using Git in a contained environment.
 You can follow through tasks in order or in some cases jump in at specific points 
 where you feel you need to target your learning. A logbook is provided within the 
 [git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox)
-repo. The logbook is alongside this guide to record your progress and practice 
+repo. The logbook is to be used alongside this guide to record your progress and practice 
 making and recording changes.
 
 :::: {.callout-note}
