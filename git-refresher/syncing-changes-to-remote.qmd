@@ -56,5 +56,5 @@ Alternatively you can push and commit your changes at the same time from the com
 
 
 :::: callout-note
-Remember to fill in your logbook now that you have completed these steps. You should open the file and tick off the tasks you have completed, and then before [adding, committing and pushing the changes](recording-changes.html). 
+Remember to fill in your logbook now that you have completed these steps. You should open the file and tick off the tasks you have completed under the header "Recording changes (add and commit)" and "Syncing to the remote (push), before then [adding, committing and pushing the changes](recording-changes.html). 
 ::::

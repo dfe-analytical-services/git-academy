@@ -70,5 +70,5 @@ git push -u origin <github_username>/development
 
 ::: callout-caution
 ## Edit your git-academy-log file
-Now you have made your development branch, go to your git log and update tick the 'making a second branch' box, before [adding, committing and pushing the changes](recording-changes.html).
+Now you have made your development branch, go to your git log and tick the boxes under 'Making more branches', before [adding, committing and pushing the changes](recording-changes.html).
 :::
