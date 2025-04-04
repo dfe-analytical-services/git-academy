@@ -34,7 +34,9 @@ You can also do this from the side panel after closing the commit window as show
 ## GitHub Desktop
 
 ## VS Code
+- To sync your changes, all you need to do is click the bluebutton saying 'Publish Branch' after commiting your changes.
 
+![](images/vscode_syncing.png){fig-alt="Showing end user how to sync their changes."}
 ## PyCharm
 
 -   Click on the branches drop down menu at the top of the screen and click "Push".
