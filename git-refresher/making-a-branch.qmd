@@ -40,6 +40,12 @@ with your own GitHub username, e.g. `jsmith/main`)
 
 ![Creating a new branch in RStudio](./images/new-branch_RStudio.png)
 
+:::: callout-tip
+We recommend making sure the **Sync branch with remote** checkbox is ticked as this will make 
+sure the branch is also created on your remote (i.e. GitHub / Azure DevOps). Not clicking this
+when making a new branch will cause the push / pull arrow buttons in RStudio to be greyed out.
+::::
+
 ## GitHub Desktop
 
 Click **Branch** in the menu bar and then select **New branch...** as shown in 
