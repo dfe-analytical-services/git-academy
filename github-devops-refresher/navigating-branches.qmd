@@ -19,5 +19,5 @@ To view and switch between the different branches available in a GitHub reposito
 
 ::: callout-note
 ## Edit your git-academy-log file
-Now you have practiced navigating branches, ensure you are on your <github_username>/main branch, go to your git log and tick the boxes under 'Navigating branches', before [adding, committing and pushing the changes](recording-changes.html).
+Now you have practiced navigating branches, ensure you are on your `<github_usernname>/main` branch, go to your git log and tick the boxes under 'Navigating branches', before [adding, committing and pushing the changes](recording-changes.html).
 :::
