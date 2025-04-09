@@ -51,7 +51,7 @@ git push -u origin <github_username>/development
 
 ## VS Code
 
-1. The current branch **`(<github_username>main)`** should be listed in the very bottom left hand corner of the VS Code window frame. If you left click on this, you should then see a menu appear at the top of the VS Code window with some branch options (as shown in the screen shot below).
+1. The current branch **`(<github_username>/main)`** should be listed in the very bottom left hand corner of the VS Code window frame. If you left click on this, you should then see a menu appear at the top of the VS Code window with some branch options (as shown in the screen shot below).
 
 2. Click **+ Create new branch...** and then enter your branch name as **`<github_username>/development`** (but replacing <github_username> with your own GitHub username, e.g. `jsmith/development`).
 
