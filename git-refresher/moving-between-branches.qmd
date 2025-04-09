@@ -81,6 +81,9 @@ You can also use the `git switch` command interchangeably with the git checkout 
       
 -   Check the "git-academy-log.md" file and you'll see your edits have returned.
 
+:::
 
-
+::: callout-note
+## Edit your git-academy-log file
+Now you have moved between branches, go to your git log and tick the boxes under 'Moving between branches' before [adding, committing and pushing the changes](recording-changes.html).
 :::

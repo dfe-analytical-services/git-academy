@@ -37,7 +37,7 @@ git push -u origin <github_username>/development
 
 2. In the Git panel, click the purple new branch symbol ![symbol containing two purple boxes branching from a diamond](images/new-branch_rstudio-button.png) as to the left of the username in the screenshot below.
 
-3. Then enter your development branch name as **`<github_username>/development`** (but replacing <github_id> with your own GitHub username, e.g. `jsmith/development`)
+3. Then enter your development branch name as **`<github_username>/development`** (but replacing <github_username> with your own GitHub username, e.g. `jsmith/development`)
 
 ![Creating a new branch in RStudio](./images/dev_branch_RStudio.png)
 
@@ -68,7 +68,7 @@ git push -u origin <github_username>/development
 
 :::
 
-::: callout-caution
+::: callout-note
 ## Edit your git-academy-log file
-Now you have made your development branch, go to your git log and update tick the 'making a second branch' box, before [adding, committing and pushing the changes](recording-changes).
+Now you have made your development branch, go to your git log and tick the boxes under 'Making more branches', before [adding, committing and pushing the changes](recording-changes.html).
 :::

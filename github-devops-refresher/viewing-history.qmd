@@ -4,7 +4,7 @@ title: "Viewing the history"
 
 1.  Ensure you are still on the GitHub site for the github-sandbox repository. 
 
-2.  Select the branch you would like to see history for from the 'Branch' drop down menu, in this case, the `<github_id>/main` branch you created. 
+2.  Select the branch you would like to see history for from the 'Branch' drop down menu, in this case, the `<github_username>/main` branch you created. 
 
 ![](images/viewing_branches_drop_down.png){fig-alt="Image shows a screengrab of the git-academy-sandbox repository, with the branches drop-down selected"}
 
