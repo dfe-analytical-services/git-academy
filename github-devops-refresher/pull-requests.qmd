@@ -49,17 +49,16 @@ gh pr create --base <github_id>/main --head <github_username>/development --titl
 
 8. You will then want to check whether there are any merge conflicts. If there are merge conflicts, they will need resolving before you are able to complete your pull request. 
 
-## GitHub Desktop
+## Git Bash
 
-1. Ensure you are on the development branch. 
+Create your pull request, adding a title and a description of your changes 
 
-2. Click on the 'Branch' menu and 'Create pull request' 
+``` bash
+gh pr create --base <github_username>/main --head <github_username>/development --title "Update to log book" --body "Updating logbook to reflect completing the development branch task."
+```
 
-3. Click 'open in browser'. This will open GitHub in your web browser with the pull request form pre-filled. 
+:::: callout-caution
+In order to run the above command, you'll need to have installed [GitHub command line tools](https://cli.github.com/).
+::::
 
-4. Add a title and description for you pull request and then click 'Create pull request' 
-
-## VS Code 
-
-## PyCharm 
 ::: 
