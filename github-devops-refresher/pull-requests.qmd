@@ -54,7 +54,7 @@ gh pr create --base <github_id>/main --head <github_username>/development --titl
 Create your pull request, adding a title and a description of your changes 
 
 ``` bash
-gh pr create --base <github_id>/main --head <github_id>/development --title "Update to log book" --body "Updating logbook to reflect completing the development branch task."
+gh pr create --base <github_username>/main --head <github_username>/development --title "Update to log book" --body "Updating logbook to reflect completing the development branch task."
 ```
 
 :::: callout-caution
