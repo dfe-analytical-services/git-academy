@@ -24,7 +24,7 @@ Before attempting to create your pull request, make sure to have pushed any chan
 Create your pull request, adding a title and a description of your changes 
 
 ``` bash
-gh pr create --base <github_id>/main --head <github_id>/development --title "Update to log book" --body "Updating logbook to reflect completing the development branch task."
+gh pr create --base <github_id>/main --head <github_username>/development --title "Update to log book" --body "Updating logbook to reflect completing the development branch task."
 ```
 
 ## GitHub Website

@@ -2,6 +2,11 @@
 title: "Navigating branches"
 ---
 
+::: {.callout-note}
+## Default Branch
+The default branch is like the main version of your project. It's usually called main, but sometimes it might have a different name. This is the branch where the latest, most stable version of your project lives. When you want to make changes to code, you usually create your own branch from main. 
+:::
+
 To view and switch between the different branches available in a GitHub repository, follow these steps:
 
 1.  Navigate to the repository on GitHub. In this case, [Git-academy-sandbox](https://github.com/dfe-analytical-services/git-academy-sandbox){target="_blank"}.
@@ -12,7 +17,7 @@ To view and switch between the different branches available in a GitHub reposito
 
 3. A list of all of the branches in the repository which have been synced to the remote will be shown. You can select any branch to view its contents. You can search branches using the search box or just see your own, active or stale branches by moving through the tabs. 
 
-::: {.callout-note}
-## Default Branch
-The default branch is like the main version of your project. It's usually called main, but sometimes it might have a different name. This is the branch where the latest, most stable version of your project lives. When you want to make changes to code, you usually create your own branch from main. 
+::: callout-note
+## Edit your git-academy-log file
+Now you have practiced navigating branches, ensure you are on your `<github_usernname>/main` branch, go to your git log and tick the boxes under 'Navigating branches', before [adding, committing and pushing the changes](recording-changes.html).
 :::

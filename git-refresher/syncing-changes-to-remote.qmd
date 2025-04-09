@@ -53,3 +53,8 @@ Alternatively you can push and commit your changes at the same time from the com
 
 ![](images/pycharm_push2.png){fig-alt="Highlighting the Commit and Push button in the Commit pop up window that appears after following the steps in recoding changes part of this guide." fig-width="80%" fig-align="center"}
 :::
+
+
+:::: callout-note
+Remember to fill in your logbook now that you have completed these steps. You should open the file and tick off the tasks you have completed under the header "Recording changes (add and commit)" and "Syncing to the remote (push), before then [adding, committing and pushing the changes](recording-changes.html). 
+::::

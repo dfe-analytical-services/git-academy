@@ -10,7 +10,7 @@ To view a file on your repo:
 
 ![](images/repo_code_tab.png){fig-alt="Screenshot of the git-academy-sandbox repository on GitHub, highlighting the 'Code' tab."}
 
-3. Find and select the branch you previously created i.e. `<github_id>/main`. You can do this by clicking on the branches button and selecting your branch, or using the branch drop-down as below to click on your branch: 
+3. Find and select the branch you previously created i.e. `<github_username>/main`. You can do this by clicking on the branches button and selecting your branch, or using the branch drop-down as below to click on your branch: 
 
 
 ![](images/viewing_branches_drop_down.png){fig-alt="Screenshot of the git-academy-sandbox repository on GitHub, displaying the branches drop-down menu with 'main' selected."}

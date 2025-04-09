@@ -6,12 +6,14 @@ This section will guide you through recording changes you make to your repo thro
 
 These steps help you manage and track changes in your project, making collaboration and version control efficient and reliable.
 
-Having [created your own branch](making-a-branch.html), follow the instructions below to make and record changes in your repo.
+Having [created your own branch](making-a-branch.html), you should now record this change in the logbook provided in the git-academy-sandbox repository. This will mean you have recorded your progress so far, and made a change to a file which you can then practice recording. Follow the instructions below to make and record changes in your repo.
 
 ::: callout-caution
 ## Edit your git-academy-log file
 
--   Put an x inside the brackets for the "Clone git-academy-sandbox" and "Create a new branch in GitHub (\<github_username\>/main)".
+-   Open your `git-academy-log.md` file. You can do this either in the file explorer pane of the software you are using, or by double clicking on the file in the folder you have saved it in locally. 
+
+-   Put an x inside the brackets for the "Clone git-academy-sandbox" and "Create a new branch (\<github_username\>/main)".
 
 -   Save the file.
 :::
