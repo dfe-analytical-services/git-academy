@@ -56,6 +56,11 @@ You can also use the `git switch` command interchangeably with the git checkout 
 
 ## VS Code
 
+<<<<<<< HEAD
+- Click the branch icon in the bottom left of your VSCode, this will take you to the search bar, allowing you to click on the branch you would like to switch to.
+
+![](images/vscode_branch.png){fig-alt="Showing end user what the branch icon looks like."}
+
 ## PyCharm
 
 -   Click on the branches drop down menu at the top of the screen.
