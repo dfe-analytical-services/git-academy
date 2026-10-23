@@ -56,7 +56,7 @@ with your own GitHub username, e.g. `jsmith/main`)
 
 ![Creating a new branch in GitHub Desktop](./images/new-branch_GitHubDesktop.png)
 
-## VS Code
+## Positron / VS Code
 
 The current branch (**main**) should be listed in the very bottom left hand 
 corner of the VS Code window frame. If you left click on this, you should then 

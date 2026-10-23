@@ -59,7 +59,13 @@ Note that you can see the changes made by comparing the green (current version) 
 
 ## GitHub Desktop
 
-## VS Code
+## Positron / VS Code
+
+- If you are using Positron, before being able to commit your changes, you need to configure your email and username.
+- Run these commands in your terminal when prompted:
+![](images/positron_email_config.png)
+![](images/positron_username_config.png
+)
 -  In the Source Control panel of VSCode, click the plus on the file to 'stage' it. (see image below.)
 Then write in your message above the big blue commit button, then click commit when you are ready.
 

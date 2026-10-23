@@ -61,8 +61,14 @@ Check the Files pane in RStudio to see if the repo files have been cloned to you
 
 ## GitHub Desktop
 
-## VS Code
+## Positron / VS Code
+- In positron, go to **New \> New folder from git**.
 
+![](images/positron-clone-repository_1.png)
+
+- Paste the URL you copied from GitHub into the "Git Repository URL" field and choose a directory on your device where you want to save the repo.
+
+![](images/positron_clone_repository_2.png)
 ## PyCharm
 
 -   In PyCharm, go to **File \> Project from Version Control**. 
