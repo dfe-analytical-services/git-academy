@@ -54,7 +54,7 @@ You can also use the `git switch` command interchangeably with the git checkout 
 
 ## GitHub Desktop
 
-## VS Code
+## Positron / VS Code
 
 <<<<<<< HEAD
 - Click the branch icon in the bottom left of your VSCode, this will take you to the search bar, allowing you to click on the branch you would like to switch to.
